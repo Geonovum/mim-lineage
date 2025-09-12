@@ -1,11 +1,22 @@
+MIM-Lineage
+
+Deze repository is onderdeel van de MIM 2.0 set aan repositories. Het bevat de beschijving van het lineagemodel als onderdeel van het complete MIM metamodel.
+
+
+Het werkdocument van mim-lineage staat hier:
+<https://geonovum.github.io/mim-lineage>
+
+
+
+
+
 ⚠️ Deze repository is automatisch bijgewerkt naar de nieuwste workflow.
 Voor vragen, neem contact op met [Linda van den Brink](mailto:l.vandenbrink@geonovum.nl) of [Wilko Quak](mailto:w.quak@geonovum.nl).
 
 Als je een nieuwe publicatie wilt starten, lees dan eerst de instructies in de README van de NL-ReSpec-template:
 [https://github.com/Geonovum/NL-ReSpec-template](https://github.com/Geonovum/NL-ReSpec-template).
 
-Het werkdocument van het mim-uml staat hier:
-<https://geonovum.github.io/mim-uml>
+
 
 
 
