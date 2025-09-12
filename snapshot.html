@@ -43,7 +43,7 @@ dfn{cursor:pointer}
   
   
 <script>document.title = respecConfig.title</script>
-<title>MIM-UML. Metamodel Informatiemodellering voor UML</title>
+<title>MIM-Lineagemodel</title>
   
 <title>TODO: Vul hier de titel in</title>
   
@@ -1349,30 +1349,50 @@ ul.index code{color:inherit}
       "id": "WMCC11"
     }
   },
-  "title": "MIM-UML. Metamodel Informatiemodellering voor UML",
+  "title": "MIM-Lineagemodel",
   "specStatus": "wv",
   "specType": "ST",
-  "pubDomain": "TODO",
-  "shortName": "mim-uml",
+  "pubDomain": "MIM",
+  "shortName": "mim-lineage",
   "editors": [
-    {
-      "name": "Paul Janssen",
-      "company": "Geonovum",
-      "companyURL": "https://www.geonovum.nl"
-    }
-  ],
-  "authors": [
     {
       "name": "voornaam achternaam",
       "company": "Geonovum",
       "companyURL": "https://www.geonovum.nl"
     }
   ],
-  "github": "https://github.com/Geonovum/NL-ReSpec-GN-template",
+  "authors": [
+    {
+      "name": "Lennart van Bergen",
+      "company": "Belastingdienst",
+      "companyURL": "https://www.belastingdienst.nl"
+    },
+    {
+      "name": "Paul Janssen",
+      "company": "Geonovum",
+      "companyURL": "https://www.geonovum.nl"
+    },
+    {
+      "name": "Pano Maria",
+      "company": "Skemu",
+      "companyURL": "https://www.skemu.com"
+    },
+    {
+      "name": "Thies Mesdag",
+      "company": "Kadaster",
+      "companyURL": "https://www.kadaster.nl"
+    },
+    {
+      "name": "Frans van der Zande",
+      "company": "Logius",
+      "companyURL": "https://www.logius.nl"
+    }
+  ],
+  "github": "https://github.com/Geonovum/mim-lineage",
   "alternateFormats": [
     {
       "label": "pdf",
-      "uri": "template.pdf"
+      "uri": "static/template.pdf"
     }
   ]
 }</script>
@@ -1380,17 +1400,17 @@ ul.index code{color:inherit}
 
 <body class="h-entry toc-inline"><div class="head">
     <a class="logo" href="https://www.geonovum.nl/geo-standaarden"><img alt="Geonovum" height="67" id="Geonovum" src="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg" width="132">
-  </a> <h1 id="title" class="title">MIM-UML. Metamodel Informatiemodellering voor UML</h1>
+  </a> <h1 id="title" class="title">MIM-Lineagemodel</h1>
     
     <h2>
       Geonovum Standaard<br>
       Werkversie
-      <time class="dt-published" datetime="2025-08-08">08 augustus 2025</time>
+      <time class="dt-published" datetime="2025-09-12">12 september 2025</time>
     </h2>
     <dl>
       
       
-      <dt>Laatste werkversie:</dt><dd><a href="https://geonovum.github.io/NL-ReSpec-GN-template/">https://geonovum.github.io/NL-ReSpec-GN-template/</a></dd>
+      <dt>Laatste werkversie:</dt><dd><a href="https://geonovum.github.io/mim-lineage/">https://geonovum.github.io/mim-lineage/</a></dd>
       
       
       
@@ -1398,27 +1418,35 @@ ul.index code{color:inherit}
       
       <dt>Redacteur:</dt>
       <dd class="editor p-author h-card vcard">
-    <span class="p-name fn">Paul Janssen</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
-  </dd>
-      
-      <dt>Auteur:</dt><dd class="editor p-author h-card vcard">
     <span class="p-name fn">voornaam achternaam</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
   </dd>
+      
+      <dt>Auteurs:</dt><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Lennart van Bergen</span> (<a class="p-org org h-org" href="https://www.belastingdienst.nl">Belastingdienst</a>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Paul Janssen</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Pano Maria</span> (<a class="p-org org h-org" href="https://www.skemu.com">Skemu</a>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Thies Mesdag</span> (<a class="p-org org h-org" href="https://www.kadaster.nl">Kadaster</a>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Frans van der Zande</span> (<a class="p-org org h-org" href="https://www.logius.nl">Logius</a>)
+  </dd>
       <dt>Doe mee:</dt><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-GN-template/">GitHub Geonovum/NL-ReSpec-GN-template</a>
+    <a href="https://github.com/Geonovum/mim-lineage/">GitHub Geonovum/mim-lineage</a>
   </dd><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-GN-template/issues/">Dien een melding in</a>
+    <a href="https://github.com/Geonovum/mim-lineage/issues/">Dien een melding in</a>
   </dd><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-GN-template/commits/">Revisiehistorie</a>
+    <a href="https://github.com/Geonovum/mim-lineage/commits/">Revisiehistorie</a>
   </dd><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-GN-template/pulls/">Pull requests</a>
+    <a href="https://github.com/Geonovum/mim-lineage/pulls/">Pull requests</a>
   </dd>
     </dl>
     
     
     <p>
           Dit document is ook beschikbaar in dit niet-normatieve formaat:
-          <a rel="alternate" href="template.pdf">pdf</a>
+          <a rel="alternate" href="static/template.pdf">pdf</a>
         </p>
     <p class="copyright">
             Dit document valt onder de volgende licentie: 
@@ -1428,12 +1456,17 @@ ul.index code{color:inherit}
   </div>
   <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>TODO: vul in abstract.md een abstract in.</p>
 </section>
-  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">2. </bdi>Toepassingsgebied</a></li><li class="tocline"><a class="tocxref" href="#normreferenties"><bdi class="secno">3. </bdi>Normreferenties</a></li><li class="tocline"><a class="tocxref" href="#termen-definities-en-afkortingen"><bdi class="secno">4. </bdi>Termen, definities en afkortingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#termen-definities"><bdi class="secno">4.1 </bdi>Termen, definities</a></li><li class="tocline"><a class="tocxref" href="#afkortingen"><bdi class="secno">4.2 </bdi>Afkortingen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformiteit"><bdi class="secno">5. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#metamodel-in-uml"><bdi class="secno">6. </bdi>Metamodel in UML</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#inleiding-0"><bdi class="secno">6.1 </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#structuur-metamodel-in-uml"><bdi class="secno">6.2 </bdi>Structuur metamodel in UML</a></li><li class="tocline"><a class="tocxref" href="#structuur-metamodel-in-uml-0"><bdi class="secno">6.3 </bdi>Structuur metamodel in UML</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#kern-objecten-eigenschappen-relaties"><bdi class="secno">6.3.1 </bdi>Kern: objecten, eigenschappen, relaties</a></li><li class="tocline"><a class="tocxref" href="#overzicht-model-mim-uml-profiel"><bdi class="secno">6.3.2 </bdi>Overzicht model MIM UML-profiel</a></li><li class="tocline"><a class="tocxref" href="#datatypen"><bdi class="secno">6.3.3 </bdi>Datatypen</a></li><li class="tocline"><a class="tocxref" href="#overig"><bdi class="secno">6.3.4 </bdi>Overig</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#constraint"><bdi class="secno">6.3.4.1 </bdi>Constraint</a></li><li class="tocline"><a class="tocxref" href="#keuze"><bdi class="secno">6.3.4.2 </bdi>Keuze</a></li><li class="tocline"><a class="tocxref" href="#packages"><bdi class="secno">6.3.4.3 </bdi>Packages</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#specificaties-metagegevens-in-uml"><bdi class="secno">6.4 </bdi>Specificaties metagegevens in UML</a></li></ol></li><li class="tocline"><a class="tocxref" href="#niet-normatieve-deel"><bdi class="secno">7. </bdi>Niet-normatieve deel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#een-subparagraaf"><bdi class="secno">7.1 </bdi>Een subparagraaf</a></li></ol></li><li class="tocline"><a class="tocxref" href="#meer-inhoud"><bdi class="secno">8. </bdi>Meer inhoud</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#definities"><bdi class="secno">8.1 </bdi>Definities</a></li><li class="tocline"><a class="tocxref" href="#afbeeldingen"><bdi class="secno">8.2 </bdi>Afbeeldingen</a></li><li class="tocline"><a class="tocxref" href="#referenties"><bdi class="secno">8.3 </bdi>Referenties</a></li><li class="tocline"><a class="tocxref" href="#optioneel"><bdi class="secno">8.4 </bdi>Optioneel</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mermaid-diagram"><bdi class="secno">9. </bdi>Mermaid diagram</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">10. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">11. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">2. </bdi>Toepassingsgebied</a></li><li class="tocline"><a class="tocxref" href="#normreferenties"><bdi class="secno">3. </bdi>Normreferenties</a></li><li class="tocline"><a class="tocxref" href="#termen-definities-en-afkortingen"><bdi class="secno">4. </bdi>Termen, definities en afkortingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#termen-definities"><bdi class="secno">4.1 </bdi>Termen, definities</a></li><li class="tocline"><a class="tocxref" href="#afkortingen"><bdi class="secno">4.2 </bdi>Afkortingen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#lineagemodel"><bdi class="secno">5. </bdi>Lineagemodel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#inleiding-0"><bdi class="secno">5.1 </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#lineage-vanuit-conceptueel-informatiemodel"><bdi class="secno">5.2 </bdi>Lineage vanuit conceptueel informatiemodel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#model"><bdi class="secno">5.2.1 </bdi>Model</a></li></ol></li><li class="tocline"><a class="tocxref" href="#lineage-vanuit-logisch-gegevensmodel"><bdi class="secno">5.3 </bdi>Lineage vanuit logisch gegevensmodel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#model-0"><bdi class="secno">5.3.1 </bdi>Model</a></li></ol></li><li class="tocline"><a class="tocxref" href="#lineage-vanuit-fysiek-datamodel"><bdi class="secno">5.4 </bdi>Lineage vanuit fysiek datamodel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#model-1"><bdi class="secno">5.4.1 </bdi>Model</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#niet-normatieve-deel"><bdi class="secno">6. </bdi>Niet-normatieve deel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#een-subparagraaf"><bdi class="secno">6.1 </bdi>Een subparagraaf</a></li></ol></li><li class="tocline"><a class="tocxref" href="#meer-inhoud"><bdi class="secno">7. </bdi>Meer inhoud</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#definities"><bdi class="secno">7.1 </bdi>Definities</a></li><li class="tocline"><a class="tocxref" href="#afbeeldingen"><bdi class="secno">7.2 </bdi>Afbeeldingen</a></li><li class="tocline"><a class="tocxref" href="#referenties"><bdi class="secno">7.3 </bdi>Referenties</a></li><li class="tocline"><a class="tocxref" href="#optioneel"><bdi class="secno">7.4 </bdi>Optioneel</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mermaid-diagram"><bdi class="secno">8. </bdi>Mermaid diagram</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">9. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">10. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav>
 
   
   <section id="inleiding"><div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 1."></a></div>
+<p>Het metamodel voor informatiemodellering (MIM) biedt een gemeenschappelijk vertrekpunt voor het maken van informatie- en gegevensmodellen. Het bevat afspraken en conventies voor het creëren van modellen en modelelementen, met daarbij standaard metagegevens. Het leidt tot meer uniforme beschrijvingen van modellen en zorgt daardoor voor meer begrijpelijkheid en andere vormen van kwaliteit.</p>
+<p>Dit document beschrijft een specifiek onderdeel van het MIM namelijk de lineage of afkomstrelaties tussen de informatie-elementen in de verschillende abstractielagen van het MIM model. In de modellering van een domein onderscheidt MIM verschillende abstractielagen van begrip naar conceptueel naar logisch naar fysieke implementatie. Omdat dit aparte lagen zijn is het van belang om de relatie tussen de lagen te kunnen beschrijven op het niveau van de individuele informatie-elementen. Er onstaat hiermee een systematiek van 'voortbouwende en uitbreidende' specificatie waarbij de afkomstrelaties traceerbaar en bruikbaar zijn van begrips- tot dataniveau.</p>
 </section>
   <section id="toepassingsgebied"><div class="header-wrapper"><h2 id="x2-toepassingsgebied"><bdi class="secno">2. </bdi>Toepassingsgebied</h2><a class="self-link" href="#toepassingsgebied" aria-label="Permalink for Section 2."></a></div>
+<p>Deze MIM-module beschrijft een model voor de lineage of afkomstrelaties tussen de informatie-elementen in de verschillende MIM model- en abstractieniveaus: het begrippenmodel, het conceptuele informatiemodel het logisch gegevensmodel en het fysieke datamodel.</p>
+<p>Lineage in de context van deze toepassing is lineage op het gebied van informatie en semantiek. Het betreft semantische - en realisatie relaties tussen informatie-elementen op de verschillende MIM-beschouwingsniveaus. We noemen dit 'verticale lineage'.</p>
+<p>Met de toepassing van het model wordt de afkomstrelatie beschreven tussen een informatie-element in een specifiek MIM abstractieniveau naar een ander MIM abstractieniveau.</p>
 </section>
   <section id="normreferenties"><div class="header-wrapper"><h2 id="x3-normreferenties"><bdi class="secno">3. </bdi>Normreferenties</h2><a class="self-link" href="#normreferenties" aria-label="Permalink for Section 3."></a></div>
 </section>
@@ -1457,60 +1490,44 @@ We gebruiken een <a href="#dfn-fiets" class="internalDFN" data-link-type="dfn" i
 </p></div>
 
 </section><section id="afkortingen"><div class="header-wrapper"><h3 id="x4-2-afkortingen"><bdi class="secno">4.2 </bdi>Afkortingen</h3><a class="self-link" href="#afkortingen" aria-label="Permalink for Section 4.2"></a></div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MIM</td>
+<td>Metamodel Informatiemodellering</td>
+</tr>
+</tbody></table>
 </section></section> 
-  <section id="conformiteit"><div class="header-wrapper"><h2 id="x5-conformiteit"><bdi class="secno">5. </bdi>Conformiteit</h2><a class="self-link" href="#conformiteit" aria-label="Permalink for Section 5."></a></div>
-</section>
-  <section id="metamodel-in-uml"><div class="header-wrapper"><h2 id="x6-metamodel-in-uml"><bdi class="secno">6. </bdi>Metamodel in UML</h2><a class="self-link" href="#metamodel-in-uml" aria-label="Permalink for Section 6."></a></div>
-<p>Beschrijf in dit hoofdstuk het MIM-profiel van deze modelleertaal of de toepassing van het MIM metamodel in deze modelleertaal.
-Het is waarschijnliijk een mapping en extensie (of specialisatie) van MIM op deze modelleertaal.
-Het resulterende profiel is conform MIM en conform deze modelleertaal.</p>
-<section id="inleiding-0"><div class="header-wrapper"><h3 id="x6-1-inleiding"><bdi class="secno">6.1 </bdi>Inleiding</h3><a class="self-link" href="#inleiding-0" aria-label="Permalink for Section 6.1"></a></div>
-<p>Dit hoofdstuk beschrijft hoe je met MIM (doc link) een informatiemodel maakt in UML.</p>
-</section><section id="structuur-metamodel-in-uml"><div class="header-wrapper"><h3 id="x6-2-structuur-metamodel-in-uml"><bdi class="secno">6.2 </bdi>Structuur metamodel in UML</h3><a class="self-link" href="#structuur-metamodel-in-uml" aria-label="Permalink for Section 6.2"></a></div>
-<p>De eerste paragraaf bevat UML-diagrammen. Elk diagram toont een aantal modelelementen. Het geheel van diagrammen, in samenhang, is opgenomen in bijlage <a href="#diagrammen" data-matched-text="[[[#diagrammen]]]" class="respec-offending-element" title="No matching id in document: diagrammen." id="respec-offender-no-matching-id-in-document-diagrammen">#diagrammen</a>. Uitgangspunten voor het metamodel in UML zijn:</p>
+  <section id="lineagemodel"><div class="header-wrapper"><h2 id="x5-lineagemodel"><bdi class="secno">5. </bdi>Lineagemodel</h2><a class="self-link" href="#lineagemodel" aria-label="Permalink for Section 5."></a></div>
+<section id="inleiding-0"><div class="header-wrapper"><h3 id="x5-1-inleiding"><bdi class="secno">5.1 </bdi>Inleiding</h3><a class="self-link" href="#inleiding-0" aria-label="Permalink for Section 5.1"></a></div>
 <ul>
-<li>UML 2.5.1 geldt als de UML versie waar deze specificatie aan conformeert.</li>
-<li>Het UML metamodel en daarin voorkomende UML-modelelementen of metaklassen geldt als uitgangspunt.</li>
-<li>De MIM metaklassen worden gerelateerd aan UML metaklassen en zijn indien nodig een extensie daarvan. Extensies bevatten extra metagegevens en worden gerealiseerd middels stereotypen van die UML metaklassen.</li>
-<li>Twee verschillende stereotypen hebben nooit dezelfde betekenis. </li>
-<li>Stereotypen worden toegepast als er een verbijzondering van een UML-constructie nodig is met behoud van de betekenis van de UML-metaklasse.
-((((Elk modelelement heeft een MIM metaclass. Deze wordt met UML in een
-informatiemodel gemodelleerd als een extensie van een Metaclass van UML 2.5 en een bijbehorende
-stereotype.))))</li>
+<li>Wat is lineage in deze context.</li>
+<li>Waarom lineage?</li>
+<li>Lineage tussen verschillende MIM-niveaus</li>
+<li>Aanpak door per koppelvlak tussen de niveaus een model maken.</li>
 </ul>
-</section><section id="structuur-metamodel-in-uml-0"><div class="header-wrapper"><h3 id="x6-3-structuur-metamodel-in-uml"><bdi class="secno">6.3 </bdi>Structuur metamodel in UML</h3><a class="self-link" href="#structuur-metamodel-in-uml-0" aria-label="Permalink for Section 6.3"></a></div>
-<section id="kern-objecten-eigenschappen-relaties"><div class="header-wrapper"><h4 id="x6-3-1-kern-objecten-eigenschappen-relaties"><bdi class="secno">6.3.1 </bdi>Kern: objecten, eigenschappen, relaties</h4><a class="self-link" href="#kern-objecten-eigenschappen-relaties" aria-label="Permalink for Section 6.3.1"></a></div>
-<p>voorbeeld: </p>
-<figure id="ExtendClass">
-  <img src="media/ExtendClass.png" alt="">
-  <figcaption><a class="self-link" href="#ExtendClass">Figuur <bdi class="figno">1</bdi></a> <span class="fig-title">MIM extend op UML-Class</span></figcaption>
-</figure>
-
-</section><section id="overzicht-model-mim-uml-profiel"><div class="header-wrapper"><h4 id="x6-3-2-overzicht-model-mim-uml-profiel"><bdi class="secno">6.3.2 </bdi>Overzicht model MIM UML-profiel</h4><a class="self-link" href="#overzicht-model-mim-uml-profiel" aria-label="Permalink for Section 6.3.2"></a></div>
-<p>Extensie van metamodel van UML. MIM-stereotypen als extensies van UML metaklassen.</p>
-<figure id="MIM-UML Profiel-overzicht">
-  <img src="media/MIM-UML Profiel-overzicht.svg" alt="">
-  <figcaption><a class="self-link" href="#MIM-UML Profiel-overzicht">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title">MIM extend op UML-metaklassen</span></figcaption>
-</figure>
-
-<p>MIM-UML Profiel-overzicht</p>
-</section><section id="datatypen"><div class="header-wrapper"><h4 id="x6-3-3-datatypen"><bdi class="secno">6.3.3 </bdi>Datatypen</h4><a class="self-link" href="#datatypen" aria-label="Permalink for Section 6.3.3"></a></div>
-</section><section id="overig"><div class="header-wrapper"><h4 id="x6-3-4-overig"><bdi class="secno">6.3.4 </bdi>Overig</h4><a class="self-link" href="#overig" aria-label="Permalink for Section 6.3.4"></a></div>
-<section id="constraint"><div class="header-wrapper"><h5 id="x6-3-4-1-constraint"><bdi class="secno">6.3.4.1 </bdi>Constraint</h5><a class="self-link" href="#constraint" aria-label="Permalink for Section 6.3.4.1"></a></div>
-</section><section id="keuze"><div class="header-wrapper"><h5 id="x6-3-4-2-keuze"><bdi class="secno">6.3.4.2 </bdi>Keuze</h5><a class="self-link" href="#keuze" aria-label="Permalink for Section 6.3.4.2"></a></div>
-</section><section id="packages"><div class="header-wrapper"><h5 id="x6-3-4-3-packages"><bdi class="secno">6.3.4.3 </bdi>Packages</h5><a class="self-link" href="#packages" aria-label="Permalink for Section 6.3.4.3"></a></div>
-</section></section></section><section id="specificaties-metagegevens-in-uml"><div class="header-wrapper"><h3 id="x6-4-specificaties-metagegevens-in-uml"><bdi class="secno">6.4 </bdi>Specificaties metagegevens in UML</h3><a class="self-link" href="#specificaties-metagegevens-in-uml" aria-label="Permalink for Section 6.4"></a></div>
-</section></section>
+</section><section id="lineage-vanuit-conceptueel-informatiemodel"><div class="header-wrapper"><h3 id="x5-2-lineage-vanuit-conceptueel-informatiemodel"><bdi class="secno">5.2 </bdi>Lineage vanuit conceptueel informatiemodel</h3><a class="self-link" href="#lineage-vanuit-conceptueel-informatiemodel" aria-label="Permalink for Section 5.2"></a></div>
+<section id="model"><div class="header-wrapper"><h4 id="x5-2-1-model"><bdi class="secno">5.2.1 </bdi>Model</h4><a class="self-link" href="#model" aria-label="Permalink for Section 5.2.1"></a></div>
+</section></section><section id="lineage-vanuit-logisch-gegevensmodel"><div class="header-wrapper"><h3 id="x5-3-lineage-vanuit-logisch-gegevensmodel"><bdi class="secno">5.3 </bdi>Lineage vanuit logisch gegevensmodel</h3><a class="self-link" href="#lineage-vanuit-logisch-gegevensmodel" aria-label="Permalink for Section 5.3"></a></div>
+<section id="model-0"><div class="header-wrapper"><h4 id="x5-3-1-model"><bdi class="secno">5.3.1 </bdi>Model</h4><a class="self-link" href="#model-0" aria-label="Permalink for Section 5.3.1"></a></div>
+</section></section><section id="lineage-vanuit-fysiek-datamodel"><div class="header-wrapper"><h3 id="x5-4-lineage-vanuit-fysiek-datamodel"><bdi class="secno">5.4 </bdi>Lineage vanuit fysiek datamodel</h3><a class="self-link" href="#lineage-vanuit-fysiek-datamodel" aria-label="Permalink for Section 5.4"></a></div>
+<section id="model-1"><div class="header-wrapper"><h4 id="x5-4-1-model"><bdi class="secno">5.4.1 </bdi>Model</h4><a class="self-link" href="#model-1" aria-label="Permalink for Section 5.4.1"></a></div>
+</section></section></section>
   
   
   
-  <section class="informative" id="niet-normatieve-deel"><div class="header-wrapper"><h2 id="x7-niet-normatieve-deel"><bdi class="secno">7. </bdi>Niet-normatieve deel</h2><a class="self-link" href="#niet-normatieve-deel" aria-label="Permalink for Section 7."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
+  <section class="informative" id="niet-normatieve-deel"><div class="header-wrapper"><h2 id="x6-niet-normatieve-deel"><bdi class="secno">6. </bdi>Niet-normatieve deel</h2><a class="self-link" href="#niet-normatieve-deel" aria-label="Permalink for Section 6."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
 <p>Bijvoorbeeld een introductie is niet normatief.</p>
 <div class="note" role="note" id="issue-container-generatedID-0"><div role="heading" class="note-title marker" id="h-note-0" aria-level="3"><span>Noot</span><span class="issue-label">: index</span></div><p class="">
 Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config.js</code>.
 </p></div>
 
-<section id="een-subparagraaf"><div class="header-wrapper"><h3 id="x7-1-een-subparagraaf"><bdi class="secno">7.1 </bdi>Een subparagraaf</h3><a class="self-link" href="#een-subparagraaf" aria-label="Permalink for Section 7.1"></a></div>
+<section id="een-subparagraaf"><div class="header-wrapper"><h3 id="x6-1-een-subparagraaf"><bdi class="secno">6.1 </bdi>Een subparagraaf</h3><a class="self-link" href="#een-subparagraaf" aria-label="Permalink for Section 6.1"></a></div>
 <table>
 <thead>
 <tr>
@@ -1524,18 +1541,18 @@ Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config
 </tr>
 </tbody></table>
 </section></section>
-  <section id="meer-inhoud"><div class="header-wrapper"><h2 id="x8-meer-inhoud"><bdi class="secno">8. </bdi>Meer inhoud</h2><a class="self-link" href="#meer-inhoud" aria-label="Permalink for Section 8."></a></div>
-<section id="definities"><div class="header-wrapper"><h3 id="x8-1-definities"><bdi class="secno">8.1 </bdi>Definities</h3><a class="self-link" href="#definities" aria-label="Permalink for Section 8.1"></a></div>
+  <section id="meer-inhoud"><div class="header-wrapper"><h2 id="x7-meer-inhoud"><bdi class="secno">7. </bdi>Meer inhoud</h2><a class="self-link" href="#meer-inhoud" aria-label="Permalink for Section 7."></a></div>
+<section id="definities"><div class="header-wrapper"><h3 id="x7-1-definities"><bdi class="secno">7.1 </bdi>Definities</h3><a class="self-link" href="#definities" aria-label="Permalink for Section 7.1"></a></div>
 <p><dfn id="dfn-definitie" tabindex="0" aria-haspopup="dialog">Definitie</dfn>: Een definitie is een beschrijving van een woord. Een ander woord voor <em>definitie</em> is betekenis of beschrijving.</p>
-</section><section id="afbeeldingen"><div class="header-wrapper"><h3 id="x8-2-afbeeldingen"><bdi class="secno">8.2 </bdi>Afbeeldingen</h3><a class="self-link" href="#afbeeldingen" aria-label="Permalink for Section 8.2"></a></div>
-<p>Afbeeldingen krijgen een nummer en vermelding in de figurenlijst <a href="#tof" data-matched-text="[[[#tof]]]" class="sec-ref"><bdi class="secno">11. </bdi>Lijst met figuren</a>.</p>
+</section><section id="afbeeldingen"><div class="header-wrapper"><h3 id="x7-2-afbeeldingen"><bdi class="secno">7.2 </bdi>Afbeeldingen</h3><a class="self-link" href="#afbeeldingen" aria-label="Permalink for Section 7.2"></a></div>
+<p>Afbeeldingen krijgen een nummer en vermelding in de figurenlijst <a href="#tof" data-matched-text="[[[#tof]]]" class="sec-ref"><bdi class="secno">10. </bdi>Lijst met figuren</a>.</p>
 <p>
       </p><figure id="fig-onderschrift">
         <img src="media/Bomos_levenscyclus.svg" alt="Tekstueel alternatief voor toegankelijkheid">
-        <figcaption><a class="self-link" href="#fig-onderschrift">Figuur <bdi class="figno">3</bdi></a> <span class="fig-title">Onderschrift</span></figcaption>
+        <figcaption><a class="self-link" href="#fig-onderschrift">Figuur <bdi class="figno">1</bdi></a> <span class="fig-title">Onderschrift</span></figcaption>
       </figure>
     <p></p>
-</section><section id="referenties"><div class="header-wrapper"><h3 id="x8-3-referenties"><bdi class="secno">8.3 </bdi>Referenties</h3><a class="self-link" href="#referenties" aria-label="Permalink for Section 8.3"></a></div>
+</section><section id="referenties"><div class="header-wrapper"><h3 id="x7-3-referenties"><bdi class="secno">7.3 </bdi>Referenties</h3><a class="self-link" href="#referenties" aria-label="Permalink for Section 7.3"></a></div>
 <p>Referenties kunnen op drie plaatsen staan:</p>
 <ul>
 <li>In SpecRef <a href="https://www.specref.org/">Specref</a></li>
@@ -1544,7 +1561,7 @@ Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config
 </ul>
 <p>Referentie uit organisatie lijst [<cite><a class="bibref" data-link-type="biblio" href="#bib-semver" title="Semantic Versioning 2.0.0">SemVer</a></cite>] of de locale lijst [<cite><a class="bibref" data-link-type="biblio" href="#bib-mim12" title="MIM - Metamodel Informatie Modellering (Versie 1.2)">MIM12</a></cite>]. Lijst staat in <code>organisation-config.js</code>. Alleen referenties die in de tekst voorkomen worden getoond.</p>
 <p>We gebruiken een <a href="#dfn-definitie" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-definitie-1">definitie</a> om een woord te omschrijven.</p>
-</section><section id="optioneel"><div class="header-wrapper"><h3 id="x8-4-optioneel"><bdi class="secno">8.4 </bdi>Optioneel</h3><a class="self-link" href="#optioneel" aria-label="Permalink for Section 8.4"></a></div>
+</section><section id="optioneel"><div class="header-wrapper"><h3 id="x7-4-optioneel"><bdi class="secno">7.4 </bdi>Optioneel</h3><a class="self-link" href="#optioneel" aria-label="Permalink for Section 7.4"></a></div>
 <p>De onderstaande secties (<em>Conformiteit</em> e.d.) zijn optioneel, zie <code>index.html</code>:</p>
 <pre><code aria-busy="false" class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"abstract"</span> <span class="hljs-attr">data-include-format</span>=<span class="hljs-string">"markdown"</span> <span class="hljs-attr">data-include</span>=<span class="hljs-string">"abstract.md"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
@@ -1558,13 +1575,13 @@ Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 </code></pre>
 </section></section>
-  <section id="mermaid-diagram"><div class="header-wrapper"><h2 id="x9-mermaid-diagram"><bdi class="secno">9. </bdi>Mermaid diagram</h2><a class="self-link" href="#mermaid-diagram" aria-label="Permalink for Section 9."></a></div>
+  <section id="mermaid-diagram"><div class="header-wrapper"><h2 id="x8-mermaid-diagram"><bdi class="secno">8. </bdi>Mermaid diagram</h2><a class="self-link" href="#mermaid-diagram" aria-label="Permalink for Section 8."></a></div>
 <figure id="Mermaidvoorbeeld">
 
-<pre><svg id="diagram-1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="max-width: 128.234375px;" viewBox="0 0 128.234375 230"><style>
+<pre><svg id="diagram-1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="max-width: 128.234375px;" viewBox="0 0 128.234375 248"><style>
 #diagram-1 {font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#diagram-1 .error-icon{fill:#552222;}#diagram-1 .error-text{fill:#552222;stroke:#552222;}#diagram-1 .edge-thickness-normal{stroke-width:2px;}#diagram-1 .edge-thickness-thick{stroke-width:3.5px;}#diagram-1 .edge-pattern-solid{stroke-dasharray:0;}#diagram-1 .edge-pattern-dashed{stroke-dasharray:3;}#diagram-1 .edge-pattern-dotted{stroke-dasharray:2;}#diagram-1 .marker{fill:#333333;stroke:#333333;}#diagram-1 .marker.cross{stroke:#333333;}#diagram-1 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#diagram-1 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#diagram-1 .cluster-label text{fill:#333;}#diagram-1 .cluster-label span{color:#333;}#diagram-1 .label text,#diagram-1 span{fill:#333;color:#333;}#diagram-1 .node rect,#diagram-1 .node circle,#diagram-1 .node ellipse,#diagram-1 .node polygon,#diagram-1 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#diagram-1 .node .label{text-align:center;}#diagram-1 .node.clickable{cursor:pointer;}#diagram-1 .arrowheadPath{fill:#333333;}#diagram-1 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#diagram-1 .flowchart-link{stroke:#333333;fill:none;}#diagram-1 .edgeLabel{background-color:#e8e8e8;text-align:center;}#diagram-1 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#diagram-1 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#diagram-1 .cluster text{fill:#333;}#diagram-1 .cluster span{color:#333;}#diagram-1 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#diagram-1 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}
-</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-A LE-B" id="L-A-B" style="opacity: 1;"><path class="path" d="M48.55859375,43.637195415583165L44.354817708333336,48.197662846319304C40.151041666666664,52.75813027705544,31.743489583333332,61.87906513852772,27.539713541666668,70.60619923593053C23.3359375,79.33333333333333,23.3359375,87.66666666666667,23.3359375,91.83333333333333L23.3359375,96" marker-end="url(#arrowhead14)" style="fill:none"></path><defs><marker id="arrowhead14" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-A LE-C" id="L-A-C" style="opacity: 1;"><path class="path" d="M79.23046875,43.637195415583165L83.43424479166667,48.197662846319304C87.63802083333333,52.75813027705544,96.04557291666667,61.87906513852772,100.24934895833333,70.60619923593053C104.453125,79.33333333333333,104.453125,87.66666666666667,104.453125,91.83333333333333L104.453125,96" marker-end="url(#arrowhead15)" style="fill:none"></path><defs><marker id="arrowhead15" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-D" id="L-B-D" style="opacity: 1;"><path class="path" d="M23.3359375,134L23.3359375,138.16666666666666C23.3359375,142.33333333333334,23.3359375,150.66666666666666,27.465494791666668,159.31328453561912C31.595052083333332,167.95990240457158,39.854166666666664,176.91980480914313,43.983723958333336,181.39975601142896L48.11328125,185.87970721371474" marker-end="url(#arrowhead16)" style="fill:none"></path><defs><marker id="arrowhead16" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-C LE-D" id="L-C-D" style="opacity: 1;"><path class="path" d="M104.453125,134L104.453125,138.16666666666666C104.453125,142.33333333333334,104.453125,150.66666666666666,100.32356770833333,159.31328453561912C96.19401041666667,167.95990240457158,87.93489583333333,176.91980480914313,83.80533854166667,181.39975601142896L79.67578125,185.87970721371474" marker-end="url(#arrowhead17)" style="fill:none"></path><defs><marker id="arrowhead17" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-B" class="edgeLabel L-LS-A' L-LE-B"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-C" class="edgeLabel L-LS-A' L-LE-C"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-D" class="edgeLabel L-LS-B' L-LE-D"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-C-D" class="edgeLabel L-LS-C' L-LE-D"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-8" transform="translate(63.89453125,27)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.3359375" y="-19" width="30.671875" height="38" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.3359375,-9)"><foreignObject width="10.671875" height="18"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">A</div></foreignObject></g></g></g><g class="node default" id="flowchart-B-9" transform="translate(23.3359375,115)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.3359375" y="-19" width="30.671875" height="38" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.3359375,-9)"><foreignObject width="10.671875" height="18"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">B</div></foreignObject></g></g></g><g class="node default" id="flowchart-C-11" transform="translate(104.453125,115)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.78125" y="-19" width="31.5625" height="38" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.78125,-9)"><foreignObject width="11.5625" height="18"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">C</div></foreignObject></g></g></g><g class="node default" id="flowchart-D-13" transform="translate(63.89453125,203)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.78125" y="-19" width="31.5625" height="38" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.78125,-9)"><foreignObject width="11.5625" height="18"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">D</div></foreignObject></g></g></g></g></g></g></svg></pre>
-<figcaption><a class="self-link" href="#Mermaidvoorbeeld">Figuur <bdi class="figno">4</bdi></a> <span class="fig-title">Mermaid voorbeeld</span></figcaption>
+</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-A LE-B" id="L-A-B" style="opacity: 1;"><path class="path" d="M48.55859375,47.77154964846383L44.354817708333336,52.64295804038653C40.151041666666664,57.514366432309224,31.743489583333332,67.25718321615462,27.539713541666668,76.29525827474397C23.3359375,85.33333333333333,23.3359375,93.66666666666667,23.3359375,97.83333333333333L23.3359375,102" marker-end="url(#arrowhead14)" style="fill:none"></path><defs><marker id="arrowhead14" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-A LE-C" id="L-A-C" style="opacity: 1;"><path class="path" d="M79.23046875,47.77154964846383L83.43424479166667,52.64295804038653C87.63802083333333,57.514366432309224,96.04557291666667,67.25718321615462,100.24934895833333,76.29525827474397C104.453125,85.33333333333333,104.453125,93.66666666666667,104.453125,97.83333333333333L104.453125,102" marker-end="url(#arrowhead15)" style="fill:none"></path><defs><marker id="arrowhead15" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-D" id="L-B-D" style="opacity: 1;"><path class="path" d="M23.3359375,146L23.3359375,150.16666666666666C23.3359375,154.33333333333334,23.3359375,162.66666666666666,27.465494791666668,171.6187357539568C31.595052083333332,180.57080484124694,39.854166666666664,190.14160968249382,43.983723958333336,194.92701210311728L48.11328125,199.71241452374073" marker-end="url(#arrowhead16)" style="fill:none"></path><defs><marker id="arrowhead16" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-C LE-D" id="L-C-D" style="opacity: 1;"><path class="path" d="M104.453125,146L104.453125,150.16666666666666C104.453125,154.33333333333334,104.453125,162.66666666666666,100.32356770833333,171.6187357539568C96.19401041666667,180.57080484124694,87.93489583333333,190.14160968249382,83.80533854166667,194.92701210311728L79.67578125,199.71241452374073" marker-end="url(#arrowhead17)" style="fill:none"></path><defs><marker id="arrowhead17" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-B" class="edgeLabel L-LS-A' L-LE-B"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-C" class="edgeLabel L-LS-A' L-LE-C"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-D" class="edgeLabel L-LS-B' L-LE-D"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-C-D" class="edgeLabel L-LS-C' L-LE-D"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-8" transform="translate(63.89453125,30)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.3359375" y="-22" width="30.671875" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.3359375,-12)"><foreignObject width="10.671875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">A</div></foreignObject></g></g></g><g class="node default" id="flowchart-B-9" transform="translate(23.3359375,124)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.3359375" y="-22" width="30.671875" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.3359375,-12)"><foreignObject width="10.671875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">B</div></foreignObject></g></g></g><g class="node default" id="flowchart-C-11" transform="translate(104.453125,124)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.78125" y="-22" width="31.5625" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.78125,-12)"><foreignObject width="11.5625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">C</div></foreignObject></g></g></g><g class="node default" id="flowchart-D-13" transform="translate(63.89453125,218)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.78125" y="-22" width="31.5625" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.78125,-12)"><foreignObject width="11.5625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">D</div></foreignObject></g></g></g></g></g></g></svg></pre>
+<figcaption><a class="self-link" href="#Mermaidvoorbeeld">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title">Mermaid voorbeeld</span></figcaption>
 </figure></section>
 
   
@@ -1572,16 +1589,12 @@ Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config
   
 
   
-  <section id="conformance"><div class="header-wrapper"><h2 id="x10-conformiteit"><bdi class="secno">10. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 10."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section> 
-  <section id="tof"><div class="header-wrapper"><h2 id="x11-lijst-met-figuren"><bdi class="secno">11. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section 11."></a></div><ul class="tof">
+  <section id="conformance"><div class="header-wrapper"><h2 id="x9-conformiteit"><bdi class="secno">9. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 9."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section> 
+  <section id="tof"><div class="header-wrapper"><h2 id="x10-lijst-met-figuren"><bdi class="secno">10. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section 10."></a></div><ul class="tof">
         <li class="tofline">
-    <a class="tocxref" href="#ExtendClass"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title">MIM extend op UML-Class</span></a>
+    <a class="tocxref" href="#fig-onderschrift"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title">Onderschrift</span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#MIM-UML Profiel-overzicht"><span class="self-link">Figuur <bdi class="figno">2</bdi></span> <span class="fig-title">MIM extend op UML-metaklassen</span></a>
-  </li><li class="tofline">
-    <a class="tocxref" href="#fig-onderschrift"><span class="self-link">Figuur <bdi class="figno">3</bdi></span> <span class="fig-title">Onderschrift</span></a>
-  </li><li class="tofline">
-    <a class="tocxref" href="#Mermaidvoorbeeld"><span class="self-link">Figuur <bdi class="figno">4</bdi></span> <span class="fig-title">Mermaid voorbeeld</span></a>
+    <a class="tocxref" href="#Mermaidvoorbeeld"><span class="self-link">Figuur <bdi class="figno">2</bdi></span> <span class="fig-title">Mermaid voorbeeld</span></a>
   </li>
       </ul></section>
   <section id="index" class="appendix"><div class="header-wrapper"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix A."></a></div><section id="index-defined-here">
@@ -1589,7 +1602,7 @@ Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config
     <ul class="index">
     <li>
       <a class="index-term" href="#dfn-definitie">Definitie</a> 
-    <span class="print-only">§8.1</span></li><li>
+    <span class="print-only">§7.1</span></li><li>
       <a class="index-term" href="#dfn-fiets">Fiets</a> 
     <span class="print-only">§4.1</span></li>
   </ul>
@@ -1632,7 +1645,7 @@ Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-      <a href="#ref-for-dfn-definitie-1" title="§ 8.3 Referenties">§ 8.3 Referenties</a> 
+      <a href="#ref-for-dfn-definitie-1" title="§ 7.3 Referenties">§ 7.3 Referenties</a> 
     </li>
   </ul>
     </div><script id="respec-dfn-panel">(() => {
