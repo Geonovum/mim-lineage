@@ -2,7 +2,7 @@ let respecConfig = {
   useLogo: true,
   useLabel: true,
   // TODO: title is verplicht! Neem hieronder de titel van het document op
-  title: "Geonovum template voor ReSpec",
+  title: "MIM-Lineagemodel",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
   specStatus: "wv",                   // Werkversie
   //specStatus: "cv",               // Consultatieversie
@@ -11,10 +11,10 @@ let respecConfig = {
   //specStatus: "basis",            // Basis Document
   //-- specType is verplicht bij alle andere dan BASIS ---------------------------------
   //specType: "NO",                 // Norm
-  //specType: "ST",                 // Standaard
+  specType: "ST",                 // Standaard
   //specType: "IM",                 // Informatie Model
   //specType: "PR",                 // Praktijkrichtlijn
-  specType: "HR",                     // HandReiking
+  //specType: "HR",                     // HandReiking
   //specType: "WA",                 // Werkafspraak
   //specType: "BD",                 // Beheer Documentatie
   //specType: "AL",                 // Algemeen document
@@ -22,13 +22,13 @@ let respecConfig = {
   //-- pubDomain is verplicht! (komt in de URL) -------------------------------------
   //-- zie: https://geonovum.github.io/handleiding-tooling/ReSpec/#pubdomain
   //-- TODO: vul pubDomain in
-  pubDomain: "3dbv",
+  pubDomain: "MIM",
   //-- license: voor de geldende gebruiksvoorwaarden. Default is cc-by.
   //license: "cc-by-nd",            // bronvermelding, geen afgeleide werken (default)
   //license: "cc0",                 // Public Domain Dedication
   license: "cc-by",                 // Attribution, met bronvermelding
   //-- TODO shortName is verplicht! (komt in de URL: kies logische afkorting)--------------
-  shortName: "NL-ReSpec-template",
+  shortName: "mim-lineage",
   
   //edDraftURI = De URI van de draft version. Deze wordt automatisch afgeleid van de github URI; maar kan hier overschreven worden. 
 	//edDraftURI: ["https://geonovum.github.io", "/", "shortName"],
@@ -57,14 +57,35 @@ let respecConfig = {
   authors:
     [
       {
-        name: "voornaam achternaam",
+        name: "Lennart van Bergen",
+        company: "Belastingdienst",
+        companyURL: "https://www.belastingdienst.nl",
+      },
+	        {
+        name: "Paul Janssen",
         company: "Geonovum",
         companyURL: "https://www.geonovum.nl",
-      }
+      },
+	        {
+        name: "Pano Maria",
+        company: "Skemu",
+        companyURL: "https://www.skemu.com",
+      },
+	        {
+        name: "Thies Mesdag",
+        company: "Kadaster",
+        companyURL: "https://www.kadaster.nl",
+      },
+	        {
+        name: "Frans van der Zande",
+        company: "Logius",
+        companyURL: "https://www.logius.nl",
+      },
+	  
     ],
   // TODO: Vul de github URL in.
   //neem hier de URL van de github repository op waar het respec document in staat
-  github: "https://github.com/Geonovum/NL-ReSpec-template",
+  github: "https://github.com/Geonovum/mim-lineage",
   // Create PDF and link to file in header (optional):
   // TODO: Change the filename as preferred.
   alternateFormats: [

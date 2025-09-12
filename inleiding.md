@@ -1,0 +1,7 @@
+# Inleiding
+Het metamodel voor informatiemodellering (MIM) biedt een gemeenschappelijk vertrekpunt voor het maken van informatie- en gegevensmodellen. Het bevat afspraken en conventies voor het creëren van modellen en modelelementen, met daarbij standaard metagegevens. Het leidt tot meer uniforme beschrijvingen van modellen en zorgt daardoor voor meer begrijpelijkheid en andere vormen van kwaliteit.
+
+Dit document beschrijft een specifiek onderdeel van het MIM namelijk de lineage of afkomstrelaties tussen de informatie-elementen in de verschillende abstractielagen van het MIM model. In de modellering van een domein onderscheidt MIM verschillende abstractielagen van begrip naar conceptueel naar logisch naar fysieke implementatie. Omdat dit aparte lagen zijn is het van belang om de relatie tussen de lagen te kunnen beschrijven op het niveau van de individuele informatie-elementen. Er onstaat hiermee een systematiek van 'voortbouwende en uitbreidende' specificatie waarbij de afkomstrelaties traceerbaar en bruikbaar zijn van begrips- tot dataniveau.
+
+
+

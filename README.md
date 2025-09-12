@@ -1,115 +1,119 @@
+⚠️ Deze repository is automatisch bijgewerkt naar de nieuwste workflow.
+Voor vragen, neem contact op met [Linda van den Brink](mailto:l.vandenbrink@geonovum.nl) of [Wilko Quak](mailto:w.quak@geonovum.nl).
+
+Als je een nieuwe publicatie wilt starten, lees dan eerst de instructies in de README van de NL-ReSpec-template:
+[https://github.com/Geonovum/NL-ReSpec-template](https://github.com/Geonovum/NL-ReSpec-template).
+
+Het werkdocument van het mim-uml staat hier:
+<https://geonovum.github.io/mim-uml>
+
+
+
 ## ReSpec template instructies
 
-ReSpec is een tool om HTML- en PDF-documenten te genereren op basis van markdowncontent. Deze template helpt je bij het opstellen en publiceren van documenten volgens de Geonovum-standaard.
+ReSpec is een tool om html en pdf documenten te genereren op basis van markdown content.
 
-De dynamische voorbeeldpagina van het template is [hier te bekijken](https://geonovum.github.io/NL-ReSpec-GN-template/).
+Gebruik de knop [_Use this template_](https://github.com/Geonovum/NL-ReSpec-GN-template/generate) om aan de slag te gaan. Dit maakt een kopie van de template in uw eigen GitHub repository die dan aangepast en uitgebreid kan worden.
 
----
+De dynamische pagina is van het template document [hier](https://geonovum.github.io/NL-ReSpec-GN-template/) te zien.
 
-## Starten
+Deze repository bevat ook de GitHub Workflows om een statische HTML-pagina en PDF-document te genereren en enkele controles uit te voeren. Deze workflows worden automatisch gerund zodra er een aanpassing gedaan wordt aan de main branch.
 
-Gebruik de knop [*Gebruik deze template*](https://github.com/Geonovum/NL-ReSpec-template/generate?description=Geonovum+documenttemplate) om een nieuwe repository aan te maken:
+### Vereiste voor gebruik
+- Kennis van git/github
+- Kennis van markdown en/of HTML
+- Een webserver om de documentatie te hosten
 
-* **Owner:** kies `Geonovum` als je daar rechten voor hebt.
-* **Visibility:** kies **Public**.
+### Gebruikersinstructie
+Om het gebruik van dit template makkelijker te maken raden we het aan om een IDE te gebruiken. Die geeft een voorbeeld van hoe de markdown eruit zal zien, kan laten zien of de config files nog in de correcte vorm zijn en kan helpen in het gebruik van git.  
+Een gratis voorbeeld van een IDE is: [Visual studio code](https://code.visualstudio.com/).
 
-> ℹ️ Na het aanmaken moet je **handmatig GitHub Pages activeren** in de instellingen van je nieuwe repository:
->
-> * Ga naar `Settings` → `Pages`
-> * Kies onder “Source” de branch `main` en map `/ (root)`
+Aanpassingen maken aan het document gaat op 2 manieren:
+- De configuratie van het document aanpassing in de config files
+- Markdown files toevoegen/veranderen
+- Plaatsen waar de template ingevuld moeten worden zijn gemarkeerd met 'TODO:'.
 
----
+De **configuratie files** bevatten informatie over de organisatie en over 
+de status van het document. Bekijk de [Logius ReSpec wiki](https://github.com/Logius-standaarden/respec/wiki) 
+voor meer informatie over de configuratie opties. De files zijn gesplitst in 2 files:
+[organisation-config.js](https://github.com/Geonovum/NL-ReSpec-GN-beheer/tree/9a606242041171dbf507c439863e4ffb94701463/js) en [config.js](js/config.js).
+Deze laatste is te vinden in de `js` folder.
 
-## Gebruikersinstructie
+De organisation_config bevat informatie over de organisatie, de informatie in deze file 
+zal bijna nooit veranderen zoals de naam van de organisatie. Het wordt aangeraden de file 
+zelf te hosten zodat hij in alle documentatie van de organisatie gebruikt kan worden en
+niet elke keer gekopieerd hoeft te worden. Geonovum host dit file onder de naam `geonovum-config.js` op https://tools.geostandaarden.nl/respec/config, zodat deze configuratie centraal ingevuld is en hergebruikt kan worden. 
 
-Voor het aanpassen van het document raden we aan om een IDE te gebruiken, zoals [Visual Studio Code](https://code.visualstudio.com/). Deze geeft een voorbeeldweergave van je markdown en helpt bij het beheren van je bestanden.
+De document_config in [config.js](js/config.js) bevat informatie die alleen relevant is voor het huidige document. Hier kun je instellingen regelen voor het document dat je gaat schrijven, zoals documenttype, status, auteurs, etc. 
 
-### Aanpassen van content
+Beide configuratie bestanden worden gelinkt in de `index.html` file.
 
-* Pas instellingen aan in de configuratiebestanden (`config.js`)
-* Voeg markdown-bestanden toe of wijzig bestaande bestanden
+**Markdown files** bevatten de content van het document. Alle content
+kan in 1 document, maar het is aan te raden om de content te splitsen
+in verschillende files, bijvoorbeeld per hoofdstuk, met een toepasselijke naam om onderhoud 
+makkelijker te maken. HTML is overigens ook mogelijk.
 
-### Configuratiebestanden
+Na het toevoegen van een nieuwe markdown file moet hij toegevoegd worden
+aan de [index.html](index.html). Je voegt hem toe door de naam en eventueel relevante CSS class 
+toe te voegen aan de lijst met "data includes":
 
-* [`js/config.js`](js/config.js): bevat document-specifieke instellingen zoals titel, status en auteurs
-* [`organisation-config.js`](https://tools.geostandaarden.nl/respec/config/geonovum-config.js): bevat algemene informatie over de organisatie
+<pre>
+  &lt;section data-include-format="markdown" data-include="ch01.md" class="informative">&lt;/section>
+  &lt;section data-include-format="markdown" data-include="ch02.md">&lt;/section>
+</pre>
 
-Beide bestanden worden gelinkt in de [`index.html`](index.html)
+Dat wil zeggen, voeg een `<section>` toe met op de plaats van "ch01.md" de naam van het bestand. 
 
-### Content schrijven
+Voor een volledige lijst van CSS classes zie de [ReSpec Documentation](https://respec.org/docs/#css-classes)
 
-* Gebruik markdown of HTML
-* Splits content idealiter per hoofdstuk in losse bestanden
-* Voeg nieuwe secties toe aan de `index.html` via `data-include`:
+Deze classes zijn ook binnen de markdown files te gebruiken op de volgende manier:  
+```<div class="example">voorbeeld</div>```
 
-```html
-<section data-include-format="markdown" data-include="ch01.md" class="informative"></section>
-<section data-include-format="markdown" data-include="ch02.md"></section>
-```
+### Automatische controles
+Bij het uploaden van een nieuwe versie naar github worden er via github actions 2 controles 
+uitgevoerd:  
 
-CSS-classes zijn ook bruikbaar in markdown via HTML:
+Een WCAG-check (Web Content Accessibility Guidelines), deze guidelines
+gemaakt door W3C zorgen voor een verbetering van de toegankelijkheid
+van webapplicaties verbeterd voor zowel verschillende apparaten 
+als voor mensen met een beperking.
 
-```html
-<div class="example">voorbeeld</div>
-```
+Een link-check, deze check controleert of alle links die in het 
+document staan ook naar iets wijzen.
 
-Meer info: [ReSpec documentatie](https://respec.org/docs/#css-classes)
+outputs van deze tests zijn te vinden in het tabblad `Actions` in de GitHub repository.
 
----
-
-## Automatische checks en build
-
-De GitHub Actions workflow draait automatisch bij iedere commit of bij een GitHub Release. Daarbij gebeuren de volgende stappen:
-
-1. HTML wordt gegenereerd met [ReSpec](https://respec.org/)
-2. (optioneel) PDF wordt gegenereerd — indien `alternateFormats` is ingesteld in `config.js`:
-
+### Publiceren van documenten
+Na een update in de main branch wordt er een statische HTML en een PDF-versie gemaakt.
+Dit zijn `snapshot.html` en `template.pdf` deze bestanden zijn te vinden in de root file van het project. Deze files kunnen daarna gepubliceerd worden.
+De PDF-versie wordt aangemaakt indien `alternateFormats` in `config.js` geconfigureerd staat:
 ```js
 alternateFormats: [
   {
-    label: "pdf",
-    uri: "template.pdf",
+	  label: "pdf",
+	  uri: "template.pdf",
   },
 ]
 ```
 
-3. Automatische controles worden uitgevoerd:
+### Transitie van 'oude' Geonovum ReSpec naar NL-ReSpec van Logius
 
-    * HTML-validatie
-    * WCAG-check (toegankelijkheid)
-    * Linkcheck (controleren van verwijzingen)
+Hieronder staan de instructies voor gebruikers van Geonovum ReSpec die willen overstappen naar de nieuwe NL-ReSpec. 
 
-De resultaten zijn zichtbaar in het tabblad **Actions** van je repository.
+Als je een gepubliceerd document wilt omzetten naar de nieuwe ReSpec:
+- Dit hoeft niet. Eenmaal op docs gepubliceerde documenten hoeven niet aangepast te worden.
 
----
+Als je een bestaand werkdocument wilt omzetten naar de nieuwe ReSpec:
+- Pas de `<head>` van index.html aan. Wat er in moet staan kun je afkijken in [template index.html](https://github.com/Geonovum/NL-ReSpec-GN-template/blob/main/index.html). Het is belangrijk dat je in ieder geval de link naar `geonovum-config.js`, `respec-nlgov.js`, en `Geonovum.ico` overneemt. Vraag eventueel hulp aan de ReSpec beheerders.
+ - Pas in `config.js` de `specStatus aan. De afkortingen zijn veranderd (!): 
+   - `wv` of `WV` = Werkversie
+   - `cv` of `CV` = Consultatieversie
+   - `vv` of `VV` = Versie ter vaststelling
+   - `def` of `DEF` = Vastgestelde versie
+   - `basis` of `BASIS` = Basis Document
+- Pas in `config.js` de `title` aan. Dit is een nieuwe config optie. De hoofdtitel van je document zet je voortaan in `config.js` in plaats van bovenin `index.html`. Voorbeeld: 
 
-## Publiceren van documenten
+`title: "Informatiemodel Golf",`
 
-Wanneer je document klaar is, publiceer je via **GitHub Releases**:
-
-### Pre-release (testomgeving)
-
-* Ga naar het tabblad **Releases** in je eigen repo
-* Klik op **“Create a new release”**
-* Geef een tag aan bij, Choose a tag (bijv. `v0.1.0`) en klik op **“Create new tag”**
-* **Vink aan:** “This is a pre-release” onderop deze pagina
-* Klik op **“Publish release”**
-
-💡 Dit publiceert je document automatisch op:
-https://test.docs.geostandaarden.nl/
-
-(De exacte URL wordt bepaald door waarden in `config.js`)
-
-### Release (productieomgeving)
-
-* Ga opnieuw naar **Releases**
-* Klik op **“Create a new release”**
-* Geef een tag aan bij, Choose a tag (bijv. `v0.1.0`) en klik op **“Create new tag”**
-* Laat “pre-release” uitgevinkt
-* Klik op **“Publish release”**
-
-💡 Dit maakt automatisch een **Pull Request** aan naar:
-[`Geonovum/docs.geostandaarden.nl`](https://github.com/Geonovum/docs.geostandaarden.nl/pulls)
-
-Na goedkeuring van de PR wordt het document gepubliceerd op:
-https://docs.geostandaarden.nl/
+Als je een nieuw werkdocument gaat maken: 
+- gebruik de [template](https://github.com/Geonovum/NL-ReSpec-GN-template). Klik op `Use this template` en kies `Create a new repository`. Er wordt dan een nieuwe repository (dat al wel aangemaakt moet zijn) ingericht op basis van de nieuwe respec, waarmee je direct aan de slag kunt. Pas in `config.js` de titel van je document aan zoals hierboven beschreven. Neem contact op met een van de github beheerders als je zelf geen github repository kan aanmaken. 
