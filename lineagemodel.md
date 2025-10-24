@@ -42,7 +42,7 @@ Op die manier kan uiteindelijk ook worden nagegaan of aan de gestelde eisen word
 ### Lineage en definities
 
 #### Geannoteerde definities
-Ieder modelelement heeft een definitie: een beschrijving van de betekenis van dat modelelement. 
+De meeste modelelementen hebben verplicht een definitie: een beschrijving van de betekenis van dat modelelement. 
 In zo’n beschrijving kunnen een of meerdere gebruikte termen expliciet gekoppeld zijn aan een begrip. 
 Dit wordt een *geannoteerde definitie* genoemd.  
 
@@ -54,7 +54,7 @@ Zowel conceptuele informatiemodellen als logische gegevensmodellen kunnen geanno
 *(Nog uit te werken in dit document.)*
 
 #### Redundantie van definities
-In MIM is een definitie een verplicht metagegeven. 
+In MIM is een definitie voor veel modelelementen een verplicht metagegeven. 
 Wanneer de definitie van een modelelement exact gelijk is aan die van een modelelement of begrip waarmee een lineage-relatie bestaat, kan dit als redundant worden ervaren.  
 
 Het verdient echter de voorkeur om deze definities toch te herhalen, zodat het model ook zelfstandig goed te begrijpen blijft.

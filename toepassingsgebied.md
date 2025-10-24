@@ -1,6 +1,6 @@
 # Toepassingsgebied
 
-Deze MIM-module beschrijft een model voor de lineage of afkomstrelaties tussen de modelelementen in de verschillende beschouwingsniveau's die MIM onderkend het begrippenmodel, het conceptuele informatiemodel het logisch gegevensmodel en het fysieke datamodel.
+Deze MIM-module beschrijft een model voor de lineage of afkomstrelaties tussen de modelelementen in de verschillende beschouwingsniveau's die MIM onderkent: het begrippenmodel, het conceptuele informatiemodel het logisch gegevensmodel en het fysieke datamodel.
 
 Lineage in de context van deze toepassing is lineage op het gebied van informatie en semantiek. Het betreft semantische - en realisatie relaties tussen modelelementen op de verschillende MIM-beschouwingsniveaus. We noemen dit 'verticale lineage'.
 
