@@ -7,7 +7,8 @@ Bijvoorbeeld:
 - een gegevenstype bsn, wat een gegevenstype is dat onderdeel uitmaakt van het gegevensobjecttype GeregistreerdNP in een logisch gegevensmodel;
 - voorgaande is gebaseerd op modelelementen die in een conceptueel informatiemodel zijn uitgewerkt, te weten een objecttype Ingeschrevene, met een eigenschaptype burgerservicenummer, waarbij de Ingeschrevene een specialisatie is van een objecttype Natuurlijk persoon (die niet altijd een ingeschrevene is);
 - voorgaande is gebaseerd op begrippen zoals natuurlijk persoon, een ingeschrevene, en een burgerservicenummer;
-- deze begrippen zelf kunnen weer gebaseerd zijn op gepubliceerde kennisbronnen, zoals bijvoorbeeld wet- en regelgeving zoals het Burgerlijk Wetboek en de Wet algemene bepalingen burgerservicenummer.
+
+Deze begrippen zelf kunnen weer gebaseerd zijn op gepubliceerde kennisbronnen, zoals in dit voorbeeld bijvoorbeeld wet- en regelgeving zoals het Burgerlijk Wetboek en de Wet algemene bepalingen burgerservicenummer. Merk op dat met dit voorbeeld niet bedoeld wordt dat er altijd sprake is of moet zijn van wet- en regelgeving. Er zijn vele domeinen waarbij dit niet van belang is. 
 
 Voorgaande samenhang noemen we ook wel verticale lineage of afkomstrelaties tussen de modelelementen in de verschillende abstractielagen. In de modellering van een domein onderscheidt MIM verschillende abstractielagen van begrip naar conceptueel naar logisch naar fysieke implementatie. Omdat dit aparte lagen zijn is het van belang om de relatie tussen de lagen te kunnen beschrijven op het niveau van de individuele informatie-elementen. Er onstaat hiermee een systematiek van 'voortbouwende en uitbreidende' specificatie waarbij de afkomstrelaties traceerbaar en bruikbaar zijn van begrips- tot dataniveau, of eigenlijk van dataniveau terug naar begripsniveau. 
 
