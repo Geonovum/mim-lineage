@@ -52,6 +52,7 @@ Zowel conceptuele informatiemodellen als logische gegevensmodellen kunnen geanno
 
 #### Het hoofdonderwerp van een definitie
 *(Nog uit te werken in dit document.)*
+Zie: onderwerp van gesprek. 
 
 #### Redundantie van definities
 In MIM is een definitie voor veel modelelementen een verplicht metagegeven. 
@@ -64,26 +65,90 @@ Het verdient echter de voorkeur om deze definities toch te herhalen, zodat het m
 
 
 ## Lineage vanuit conceptueel informatiemodel naar een begrippenkader
-De relatie tussen een conceptueel modelelement en een begrip moet strikt worden opgevat. 
-Het gaat immers om een formele modellering van (informatie over) de werkelijkheid.
 
-Een relatie tussen een conceptueel modelelement en een begrip drukt uit dat de definities overeenkomen, of in ieder geval grotendeels overeenkomen.
+De definitie van een modelelement in een CIM heeft daarom een zeer sterke relatie met de definitie van een begrip uit een begrippenkader. Een begrippenkader en een conceptueel informatiemodel beschrijven immers beiden een model van dezelfde werkelijkheid. De ene beschrijft begrippen waarmee we uitdrukking geven aan het beschrijven van die werkelijkeheid, de andere geeft de conceptualisatie aan van dezelfde werkelijkheid, door middel van objecttypen, eigenschaptypen, relatietypen enzovoorts. Het is daarom in principe zo dat de terminologie in een CIM overeenkomt met de voorkeurstermen van de gerelateerde begrippen, daar waar mogelijk, mede ook om geen onnodige (spraak) verschillen te krijgen. Dit is niet altijd mogelijk, maar dit is wel een streven. De spelregels in onderstaande tabel geven dit aan. 
+
+### Modelelementen uit een CIM waarvoor semantische verwijzingen mogelijk zijn 
+
+Dit zijn in principe alle modelelementen die een definitie kunnen hebben en ten minste alle modelelementen die een definitie hebben (altijd behoren te hebben). 
+
+| Modelelement | semantische verwijzing naar | kardinaliteit | spelregels, bij 1 modelelement van dit type hoort                     | 
+| ------------ | --------------------------- | ------------- | --------------------------------------------------------------------- | 
+| objecttype   | begrip                      | 0..*          | precies 1 begrip                               |  
+| eigenschaptype | begrip                    | 0..*          | precies 1 begrip. Als dit begrip algemeen van aard is, dan geeft het objecttype de context aan waarbinnen het begrip geinterpreteerd moet worden. | 
+| eigenschaptype, classifierend | begrip     | zie enumeratie | elke enumeratie kent precies 1 begrip. | 
+| relatietype, associatief | begrip          | 0..*          | 1..* begrippen. 
+| relatietype. compositie  | begrip          | 0..*          | 0 begrip, de betekenis is in principe: onderdeel van |  
+| relatierol | begrip |                      | 0..1          | als de rol qua naam afwijkt van het objecttype waar de rol bij hoort, dan 1..1, anders: zie objecttype | 
+| ...        | begrip |                      | 0..*          | overige modelelementen met een defintie | 
+
+_Interpretatie van de semantische verwijzing_
+
+De relatie tussen een conceptueel modelelement en een begrip moet strikt worden opgevat. Het gaat immers om een formele modellering van (informatie over) de werkelijkheid. De semantische verwijzing tussen een conceptueel modelelement en een begrip geeft altijd aan dat de definities overeenkomen, oftewel 1 op 1 op elkaar gebaseerd zijn en in ieder geval grotendeels overeenkomen. De verwoording is mogelijk anders, maar de betekenis is hetzelfde. Het kan zijn dat er meerdere begrippen zijn gebruikt, de betekenis is dan nog steeds geheel overeenkomend, er is enkel sprake van een combinatie. 
+
+Het is mogelijk dat MIM in een latere versie ook niet exact overeenkomende semantische verwijzingen toestaat. De semantische verwijzingen zullen dan een aanduiding of classificatie krijgen. Dit is op het moment nog niet uitgewerkt.
+
+### Lineage op model niveau 
+
+_Optionele spelregels_ 
+
+Deze kunnen worden opgegeven bij een model. 
+
+1. Het informatiedomein van een CIM volgt strikt 1 begrippenkader, of 1 set van sterk sterk bij elkaar behorende begrippenkaders die een bepaalde onderverdeling kennen. De partij die verantwoordelijkheid is voor beide, is dezelfde partij, en deze bewaakt ook dat beide naadloos op elkaar aansluiten.
+2. De modeldidentificaties van de begrippenkaders, en de namen ervan, waarnaar verwezen wordt vanuit dit CIM zijn de volgende
+3. Verwijzingen naar kennisbronnen die niet als begrippenkader zijn uitgewerkt, zijn toegestaan. In dit geval is het metagegeven 'kennisbron' bij een modelelement met een definitie gevuld. 
+   
 
 ### Model
 
 
-## Lineage vanuit logisch gegevensmodel
-In MIM 1.2 worden logische modelelementen gekoppeld aan een begrip met behulp van het metagegeven `mim:begrip`. 
+## Lineage vanuit logisch gegevensmodel naar een conceptueel informatiemodel 
+
+Gegevens gaan over eigenschappen van een object. Door semantische herleidbaarheid aan te brengen wordt aangegeven hoe (en in hoeverre) de gegevenswerkelijkheid en de gemodelleerde werkelijkheid in het begrippenkader en het conceptuele inforatiemodel met elkaar overeenkomen. 
+
+Een gegevensmodel gaat over gegevens die er zijn, een informatiemodel gaat over informatie die we over de werkelijkheid nodig hebben. De definitie van een gegevensobject of een gegevenstype is daarom sterk gebaseerd de conceptualisatie van de informatie die beschreven is in het CIM. Het CIM definieert immers het objecttype, of het eigenschaptype, waarover het gegevenstype gaat. Dit is in een begrippenkader nog open en nog niet formeel vastgesteld. Daarom heeft het de sterke voorkeur om bij het aanbrengen van semantische herleidbaarheid in een logische gegevensmodel verwijzingen aan te brengen naar een modelelment in een CIM, en alleen te verwijzen naar een begrip als er geen CIM is. 
+
+Semantische herleidbaarheid in een logisch gegevensmodel beschrijft op welke modelelementen uit een CIM een gegevenstype is gebaseerd. In het verlengde hiervan geldt dat de definitie van het gegevenstype weer op de begrippen is gebaseerd die daarin zijn aangegeven. 
+
+### Modelelementen uit een LGM waarvoor semantische verwijzingen mogelijk zijn 
+
+In MIM 1.2 kunnen logische modelelementen gekoppeld aan een modelelement uit een conceptueel informatiemodel, met behulp van het metagegeven `mim:begrip`. 
 De definitie daarvan luidt:  
 
-> “Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodelelement is gebaseerd. De verwijzing heeft de vorm van een term of een URI.”  
+In MIM 1.2 kunnen logische modelelementen gekoppeld aan een begrip met behulp van het metagegeven `mim:begrip`. 
+De definitie daarvan luidt:  
+
+| Modelelement | semantische verwijzing naar | kardinaliteit | spelregels, bij 1 modelelement van dit type hoort                     | 
+| ------------ | --------------------------- | ------------- | --------------------------------------------------------------------- | 
+| gegevensobjecttype   | objecttype of relatietype | 1..1 | precies 1, te weten het objecttype of het relatietype die onderwerp van gesprek is van het gegevensobjecttype                          |  
+| gegevensobjecttype   | begrip              | 0..* | precies 1, te weten het begrip waar het primair om gaat (en waarvoor een objecttype in een CIM zou moeten zijn, indien er een CIM is         |  
+| gegevenstype         | eigenschaptype                    | 0..* | ten minste 1, mits er een CIM is met daarin een passend eigenschaptype | 
+| gegevenstype         | begrip                            | 0..* | ten minste 1, indien er geen CIM is maar wel een begrippenkader is met daarin een passend begrip | 
+
+Merk op: 
+- Een relatietype in een logisch gegevensmodel is een verwijzing naar de identificatie van het gegevensobject waarnaar verwezen wordt. Hiervoor is geen semantische verwijzing vereist naar een CIM of begrippenkader. Wel kan een definitie gegeven worden voor dit relatietype in het LGM.
+
+_Interpretatie van de semantische verwijzing_
+
+> “Verwijzing naar een conceptueel modelelement, vanuit een modelelement op het logische niveau, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodelelement is gebaseerd. De verwijzing heeft de vorm van een term of een URI.”
+
+> “Verwijzing naar een begrip, vanuit een modelelement op het logische niveau, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodelelement is gebaseerd. De verwijzing heeft de vorm van een term of een URI.”
 
 De formulering *is gebaseerd op* wijst op een meer vrije en mogelijk meervoudige interpretatie van de relatie tussen een logisch modelelement en een begrip.
 
-### Model
+
+### Lineage op model niveau 
+
+_Optionele spelregels_ 
+
+Deze kunnen worden opgegeven bij een model. 
+1. De modeldidentificaties van de begrippenkaders of conceptuele informatiemodellen, en de namen ervan, waarnaar verwezen wordt vanuit dit CIM zijn de volgende.
+2. De administratie of de gegevensuitwisseling waar dit model een uitdrukking van is heet als volgt:
+
+### Lineage vanuit logisch gegevensmodel naar een begrip uit een begrippen model 
 
 
 ## Lineage vanuit fysiek datamodel
-Dit onderdeel wordt momenteel in detail beschreven in de *Handreiking data lineage*.
+Dit onderdeel is buiten scope van MIM. Dit wordt momenteel in detail beschreven in de *Handreiking data lineage*.
 
 ### Model
