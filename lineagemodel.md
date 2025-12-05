@@ -136,6 +136,15 @@ _Interpretatie van de semantische verwijzing_
 
 De formulering *is gebaseerd op* wijst op een meer vrije en mogelijk meervoudige interpretatie van de relatie tussen een logisch modelelement en een begrip.
 
+_Indirecte semantische verwijzing_
+
+Een gegevenstype kan 1 op 1 overgenomen zijn uit een ander logisch gegevensmodel. Het is mogelijk om daarnaar te verwijzen, en voor de semantische herleidbaarheid te stellen: zie aldaar. 
+
+| Modelelement | indirecte semantische verwijzing naar | kardinaliteit | spelregels, bij 1 modelelement van dit type hoort                     | 
+| ------------ | --------------------------- | ------------- | --------------------------------------------------------------------- | 
+| gegevensobjecttype   | gegevensobjecttype uit ander LGM | 0..1 | als aangebracht, dan altijd tijd precies 1                        |  
+| gegevenstype         | gegevenstype uit ander LGMe      | 0..1 | als aangebracht, dan altijd tijd precies 1                        | 
+
 
 ### Lineage op model niveau 
 
