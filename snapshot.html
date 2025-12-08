@@ -1398,7 +1398,7 @@ ul.index code{color:inherit}
 }</script>
 <link rel="stylesheet" href="https://tools.geostandaarden.nl/respec/style/base.css"></head>
 
-<body class="h-entry toc-inline"><div class="head">
+<body class="h-entry"><div class="head">
     <a class="logo" href="https://www.geonovum.nl/geo-standaarden"><img alt="Geonovum" height="67" id="Geonovum" src="https://docs.geostandaarden.nl/media/Geonovum.svg" width="132">
   </a> <h1 id="title" class="title">MIM-Lineagemodel</h1>
     
@@ -1659,8 +1659,7 @@ Wanneer de definitie van een modelelement exact gelijk is aan die van een modele
 <ul>
 <li>Werknemer: Een werknemer is een natuurlijk persoon die werkt voor een organisatie. </li>
 <li>Woonplaats: Een woonplaats is een afgebakend grondgebied met een eigen begrenzing dat gelegen is binnen het grondgebied van een gemeente, dat onder andere bestemd is voor bewoning door mensen.</li>
-<li>Wonen: Wonen betekent permanent verblijven op een vaste plek, meestal in een huis of andere woonruimte, wat meer is dan alleen 'verblijven' of 'logeren'. </li>
-<li>Geboorteplaats: Een geboorteplaats is een woonplaats waar een natuurlijk persoon is geboren.</li>
+<li>Geboorteplaats: Een geboorteplaats is de plaats waar een natuurlijk persoon is geboren.</li>
 </ul>
 <p>Modelelementen in een CIM: </p>
 <ul>
@@ -1706,6 +1705,7 @@ Het model beschrijft een aantal gegevens die bijgehouden worden over werknemers 
 </ul>
 </li>
 </ul>
+<p>Merk op dat code van de woonplaats niet duidelijk maakt dat het om de geboorteplaats van een natuurlijk persoon gaat, het onderwerp van gesprek van dit gegevenstype is de natuurlijk persoon (niet de woonplaats). </p>
 <p>Wanneer we de semantische herleidbaarheid beschouwen als onderdeel van een formele specificatie, en de oorspronklijke definities van de betrokken begrippen hierin subtitueren dan zou de formele definitie zijn: 
 'De code is de officiele identificatie van een Woonplaats.' die de 'Een geboorteplaats is een woonplaats waar een natuurlijk persoon is geboren.' van een 'Natuurlijk persoon' die 'Een werknemer is een natuurlijk persoon die werkt voor een organisatie.' is bij onze 'Organisatie. Merk op dat Natuurlijk persoon' en 'Organisatie' ook nog uitgeschreven kunnen worden. </p>
 <p>Dit is heel exact, maar niet goed leesbaar. Merk ook op dat er extra woorden nodig zijn zoals 'die de' en 'van een' en 'is bij'. Semantische herleidbaarheid letterlijk uitschrijven levert meestal geen goed leesbare definities op voor de doelgroep van een model. Het is dan ook niet gebruikelijk om een definitie van een gegevenstype in een gegevensmodel op deze manier uit te schrijven. Het moet daarom altijd mogelijk zijn eigen verwoordingen toe te kennen. </p>
@@ -1715,7 +1715,8 @@ Het model beschrijft een aantal gegevens die bijgehouden worden over werknemers 
 <li>De geboorteplaatscode is de code van de woonplaats waarin een werknemer van onze organisatie is geboren.</li>
 </ul>
 <p>Beide zijn heel helder. De eerste volgt zo veel als mogelijk de semantische herleidbaarheid. De tweede is ook heel helder en is nog prettiger leesbaar voor mensen. </p>
-<p>Deze beide verwoordingen zijn daarom goed. Althans, dit is zo wanneer <em>semantische herleidbaarheid</em> ook is aangebracht <strong>in aanvulling op</strong> de <em>definitie van het gegevenstype</em>. Want met de specificatie van semantische herleidbaarheid kunnen we via de aangebrachte semantische verwijzingen <em>alle</em> bijbehorende begrippen terug vinden en ook desgewenst het bijbehorende CIM en begrippenkader bestuderen. Wat er met het gegevenstype 'geboorteplaatscode' bedoeld wordt is dan volledig helder. Hoe meer er gewerkt wordt met specialistische begrippen, of hoe meer "platgeslagen" een logisch gegevensmodel is opgezet, hoe belangrijker dit wordt. </p>
+<p>Deze beide verwoordingen zijn daarom goed. Althans, dit is zo wanneer <em>semantische herleidbaarheid</em> ook is aangebracht <strong>in aanvulling op</strong> de <em>definitie van het gegevenstype</em>. Want met de specificatie van semantische herleidbaarheid kunnen we via de aangebrachte semantische verwijzingen <em>alle</em> bijbehorende begrippen terug vinden en ook desgewenst het bijbehorende CIM en begrippenkader bestuderen. Dit zijn de begrippen: natuurlijk persoon, werknemer, woonplaats en geboorteplaats en aanvullend geeft het CIM aan dat er sprake is van een code van een woonplaats en dat de geboorteplaats een woonplaats is. </p>
+<p>Wat er met het gegevenstype 'geboorteplaatscode' bedoeld wordt is dan volledig helder. Hoe meer er gewerkt wordt met specialistische begrippen, of hoe meer "platgeslagen" een logisch gegevensmodel is opgezet, hoe belangrijker dit wordt. </p>
 <p>Onderstaande werkt nader uit hoe semantische herleidbaarheid gespecificeerd wordt. Dit kan per modeltype verschillend zijn, hoewel het doel telkens hetzelfde is. </p>
 </section><section id="lineage-vanuit-conceptueel-informatiemodel-naar-een-begrippenkader"><div class="header-wrapper"><h4 id="x5-2-2-lineage-vanuit-conceptueel-informatiemodel-naar-een-begrippenkader"><bdi class="secno">5.2.2 </bdi>Lineage vanuit conceptueel informatiemodel naar een begrippenkader</h4><a class="self-link" href="#lineage-vanuit-conceptueel-informatiemodel-naar-een-begrippenkader" aria-label="Permalink for Section 5.2.2"></a></div>
 <p>In deze paragraaf wordt aangegeven hoe een begrippenkader met begrippen gebruikt kan worden om semantische herleidbaarheid aan te brengen in een CIM. </p>
