@@ -8,7 +8,7 @@ Voorbeeld van een definitie in een logisch gegevensmodel, van een attribuuttype 
 
 Voorbeeld van de bijbehorende semantische herleidbaarheid: 
 - bsn is een gegevenstype dat onderdeel uitmaakt van het gegevensobjecttype GeregistreerdNP in een logisch gegevensmodel;
-- voorgaande is gebaseerd op modelelementen die in een conceptueel informatiemodel zijn uitgewerkt, te weten een objecttype Ingeschrevene, met een eigenschaptype burgerservicenummer, waarbij de Ingeschrevene een specialisatie is van een objecttype Natuurlijk persoon (die niet altijd een ingeschrevene is);
+- voorgaande is gebaseerd op modelelementen die in een conceptueel informatiemodel zijn uitgewerkt, te weten een objecttype Ingeschrevene, met een eigenschaptype burgerservicenummer, waarbij de Ingeschrevene een specialisatie is van een objecttype Natuurlijk persoon (niet elke natuurlijk persoon is een ingeschrevene);
 - voorgaande is gebaseerd op begrippen zoals natuurlijk persoon, een ingeschrevene, en een burgerservicenummer;
 
 Deze begrippen zelf kunnen weer gebaseerd zijn op gepubliceerde kennisbronnen, zoals in dit voorbeeld het Burgerlijk Wetboek en de Wet algemene bepalingen burgerservicenummer. Merk op dat met dit voorbeeld niet bedoeld wordt dat er altijd sprake is of moet zijn van wet- en regelgeving. Er zijn vele domeinen waarbij dit niet of minder van belang is. 
