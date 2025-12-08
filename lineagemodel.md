@@ -189,7 +189,6 @@ Deze kunnen worden opgegeven bij een CIM.
 
 #### Metamodel
 
-
 ### Lineage vanuit logisch gegevensmodel naar een conceptueel informatiemodel 
 
 Gegevens gaan over eigenschappen van een object. Door semantische herleidbaarheid aan te brengen wordt aangegeven hoe (en in hoeverre) de gegevenswerkelijkheid en de gemodelleerde werkelijkheid in het begrippenkader en het conceptuele inforatiemodel met elkaar overeenkomen. 
@@ -199,12 +198,6 @@ Een gegevensmodel gaat over gegevens die er zijn, een informatiemodel gaat over 
 Semantische herleidbaarheid in een logisch gegevensmodel beschrijft op welke modelelementen uit een CIM een gegevenstype is gebaseerd. In het verlengde hiervan geldt dat de definitie van het gegevenstype weer op de begrippen is gebaseerd die daarin zijn aangegeven. 
 
 #### Modelelementen uit een LGM waarvoor semantische verwijzingen mogelijk zijn 
-
-In MIM 1.2 kunnen logische modelelementen gekoppeld aan een modelelement uit een conceptueel informatiemodel, met behulp van het metagegeven `mim:begrip`. 
-De definitie daarvan luidt:  
-
-In MIM 1.2 kunnen logische modelelementen gekoppeld aan een begrip met behulp van het metagegeven `mim:begrip`. 
-De definitie daarvan luidt:  
 
 | Modelelement | semantische verwijzing naar | kardinaliteit | spelregels, bij 1 modelelement van dit type hoort                     | 
 | ------------ | --------------------------- | ------------- | --------------------------------------------------------------------- | 
