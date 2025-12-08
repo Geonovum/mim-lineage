@@ -1948,8 +1948,9 @@ Wanneer de definitie van een modelelement exact gelijk is aan die van een modele
 <li>lexicaal pad: geboorteplaats (de rol), Woonplaats (het objecttype)</li>
 </ul>
 <p>Het gehele lexicale pad voor het gegevenstype geboorteplaatscode is dan: Natuurlijk persoon, geboorteplaats, Woonplaats, code. </p>
-<p>Als een model geen rollen kent, dan wordt als rol de naam van het objecttype waar het relatietype naar verwijst gekozen. Het lexicale pad is dan: woonplaats, Woonplaats. Dit komt wellicht redundant over, maar dit zorgt ervoor dat er geen "gaten" in het pad ontstaan. Er is ook gekozen om niet de relatienaam te gebruiken, omdat de rol over het algemeen stabieler is, en ook gegarandeerd uniek (in het geval er meerdere relatietypen liggen tussen dezelfde objecttypen).</p>
-<p>_Optionele spelregels: _</p>
+<p>Als een model geen rollen kent, dan wordt als rol de naam van het objecttype waar het relatietype naar verwijst gekozen. Het lexicale pad is dan: woonplaats, Woonplaats. Dit komt wellicht redundant over, maar dit zorgt ervoor dat er geen "gaten" in het pad ontstaan. </p>
+<p>Er is ook gekozen om niet de relatienaam te gebruiken, omdat de rol over het algemeen stabieler is, en korter. Het is dan wel nodig dat de rol gegarandeerd uniek is in het geval er meerdere relatietypen liggen tussen dezelfde objecttypen. Wanneer tussen het objecttype Natuurlijk persoon en Woonplaats dus twee relatietypen zijn gemodelleerd, zoals 'woont in' en 'is geboren in' dan is bij elk van deze relatietypen ook een rol nodig, zoals 'woonplaats' en 'geboorteplaats'. </p>
+<p><em>Optionele spelregels:</em></p>
 <ol>
 <li>Het model hanteert een eigen notatiewijze voor het lexicale pad, te weten de volgende: ... </li>
 <li>Start- en eindpunt hoeven niet te worden opgegeven door de modelleur en kunnen terug gevonden worden bij de overige specificaties van semantische herleidbaarheid.</li>
