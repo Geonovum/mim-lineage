@@ -229,11 +229,11 @@ Een gegevenstype kan 1 op 1 overgenomen zijn uit een ander logisch gegevensmodel
 
 #### Lexicaal pad
 
-| Modelelement | semantische verwijzing naar | kardinaliteit | spelregels, bij 1 modelelement van dit type hoort                     | 
+| Modelelement | semantische verwijzing naar | kardinaliteit | spelregels                     | 
 | ------------ | --------------------------- | ------------- | --------------------------------------------------------------------- | 
-| modelelement startpunt  | objecttype die het onderwerp van gesprek is van het gegevensobject waartoe het gegevenstype behoort | 0..1 | als aangebracht, dan altijd tijd precies 1                        |  
-| modelelement eindpunt   | eigenschaptype waar het gegevenstype over gaat | 0..1 | als aangebracht, dan altijd tijd precies 1                        | 
-| lexicaal pad            | objecttypen en/of relatierollen | 0..* |  in volgorde van het startpunt tot en met het eindpunt | 
+| modelelement startpunt  | objecttype die het onderwerp van gesprek is van het gegevensobject waartoe het gegevenstype behoort | 0..1 | als aangebracht, dan altijd tijd precies 1                 |  
+| modelelement eindpunt   | eigenschaptype waar het gegevenstype over gaat                                                      | 0..1 | als aangebracht, dan altijd tijd precies 1                 | 
+| lexicaal pad            | objecttypen en/of relatierollen                                                                     | 0..* |  in volgorde van het startpunt tot en met het eindpunt     | 
 
 Bij de geboorteplaatscode in het voorbeeld hoort de volgende specificatie voor het lexicale pad: 
 - modelelement startpunt: objecttype Natuurlijk persoon 
