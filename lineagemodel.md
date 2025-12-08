@@ -65,9 +65,11 @@ Het verdient echter de voorkeur om deze definities toch te herhalen, zodat het m
 
 ## Semantische herleidbaarheid 
 
-**Betekenis van elementen op ieder beschouwingsniveau uitdrukken met een welgevormde verwoording van die betekenis met een definitie.** 
+### Voorbeeld ### 
 
-In deze paragraaf wordt aangegeven hoe een begrippenkader met begrippen en een conceptueel informatiemodel (CIM) gebruikt kan worden om te komen tot een welgevormde definitie van een gegevenstype die goed leesbaar en ook nog steed heel helder is voor gebruikers. Hierbij wordt zowel gekeken naar definities en naar semantische herleibaarheid. 
+Een begrippenkader met begrippen en een conceptueel informatiemodel (CIM) kunnen gebruikt worden om te komen tot een welgevormde definitie van een gegevenstype die goed leesbaar en ook nog steed heel helder is voor gebruikers. Hierbij wordt zowel gekeken naar definities en naar semantische herleibaarheid, beide horen bij elkaar. De laatste is een aanvulling op de eerste. Het doel is telkens om betekenis van elementen op ieder beschouwingsniveau uit te drukken met een welgevormde verwoording van die betekenis met een definitie en om hierna semantische verwijzingen aan te geven waarop de tekst van deze definitie is gebaseerd. 
+
+Dit wordt uitgewerkt aan de hand van een voorbeeld, waarin een begrippenkader is uitgewerkt naar een CIM en beide weer zijn gebruikt bij het maken van gegevensobjecttype en een gegevenstype in een logisch gegevensmodel. 
 
 Begrippen in een begrippenkader: 
 - Werknemer: Een werknemer is een natuurlijk persoon die werkt voor een organisatie. 
@@ -92,9 +94,9 @@ Modelelementen in een logisch gegevensmodel, die werknemers van de eigen organis
    - een attribuuttype 'woonplaatscode'
    - een attribuuttype 'geboorteplaatscode'
   
-Wat is nou een goede definitie van het gegevenstype geboorteplaatscode? 
+Vraag: wat is nou een goede definitie van het gegevenstype geboorteplaatscode? 
 
-Een antwoord kan zijn om deze uit de in het CIM gedefinieerde code te halen: de officiele identificatie van een Woonplaats. We raken dan echter relevante context kwijt, te weten dat het om de geboorteplaats gaat. Een ander antwoord zou daarom kunnen zijn: een woonplaats waar een natuurlijk persoon is geboren. Maar het gegeven zelf gaat over de code ervan, dus dat klopt ook niet echt. Laten we daarom eerst kijken naar de semantische herleidbaarheid.
+Een antwoord kan zijn om deze uit de in het CIM gedefinieerde code te halen: de officiele identificatie van een Woonplaats. We raken dan echter relevante context kwijt, te weten dat het om de geboorteplaats gaat. Een ander antwoord zou daarom kunnen zijn: een woonplaats waar een natuurlijk persoon is geboren. Maar het gegeven zelf gaat over de code ervan, dus dat klopt ook niet echt. Laten we daarom eerst kijken naar de semantische herleidbaarheid, gebruik makende van de begrippen uit het vorige hoofdstuk.
 
 Semantische herleidbaarheid:
 - onderwerp van gesprek: Natuurlijk persoon uit het CIM
@@ -119,7 +121,9 @@ Onderstaande werkt nader uit hoe semantische herleidbaarheid gespecificeerd word
 
 ### Lineage vanuit conceptueel informatiemodel naar een begrippenkader
 
-De definitie van een modelelement in een CIM heeft daarom een zeer sterke relatie met de definitie van een begrip uit een begrippenkader. Een begrippenkader en een conceptueel informatiemodel beschrijven immers beiden een model van dezelfde werkelijkheid. De ene beschrijft begrippen waarmee we uitdrukking geven aan het beschrijven van die werkelijkeheid, de andere geeft de conceptualisatie aan van dezelfde werkelijkheid, door middel van objecttypen, eigenschaptypen, relatietypen enzovoorts. Het is daarom in principe zo dat de terminologie in een CIM overeenkomt met de voorkeurstermen van de gerelateerde begrippen, daar waar mogelijk, mede ook om geen onnodige (spraak) verschillen te krijgen. Dit is niet altijd mogelijk, maar dit is wel een streven. De spelregels in onderstaande tabel geven dit aan. 
+In deze paragraaf wordt aangegeven hoe een begrippenkader met begrippen gebruikt kan worden om semantische herleidbaarheid aan te brengen in een CIM. 
+ 
+De definitie van een modelelement in een CIM heeft een zeer sterke relatie met de definitie van een begrip uit een begrippenkader. Een begrippenkader en een conceptueel informatiemodel beschrijven immers beiden een model van dezelfde werkelijkheid. De ene beschrijft begrippen waarmee we uitdrukking geven aan het beschrijven van die werkelijkeheid, de andere geeft de conceptualisatie aan van dezelfde werkelijkheid, door middel van objecttypen, eigenschaptypen, relatietypen enzovoorts. Het is daarom in principe zo dat de terminologie in een CIM overeenkomt met de voorkeurstermen van de gerelateerde begrippen, daar waar mogelijk, mede ook om geen onnodige (spraak) verschillen te krijgen. Dit is niet altijd mogelijk, maar dit is wel een streven. De spelregels in onderstaande tabel geven dit aan. 
 
 #### Modelelementen uit een CIM waarvoor semantische verwijzingen mogelijk zijn 
 
