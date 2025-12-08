@@ -63,6 +63,57 @@ Het verdient echter de voorkeur om deze definities toch te herhalen, zodat het m
 ### Aanpak: per koppelvlak tussen niveaus een model maken
 *(Nog uit te werken in dit document.)*
 
+## Betekenis van elementen op ieder beschouwingsniveau uitdrukken met een welgevormde verwoording van die betekenis met een definitie 
+
+In deze paragraaf wordt aangegeven hoe een begrippenkader met begrippen en een conceptueel informatiemodel (CIM) gebruikt kan worden om te komen tot een welgevormde definitie van een gegevenstype die goed leesbaar en ook nog steed heel helder is voor gebruikers. Hierbij wordt zowel gekeken naar definities en naar semantische herleibaarheid. 
+
+Begrippen in een begrippenkader: 
+- Werknemer: Een werknemer is een natuurlijk persoon die werkt voor een organisatie. 
+- Woonplaats: Een woonplaats is een afgebakend grondgebied met een eigen begrenzing dat gelegen is binnen het grondgebied van een gemeente, dat onder andere bestemd is voor bewoning door mensen.
+- Wonen: Wonen betekent permanent verblijven op een vaste plek, meestal in een huis of andere woonruimte, wat meer is dan alleen 'verblijven' of 'logeren'. 
+- Geboorteplaats: Een geboorteplaats is een woonplaats waar een natuurlijk persoon is geboren. 
+
+Modelelementen in een CIM: 
+- een objecttype _Natuurlijk persoon_
+   - een relatietype '_is geboren in_'
+      - Deze relatie ligt tussen objecttype Natuurlijk Persoon en een objecttype Woonplaats.
+      - De rol die een plaats speelt in deze relatie is dat deze de _geboorteplaats_ is van de natuurlijk persoon.
+   - een relatietype '_werkt bij_'
+      - Deze relatie ligt tussen objecttype Natuurlijk Persoon en een objecttype Organisatie.
+      - De rol die een natuurlijk persoon speelt in deze relatie is dat deze de _werknemer_ is van de organisatie
+- een objecttype _Woonplaats_
+   - een eigenschaptype 'naam', met definitie: De officiele naam van een Woonlaats.
+   - een eigenschaptype 'code', met definitie: De code de officiele identificatie van een Woonplaats
+
+Modelelementen in een logisch gegevensmodel, die werknemers van de eigen organisatie registreert en deze gegevens uitwisselt met gebruikers: 
+- een gegevensobjecttype _Geregistreerde werknemer_
+   - een attribuuttype 'woonplaatscode'
+   - een attribuuttype 'geboorteplaatscode'
+  
+Wat is nou een goede definitie van het gegevenstype geboorteplaatscode? 
+
+Een antwoord kan zijn om deze uit de in het CIM gedefinieerde code te halen: de officiele identificatie van een Woonplaats. We raken dan echter relevante context kwijt, te weten dat het om de geboorteplaats gaat. Een ander antwoord zou daarom kunnen zijn: een woonplaats waar een natuurlijk persoon is geboren. Maar het gegeven zelf gaat over de code ervan, dus dat klopt ook niet echt. Laten we daarom eerst kijken naar de semantische herleidbaarheid.
+
+Semantische herleidbaarheid:
+- onderwerp van gesprek: Natuurlijk persoon uit het CIM
+   - niet zomaar een Natuurlijk persoon, maar een natuurlijk persoon die een werknemer is bij onze organisatie      
+- eigenschaptype: 'code' van Woonplaats uit het CIM 
+   - lexicaal pad: de geboorteplaats van een natuurlijk persoon, dit is een rol die de woonplaats speelt in de relatie met een natuurlijk persoon (niet te verwarren met de woonplaats) 
+
+Wanneer we de semantische herleidbaarheid beschouwen als onderdeel van een formele specificatie, en de oorspronklijke definities van de betrokken begrippen hierin subtitueren dan zou de formele definitie zijn: 
+'De code is de officiele identificatie van een Woonplaats.' die de 'Een geboorteplaats is een woonplaats waar een natuurlijk persoon is geboren.' van een 'Natuurlijk persoon' die 'Een werknemer is een natuurlijk persoon die werkt voor een organisatie.' is bij onze 'Organisatie. Merk op dat Natuurlijk persoon' en 'Organisatie' ook nog uitgeschreven kunnen worden. 
+
+Dit is heel exact, maar niet goed leesbaar. Merk ook op dat er extra woorden nodig zijn zoals 'die de' en 'van een' en 'is bij'. Semantische herleidbaarheid letterlijk uitschrijven levert meestal geen goed leesbare definities op voor de doelgroep van een model. Het is dan ook niet gebruikelijk om een definitie van een gegevenstype in een gegevensmodel op deze manier uit te schrijven. Het moet daarom altijd mogelijk zijn eigen verwoordingen toe te kennen. 
+
+Semantische herleidbaarheid is echter wel erg nuttig om te komen tot een goede definitie. Hiervan gebruik makende komen we tot teksten zoals: 
+- De geboorteplaatscode is de code van de woonplaats die de geboorteplaats is van de natuurlijk persoon die werknemer is bij onze organisatie. 
+- De geboorteplaatscode is de code van de woonplaats waarin de natuurlijke persoon, die werknemer is bij onze organisatie, is geboren.
+
+Beide zijn heel helder. De eerste volgt zo veel als mogelijk de semantische herleidbaarheid. De tweede is ook heel helder en is nog prettiger leesbaar voor mensen. 
+
+Deze beide verwoordingen zijn daarom goed. Althans, dit is zo wanneer _semantische herleidbaarheid_ ook is aangebracht **in aanvulling op** de _definitie van het gegevenstype_. Want met de specificatie van semantische herleidbaarheid kunnen we via de aangebrachte semantische verwijzingen _alle_ bijbehorende begrippen terug vinden en ook desgewenst het bijbehorende CIM en begrippenkader bestuderen. Wat er met het gegevenstype 'geboorteplaatscode' bedoeld wordt is dan volledig helder. Hoe meer er gewerkt wordt met specialistische begrippen, of hoe meer "platgeslagen" een logisch gegevensmodel is opgezet, hoe belangrijker dit wordt. 
+
+Onderstaande werkt nader uit hoe semantische herleidbaarheid gespecificeerd wordt. Dit kan per modeltype verschillend zijn, hoewel het doel telkens hetzelfde is. 
 
 ## Lineage vanuit conceptueel informatiemodel naar een begrippenkader
 
