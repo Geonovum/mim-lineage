@@ -18,7 +18,7 @@ Voorgaande samenhang noemen we ook wel verticale lineage of afkomstrelaties tuss
 Of semantische herleidbaarheid van belang is voor een model of een organisatie, dat is een afweging voor elke organisatie zelf. Daarom is dit onderwerp als een aparte module opgenomen in de standaard. Het is niet verplicht om dit te doen, maar als er gekozen wordt om het wel te beschrijven doe het dan zoals in dit document is gespecificeerd. 
 
 Dit document beperkt zich hierbij qua scope tot de MIM modellen zelf: 
-- van een conceptuele informatiemodel naar de bijbehorende semantiek, zoals bijvoorbeeld een NL-SBB begrippenkader
+- van een conceptuele informatiemodel naar de bijbehorende semantiek, zoals bijvoorbeeld een begrippenkader (dat bijvoorbeeld uitgewerkt is in de NL-SBB standaard)
 - van een logisch gegevensmodel naar een conceptueel informatiemodel
 
 Tot slot is het van belang om op te merken dat het aanbrengen van semantische herleidbaarheid best complex kan zijn. Denk aan: 
