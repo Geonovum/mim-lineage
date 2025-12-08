@@ -261,12 +261,12 @@ In een LGM kunnen modelelementen voorkomen die semantische verwijzingen hebben n
 
 Per model waarnaar wordt verwezen kan worden aangegeven: 
 
-| Metagegeven  | semantische verwijzing naar | kardinaliteit  | voorbeeld | 
-| ------------ | --------------------------- | ------------- | -------------- | 
-| model type          | model                | 1..1   | CIM, LGM, begrippenkader
-| model identificatie | zie type             | 1..1   | ...                  | 
-| model naam          | CIM                  | 1..1   | Natuurlijke personen | 
-| model versie        | CIM                  | 1..1   |  1.0.0 | 
+| Metagegeven  | semantische verwijzing naar  | kardinaliteit  | voorbeeld | 
+| ------------ | ---------------------------  | ------------- | -------------- | 
+| model type          | model                 | 1..1   | CIM, LGM, begrippenkader
+| model identificatie | zie type, model       | 1..1   | ...                  | 
+| model naam          | zie type, model       | 1..1   | Natuurlijke personen | 
+| model versie        | zie type, modelversie | 1..1   |  1.0.0 | 
 
 _Optionele spelregels_ 
 
