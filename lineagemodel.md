@@ -187,7 +187,8 @@ Deze kunnen worden opgegeven bij een CIM.
 1. Het informatiedomein van een CIM volgt strikt 1 begrippenkader, of 1 set van sterk sterk bij elkaar behorende begrippenkaders die een bepaalde onderverdeling kennen. De partij die verantwoordelijkheid is voor beide, is dezelfde partij, en deze bewaakt ook dat beide naadloos op elkaar aansluiten. 
 2. Verwijzingen naar kennisbronnen die niet als begrippenkader zijn uitgewerkt, zijn toegestaan. In dit geval is het metagegeven 'kennisbron' bij een modelelement met een definitie gevuld. 
 
-### Metamodel
+#### Metamodel
+
 
 ### Lineage vanuit logisch gegevensmodel naar een conceptueel informatiemodel 
 
@@ -274,6 +275,8 @@ Deze kunnen worden opgegeven bij een model en geven aan welke verwijzen op model
 1. Er mag worden verwezen naar een CIM 
 2. Er mag (rechtstreeks) worden verwezen naar een begrippenkader
 3. Er mag worden verwezen naar een LGM via indirecte semantische verwijzingen 
+
+#### Metamodel
 
 ### Lineage vanuit logisch gegevensmodel naar een begrip uit een begrippen model 
 
