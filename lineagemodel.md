@@ -169,14 +169,20 @@ Het is mogelijk dat MIM in een latere versie ook niet exact overeenkomende seman
 
 #### Lineage op model niveau 
 
+In een CIM kunnen modelelementen voorkomen die semantische verwijzingen hebben naar begrippen uit verschillende begrippenkaders. Hierover kan extra informatie worden toegevoegd in het model. 
+
+| Metagegeven | semantische verwijzing naar | kardinaliteit | 
+| ------------ | --------------------------- | ------------- |
+| modelidentificatie begrippenkader model | begrippenkader     | 0..*          | 
+| naam begrippenkader  | begrippenkader model    | 0..*          | 
+| versie begrippenkader  | begrippenkader modelversie     | 0..*          | 
+
 _Optionele spelregels_ 
 
-Deze kunnen worden opgegeven bij een model. 
+Deze kunnen worden opgegeven bij een CIM. 
 
-1. Het informatiedomein van een CIM volgt strikt 1 begrippenkader, of 1 set van sterk sterk bij elkaar behorende begrippenkaders die een bepaalde onderverdeling kennen. De partij die verantwoordelijkheid is voor beide, is dezelfde partij, en deze bewaakt ook dat beide naadloos op elkaar aansluiten.
-2. De modeldidentificaties van de begrippenkaders, en de namen ervan, waarnaar verwezen wordt vanuit dit CIM zijn de volgende
-3. Verwijzingen naar kennisbronnen die niet als begrippenkader zijn uitgewerkt, zijn toegestaan. In dit geval is het metagegeven 'kennisbron' bij een modelelement met een definitie gevuld. 
-   
+1. Het informatiedomein van een CIM volgt strikt 1 begrippenkader, of 1 set van sterk sterk bij elkaar behorende begrippenkaders die een bepaalde onderverdeling kennen. De partij die verantwoordelijkheid is voor beide, is dezelfde partij, en deze bewaakt ook dat beide naadloos op elkaar aansluiten. 
+2. Verwijzingen naar kennisbronnen die niet als begrippenkader zijn uitgewerkt, zijn toegestaan. In dit geval is het metagegeven 'kennisbron' bij een modelelement met een definitie gevuld. 
 
 ### Metamodel
 
