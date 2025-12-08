@@ -110,7 +110,7 @@ Een ander antwoord zou daarom kunnen zijn om de definitie van het begrip geboort
 
 Laten we daarom eerst kijken naar de semantische herleidbaarheid, gebruik makende van de bijbehorende concepten uit het vorige hoofdstuk.
 
-**Semantische herleidbaarheid:**
+**Semantische herleidbaarheid van het gegevenstype geboorteplaatscode:**
 
 - onderwerp van gesprek: Natuurlijk persoon uit het CIM
    - niet zomaar een Natuurlijk persoon, maar een natuurlijk persoon die een werknemer is bij onze organisatie
@@ -124,7 +124,9 @@ Wanneer we de semantische herleidbaarheid beschouwen als onderdeel van een forme
 
 Dit is heel exact, maar niet goed leesbaar. Merk ook op dat er extra woorden nodig zijn zoals 'die de' en 'van een' en 'is bij'. Semantische herleidbaarheid letterlijk uitschrijven levert meestal geen goed leesbare definities op voor de doelgroep van een model. Het is dan ook niet gebruikelijk om een definitie van een gegevenstype in een gegevensmodel op deze manier uit te schrijven. Het moet daarom altijd mogelijk zijn eigen verwoordingen toe te kennen. 
 
-Semantische herleidbaarheid is echter wel erg nuttig om te komen tot een goede definitie. Hiervan gebruik makende komen we tot teksten zoals: 
+**Definitie van het gegevenstype geboorteplaatscode:**
+
+Semantische herleidbaarheid is erg nuttig om te komen tot een goede definitie. Hiervan gebruik makende komen we tot teksten zoals: 
 - De geboorteplaatscode is de code van de woonplaats die de geboorteplaats is van de natuurlijk persoon die werknemer is bij onze organisatie. 
 - De geboorteplaatscode is de code van de woonplaats waarin een werknemer van onze organisatie is geboren.
 
@@ -134,7 +136,7 @@ Deze beide verwoordingen zijn daarom goed. Althans, dit is zo wanneer _semantisc
 
 Wat er met het gegevenstype 'geboorteplaatscode' bedoeld wordt is dan volledig helder. Hoe meer er gewerkt wordt met specialistische begrippen, of hoe meer "platgeslagen" een logisch gegevensmodel is opgezet, hoe belangrijker dit wordt. 
 
-Onderstaande werkt nader uit hoe semantische herleidbaarheid gespecificeerd wordt. Dit kan per modeltype verschillend zijn, hoewel het doel telkens hetzelfde is. 
+Tot dusver het voorbeeld. Onderstaande werkt nader uit hoe semantische herleidbaarheid precies gespecificeerd wordt. Merk op dat dit per modeltype verschillend is zijn omdat semantische verwijzingen in een CIM naar begrippen verwijzen en in LGM naar CIM modelelementen en van daaruit naar begrippen. Het doel is hierbij echter telkens hetzelfde. 
 
 ### Lineage vanuit conceptueel informatiemodel naar een begrippenkader
 
