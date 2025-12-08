@@ -60,8 +60,16 @@ Wanneer de definitie van een modelelement exact gelijk is aan die van een modele
 
 Het verdient echter de voorkeur om deze definities toch te herhalen, zodat het model ook zelfstandig goed te begrijpen blijft.
 
-### Aanpak: per koppelvlak tussen niveaus een model maken
+### Aanpak: per raakvlak tussen MIM niveaus een model maken
 *(Nog uit te werken in dit document.)*
+
+| MIM niveau | Lineage | Uitwerking te vinden in | 
+| --------   | --------------------------- | --------------------------- | --------------------------- | 
+| 1 naar ... | vanuit een begripppenkader naar kennisbronnen | Buiten scope van MIM. Dit wordt momenteel in detail beschreven in de *NL-SBB standaard*. |
+| 2 naar 1   | vanuit CIM naar een begrippenkader | in deze module van MIM, zie verderop |
+| 3 naar 2   | vanuit LGM naar conceptueel informatiemodel | in deze module van MIM, zie verderop |
+| 3 naar 1   | vanuit LGM naar een begrippenkader | in deze module van MIM, zie verderop |
+| 4 naar ... | vanuit logisch gegevensmodel naar een LGM, CIM of begrippenkader | - |Buiten scope van MIM. Dit wordt momenteel in detail beschreven in de *Handreiking data lineage*.
 
 ## Semantische herleidbaarheid 
 
@@ -277,5 +285,40 @@ Deze kunnen worden opgegeven bij een model en geven aan welke verwijzen op model
 
 TODO. 
 
-## Lineage vanuit fysiek datamodel
-Dit onderdeel is buiten scope van MIM. Dit wordt momenteel in detail beschreven in de *Handreiking data lineage*.
+
+## Mate van verwijsbaarheid 
+
+Bij het aangeven van de semantische herleidbaarheid van een gegevenstype naar de bijbehorende semantiek kan uit analyse blijken dat de gegevensdefinitie van een gegevenstype volledig afgedekt kan worden door modelelementen in een CIM en/of begrippenkader. Dit is de gewenste situatie. 
+
+| Modelelement | Mate van verwijsbaarheid | kardinaliteit | spelregels               | 
+| ------------ | --------------------------- | ------------- | --------------------------------------------------------------------- | 
+| gegevensobjecttype   | aanduiding  | 0..1 | verplicht indien semantische herleidbaarheid in het model is opgenomen |  
+| gegevenstype         | aanduiding  | 0..1 | verplicht indien semantische herleidbaarheid in het model is opgenomen | 
+
+Regel: De aanduiding van de van verwijsbaarheid komt uit de tabel uit het hoofdstuk Termen. 
+
+Regel: Het is niet toegestaan om een andere aanduiding te kiezen die niet in MIM gedefinieerd is. Het is wel toegestaan om in een eigen toepassingsprofiel een 'nadere aanduiding' te specificeren, in aanvulling op de MIM aanduiding. 
+
+Indien de aanduiding wat anders is dan volledig, dan kan er een verklaring van verschil worden opgenomen. 
+
+| Modelelement | Mate van verwijsbaarheid | kardinaliteit | spelregels               | 
+| ------------ | --------------------------- | ------------- | --------------------------------------------------------------------- | 
+| gegevensobjecttype   | verklaring van verschil  | 0..1 |  |  
+| gegevenstype         | verklaring van verschil  | 0..1 |  | 
+
+De verklaring van verschil is in principe vrije tekst. 
+- Deze legt zo goed als mogelijk uit hoe de gegevensdefinitie verschilt van bestaande definities uit een CIM of begrippenkader.
+- De verklaring is bedoeld voor de lezer van het model en niet voor de modelleur. Neem dus geen oorzaken op, maar hou het bij het inhoudelijke verschil zelf.
+- Het is hierbij toegestaan om gebruik te maken van gestandaardiseerde teksten. Hierbij kan gebruik gemaakt worden van de volgende: 
+
+| Verklaring van verschil | Toelichting | 
+| ----------------- | --------------------------- |
+| omissie in CIM            | Er ontbreekt (vermoedelijk) een modelelement in het CIM. | 
+| omissie in begrippenkader | Er ontbreekt (vermoedelijk) een begrip in het begrippenkader. |  
+
+_Optionele spelregels: _
+
+1. Indien de mate van verwijsbaarheid volledig is en de semantische verwijzing is 1 op 1 dan kan de definitie van het CIM modelelement 1 op 1 worden overgenomen naar de gegevensdefinitie van het gegevenstype of gegevensobjecttype.
+2. De verklaring van verschil is verplicht indien de aanduiding wat anders is dan volledig.
+
+
