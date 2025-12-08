@@ -91,6 +91,7 @@ Modelelementen in een CIM:
    - een eigenschaptype 'code', met definitie: De code is de officiele identificatie van een Woonplaats
 
 Modelelementen in een LGM:
+
 Het model beschrijft een aantal gegevens die bijgehouden worden over werknemers die werken bij de eigen organisatie, in een registratie die enkele van deze gegevens uitwisselt met gebruikers: 
 
 - een gegevensobjecttype _Geregistreerde werknemer_
