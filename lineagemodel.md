@@ -233,6 +233,28 @@ Een gegevenstype kan 1 op 1 overgenomen zijn uit een ander logisch gegevensmodel
 | gegevenstype         | gegevenstype uit ander LGMe      | 0..1 | als aangebracht, dan altijd tijd precies 1                        | 
 
 
+#### Lexicaal pad
+
+| Modelelement | semantische verwijzing naar | kardinaliteit | spelregels, bij 1 modelelement van dit type hoort                     | 
+| ------------ | --------------------------- | ------------- | --------------------------------------------------------------------- | 
+| modelelement startpunt  | objecttype die het onderwerp van gesprek is van het gegevensobject waartoe het gegevenstype behoort | 0..1 | als aangebracht, dan altijd tijd precies 1                        |  
+| modelelement eindpunt   | eigenschaptype waar het gegevenstype over gaat | 0..1 | als aangebracht, dan altijd tijd precies 1                        | 
+| lexicaal pad            | objecttypen en/of relatierollen | 0..* |  in volgorde van het startpunt tot en met het eindpunt | 
+
+Bij de geboorteplaatscode in het voorbeeld hoort de volgende specificatie voor het lexicale pad: 
+- modelelement startpunt: objecttype Natuurlijk persoon 
+- modelelement eindpunt: eigenschaptype code
+- lexicaal pad: geboorteplaats (de rol), Woonplaats (het objecttype)
+
+Het gehele lexicale pad voor het gegevenstype geboorteplaatscode is dan: Natuurlijk persoon, geboorteplaats, Woonplaats, code. 
+
+Als een model geen rollen kent, dan wordt als rol de naam van het objecttype waar het relatietype naar verwijst gekozen. Het lexicale pad is dan: woonplaats, Woonplaats. Dit komt wellicht redundant over, maar dit zorgt ervoor dat er geen "gaten" in het pad ontstaan. Er is ook gekozen om niet de relatienaam te gebruiken, omdat de rol over het algemeen stabieler is, en ook gegarandeerd uniek (in het geval er meerdere relatietypen liggen tussen dezelfde objecttypen).
+
+_Optionele spelregels: _
+
+1. Het model hanteert een eigen notatiewijze voor het lexicale pad, te weten de volgende: ... 
+2. Start- en eindpunt hoeven niet te worden opgegeven door de modelleur en kunnen terug gevonden worden bij de overige specificaties van semantische herleidbaarheid.
+
 #### Lineage op model niveau 
 
 In een LGM kunnen modelelementen voorkomen die semantische verwijzingen hebben naar CIM modelelementen uit verschillende CIM's. Hierover kan extra informatie worden toegevoegd in het model. 
@@ -252,7 +274,6 @@ Deze kunnen worden opgegeven bij een model en geven aan welke verwijzen op model
 1. Er mag worden verwezen naar een CIM 
 2. Er mag (rechtstreeks) worden verwezen naar een begrippenkader
 3. Er mag worden verwezen naar een LGM via indirecte semantische verwijzingen 
-
 
 ### Lineage vanuit logisch gegevensmodel naar een begrip uit een begrippen model 
 
