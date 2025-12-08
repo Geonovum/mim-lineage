@@ -169,13 +169,16 @@ Het is mogelijk dat MIM in een latere versie ook niet exact overeenkomende seman
 
 #### Lineage op model niveau 
 
-In een CIM kunnen modelelementen voorkomen die semantische verwijzingen hebben naar begrippen uit verschillende begrippenkaders. Hierover kan extra informatie worden toegevoegd in het model. 
+In een CIM kunnen modelelementen voorkomen die semantische verwijzingen hebben naar begrippen uit verschillende begrippenkaders. Hierover kan extra informatie worden toegevoegd in het model, zodat helder is welke dit zijn. 
 
-| Metagegeven | semantische verwijzing naar | kardinaliteit | 
-| ------------ | --------------------------- | ------------- |
-| modelidentificatie begrippenkader model | begrippenkader     | 0..*          | 
-| naam begrippenkader  | begrippenkader model    | 0..*          | 
-| versie begrippenkader  | begrippenkader modelversie     | 0..*          | 
+Per model waarnaar wordt verwezen kan worden aangegeven. 
+
+| Metagegeven  | semantische verwijzing naar | kardinaliteit  | voorbeeld | 
+| ------------ | --------------------------- | ------------- | -------------- | 
+| model type          | model                       | 1..1  | begrippenkader | 
+| model identificatie | begrippenkader model        | 1..1  | ...                  | 
+| model naam          | begrippenkader model        | 1..1  | Natuurlijke personen | 
+| model versie        | begrippenkader modelversie  | 1..1  |  1.0.0 | 
 
 _Optionele spelregels_ 
 
@@ -232,11 +235,24 @@ Een gegevenstype kan 1 op 1 overgenomen zijn uit een ander logisch gegevensmodel
 
 #### Lineage op model niveau 
 
+In een LGM kunnen modelelementen voorkomen die semantische verwijzingen hebben naar CIM modelelementen uit verschillende CIM's. Hierover kan extra informatie worden toegevoegd in het model. 
+
+Per model waarnaar wordt verwezen kan worden aangegeven: 
+
+| Metagegeven  | semantische verwijzing naar | kardinaliteit  | voorbeeld | 
+| ------------ | --------------------------- | ------------- | -------------- | 
+| model type          | model                | 1..1   | CIM, LGM, begrippenkader
+| model identificatie | zie type             | 1..1   | ...                  | 
+| model naam          | CIM                  | 1..1   | Natuurlijke personen | 
+| model versie        | CIM                  | 1..1   |  1.0.0 | 
+
 _Optionele spelregels_ 
 
-Deze kunnen worden opgegeven bij een model. 
-1. De modeldidentificaties van de begrippenkaders of conceptuele informatiemodellen, en de namen ervan, waarnaar verwezen wordt vanuit dit CIM zijn de volgende.
-2. De administratie of de gegevensuitwisseling waar dit model een uitdrukking van is heet als volgt:
+Deze kunnen worden opgegeven bij een model en geven aan welke verwijzen op modelniveau opgenomen mogen worden in het model:  
+1. Er mag worden verwezen naar een CIM 
+2. Er mag (rechtstreeks) worden verwezen naar een begrippenkader
+3. Er mag worden verwezen naar een LGM via indirecte semantische verwijzingen 
+
 
 ### Lineage vanuit logisch gegevensmodel naar een begrip uit een begrippen model 
 
