@@ -63,7 +63,9 @@ Het verdient echter de voorkeur om deze definities toch te herhalen, zodat het m
 ### Aanpak: per koppelvlak tussen niveaus een model maken
 *(Nog uit te werken in dit document.)*
 
-## Betekenis van elementen op ieder beschouwingsniveau uitdrukken met een welgevormde verwoording van die betekenis met een definitie 
+## Semantische herleidbaarheid 
+
+### Betekenis van elementen op ieder beschouwingsniveau uitdrukken met een welgevormde verwoording van die betekenis met een definitie 
 
 In deze paragraaf wordt aangegeven hoe een begrippenkader met begrippen en een conceptueel informatiemodel (CIM) gebruikt kan worden om te komen tot een welgevormde definitie van een gegevenstype die goed leesbaar en ook nog steed heel helder is voor gebruikers. Hierbij wordt zowel gekeken naar definities en naar semantische herleibaarheid. 
 
@@ -115,11 +117,11 @@ Deze beide verwoordingen zijn daarom goed. Althans, dit is zo wanneer _semantisc
 
 Onderstaande werkt nader uit hoe semantische herleidbaarheid gespecificeerd wordt. Dit kan per modeltype verschillend zijn, hoewel het doel telkens hetzelfde is. 
 
-## Lineage vanuit conceptueel informatiemodel naar een begrippenkader
+### Lineage vanuit conceptueel informatiemodel naar een begrippenkader
 
 De definitie van een modelelement in een CIM heeft daarom een zeer sterke relatie met de definitie van een begrip uit een begrippenkader. Een begrippenkader en een conceptueel informatiemodel beschrijven immers beiden een model van dezelfde werkelijkheid. De ene beschrijft begrippen waarmee we uitdrukking geven aan het beschrijven van die werkelijkeheid, de andere geeft de conceptualisatie aan van dezelfde werkelijkheid, door middel van objecttypen, eigenschaptypen, relatietypen enzovoorts. Het is daarom in principe zo dat de terminologie in een CIM overeenkomt met de voorkeurstermen van de gerelateerde begrippen, daar waar mogelijk, mede ook om geen onnodige (spraak) verschillen te krijgen. Dit is niet altijd mogelijk, maar dit is wel een streven. De spelregels in onderstaande tabel geven dit aan. 
 
-### Modelelementen uit een CIM waarvoor semantische verwijzingen mogelijk zijn 
+#### Modelelementen uit een CIM waarvoor semantische verwijzingen mogelijk zijn 
 
 Dit zijn in principe alle modelelementen die een definitie kunnen hebben en ten minste alle modelelementen die een definitie hebben (altijd behoren te hebben). 
 
@@ -139,7 +141,7 @@ De relatie tussen een conceptueel modelelement en een begrip moet strikt worden 
 
 Het is mogelijk dat MIM in een latere versie ook niet exact overeenkomende semantische verwijzingen toestaat. De semantische verwijzingen zullen dan een aanduiding of classificatie krijgen. Dit is op het moment nog niet uitgewerkt.
 
-### Lineage op model niveau 
+#### Lineage op model niveau 
 
 _Optionele spelregels_ 
 
@@ -150,10 +152,9 @@ Deze kunnen worden opgegeven bij een model.
 3. Verwijzingen naar kennisbronnen die niet als begrippenkader zijn uitgewerkt, zijn toegestaan. In dit geval is het metagegeven 'kennisbron' bij een modelelement met een definitie gevuld. 
    
 
-### Model
+### Metamodel
 
-
-## Lineage vanuit logisch gegevensmodel naar een conceptueel informatiemodel 
+### Lineage vanuit logisch gegevensmodel naar een conceptueel informatiemodel 
 
 Gegevens gaan over eigenschappen van een object. Door semantische herleidbaarheid aan te brengen wordt aangegeven hoe (en in hoeverre) de gegevenswerkelijkheid en de gemodelleerde werkelijkheid in het begrippenkader en het conceptuele inforatiemodel met elkaar overeenkomen. 
 
@@ -161,7 +162,7 @@ Een gegevensmodel gaat over gegevens die er zijn, een informatiemodel gaat over 
 
 Semantische herleidbaarheid in een logisch gegevensmodel beschrijft op welke modelelementen uit een CIM een gegevenstype is gebaseerd. In het verlengde hiervan geldt dat de definitie van het gegevenstype weer op de begrippen is gebaseerd die daarin zijn aangegeven. 
 
-### Modelelementen uit een LGM waarvoor semantische verwijzingen mogelijk zijn 
+#### Modelelementen uit een LGM waarvoor semantische verwijzingen mogelijk zijn 
 
 In MIM 1.2 kunnen logische modelelementen gekoppeld aan een modelelement uit een conceptueel informatiemodel, met behulp van het metagegeven `mim:begrip`. 
 De definitie daarvan luidt:  
@@ -197,7 +198,7 @@ Een gegevenstype kan 1 op 1 overgenomen zijn uit een ander logisch gegevensmodel
 | gegevenstype         | gegevenstype uit ander LGMe      | 0..1 | als aangebracht, dan altijd tijd precies 1                        | 
 
 
-### Lineage op model niveau 
+#### Lineage op model niveau 
 
 _Optionele spelregels_ 
 
@@ -207,8 +208,7 @@ Deze kunnen worden opgegeven bij een model.
 
 ### Lineage vanuit logisch gegevensmodel naar een begrip uit een begrippen model 
 
+TODO. 
 
 ## Lineage vanuit fysiek datamodel
 Dit onderdeel is buiten scope van MIM. Dit wordt momenteel in detail beschreven in de *Handreiking data lineage*.
-
-### Model
