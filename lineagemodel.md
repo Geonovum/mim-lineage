@@ -334,7 +334,7 @@ De verklaring van verschil is in principe vrije tekst.
 | omissie in begrippenkader | Er ontbreekt (vermoedelijk) een begrip in het begrippenkader. |  
 | niet relevant             | De betekenis is semantisch niet relevant op MIM niveau 1 of 2. Het gegeven is bijvoorbeeld geheel technisch van aard, of er is sprake van een modelmatige hulpconstructie. |  
 
-_Optionele spelregels: _
+_Optionele spelregels:_
 
 1. Indien de mate van verwijsbaarheid volledig is en de semantische verwijzing is 1 op 1 dan kan de definitie van het CIM modelelement 1 op 1 worden overgenomen naar de gegevensdefinitie van het gegevenstype of gegevensobjecttype.
 2. De verklaring van verschil is verplicht indien de aanduiding wat anders is dan volledig.
