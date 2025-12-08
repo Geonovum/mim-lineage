@@ -108,9 +108,7 @@ Semantische herleidbaarheid:
 - onderwerp van gesprek: Natuurlijk persoon uit het CIM
    - niet zomaar een Natuurlijk persoon, maar een natuurlijk persoon die een werknemer is bij onze organisatie
 - eigenschaptype: 'code' van Woonplaats uit het CIM 
-   - lexicaal pad: de geboorteplaats van een natuurlijk persoon
-      - dit is een rol die de woonplaats speelt in de relatie met een natuurlijk persoon
-      - niet te verwarren met de woonplaats waar de persoon woont of verblijft
+   - lexicaal pad: de geboorteplaats van een natuurlijk persoon, in CIM termen: de rol die de woonplaats speelt in de relatie met een natuurlijk persoon (en dit is wat anders dan waar de persoon woont)
 
 Merk op dat code van de woonplaats niet duidelijk maakt dat het om de geboorteplaats van een natuurlijk persoon gaat, het onderwerp van gesprek van dit gegevenstype is de natuurlijk persoon (niet de woonplaats). 
 
