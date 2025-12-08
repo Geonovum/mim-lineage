@@ -130,9 +130,9 @@ Semantische herleidbaarheid is erg nuttig om te komen tot een goede definitie. H
 - De geboorteplaatscode is de code van de woonplaats die de geboorteplaats is van de natuurlijk persoon die werknemer is bij onze organisatie. 
 - De geboorteplaatscode is de code van de woonplaats waarin een werknemer van onze organisatie is geboren.
 
-Beide zijn heel helder. De eerste volgt zo veel als mogelijk de semantische herleidbaarheid. De tweede is ook heel helder en is nog prettiger leesbaar voor mensen. 
+Beide zijn heel helder. De eerste volgt zo veel als mogelijk de semantische herleidbaarheid. De tweede is ook heel helder en is nog prettiger leesbaar voor mensen. Deze beide verwoordingen zijn daarom goed. 
 
-Deze beide verwoordingen zijn daarom goed. Althans, dit is zo wanneer _semantische herleidbaarheid_ ook is aangebracht **in aanvulling op** de _definitie van het gegevenstype_. Want met de specificatie van semantische herleidbaarheid kunnen we via de aangebrachte semantische verwijzingen _alle_ bijbehorende begrippen terug vinden en ook desgewenst het bijbehorende CIM en begrippenkader bestuderen. Dit zijn de begrippen: natuurlijk persoon, werknemer, woonplaats en geboorteplaats en aanvullend geeft het CIM aan dat er sprake is van een code van een woonplaats en dat de geboorteplaats een woonplaats is. 
+Althans, dit is zo wanneer _semantische herleidbaarheid_ ook is aangebracht **in aanvulling op** de _definitie van het gegevenstype_. Met de gespecificeerde semantische verwijzingen zijn dan _alle_ bijbehorende begrippen terug vinden en kan het bijbehorende CIM bestudeerd worden om te duiden of het om hieribj een eigenschaptype of relatietype of objecttype of iets anders gaat. Zo vinden we de begrippen: werknemer, woonplaats en geboorteplaats terug en in het begrippenkader kunnen we nog extra begrippen vinden die relevant zijn zoals natuurlijk persoon en organisatie. Aanvullend geeft het CIM aan dat er sprake is van een code van een woonplaats en dat de geboorteplaats een rol is die ingevuld wordt door een woonplaats. 
 
 Wat er met het gegevenstype 'geboorteplaatscode' bedoeld wordt is dan volledig helder. Hoe meer er gewerkt wordt met specialistische begrippen, of hoe meer "platgeslagen" een logisch gegevensmodel is opgezet, hoe belangrijker dit wordt. 
 
