@@ -30,12 +30,21 @@ _Specifiek voor logische gegevensmodellen_
 | gegevensdefinitie	| Een gegevensdefinitie is de verwoording van de semantische herleiding van een gegevenstype. | Voor de betekenis van een gegevenstype leggen we semantische herleidbaarheid aan. Dan hebben we nog geen welgevormde verwoording van die betekenis die bruikbaar is voor lezers van het gegevensmodel, zeker niet in situaties waarin de semantische herleidbaarheid is gevormd met een samenstel van semantische verwijzingen en/of waar lexicale paden nodig zijn. Daarom wordt aanvullend een gegevensdefinitie opgenomen. Deze mag natuurlijk niet in tegenspraak zijn met de betekenis. | 
 
 
+Overige:
 
+In MIM 1.2 kunnen logische modelelementen gekoppeld aan een modelelement uit een conceptueel informatiemodel, met behulp van het metagegeven `mim:begrip`. 
+De definitie daarvan luidt:  
+
+In MIM 1.2 kunnen logische modelelementen gekoppeld aan een begrip met behulp van het metagegeven `mim:begrip`. 
+De definitie daarvan luidt: 
+
+--
 
 <p class="note" title="">
 Geef de term op deze manier aan in de tekst:  
 We gebruiken een <a>fiets</a> om te fietsen.
 </p>
+
 
 ## Afkortingen
 
