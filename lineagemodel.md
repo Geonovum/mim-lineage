@@ -88,7 +88,7 @@ Modelelementen in een CIM:
       - De rol die een natuurlijk persoon speelt in deze relatie is dat deze de _werknemer_ is van de organisatie
 - een objecttype _Woonplaats_
    - een eigenschaptype 'naam', met definitie: De officiele naam van een Woonlaats.
-   - een eigenschaptype 'code', met definitie: De code de officiele identificatie van een Woonplaats
+   - een eigenschaptype 'code', met definitie: De code is de officiele identificatie van een Woonplaats
 
 Modelelementen in een LGM:
 Het model beschrijft een aantal gegevens die bijgehouden worden over werknemers die werken bij de eigen organisatie, in een registratie die enkele van deze gegevens uitwisselt met gebruikers: 
