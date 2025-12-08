@@ -24,7 +24,7 @@ Dit document beperkt zich hierbij qua scope tot de MIM modellen zelf:
 Tot slot is het van belang om op te merken dat het aanbrengen van semantische herleidbaarheid best complex kan zijn. Denk aan: 
 - definities zijn niet altijd gebaseerd zijn op eigen kennis en definities. Het komt voor dat de bovenliggende semantiek wordt bepaald door andere organisaties;  
 - dat het niet mogelijk is om naar een modelelement in een model van een bovenliggende MIM laag te verwijzen, omdat dat model nog niet gemaakt is;
-- dat definities niet geheel op elkaar aansluiten en het goed zou zijn om dit verschil zichbaar te maken en te verklaren. 
+- dat definities niet geheel op elkaar aansluiten en het goed zou zijn om dit verschil zichtbaar te maken en te verklaren. 
 
 Met dit soort situaties wordt rekening gehouden. 
 
