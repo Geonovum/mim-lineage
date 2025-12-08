@@ -102,7 +102,7 @@ Merk op dat het gegeven in geboorteplaatscode gaat over het gegevenstype: code v
   
 Vraag: wat is nou een goede definitie van het gegevenstype geboorteplaatscode? 
 
-Een antwoord kan zijn om deze uit de in het CIM gedefinieerde code te halen: de officiele identificatie van een Woonplaats. We raken dan echter relevante context kwijt, te weten dat het om de geboorteplaats gaat. Een ander antwoord zou daarom kunnen zijn: een woonplaats waar een natuurlijk persoon is geboren. Maar het gegeven zelf gaat over de code ervan, dus dat klopt ook niet echt. Laten we daarom eerst kijken naar de semantische herleidbaarheid, gebruik makende van de begrippen uit het vorige hoofdstuk.
+Een antwoord kan zijn om deze uit de in het CIM gedefinieerde code te halen: de officiele identificatie van een Woonplaats. We raken dan echter relevante context kwijt, te weten dat het om de geboorteplaats gaat. Een ander antwoord zou daarom kunnen zijn: een woonplaats waar een natuurlijk persoon is geboren. Maar het gegeven zelf gaat over de code ervan, dus dat klopt ook niet echt. Laten we daarom eerst kijken naar de semantische herleidbaarheid, gebruik makende van de bijbehorende concepten uit het vorige hoofdstuk.
 
 Semantische herleidbaarheid:
 - onderwerp van gesprek: Natuurlijk persoon uit het CIM
