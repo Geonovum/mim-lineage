@@ -73,12 +73,14 @@ Dit wordt uitgewerkt aan de hand van een voorbeeld.
 
 In dit voorbeeld is een begrippenkader uitgewerkt naar een CIM en beide weer zijn gebruikt bij het maken van gegevensobjecttype en een gegevenstype in een LGM. 
 
-Begrippen in een begrippenkader: 
+**Begrippen in een begrippenkader:**
+
 - Werknemer: Een werknemer is een natuurlijk persoon die werkt voor een organisatie. 
 - Woonplaats: Een woonplaats is een afgebakend grondgebied met een eigen begrenzing dat gelegen is binnen het grondgebied van een gemeente, dat onder andere bestemd is voor bewoning door mensen.
 - Geboorteplaats: Een geboorteplaats is de plaats waar een natuurlijk persoon is geboren, in Nederland is dit altijd een woonplaats. 
 
-Modelelementen in een CIM: 
+**Modelelementen in een CIM:** 
+
 - een objecttype _Natuurlijk persoon_
    - een relatietype '_is geboren in_'
       - Deze relatie ligt tussen objecttype Natuurlijk Persoon en een objecttype Woonplaats.
@@ -90,7 +92,7 @@ Modelelementen in een CIM:
    - een eigenschaptype 'naam', met definitie: De officiele naam van een Woonlaats.
    - een eigenschaptype 'code', met definitie: De code is de officiele identificatie van een Woonplaats
 
-Modelelementen in een LGM:
+**Modelelementen in een LGM:**
 
 Het model beschrijft een aantal gegevens die bijgehouden worden over werknemers die werken bij de eigen organisatie, in een registratie die enkele van deze gegevens uitwisselt met gebruikers: 
 
