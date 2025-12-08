@@ -151,7 +151,7 @@ De definitie van een modelelement in een CIM heeft een zeer sterke relatie met d
 
 Dit zijn in principe alle modelelementen die een definitie kunnen hebben en ten minste alle modelelementen die een definitie hebben (altijd behoren te hebben). 
 
-| Modelelement | semantische verwijzing naar | kardinaliteit | spelregels, bij 1 modelelement van dit type hoort                     | 
+| Modelelement | semantische verwijzing naar | kardinaliteit | spelregels, bij 1 modelelement van dit type hoort: ...                | 
 | ------------ | --------------------------- | ------------- | --------------------------------------------------------------------- | 
 | objecttype   | begrip                      | 0..*          | precies 1 begrip                               |  
 | eigenschaptype | begrip                    | 0..*          | precies 1 begrip. Als dit begrip algemeen van aard is, dan geeft het objecttype de context aan waarbinnen het begrip geinterpreteerd moet worden. | 
@@ -199,9 +199,9 @@ Semantische herleidbaarheid in een logisch gegevensmodel beschrijft op welke mod
 
 #### Modelelementen uit een LGM waarvoor semantische verwijzingen mogelijk zijn 
 
-| Modelelement | semantische verwijzing naar | kardinaliteit | spelregels, bij 1 modelelement van dit type hoort                     | 
+| Modelelement | semantische verwijzing naar | kardinaliteit | spelregels, bij 1 modelelement van dit type hoort: ...                | 
 | ------------ | --------------------------- | ------------- | --------------------------------------------------------------------- | 
-| gegevensobjecttype   | objecttype of relatietype | 1..1 | precies 1, te weten het objecttype of het relatietype die onderwerp van gesprek is van het gegevensobjecttype                          |  
+| gegevensobjecttype   | objecttype of relatietype | 1..1 | precies 1 objecttype of het relatietype, te weten degene die onderwerp van gesprek is van het gegevensobjecttype  |  
 | gegevensobjecttype   | begrip              | 0..* | precies 1, te weten het begrip waar het primair om gaat (en waarvoor een objecttype in een CIM zou moeten zijn, indien er een CIM is         |  
 | gegevenstype         | eigenschaptype                    | 0..* | ten minste 1, mits er een CIM is met daarin een passend eigenschaptype | 
 | gegevenstype         | begrip                            | 0..* | ten minste 1, indien er geen CIM is maar wel een begrippenkader is met daarin een passend begrip | 
