@@ -1651,9 +1651,10 @@ Wanneer de definitie van een modelelement exact gelijk is aan die van een modele
 </section></section><section id="aanpak-per-koppelvlak-tussen-niveaus-een-model-maken"><div class="header-wrapper"><h4 id="x5-1-6-aanpak-per-koppelvlak-tussen-niveaus-een-model-maken"><bdi class="secno">5.1.6 </bdi>Aanpak: per koppelvlak tussen niveaus een model maken</h4><a class="self-link" href="#aanpak-per-koppelvlak-tussen-niveaus-een-model-maken" aria-label="Permalink for Section 5.1.6"></a></div>
 <p><em>(Nog uit te werken in dit document.)</em></p>
 </section></section><section id="semantische-herleidbaarheid"><div class="header-wrapper"><h3 id="x5-2-semantische-herleidbaarheid"><bdi class="secno">5.2 </bdi>Semantische herleidbaarheid</h3><a class="self-link" href="#semantische-herleidbaarheid" aria-label="Permalink for Section 5.2"></a></div>
-<section id="voorbeeld"><div class="header-wrapper"><h4 id="x5-2-1-voorbeeld"><bdi class="secno">5.2.1 </bdi>Voorbeeld</h4><a class="self-link" href="#voorbeeld" aria-label="Permalink for Section 5.2.1"></a></div>
 <p>Een begrippenkader met begrippen en een conceptueel informatiemodel (CIM) kunnen gebruikt worden om te komen tot een welgevormde definitie van een gegevenstype die goed leesbaar en ook nog steed heel helder is voor gebruikers. Hierbij wordt zowel gekeken naar definities en naar semantische herleibaarheid, beide horen bij elkaar. De laatste is een aanvulling op de eerste. Het doel is telkens om betekenis van elementen op ieder beschouwingsniveau uit te drukken met een welgevormde verwoording van die betekenis met een definitie en om hierna semantische verwijzingen aan te geven waarop de tekst van deze definitie is gebaseerd. </p>
-<p>Dit wordt uitgewerkt aan de hand van een voorbeeld, waarin een begrippenkader is uitgewerkt naar een CIM en beide weer zijn gebruikt bij het maken van gegevensobjecttype en een gegevenstype in een logisch gegevensmodel. </p>
+<p>Dit wordt uitgewerkt aan de hand van een voorbeeld. </p>
+<section id="voorbeeld"><div class="header-wrapper"><h4 id="x5-2-1-voorbeeld"><bdi class="secno">5.2.1 </bdi>Voorbeeld</h4><a class="self-link" href="#voorbeeld" aria-label="Permalink for Section 5.2.1"></a></div>
+<p>In dit voorbeeld is een begrippenkader uitgewerkt naar een CIM en beide weer zijn gebruikt bij het maken van gegevensobjecttype en een gegevenstype in een LGM. </p>
 <p>Begrippen in een begrippenkader: </p>
 <ul>
 <li>Werknemer: Een werknemer is een natuurlijk persoon die werkt voor een organisatie. </li>
@@ -1682,14 +1683,16 @@ Wanneer de definitie van een modelelement exact gelijk is aan die van een modele
 </ul>
 </li>
 </ul>
-<p>Modelelementen in een logisch gegevensmodel, die werknemers van de eigen organisatie registreert en deze gegevens uitwisselt met gebruikers: </p>
+<p>Modelelementen in een LGM:
+Het model beschrijft een aantal gegevens die bijgehouden worden over werknemers die werken bij de eigen organisatie, in een registratie die enkele van deze gegevens uitwisselt met gebruikers: </p>
 <ul>
 <li>een gegevensobjecttype <em>Geregistreerde werknemer</em><ul>
-<li>een attribuuttype 'woonplaatscode'</li>
-<li>een attribuuttype 'geboorteplaatscode'</li>
+<li>een aantal gegevenstypen betreffende de naam en een werknemersnummer (maar deze worden niet nader uitgewerkt in het voorbeeld) </li>
+<li>een attribuuttype 'geboorteplaatscode' --&gt; deze wordt uitgewerkt in onderstaand voorbeeld</li>
 </ul>
 </li>
 </ul>
+<p>Merk op dat het gegeven in geboorteplaatscode gaat over het gegevenstype: code van woonplaats. Het gegevenstype had dus ook woonplaats of code kunnen heten, maar dat is onvoldoende helder als het gaat om de geboorteplaats van de werknemer. Om soortgelijke redenen is ook niet de term geboorteplaats gebruikt maar geboorteplaatscode, om aan te geven dat het gegevenstype over de code gaat en niet over de naam van de woonplaats. Dit zorgt ervoor dat het logische gegevensmodel niet verwarrend is. Echter, er is geen begrip met de voorkeursterm geboorteplaatscode. </p>
 <p>Vraag: wat is nou een goede definitie van het gegevenstype geboorteplaatscode? </p>
 <p>Een antwoord kan zijn om deze uit de in het CIM gedefinieerde code te halen: de officiele identificatie van een Woonplaats. We raken dan echter relevante context kwijt, te weten dat het om de geboorteplaats gaat. Een ander antwoord zou daarom kunnen zijn: een woonplaats waar een natuurlijk persoon is geboren. Maar het gegeven zelf gaat over de code ervan, dus dat klopt ook niet echt. Laten we daarom eerst kijken naar de semantische herleidbaarheid, gebruik makende van de begrippen uit het vorige hoofdstuk.</p>
 <p>Semantische herleidbaarheid:</p>
