@@ -117,7 +117,7 @@ Dit is heel exact, maar niet goed leesbaar. Merk ook op dat er extra woorden nod
 
 Semantische herleidbaarheid is echter wel erg nuttig om te komen tot een goede definitie. Hiervan gebruik makende komen we tot teksten zoals: 
 - De geboorteplaatscode is de code van de woonplaats die de geboorteplaats is van de natuurlijk persoon die werknemer is bij onze organisatie. 
-- De geboorteplaatscode is de code van de woonplaats waarin de natuurlijke persoon, die werknemer is bij onze organisatie, is geboren.
+- De geboorteplaatscode is de code van de woonplaats waarin een werknemer van onze organisatie is geboren.
 
 Beide zijn heel helder. De eerste volgt zo veel als mogelijk de semantische herleidbaarheid. De tweede is ook heel helder en is nog prettiger leesbaar voor mensen. 
 
