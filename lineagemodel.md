@@ -65,11 +65,13 @@ Het verdient echter de voorkeur om deze definities toch te herhalen, zodat het m
 
 ## Semantische herleidbaarheid 
 
-### Voorbeeld ### 
-
 Een begrippenkader met begrippen en een conceptueel informatiemodel (CIM) kunnen gebruikt worden om te komen tot een welgevormde definitie van een gegevenstype die goed leesbaar en ook nog steed heel helder is voor gebruikers. Hierbij wordt zowel gekeken naar definities en naar semantische herleibaarheid, beide horen bij elkaar. De laatste is een aanvulling op de eerste. Het doel is telkens om betekenis van elementen op ieder beschouwingsniveau uit te drukken met een welgevormde verwoording van die betekenis met een definitie en om hierna semantische verwijzingen aan te geven waarop de tekst van deze definitie is gebaseerd. 
 
-Dit wordt uitgewerkt aan de hand van een voorbeeld, waarin een begrippenkader is uitgewerkt naar een CIM en beide weer zijn gebruikt bij het maken van gegevensobjecttype en een gegevenstype in een logisch gegevensmodel. 
+Dit wordt uitgewerkt aan de hand van een voorbeeld. 
+
+### Voorbeeld ### 
+
+In dit voorbeeld is een begrippenkader uitgewerkt naar een CIM en beide weer zijn gebruikt bij het maken van gegevensobjecttype en een gegevenstype in een LGM. 
 
 Begrippen in een begrippenkader: 
 - Werknemer: Een werknemer is een natuurlijk persoon die werkt voor een organisatie. 
@@ -89,10 +91,14 @@ Modelelementen in een CIM:
    - een eigenschaptype 'naam', met definitie: De officiele naam van een Woonlaats.
    - een eigenschaptype 'code', met definitie: De code de officiele identificatie van een Woonplaats
 
-Modelelementen in een logisch gegevensmodel, die werknemers van de eigen organisatie registreert en deze gegevens uitwisselt met gebruikers: 
+Modelelementen in een LGM:
+Het model beschrijft een aantal gegevens die bijgehouden worden over werknemers die werken bij de eigen organisatie, in een registratie die enkele van deze gegevens uitwisselt met gebruikers: 
+
 - een gegevensobjecttype _Geregistreerde werknemer_
-   - een attribuuttype 'woonplaatscode'
-   - een attribuuttype 'geboorteplaatscode'
+   - een aantal gegevenstypen betreffende de naam en een werknemersnummer (maar deze worden niet nader uitgewerkt in het voorbeeld) 
+   - een attribuuttype 'geboorteplaatscode' --> deze wordt uitgewerkt in onderstaand voorbeeld
+
+Merk op dat het gegeven in geboorteplaatscode gaat over het gegevenstype: code van woonplaats. Het gegevenstype had dus ook woonplaats of code kunnen heten, maar dat is onvoldoende helder als het gaat om de geboorteplaats van de werknemer. Om soortgelijke redenen is ook niet de term geboorteplaats gebruikt maar geboorteplaatscode, om aan te geven dat het gegevenstype over de code gaat en niet over de naam van de woonplaats. Dit zorgt ervoor dat het logische gegevensmodel niet verwarrend is. Echter, er is geen begrip met de voorkeursterm geboorteplaatscode. 
   
 Vraag: wat is nou een goede definitie van het gegevenstype geboorteplaatscode? 
 
