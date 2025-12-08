@@ -54,11 +54,16 @@ Zowel conceptuele informatiemodellen als logische gegevensmodellen kunnen geanno
 *(Nog uit te werken in dit document.)*
 Zie: onderwerp van gesprek. 
 
+### Ontwerpbeslissingen 
+
 #### Redundantie van definities
 In MIM is een definitie voor veel modelelementen een verplicht metagegeven. 
 Wanneer de definitie van een modelelement exact gelijk is aan die van een modelelement of begrip waarmee een lineage-relatie bestaat, kan dit als redundant worden ervaren.  
 
 Het verdient echter de voorkeur om deze definities toch te herhalen, zodat het model ook zelfstandig goed te begrijpen blijft.
+
+####
+Elk gegevenstype verdiend een definitie. Daarom is de definitie hiervan verplicht. Elk gegevensobjecttype verdiend een definitie. Daarom is de definitie hiervan verplicht. Om deze reden is het mogelijk om de verklaring van verschil bij beide op te nemen. 
 
 ### Aanpak: per raakvlak tussen MIM niveaus een model maken
 *(Nog uit te werken in dit document.)*
@@ -196,6 +201,8 @@ Deze kunnen worden opgegeven bij een CIM.
 2. Verwijzingen naar kennisbronnen die niet als begrippenkader zijn uitgewerkt, zijn toegestaan. In dit geval is het metagegeven 'kennisbron' bij een modelelement met een definitie gevuld. 
 
 #### Metamodel
+*(Nog uit te werken in dit document.)*
+TODO: visueel diagram. 
 
 ### Lineage vanuit logisch gegevensmodel naar een conceptueel informatiemodel 
 
@@ -280,11 +287,11 @@ Deze kunnen worden opgegeven bij een model en geven aan welke verwijzen op model
 3. Er mag worden verwezen naar een LGM via indirecte semantische verwijzingen 
 
 #### Metamodel
+*(Nog uit te werken in dit document.)*
+TODO: visueel diagram. 
 
 ### Lineage vanuit logisch gegevensmodel naar een begrip uit een begrippen model 
-
-TODO. 
-
+*(Nog uit te werken in dit document.)*
 
 ## Mate van verwijsbaarheid 
 
@@ -315,6 +322,7 @@ De verklaring van verschil is in principe vrije tekst.
 | ----------------- | --------------------------- |
 | omissie in CIM            | Er ontbreekt (vermoedelijk) een modelelement in het CIM. | 
 | omissie in begrippenkader | Er ontbreekt (vermoedelijk) een begrip in het begrippenkader. |  
+| niet relevant             | De betekenis is semantisch niet relevant op MIM niveau 1 of 2. Het gegeven is bijvoorbeeld geheel technisch van aard, of er is sprake van een modelmatige hulpconstructie. |  
 
 _Optionele spelregels: _
 
