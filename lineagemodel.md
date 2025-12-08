@@ -65,7 +65,7 @@ Het verdient echter de voorkeur om deze definities toch te herhalen, zodat het m
 
 ## Semantische herleidbaarheid 
 
-### Betekenis van elementen op ieder beschouwingsniveau uitdrukken met een welgevormde verwoording van die betekenis met een definitie 
+**Betekenis van elementen op ieder beschouwingsniveau uitdrukken met een welgevormde verwoording van die betekenis met een definitie.** 
 
 In deze paragraaf wordt aangegeven hoe een begrippenkader met begrippen en een conceptueel informatiemodel (CIM) gebruikt kan worden om te komen tot een welgevormde definitie van een gegevenstype die goed leesbaar en ook nog steed heel helder is voor gebruikers. Hierbij wordt zowel gekeken naar definities en naar semantische herleibaarheid. 
 
