@@ -76,8 +76,7 @@ In dit voorbeeld is een begrippenkader uitgewerkt naar een CIM en beide weer zij
 Begrippen in een begrippenkader: 
 - Werknemer: Een werknemer is een natuurlijk persoon die werkt voor een organisatie. 
 - Woonplaats: Een woonplaats is een afgebakend grondgebied met een eigen begrenzing dat gelegen is binnen het grondgebied van een gemeente, dat onder andere bestemd is voor bewoning door mensen.
-- Wonen: Wonen betekent permanent verblijven op een vaste plek, meestal in een huis of andere woonruimte, wat meer is dan alleen 'verblijven' of 'logeren'. 
-- Geboorteplaats: Een geboorteplaats is een woonplaats waar een natuurlijk persoon is geboren. 
+- Geboorteplaats: Een geboorteplaats is de plaats waar een natuurlijk persoon is geboren. 
 
 Modelelementen in een CIM: 
 - een objecttype _Natuurlijk persoon_
@@ -106,9 +105,11 @@ Een antwoord kan zijn om deze uit de in het CIM gedefinieerde code te halen: de 
 
 Semantische herleidbaarheid:
 - onderwerp van gesprek: Natuurlijk persoon uit het CIM
-   - niet zomaar een Natuurlijk persoon, maar een natuurlijk persoon die een werknemer is bij onze organisatie      
+   - niet zomaar een Natuurlijk persoon, maar een natuurlijk persoon die een werknemer is bij onze organisatie
 - eigenschaptype: 'code' van Woonplaats uit het CIM 
    - lexicaal pad: de geboorteplaats van een natuurlijk persoon, dit is een rol die de woonplaats speelt in de relatie met een natuurlijk persoon (niet te verwarren met de woonplaats) 
+
+Merk op dat code van de woonplaats niet duidelijk maakt dat het om de geboorteplaats van een natuurlijk persoon gaat, het onderwerp van gesprek van dit gegevenstype is de natuurlijk persoon (niet de woonplaats). 
 
 Wanneer we de semantische herleidbaarheid beschouwen als onderdeel van een formele specificatie, en de oorspronklijke definities van de betrokken begrippen hierin subtitueren dan zou de formele definitie zijn: 
 'De code is de officiele identificatie van een Woonplaats.' die de 'Een geboorteplaats is een woonplaats waar een natuurlijk persoon is geboren.' van een 'Natuurlijk persoon' die 'Een werknemer is een natuurlijk persoon die werkt voor een organisatie.' is bij onze 'Organisatie. Merk op dat Natuurlijk persoon' en 'Organisatie' ook nog uitgeschreven kunnen worden. 
@@ -121,7 +122,9 @@ Semantische herleidbaarheid is echter wel erg nuttig om te komen tot een goede d
 
 Beide zijn heel helder. De eerste volgt zo veel als mogelijk de semantische herleidbaarheid. De tweede is ook heel helder en is nog prettiger leesbaar voor mensen. 
 
-Deze beide verwoordingen zijn daarom goed. Althans, dit is zo wanneer _semantische herleidbaarheid_ ook is aangebracht **in aanvulling op** de _definitie van het gegevenstype_. Want met de specificatie van semantische herleidbaarheid kunnen we via de aangebrachte semantische verwijzingen _alle_ bijbehorende begrippen terug vinden en ook desgewenst het bijbehorende CIM en begrippenkader bestuderen. Wat er met het gegevenstype 'geboorteplaatscode' bedoeld wordt is dan volledig helder. Hoe meer er gewerkt wordt met specialistische begrippen, of hoe meer "platgeslagen" een logisch gegevensmodel is opgezet, hoe belangrijker dit wordt. 
+Deze beide verwoordingen zijn daarom goed. Althans, dit is zo wanneer _semantische herleidbaarheid_ ook is aangebracht **in aanvulling op** de _definitie van het gegevenstype_. Want met de specificatie van semantische herleidbaarheid kunnen we via de aangebrachte semantische verwijzingen _alle_ bijbehorende begrippen terug vinden en ook desgewenst het bijbehorende CIM en begrippenkader bestuderen. Dit zijn de begrippen: natuurlijk persoon, werknemer, woonplaats en geboorteplaats en aanvullend geeft het CIM aan dat er sprake is van een code van een woonplaats en dat de geboorteplaats een woonplaats is. 
+
+Wat er met het gegevenstype 'geboorteplaatscode' bedoeld wordt is dan volledig helder. Hoe meer er gewerkt wordt met specialistische begrippen, of hoe meer "platgeslagen" een logisch gegevensmodel is opgezet, hoe belangrijker dit wordt. 
 
 Onderstaande werkt nader uit hoe semantische herleidbaarheid gespecificeerd wordt. Dit kan per modeltype verschillend zijn, hoewel het doel telkens hetzelfde is. 
 
