@@ -64,12 +64,12 @@ Het verdient echter de voorkeur om deze definities toch te herhalen, zodat het m
 *(Nog uit te werken in dit document.)*
 
 | MIM niveau | Lineage | Uitwerking te vinden in | 
-| --------   | --------------------------- | --------------------------- | --------------------------- | 
+| --------   | --------------------------- | --------------------------- |
 | 1 naar ... | vanuit een begripppenkader naar kennisbronnen | Buiten scope van MIM. Dit wordt momenteel in detail beschreven in de *NL-SBB standaard*. |
 | 2 naar 1   | vanuit CIM naar een begrippenkader | in deze module van MIM, zie verderop |
 | 3 naar 2   | vanuit LGM naar conceptueel informatiemodel | in deze module van MIM, zie verderop |
 | 3 naar 1   | vanuit LGM naar een begrippenkader | in deze module van MIM, zie verderop |
-| 4 naar ... | vanuit logisch gegevensmodel naar een LGM, CIM of begrippenkader | - |Buiten scope van MIM. Dit wordt momenteel in detail beschreven in de *Handreiking data lineage*.
+| 4 naar ... | vanuit logisch gegevensmodel naar een LGM, CIM of begrippenkader | Buiten scope van MIM. Dit wordt momenteel in detail beschreven in de *Handreiking data lineage*.
 
 ## Semantische herleidbaarheid 
 
