@@ -295,7 +295,17 @@ TODO: visueel diagram.
 
 ## Mate van verwijsbaarheid 
 
-Bij het aangeven van de semantische herleidbaarheid van een gegevenstype naar de bijbehorende semantiek kan uit analyse blijken dat de gegevensdefinitie van een gegevenstype volledig afgedekt kan worden door modelelementen in een CIM en/of begrippenkader. Dit is de gewenste situatie. 
+Bij het aangeven van de semantische herleidbaarheid van een gegevenstype naar de bijbehorende semantiek kan uit analyse blijken dat de gegevensdefinitie van een gegevenstype volledig afgedekt kan worden door modelelementen in een CIM en/of begrippenkader. Dit is de gewenste situatie. Het kan echter ook zo zijn dat het niet het wat anders is dan gewenst. De mate van aanwijsbaarheid is dan maar deels mogelijk of zelfs geheel niet mogelijk. 
+
+De aanduidingen die onderkend worden zijn: 
+
+| Mate van verwijsbaarheid | beschrijving      | 
+| ------------ | --------------------------- | 
+| volledig herleidbaar  | zie hoofdstuk Termen: volledige semantische verwijzingen | 
+| deels herleidbaar     | zie hoofdstuk Termen: deels ontbrekende semantische verwijzingen | 
+| niet herleidbaar      | zie hoofdstuk Termen: geheel ontbrekende semantische verwijzingen |  
+
+Deze aanduiding kan worden opgenomen bij een gegevensobjecttype of een gegevenstype. 
 
 | Modelelement | Mate van verwijsbaarheid | kardinaliteit | spelregels               | 
 | ------------ | --------------------------- | ------------- | --------------------------------------------------------------------- | 
