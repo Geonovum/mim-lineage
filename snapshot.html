@@ -1398,14 +1398,14 @@ ul.index code{color:inherit}
 }</script>
 <link rel="stylesheet" href="https://tools.geostandaarden.nl/respec/style/base.css"></head>
 
-<body class="h-entry"><div class="head">
+<body class="h-entry toc-inline"><div class="head">
     <a class="logo" href="https://www.geonovum.nl/geo-standaarden"><img alt="Geonovum" height="67" id="Geonovum" src="https://docs.geostandaarden.nl/media/Geonovum.svg" width="132">
   </a> <h1 id="title" class="title">MIM-Lineagemodel</h1>
     
     <h2>
       Geonovum Standaard<br>
       Werkversie
-      <time class="dt-published" datetime="2025-12-08">08 december 2025</time>
+      <time class="dt-published" datetime="2025-12-12">12 december 2025</time>
     </h2>
     <dl>
       
@@ -1496,6 +1496,10 @@ ul.index code{color:inherit}
   <section id="normreferenties"><div class="header-wrapper"><h2 id="x3-normreferenties"><bdi class="secno">3. </bdi>Normreferenties</h2><a class="self-link" href="#normreferenties" aria-label="Permalink for Section 3."></a></div>
 </section>
   <section id="termen-definities-en-afkortingen"><div class="header-wrapper"><h2 id="x4-termen-definities-en-afkortingen"><bdi class="secno">4. </bdi>Termen, definities en afkortingen</h2><a class="self-link" href="#termen-definities-en-afkortingen" aria-label="Permalink for Section 4."></a></div>
+<p>Semantische herleidbaarheid bestaat uit een aantal concepten, samengevat in dit diagram. </p>
+<img width="1117" height="701" alt="20251212 diagram sem herleid (conceptueel)" src="https://github.com/user-attachments/assets/6fa935b6-053f-4142-98b6-84ad9282d6ba">
+
+<p>Dit diagram geeft herleidbaarheid weer tussen verschillende beschouwingsniveaus op generieke wijze. Het kan zijn dat er per beschouwingsniveau andere termen worden gekozen. </p>
 <section id="termen-definities"><div class="header-wrapper"><h3 id="x4-1-termen-definities"><bdi class="secno">4.1 </bdi>Termen, definities</h3><a class="self-link" href="#termen-definities" aria-label="Permalink for Section 4.1"></a></div>
 <p><em>Algemene</em></p>
 <table>
@@ -1512,17 +1516,18 @@ ul.index code{color:inherit}
 <td>Semantische herleidbaarheid is in opzet 'verticaal', dat wil zeggen dat we deze vormgeven door het aanbrengen van semantische verwijzingen tussen modelelementen uit modellen op de verschillende beschouwingsniveaus, van technische modellen naar logische modellen naar conceptuele modellen naar semantische modellen (die zelf weer gebasseerd kunnen zijn op bovenliggende kennisbronnen).</td>
 </tr>
 <tr>
-<td>directe semantische verwijzing</td>
-<td>Een directe semantische verwijzing is een semantische verwijzing naar een modelelement uit een bovenliggend beschouwingsniveau.</td>
+<td>verticale semantische verwijzing</td>
+<td>Een directe semantische verwijzing is een semantische verwijzing naar een modelelement uit een hogerliggend beschouwingsniveau.</td>
 <td>Wanneer de beschouwingsniveaus boven elkaar worden afgebeeld, lopen directe semantische verwijzingen verticaal naar boven.</td>
 </tr>
 <tr>
-<td>indirecte semantische verwijzing</td>
+<td>horizontale semantische verwijzing</td>
 <td>Een indirecte semantische verwijzing is een semantische verwijzing naar een ander gelijkgetypeerd modelelement binnen hetzelfde beschouwingsniveau.</td>
 <td>We spreken over indirecte verwijzing omdat voor betekenis semantisch wordt verwezen naar de semantische herleiding van een ander, gelijk getypeerd modelelement binnen hetzelfde beschouwingsniveaus. Feitelijk wordt ermee aangegeven dat de betekenis van het modelelement wordt gerepliceerd van de ander. Deze verwijzing is niet 'verticaal' (tussen beschouwingsniveaus), maar 'horizontaal'. De indirecte semantische verwijzing is vooral onderkend om aan te geven dat een gegevenstype in een gegevensmodel van een gegevensuitwisseling qua betekenis exact overeenkomt met een gegevenstype in een administratie. Vaak loopt dat gelijk op met een logistieke herleidbaarheid (waar komt het gegeven vandaan komt, maar niet per se).</td>
 </tr>
 </tbody></table>
 <p><em>Mate van verwijsbaarheid</em></p>
+<p>De mate van verwijsbaarheid geeft aan in hoeverre de semantische herleidbaarheid goed is gespecificeerd. Dit is alleen relevant voor modelelementen waarvoor semantiek nodig is, oftewel modelelementen die semantisch relevant zijn. </p>
 <table>
 <thead>
 <tr>
@@ -1532,18 +1537,18 @@ ul.index code{color:inherit}
 </tr>
 </thead>
 <tbody><tr>
-<td>volledige semantische verwijzingen</td>
-<td>een duiding van de mate van verwijsbaarheid waarbij alle benodigde semantische verwijzingen zijn aangebracht.</td>
-<td></td>
+<td>volledige semantische herleiding</td>
+<td>Een duiding van de mate van verwijsbaarheid waarbij alle benodigde semantische verwijzingen zijn aangebracht, de aangebrachte semantische verwijzingen zijn compleet en exact.</td>
+<td>Compleet betekent dat alle benodigde verwijzingen gelegd kunnen worden, exact betekent dat elk van deze exact gebruikt kan worden, dwz de betekenis waarnaar verwezen wordt is dekkend en juist en daardoor exact bruikbaar (de verwoording kan net anders zijn, mara dit heeft geen invloed op de betekenis).</td>
 </tr>
 <tr>
-<td>deels ontbrekende semantische verwijzingen</td>
-<td>een duiding van de mate van verwijsbaarheid waarbij niet alle benodigde semantische verwijzingen zijn aangebracht.</td>
+<td>deels ontbrekende semantische herleiding</td>
+<td>Een duiding van de mate van verwijsbaarheid waarbij niet alle benodigde semantische verwijzingen zijn aangebracht.</td>
 <td>Het gaat hier dus om de onvolledigheid van de semantische verwijzingen, waarbij er wel minimaal één semantische verwijzing is aangebracht. Reden kan zijn dat modellen waarnaar verwezen zou moeten worden niet of niet volledig beschikbaar zijn.</td>
 </tr>
 <tr>
-<td>ontbrekende semantische verwijzingen</td>
-<td>een duiding van de mate van verwijsbaarheid waarbij geen enkele semantische verwijzing is aangebracht.</td>
+<td>ontbrekende semantische herleiding</td>
+<td>Een duiding van de mate van verwijsbaarheid waarbij geen enkele semantische verwijzing is aangebracht.</td>
 <td>Een reden kan zijn dat modellen waarnaar verwezen zou moeten worden niet of niet volledig beschikbaar zijn.</td>
 </tr>
 <tr>
@@ -1551,7 +1556,13 @@ ul.index code{color:inherit}
 <td>De verwoording van het semantische verschil tussen de betekenis vanuit de semantische herleiding en de gegevensdefinitie.</td>
 <td>Dit is alleen relevant wanneer de semantische verwijzingen niet volledig zijn. De verklaring geeft aan wat het verschil is, om hiermee gebruikers van gegevens inzicht te bieden. De oorzaak ligt in het feit dat bovenliggende semantiek niet voldoende matched met de gegevensdefintie. Doorgaans zal het zo zijn dat het wenselijk is om dit verschil een keer op te gaan lossen, maar dit is niet altijd het geval.</td>
 </tr>
+<tr>
+<td>semantisch niet relevant</td>
+<td>Een duiding dat een modelelement semantisch niet relevant is, er hoeft geen semantische herleiding te worden aangebracht.</td>
+<td>Een voorbeeld van een niet semantisch relevant modelelement zou bijvoorbeeld kunnen zijn: een hulpgegeven t.b.v. routering, een modelelement dat modelmatig nodig is maar geen semantiek heeft, een technisch hulpgegeven zoals een record id die e.e.a. koppelt in de implementatie maar niet uitgewisseld behoort te worden richting gebruikers. Voor dit soort modelelementen kan expliciet aangegeven worden dat deze semantisch niet relevant zijn.</td>
+</tr>
 </tbody></table>
+<p>Merk op: het kan voorkomen dat een modelelement wel semantisch relevant is, maar dat er nog geen herleidbaarheid voor is aangebracht. Gebruik dan: ontbrekende semantische herleiding. </p>
 <p><em>Specifiek voor logische gegevensmodellen</em></p>
 <table>
 <thead>
@@ -1564,7 +1575,7 @@ ul.index code{color:inherit}
 <tbody><tr>
 <td>onderwerp	van gesprek</td>
 <td>Een onderwerp van gesprek is de aanduiding van het objecttype of het relatietype waarvoor een gegevensobjecttype is ingericht.</td>
-<td>Bijvoorbeeld: een gegevensobjecttype geregistreerdNP heeft als onderwerp van gesprek het objecttype Ingeschrevene. De gegevens in het gegevensobject gaan over een object of exemplaar van dit objecttype. De achtergrond van onderwerp van gesprek is dat voor elk gegeven het helder moet zijn om welke eigenschap het gaat en van welk object, zie definitie van 'gegeven' en van 'gegevenstype'.</td>
+<td>Het modelelement uit het hogerliggende beschouwingsniveau van een LGM noemen we het onderwerp van gesprek. Daar gaan de gegevens over die getypeerd zijn in het LGM bij dit gegevensobjecttype. Bijvoorbeeld: een gegevensobjecttype geregistreerdNP heeft als onderwerp van gesprek het objecttype Ingeschrevene. De gegevens in het gegevensobject gaan over een object of exemplaar van dit objecttype. De achtergrond van onderwerp van gesprek is dat voor elk gegeven het helder moet zijn om welke eigenschap het gaat en van welk object, zie definitie van 'gegeven' en van 'gegevenstype'.</td>
 </tr>
 <tr>
 <td>lexicaal pad</td>
@@ -1577,6 +1588,19 @@ ul.index code{color:inherit}
 <td>Voor de betekenis van een gegevenstype leggen we semantische herleidbaarheid aan. Dan hebben we nog geen welgevormde verwoording van die betekenis die bruikbaar is voor lezers van het gegevensmodel, zeker niet in situaties waarin de semantische herleidbaarheid is gevormd met een samenstel van semantische verwijzingen en/of waar lexicale paden nodig zijn. Daarom wordt aanvullend een gegevensdefinitie opgenomen. Deze mag natuurlijk niet in tegenspraak zijn met de betekenis.</td>
 </tr>
 </tbody></table>
+<p>Nader uit te werken: keuzes maken bij lexicaal pad: </p>
+<ol>
+<li>Lexicaal pad: mensleesbaar vs machineleesbaar</li>
+</ol>
+<ul>
+<li>mensleesbaar bv. string, met een notatiewijze en een delimeter en een volgorde. Dit zijn impliciet verwijzingen naar modelelementen. </li>
+<li>machineleesbaar, bv. een opsomming van (bepaalde_ modelelementen</li>
+</ul>
+<ol start="2">
+<li>inclusief begin en eindpunt, of alleen de tussenpunten?</li>
+<li>met of zonder generalisaties en specialisaties?</li>
+<li>alleen als er ook een CIM is of ook als er alleen begrippen zijn? Is het pad altijd uitgedrukt in CIM modelelementen?</li>
+</ol>
 <p>Overige:</p>
 <p>In MIM 1.2 kunnen logische modelelementen gekoppeld aan een modelelement uit een conceptueel informatiemodel, met behulp van het metagegeven <code>mim:begrip</code>. 
 De definitie daarvan luidt:  </p>
@@ -2208,7 +2232,7 @@ Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config
 
 <pre><svg id="diagram-1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="max-width: 128.234375px;" viewBox="0 0 128.234375 248"><style>
 #diagram-1 {font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#diagram-1 .error-icon{fill:#552222;}#diagram-1 .error-text{fill:#552222;stroke:#552222;}#diagram-1 .edge-thickness-normal{stroke-width:2px;}#diagram-1 .edge-thickness-thick{stroke-width:3.5px;}#diagram-1 .edge-pattern-solid{stroke-dasharray:0;}#diagram-1 .edge-pattern-dashed{stroke-dasharray:3;}#diagram-1 .edge-pattern-dotted{stroke-dasharray:2;}#diagram-1 .marker{fill:#333333;stroke:#333333;}#diagram-1 .marker.cross{stroke:#333333;}#diagram-1 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#diagram-1 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#diagram-1 .cluster-label text{fill:#333;}#diagram-1 .cluster-label span{color:#333;}#diagram-1 .label text,#diagram-1 span{fill:#333;color:#333;}#diagram-1 .node rect,#diagram-1 .node circle,#diagram-1 .node ellipse,#diagram-1 .node polygon,#diagram-1 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#diagram-1 .node .label{text-align:center;}#diagram-1 .node.clickable{cursor:pointer;}#diagram-1 .arrowheadPath{fill:#333333;}#diagram-1 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#diagram-1 .flowchart-link{stroke:#333333;fill:none;}#diagram-1 .edgeLabel{background-color:#e8e8e8;text-align:center;}#diagram-1 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#diagram-1 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#diagram-1 .cluster text{fill:#333;}#diagram-1 .cluster span{color:#333;}#diagram-1 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#diagram-1 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}
-</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-A LE-B" id="L-A-B" style="opacity: 1;"><path class="path" d="M48.55859375,47.77154964846383L44.354817708333336,52.64295804038653C40.151041666666664,57.514366432309224,31.743489583333332,67.25718321615462,27.539713541666668,76.29525827474397C23.3359375,85.33333333333333,23.3359375,93.66666666666667,23.3359375,97.83333333333333L23.3359375,102" marker-end="url(#arrowhead31)" style="fill:none"></path><defs><marker id="arrowhead31" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-A LE-C" id="L-A-C" style="opacity: 1;"><path class="path" d="M79.23046875,47.77154964846383L83.43424479166667,52.64295804038653C87.63802083333333,57.514366432309224,96.04557291666667,67.25718321615462,100.24934895833333,76.29525827474397C104.453125,85.33333333333333,104.453125,93.66666666666667,104.453125,97.83333333333333L104.453125,102" marker-end="url(#arrowhead32)" style="fill:none"></path><defs><marker id="arrowhead32" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-D" id="L-B-D" style="opacity: 1;"><path class="path" d="M23.3359375,146L23.3359375,150.16666666666666C23.3359375,154.33333333333334,23.3359375,162.66666666666666,27.465494791666668,171.6187357539568C31.595052083333332,180.57080484124694,39.854166666666664,190.14160968249382,43.983723958333336,194.92701210311728L48.11328125,199.71241452374073" marker-end="url(#arrowhead33)" style="fill:none"></path><defs><marker id="arrowhead33" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-C LE-D" id="L-C-D" style="opacity: 1;"><path class="path" d="M104.453125,146L104.453125,150.16666666666666C104.453125,154.33333333333334,104.453125,162.66666666666666,100.32356770833333,171.6187357539568C96.19401041666667,180.57080484124694,87.93489583333333,190.14160968249382,83.80533854166667,194.92701210311728L79.67578125,199.71241452374073" marker-end="url(#arrowhead34)" style="fill:none"></path><defs><marker id="arrowhead34" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-B" class="edgeLabel L-LS-A' L-LE-B"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-C" class="edgeLabel L-LS-A' L-LE-C"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-D" class="edgeLabel L-LS-B' L-LE-D"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-C-D" class="edgeLabel L-LS-C' L-LE-D"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-24" transform="translate(63.89453125,30)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.3359375" y="-22" width="30.671875" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.3359375,-12)"><foreignObject width="10.671875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">A</div></foreignObject></g></g></g><g class="node default" id="flowchart-B-25" transform="translate(23.3359375,124)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.3359375" y="-22" width="30.671875" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.3359375,-12)"><foreignObject width="10.671875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">B</div></foreignObject></g></g></g><g class="node default" id="flowchart-C-27" transform="translate(104.453125,124)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.78125" y="-22" width="31.5625" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.78125,-12)"><foreignObject width="11.5625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">C</div></foreignObject></g></g></g><g class="node default" id="flowchart-D-29" transform="translate(63.89453125,218)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.78125" y="-22" width="31.5625" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.78125,-12)"><foreignObject width="11.5625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">D</div></foreignObject></g></g></g></g></g></g></svg></pre>
+</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-A LE-B" id="L-A-B" style="opacity: 1;"><path class="path" d="M48.55859375,47.77154964846383L44.354817708333336,52.64295804038653C40.151041666666664,57.514366432309224,31.743489583333332,67.25718321615462,27.539713541666668,76.29525827474397C23.3359375,85.33333333333333,23.3359375,93.66666666666667,23.3359375,97.83333333333333L23.3359375,102" marker-end="url(#arrowhead14)" style="fill:none"></path><defs><marker id="arrowhead14" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-A LE-C" id="L-A-C" style="opacity: 1;"><path class="path" d="M79.23046875,47.77154964846383L83.43424479166667,52.64295804038653C87.63802083333333,57.514366432309224,96.04557291666667,67.25718321615462,100.24934895833333,76.29525827474397C104.453125,85.33333333333333,104.453125,93.66666666666667,104.453125,97.83333333333333L104.453125,102" marker-end="url(#arrowhead15)" style="fill:none"></path><defs><marker id="arrowhead15" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-D" id="L-B-D" style="opacity: 1;"><path class="path" d="M23.3359375,146L23.3359375,150.16666666666666C23.3359375,154.33333333333334,23.3359375,162.66666666666666,27.465494791666668,171.6187357539568C31.595052083333332,180.57080484124694,39.854166666666664,190.14160968249382,43.983723958333336,194.92701210311728L48.11328125,199.71241452374073" marker-end="url(#arrowhead16)" style="fill:none"></path><defs><marker id="arrowhead16" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-C LE-D" id="L-C-D" style="opacity: 1;"><path class="path" d="M104.453125,146L104.453125,150.16666666666666C104.453125,154.33333333333334,104.453125,162.66666666666666,100.32356770833333,171.6187357539568C96.19401041666667,180.57080484124694,87.93489583333333,190.14160968249382,83.80533854166667,194.92701210311728L79.67578125,199.71241452374073" marker-end="url(#arrowhead17)" style="fill:none"></path><defs><marker id="arrowhead17" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-B" class="edgeLabel L-LS-A' L-LE-B"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-C" class="edgeLabel L-LS-A' L-LE-C"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-D" class="edgeLabel L-LS-B' L-LE-D"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-C-D" class="edgeLabel L-LS-C' L-LE-D"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-8" transform="translate(63.89453125,30)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.3359375" y="-22" width="30.671875" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.3359375,-12)"><foreignObject width="10.671875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">A</div></foreignObject></g></g></g><g class="node default" id="flowchart-B-9" transform="translate(23.3359375,124)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.3359375" y="-22" width="30.671875" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.3359375,-12)"><foreignObject width="10.671875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">B</div></foreignObject></g></g></g><g class="node default" id="flowchart-C-11" transform="translate(104.453125,124)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.78125" y="-22" width="31.5625" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.78125,-12)"><foreignObject width="11.5625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">C</div></foreignObject></g></g></g><g class="node default" id="flowchart-D-13" transform="translate(63.89453125,218)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.78125" y="-22" width="31.5625" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.78125,-12)"><foreignObject width="11.5625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">D</div></foreignObject></g></g></g></g></g></g></svg></pre>
 <figcaption><a class="self-link" href="#Mermaidvoorbeeld">Figuur <bdi class="figno">3</bdi></a> <span class="fig-title">Mermaid voorbeeld</span></figcaption>
 </figure></section>
 
@@ -2252,7 +2276,7 @@ Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config
     </dd></dl>
   </section></section><p role="navigation" id="back-to-top">
     <a href="#title"><abbr title="Back to Top">↑</abbr></a>
-  </p><div class="mermaidTooltip" style="opacity: 0;"></div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-definitie" aria-label="Links in this document to definition: Definitie">
+  </p><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-definitie" aria-label="Links in this document to definition: Definitie">
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-definitie" aria-label="Permalink for definition: Definitie. Activate to close this dialog.">Permalink</a>
