@@ -1501,6 +1501,14 @@ ul.index code{color:inherit}
 <img width="1117" height="701" alt="20251212 diagram sem herleid (conceptueel)" src="https://github.com/user-attachments/assets/6fa935b6-053f-4142-98b6-84ad9282d6ba">
 
 <p>Dit diagram geeft herleidbaarheid weer tussen verschillende beschouwingsniveaus op generieke wijze. Het kan zijn dat er per beschouwingsniveau andere termen worden gekozen. </p>
+<p>Centraal in het diagram staat een semantisch relevant modelelement. Dit is een modelelement waarvoor het zinvol en nodig is om deze te verbinden met bovenliggende semantiek uit een CIM en/of begrippenkader. Anders gezegd, de gegevensdefinitie ervan wordt zo goed als mogelijk in verband gebracht met bovenliggende definities, door de semantische herleiding ervoor te beschrijven. </p>
+<p>Semantische herleiding kan verticaal en horizontaal aangebracht worden. </p>
+<ul>
+<li>Verticaal geeft aan dat er verwijzingen naar CIM modelelementen en/of begrippen uit een begrippenkader worden benoemd;</li>
+<li>Horizontaal geeft aan dat de semantische herleiding al elders is beschreven, en het modelelement in het eigen model er qua betekenis mee gelijk gesteld wordt.</li>
+</ul>
+<p>Semantische herleiding bestaat uit een of meerdere verwijzingen. Deze set kan wel of niet compleet zijn om er de gegevensdefinitie mee af te dekken. Aanvullend kan de bovenliggende defintie waarnaar verwezen wordt, hierbij elke verwijzing op zichzelf beschouwend, wel of niet exact in overeenstemming zijn met de tekstuele verwoording van de gegevensdefinitie. </p>
+<p>Hieronder worden de begrippen beschreven die nodig zijn om semantische herleidbaarheid te begrijpen.</p>
 <section id="termen-definities"><div class="header-wrapper"><h3 id="x4-1-termen-definities"><bdi class="secno">4.1 </bdi>Termen, definities</h3><a class="self-link" href="#termen-definities" aria-label="Permalink for Section 4.1"></a></div>
 <p><em>Algemene</em></p>
 <table>
@@ -1513,7 +1521,7 @@ ul.index code{color:inherit}
 </thead>
 <tbody><tr>
 <td>semantische herleidbaarheid</td>
-<td>Semantische herleidbaarheid is het vermogen om definities van modelelementen uit lagere beschouwingsniveaus expliciet en traceerbaar te verbinden met de semantische betekenis die met begrippen is vastgelegd in het semantische beschouwingsniveau (MIM laag 1 of erboven).</td>
+<td>Semantische herleidbaarheid is het vermogen om definities van modelelementen uit lagere beschouwingsniveaus expliciet en traceerbaar te verbinden met de  betekenis die met begrippen is vastgelegd in het semantische beschouwingsniveau.</td>
 <td>Semantische herleidbaarheid is in opzet 'verticaal', dat wil zeggen dat we deze vormgeven door het aanbrengen van semantische verwijzingen tussen modelelementen uit modellen op de verschillende beschouwingsniveaus, van technische modellen naar logische modellen naar conceptuele modellen naar semantische modellen (die zelf weer gebasseerd kunnen zijn op bovenliggende kennisbronnen).</td>
 </tr>
 <tr>
@@ -1523,8 +1531,8 @@ ul.index code{color:inherit}
 </tr>
 <tr>
 <td>horizontale semantische verwijzing</td>
-<td>Een indirecte semantische verwijzing is een semantische verwijzing naar een ander gelijkgetypeerd modelelement binnen hetzelfde beschouwingsniveau.</td>
-<td>We spreken over indirecte verwijzing omdat voor betekenis semantisch wordt verwezen naar de semantische herleiding van een ander, gelijk getypeerd modelelement binnen hetzelfde beschouwingsniveaus. Feitelijk wordt ermee aangegeven dat de betekenis van het modelelement wordt gerepliceerd van de ander. Deze verwijzing is niet 'verticaal' (tussen beschouwingsniveaus), maar 'horizontaal'. De indirecte semantische verwijzing is vooral onderkend om aan te geven dat een gegevenstype in een gegevensmodel van een gegevensuitwisseling qua betekenis exact overeenkomt met een gegevenstype in een administratie. Vaak loopt dat gelijk op met een logistieke herleidbaarheid (waar komt het gegeven vandaan komt, maar niet per se).</td>
+<td>Een indirecte semantische verwijzing is een semantische gelijkstelling, door middel van een verwijzing naar een ander gelijkgetypeerd modelelement in een ander logisch gegevensmodel.</td>
+<td>We spreken over indirecte verwijzing omdat voor de semantische herleiding wordt verwezen naar de semantische herleiding elders. Deze verwijzing is niet 'verticaal' (tussen beschouwingsniveaus), maar 'horizontaal', binnen hetzelfde beschouwingsniveau. De indirecte semantische verwijzing is vooral onderkend om aan te geven dat een gegevenstype in een gegevensmodel van een gegevensuitwisseling qua betekenis exact overeenkomt met een gegevenstype in een administratie van waaruit gegevens zijn gebruikt voor een informatieproduct of zijn overgenomen naar een kopie. Vaak loopt deze herleidbaarheid gelijk op met een logistieke herleidbaarheid (datalineage, waar komt het gegeven vandaan komt).</td>
 </tr>
 </tbody></table>
 <p><em>Mate van verwijsbaarheid</em></p>
@@ -1538,32 +1546,36 @@ ul.index code{color:inherit}
 </tr>
 </thead>
 <tbody><tr>
-<td>volledige semantische herleiding</td>
-<td>Een duiding van de mate van verwijsbaarheid waarbij alle benodigde semantische verwijzingen zijn aangebracht, de aangebrachte semantische verwijzingen zijn compleet en exact.</td>
-<td>Compleet betekent dat alle benodigde verwijzingen gelegd kunnen worden, exact betekent dat elk van deze exact gebruikt kan worden, dwz de betekenis waarnaar verwezen wordt is dekkend en juist en daardoor exact bruikbaar (de verwoording kan net anders zijn, mara dit heeft geen invloed op de betekenis).</td>
+<td>complete semantische herleiding</td>
+<td>Een duiding van dat alle relevante semantische verwijzingen zijn aangebracht.</td>
+<td>Er ontbreekt er geen (ook niet vanwege het ontbreken van een CIM of een begrippenkader). Wanneer de herleiding niet compleet is dan is er altijd sprake van ten minste 1 ontbrekende verwijzing, die er wel zou moeten zijn om de gehele gegevensdefinitie af te dekken. Als de gehele gegevensdefinitie afgedekt wordt dan ontbreken er geen verwijzingen en is de herleiding dus compleet.</td>
 </tr>
 <tr>
-<td>deels ontbrekende semantische herleiding</td>
-<td>Een duiding van de mate van verwijsbaarheid waarbij niet alle benodigde semantische verwijzingen zijn aangebracht.</td>
-<td>Het gaat hier dus om de onvolledigheid van de semantische verwijzingen, waarbij er wel minimaal één semantische verwijzing is aangebracht. Reden kan zijn dat modellen waarnaar verwezen zou moeten worden niet of niet volledig beschikbaar zijn.</td>
+<td>exacte semantische verwijzing</td>
+<td>Een duiding dat de gegevensdefinitie en de betekenis waarnaar via alleen deze verwijzing naar verwezen wordt exact met elkaar in overeenstemming zijn.</td>
+<td>De  verwoording kan net anders zijn, maar dit heeft geen invloed op de betekenis. De strekking is hetzelfde. Wanneer er meerdere verwijzingen nodig zijn, dan betreft het exact overeenstemmen alleen deze betreffende verwijzing en het gedeelte van de gegevensdefinitie die hierbij hoort.</td>
 </tr>
 <tr>
-<td>ontbrekende semantische herleiding</td>
-<td>Een duiding van de mate van verwijsbaarheid waarbij geen enkele semantische verwijzing is aangebracht.</td>
-<td>Een reden kan zijn dat modellen waarnaar verwezen zou moeten worden niet of niet volledig beschikbaar zijn.</td>
+<td>compleet en exact</td>
+<td>De semantische herleiding is compleet en alle semantische verwijzingen zijn exact.</td>
+<td>De gegevensdefinitie kan volledig verklaard worden via de betekenis die te vinden is via de semantische verwijzingen en is daarmee in overeenstemming. De verwoording is mogelijk net anders, maar de betekenis is hetzelfde (semantisch equivalent).</td>
 </tr>
 <tr>
 <td>verklaring van verschil</td>
-<td>De verwoording van het semantische verschil tussen de betekenis vanuit de semantische herleiding en de gegevensdefinitie.</td>
-<td>Dit is alleen relevant wanneer de semantische verwijzingen niet volledig zijn. De verklaring geeft aan wat het verschil is, om hiermee gebruikers van gegevens inzicht te bieden. De oorzaak ligt in het feit dat bovenliggende semantiek niet voldoende matched met de gegevensdefintie. Doorgaans zal het zo zijn dat het wenselijk is om dit verschil een keer op te gaan lossen, maar dit is niet altijd het geval.</td>
+<td>De beschrijving van het semantische verschil tussen de betekenis van de modelelementen waarnaar verwezen wordt vanuit de semantische herleiding en de gegevensdefinitie.</td>
+<td>Deze zijn niet semantische equivalent met elkaar, er is sprake van een wezenlijk verschil. De verklaring geeft aan wat het verschil is, om hiermee gebruikers van gegevens inzicht te bieden. De oorzaak ligt in het feit dat bovenliggende semantiek niet voldoende matched met de gegevensdefinitie (het gegevensmodel klopt niet goed met het CIM en/of begrippenkader). Doorgaans zal het zo zijn dat het wenselijk is om dit verschil een keer op te gaan lossen, zeker wanneer het verschil per ongeluk is ontstaan. Als semantische herleiding compleet en exact is, dan is het nooit nodig om een verklaring van verschil te beschrijven.</td>
+</tr>
+<tr>
+<td>uitleg verschil in verwoording</td>
+<td>De beschrijving van het verschil in verwoording van de betekenis van de modelelementen waarnaar verwezen wordt vanuit de semantische herleiding en de gegevensdefinitie, terwijl de betekenis wel hetzelfde is.</td>
+<td>Er is geen sprake van een semantisch verschil. De betekenis is semantisch equivalent, maar er is wel gebruik gemaakt van andere woorden. Het is niet nodig om punten en komma's en verbindingswoorden uit te leggen. De uitleg is nuttig voor de lezers van de gegevensdefinitie, die wel een verschil in woorden zien, en gerustgesteld willen worden dat er slechts sprake is van een andere verwoording.</td>
 </tr>
 <tr>
 <td>semantisch niet relevant</td>
 <td>Een duiding dat een modelelement semantisch niet relevant is, er hoeft geen semantische herleiding te worden aangebracht.</td>
-<td>Een voorbeeld van een niet semantisch relevant modelelement zou bijvoorbeeld kunnen zijn: een hulpgegeven t.b.v. routering, een modelelement dat modelmatig nodig is maar geen semantiek heeft, een technisch hulpgegeven zoals een record id die e.e.a. koppelt in de implementatie maar niet uitgewisseld behoort te worden richting gebruikers. Voor dit soort modelelementen kan expliciet aangegeven worden dat deze semantisch niet relevant zijn.</td>
+<td>Voor dit soort modelelementen kan expliciet aangegeven worden dat deze semantisch niet relevant zijn, oftewel niet in een CIM of begrippenkader horen. Semantisch niet relevante modelelementen hebben uiteraard wel een gegevensdefinitie, bij alle getypeerde gegevens hoort immers een gegevensdefinitie. Een voorbeeld van een niet semantisch relevant modelelement zou bijvoorbeeld kunnen zijn: een hulpgegeven t.b.v. routering, een modelelement dat modelmatig nodig is maar geen semantiek heeft, een technisch hulpgegeven zoals een record id die e.e.a. koppelt in de implementatie maar niet uitgewisseld behoort te worden richting gebruikers. Merk op: het kan voorkomen dat een modelelement wel semantisch relevant is, maar dat er nog geen herleidbaarheid voor is aangebracht. Gebruik dan: ontbrekende semantische herleiding.</td>
 </tr>
 </tbody></table>
-<p>Merk op: het kan voorkomen dat een modelelement wel semantisch relevant is, maar dat er nog geen herleidbaarheid voor is aangebracht. Gebruik dan: ontbrekende semantische herleiding. </p>
 <p><em>Specifiek voor logische gegevensmodellen</em></p>
 <table>
 <thead>
@@ -1575,33 +1587,20 @@ ul.index code{color:inherit}
 </thead>
 <tbody><tr>
 <td>onderwerp	van gesprek</td>
-<td>Een onderwerp van gesprek is de aanduiding van het objecttype of het relatietype waarvoor een gegevensobjecttype is ingericht.</td>
-<td>Het modelelement uit het hogerliggende beschouwingsniveau van een LGM noemen we het onderwerp van gesprek. Daar gaan de gegevens over die getypeerd zijn in het LGM bij dit gegevensobjecttype. Bijvoorbeeld: een gegevensobjecttype geregistreerdNP heeft als onderwerp van gesprek het objecttype Ingeschrevene. De gegevens in het gegevensobject gaan over een object of exemplaar van dit objecttype. De achtergrond van onderwerp van gesprek is dat voor elk gegeven het helder moet zijn om welke eigenschap het gaat en van welk object, zie definitie van 'gegeven' en van 'gegevenstype'.</td>
+<td>Een onderwerp van gesprek geeft het objecttype of het relatietype aan waarvoor een gegevensobjecttype is ingericht.</td>
+<td>Bijvoorbeeld: een gegevensobjecttype geregistreerdNatuurlijkPersoon heeft als onderwerp van gesprek het objecttype Ingeschrevene. De gegevens in het gegevensobject gaan over een object of exemplaar van dit objecttype, ook als het gegeven bijvoorbeeld een naam is van een plaats, want het gaat dan om de woonplaats die de ingeschrevene hanteert als woonadres. Er staat daarom in de definitie bewust 'waarvoor', en niet 'waarmee'. Merk op dat als in het CIM staat dan een natuurlijk persoon maar 1 woonadres kan hebben, dan hoort het gegevensobject er ook maar 1 te hebben (op 1 moment in de tijd). De achtergrond van onderwerp van gesprek is dat voor elk gegeven het helder moet zijn om welke eigenschap het gaat en vanuit welk object dit beschouwd wordt, zie definitie van 'gegeven' en van 'gegevenstype'. Het is mogelijk om per gegevenstype een onderwerp van gesprek bij te houden, maar omdat dit in principe altijd hetzelfde is voor hetzelfde gegevensobject wordt dit metagegeven bij het gegevensobjecttype bijgehouden. Een eigenschaptype in een CIM heeft op zich ook een onderwerp van gesprek, maar dat is altijd het object dat getypeerd is d.m.v. het objecttype zelf. Daarom wordt dit verder niet uitgemodelleerd.</td>
 </tr>
 <tr>
 <td>lexicaal pad</td>
-<td>Een lexicaal pad is voor de structuur om in een logisch gegevens model, vanuit een gegeven startpunt, een specifiek modelelement uit een conceptueel informatiemodel aan te wijzen door de route tussen startpunt en eindpunt te specificeren.</td>
-<td>Meestal hoort er bij 1 gegevensobjecttype ook 1 objecttype, of hoort er bij 1 gegevenstype ook 1 eigenschaptype of relatietype uit een CIM, maar het komt voor dat het pad hiernaartoe via meerdere relatietypen bij een ander objecttype uitkomt. Deze ingeschrevene kan wonen in een (woon)plaats en dit gegeven kan opgenomen zijn in hetzelfde gegevensobjecttype.</td>
+<td>Een lexicaal pad is de specificatie van de route tussen een gegevenstype en het bijbehorende eigenschaptype in een conceptueel informatiemodel waarnaar de semantische verwijzing naar gelegd is.</td>
+<td>Meestal hoort er bij 1 gegevensobjecttype ook 1 objecttype en hoort er bij 1 gegevenstype ook 1 eigenschaptype van dit objecttype. Er is dan niet echt sprake van een route of pad door het CIM, alleen maar van een verwijzing naar een eigenschaptype in het CIM. Het komt echter ook voor dat er wel pad door het CIM gelopen wordt, via een of meerdere relatietypen en objecttypen, vertrekkend vanuit het onderwerp van gesprek. Zie ook het voorbeeld aan het begin van dit hoofdstuk. Dan is de specificatie van het lexicale pad noodzakelijk om exact aan te geven hoe de semantische herleiding precies in elkaar zit. Elke semantische verwijzing heeft 0 of 1 lexicaal pad, nooit meerdere. Aangezien 1 gegevenstype wel meerdere semantische verwijzingen kan hebben (bv. een adresregel) kan bij 1 gegevenstype wel sprake zijn van meerdere lexicale paden.</td>
 </tr>
 <tr>
 <td>gegevensdefinitie</td>
-<td>Een gegevensdefinitie is de verwoording van de semantische herleiding van een gegevenstype.</td>
-<td>Voor de betekenis van een gegevenstype leggen we semantische herleidbaarheid aan. Dan hebben we nog geen welgevormde verwoording van die betekenis die bruikbaar is voor lezers van het gegevensmodel, zeker niet in situaties waarin de semantische herleidbaarheid is gevormd met een samenstel van semantische verwijzingen en/of waar lexicale paden nodig zijn. Daarom wordt aanvullend een gegevensdefinitie opgenomen. Deze mag natuurlijk niet in tegenspraak zijn met de betekenis.</td>
+<td>Een gegevensdefinitie is de beschrijving van de betekenis die hoort bij een gegevenstype.</td>
+<td>Het betreft de officiele gegevensdefinitie die in de praktijk gehanteerd wordt door gebruikers, zoals beschreven in officiele koppelvlakdocumentatie of interfaces. Het betreft hier niet een alternatieve B1 taalniveau verwoording en ook invulinstructies horen niet in de gegevensdefintie te worden opgenomen. Indien voor een gegevenstype semantische herleidbaarheid is aangebracht kan de gegevensdefinitie aan de hand hiervan uitgewerkt worden. Let wel, wanneer alle definities uit bovenliggende modellen erbij worden gepakt dan ontstaat niet altijd direct een welgevormde verwoording van die betekenis die bruikbaar is voor lezers van het gegevensmodel en een dergelijke verwoording is wel nuttig en nodig. Het is deze verwoording die de gegevensdefinitie is. Nota bene: het is mogelijk dat semantische herleidbaarheid niet compleet en/of niet exact is en dat de gegevensdefinitie die in de praktijk gebruikt wordt afwijkt van de bovenliggende definities. Geef dit dan aan d.m.v. een verklaring van verschil (doe niet net alsof het wel klopt).</td>
 </tr>
 </tbody></table>
-<p>Nader uit te werken: keuzes maken bij lexicaal pad: </p>
-<ol>
-<li>Lexicaal pad: mensleesbaar vs machineleesbaar</li>
-</ol>
-<ul>
-<li>mensleesbaar bv. string, met een notatiewijze en een delimeter en een volgorde. Dit zijn impliciet verwijzingen naar modelelementen. </li>
-<li>machineleesbaar, bv. een opsomming van (bepaalde_ modelelementen</li>
-</ul>
-<ol start="2">
-<li>inclusief begin en eindpunt, of alleen de tussenpunten?</li>
-<li>met of zonder generalisaties en specialisaties?</li>
-<li>alleen als er ook een CIM is of ook als er alleen begrippen zijn? Is het pad altijd uitgedrukt in CIM modelelementen?</li>
-</ol>
 <p>Overige:</p>
 <p>In MIM 1.2 kunnen logische modelelementen gekoppeld aan een modelelement uit een conceptueel informatiemodel, met behulp van het metagegeven <code>mim:begrip</code>. 
 De definitie daarvan luidt:  </p>
