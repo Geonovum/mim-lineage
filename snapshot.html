@@ -1680,7 +1680,7 @@ Zie: onderwerp van gesprek. </p>
 <section id="redundantie-van-definities"><div class="header-wrapper"><h5 id="x5-1-6-1-redundantie-van-definities"><bdi class="secno">5.1.6.1 </bdi>Redundantie van definities</h5><a class="self-link" href="#redundantie-van-definities" aria-label="Permalink for Section 5.1.6.1"></a></div>
 <p>In MIM is een definitie voor veel modelelementen een verplicht metagegeven. 
 Wanneer de definitie van een modelelement exact gelijk is aan die van een modelelement of begrip waarmee een lineage-relatie bestaat, kan dit als redundant worden ervaren.  </p>
-<p>Het verdient echter de voorkeur om deze definities toch te herhalen, zodat het model ook zelfstandig goed te begrijpen blijft.</p>
+<p>Het verdient echter de voorkeur om deze definities toch te herhalen, zodat het model ook zelfstandig goed te begrijpen blijft. In een eigen beheer omgeving zou de gegevensdefinitie leeg gelaten kunnen worden waarmee bedoeld wordt dat deze rechtstreeks van het gerelateerde begrip overgenomen kan worden, maar bij de publicatie van het model hoort er altijd een gegevensdefinitie te zijn die te lezen is door gebruikers.</p>
 </section><section id="elk-gegevenstype-verdiend-een-definitie-daarom-is-de-definitie-hiervan-verplicht-elk-gegevensobjecttype-verdiend-een-definitie-daarom-is-de-definitie-hiervan-verplicht-om-deze-reden-is-het-mogelijk-om-de-verklaring-van-verschil-bij-beide-op-te-nemen"><div class="header-wrapper"><h5 id="x5-1-6-2"><bdi class="secno">5.1.6.2 </bdi></h5><a class="self-link" href="#elk-gegevenstype-verdiend-een-definitie-daarom-is-de-definitie-hiervan-verplicht-elk-gegevensobjecttype-verdiend-een-definitie-daarom-is-de-definitie-hiervan-verplicht-om-deze-reden-is-het-mogelijk-om-de-verklaring-van-verschil-bij-beide-op-te-nemen" aria-label="Permalink for Section 5.1.6.2"></a></div>
 <p>Elk gegevenstype verdiend een definitie. Daarom is de definitie hiervan verplicht. Elk gegevensobjecttype verdiend een definitie. Daarom is de definitie hiervan verplicht. Om deze reden is het mogelijk om de verklaring van verschil bij beide op te nemen. </p>
 </section></section><section id="aanpak-per-raakvlak-tussen-mim-niveaus-een-model-maken"><div class="header-wrapper"><h4 id="x5-1-7-aanpak-per-raakvlak-tussen-mim-niveaus-een-model-maken"><bdi class="secno">5.1.7 </bdi>Aanpak: per raakvlak tussen MIM niveaus een model maken</h4><a class="self-link" href="#aanpak-per-raakvlak-tussen-mim-niveaus-een-model-maken" aria-label="Permalink for Section 5.1.7"></a></div>
@@ -2060,7 +2060,8 @@ TODO: visueel diagram. </p>
 <p>Deze kunnen worden opgegeven bij een model en geven aan welke verwijzen op modelniveau opgenomen mogen worden in het model:  </p>
 <ol>
 <li>Er mag worden verwezen naar een CIM </li>
-<li>Er mag (rechtstreeks) worden verwezen naar een begrippenkader</li>
+<li>Er mag (rechtstreeks) worden verwezen naar een begrippenkader </li>
+<li>Als er een CIM is, dan wordt er naar het CIM verwezen en niet rechtstreeks naar het begrippenkader</li>
 <li>Er mag worden verwezen naar een LGM via indirecte semantische verwijzingen</li>
 </ol>
 </section><section id="metamodel-0"><div class="header-wrapper"><h5 id="x5-2-3-4-metamodel"><bdi class="secno">5.2.3.4 </bdi>Metamodel</h5><a class="self-link" href="#metamodel-0" aria-label="Permalink for Section 5.2.3.4"></a></div>
