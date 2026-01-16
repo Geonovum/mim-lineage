@@ -154,11 +154,32 @@ Wat er met het gegevenstype 'geboorteplaatscode' bedoeld wordt is dan volledig h
 
 Tot dusver het voorbeeld. Onderstaande werkt nader uit hoe semantische herleidbaarheid precies gespecificeerd wordt. Merk op dat dit per modeltype verschillend is zijn omdat semantische verwijzingen in een CIM naar begrippen verwijzen en in LGM naar CIM modelelementen en van daaruit naar begrippen. Het doel is hierbij echter telkens hetzelfde. 
 
-### Lineage vanuit conceptueel informatiemodel naar een begrippenkader
+### Lineage vanuit CIM naar begrippenkader
 
 In deze paragraaf wordt aangegeven hoe een begrippenkader met begrippen gebruikt kan worden om semantische herleidbaarheid aan te brengen in een CIM. 
  
 De definitie van een modelelement in een CIM heeft een zeer sterke relatie met de definitie van een begrip uit een begrippenkader. Een begrippenkader en een conceptueel informatiemodel beschrijven immers beiden een model van dezelfde werkelijkheid. De ene beschrijft begrippen waarmee we uitdrukking geven aan het beschrijven van die werkelijkeheid, de andere geeft de conceptualisatie aan van dezelfde werkelijkheid, door middel van objecttypen, eigenschaptypen, relatietypen enzovoorts. Het is daarom in principe zo dat de terminologie in een CIM overeenkomt met de voorkeurstermen van de gerelateerde begrippen, daar waar mogelijk, mede ook om geen onnodige (spraak) verschillen te krijgen. Dit is niet altijd mogelijk, maar dit is wel een streven. De spelregels in onderstaande tabel geven dit aan. 
+
+#### Lineage op model niveau 
+
+In een CIM kunnen modelelementen voorkomen die semantische verwijzingen hebben naar begrippen uit verschillende begrippenkaders. Hierover kan extra informatie worden toegevoegd in het model, zodat helder is welke dit zijn. 
+
+Per model waarnaar wordt verwezen kan worden aangegeven. 
+
+| Metagegeven  | semantische verwijzing naar | kardinaliteit  | voorbeeld | 
+| ------------ | --------------------------- | ------------- | -------------- | 
+| model type          | model                       | 1..1  | begrippenkader | 
+| model identificatie | begrippenkader model        | 1..1  | ...                  | 
+| model naam          | begrippenkader model        | 1..1  | Natuurlijke personen | 
+| model versie        | begrippenkader modelversie  | 1..1  |  1.0.0 | 
+
+_Optionele spelregels_ 
+
+1. Model verwijzingen worden opgenomen bij dit CIM.
+2. Het informatiedomein van een CIM volgt strikt 1 begrippenkader, of 1 set van sterk sterk bij elkaar behorende begrippenkaders die een bepaalde onderverdeling kennen. De partij die verantwoordelijkheid is voor beide, is dezelfde partij, en deze bewaakt ook dat beide naadloos op elkaar aansluiten. 
+3. Verwijzingen naar kennisbronnen die niet als begrippenkader zijn uitgewerkt, zijn toegestaan. In dit geval is het metagegeven 'kennisbron' bij een modelelement met een definitie gevuld. 
+
+_TODO: 3 is hier nog niet uitgewerkt._
 
 #### Modelelementen uit een CIM waarvoor semantische verwijzingen mogelijk zijn 
 
@@ -180,31 +201,34 @@ De relatie tussen een conceptueel modelelement en een begrip moet strikt worden 
 
 Het is mogelijk dat MIM in een latere versie ook niet exact overeenkomende semantische verwijzingen toestaat. De semantische verwijzingen zullen dan een aanduiding of classificatie krijgen. Dit is op het moment nog niet uitgewerkt.
 
-#### Lineage op model niveau 
-
-In een CIM kunnen modelelementen voorkomen die semantische verwijzingen hebben naar begrippen uit verschillende begrippenkaders. Hierover kan extra informatie worden toegevoegd in het model, zodat helder is welke dit zijn. 
-
-Per model waarnaar wordt verwezen kan worden aangegeven. 
-
-| Metagegeven  | semantische verwijzing naar | kardinaliteit  | voorbeeld | 
-| ------------ | --------------------------- | ------------- | -------------- | 
-| model type          | model                       | 1..1  | begrippenkader | 
-| model identificatie | begrippenkader model        | 1..1  | ...                  | 
-| model naam          | begrippenkader model        | 1..1  | Natuurlijke personen | 
-| model versie        | begrippenkader modelversie  | 1..1  |  1.0.0 | 
-
-_Optionele spelregels_ 
-
-Deze kunnen worden opgegeven bij een CIM. 
-
-1. Het informatiedomein van een CIM volgt strikt 1 begrippenkader, of 1 set van sterk sterk bij elkaar behorende begrippenkaders die een bepaalde onderverdeling kennen. De partij die verantwoordelijkheid is voor beide, is dezelfde partij, en deze bewaakt ook dat beide naadloos op elkaar aansluiten. 
-2. Verwijzingen naar kennisbronnen die niet als begrippenkader zijn uitgewerkt, zijn toegestaan. In dit geval is het metagegeven 'kennisbron' bij een modelelement met een definitie gevuld. 
-
 #### Metamodel
 *(Nog uit te werken in dit document.)*
 TODO: visueel diagram. 
 
-### Lineage vanuit logisch gegevensmodel naar een conceptueel informatiemodel 
+
+### Lineage vanuit logisch gegevensmodel naar een begrippenkader 
+*(Nog uit te werken in dit document.)*
+
+#### Modelelementen uit LGM met semantische verwijzingen naar begrippenkader
+
+| Modelelement | semantische verwijzing naar | kardinaliteit | spelregels, bij 1 modelelement van dit type hoort: ...                | 
+| ------------ | --------------------------- | ------------- | --------------------------------------------------------------------- | 
+| gegevensobjecttype   | begrip              | 0..* | precies 1, te weten het begrip waar het primair om gaat (en waarvoor een objecttype in een CIM zou moeten zijn, indien er een CIM is         |  
+| gegevenstype         | begrip                            | 0..* | ten minste 1, indien er geen CIM is maar wel een begrippenkader is met daarin een passend begrip | 
+
+Merk op:
+- Het is ook mogelijk om naar een CIM modelelement te verwijzen, zoals bedoeld in de volgende paragraaf (hier niet uitgewerkt)
+
+_Interpretatie van de semantische verwijzing_
+
+> “Verwijzing naar een begrip, vanuit een modelelement op het logische niveau, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodelelement is gebaseerd. De verwijzing heeft de vorm van een term of een URI.”
+
+De formulering *is gebaseerd op* wijst op een meer vrije en mogelijk meervoudige interpretatie van de relatie tussen een logisch modelelement en een begrip.
+
+_TODO: hoe precies verwijzen naar een begrip. Dit is analoog aan MIM 1.2, wellicht nog met een extra uitbreiding of dit wel of niet exact is._
+
+
+### Lineage vanuit LGM naar CIM
 
 Gegevens gaan over eigenschappen van een object. Door semantische herleidbaarheid aan te brengen wordt aangegeven hoe (en in hoeverre) de gegevenswerkelijkheid en de gemodelleerde werkelijkheid in het begrippenkader en het conceptuele inforatiemodel met elkaar overeenkomen. 
 
@@ -212,27 +236,87 @@ Een gegevensmodel gaat over gegevens die er zijn, een informatiemodel gaat over 
 
 Semantische herleidbaarheid in een logisch gegevensmodel beschrijft op welke modelelementen uit een CIM een gegevenstype is gebaseerd. In het verlengde hiervan geldt dat de definitie van het gegevenstype weer op de begrippen is gebaseerd die daarin zijn aangegeven. 
 
-#### Modelelementen uit een LGM waarvoor semantische verwijzingen mogelijk zijn 
+#### Lineage op model niveau 
+
+In een LGM kunnen modelelementen voorkomen die semantische verwijzingen hebben naar CIM modelelementen uit verschillende CIM's. Hierover kan extra informatie worden toegevoegd in het model. 
+
+Per model waarnaar wordt verwezen kan worden aangegeven: 
+
+| Metagegeven  | semantische verwijzing naar  | kardinaliteit  | voorbeeld | 
+| ------------ | ---------------------------  | ------------- | -------------- | 
+| model type          | model                 | 1..1   | CIM, LGM, begrippenkader
+| model identificatie | zie type, model       | 1..1   | ...                  | 
+| model naam          | zie type, model       | 1..1   | Natuurlijke personen | 
+| model versie        | zie type, modelversie | 1..1   |  1.0.0 | 
+| model URI           | locatie van model     | 0..1   | http://mijnorganisatie/mijnmodel 
+
+_Optionele spelregels_ 
+
+Deze kunnen worden opgegeven bij een model en geven aan welke verwijzen op modelniveau opgenomen mogen worden in het model:  
+1. Er mag worden verwezen naar een CIM 
+2. Er mag (rechtstreeks) worden verwezen naar een begrippenkader 
+3. Als er een CIM is, dan wordt er naar het CIM verwezen en niet rechtstreeks naar het begrippenkader
+4. Er mag worden verwezen naar een LGM via indirecte semantische verwijzingen
+
+#### Modelelementen uit LGM met semantische verwijzingen naar CIM
 
 | Modelelement | semantische verwijzing naar | kardinaliteit | spelregels, bij 1 modelelement van dit type hoort: ...                | 
 | ------------ | --------------------------- | ------------- | --------------------------------------------------------------------- | 
 | gegevensobjecttype   | objecttype of relatietype | 1..1 | precies 1 objecttype of het relatietype, te weten degene die onderwerp van gesprek is van het gegevensobjecttype  |  
-| gegevensobjecttype   | begrip              | 0..* | precies 1, te weten het begrip waar het primair om gaat (en waarvoor een objecttype in een CIM zou moeten zijn, indien er een CIM is         |  
 | gegevenstype         | eigenschaptype                    | 0..* | ten minste 1, mits er een CIM is met daarin een passend eigenschaptype | 
-| gegevenstype         | begrip                            | 0..* | ten minste 1, indien er geen CIM is maar wel een begrippenkader is met daarin een passend begrip | 
 
 Merk op: 
+- Het is ook mogelijk om naar een begrip te verwijzen, zoals bedoeld in de vorige paragraaf (hier niet uitgewerkt)
 - Een relatietype in een logisch gegevensmodel is een verwijzing naar de identificatie van het gegevensobject waarnaar verwezen wordt. Hiervoor is geen semantische verwijzing vereist naar een CIM of begrippenkader. Wel kan een definitie gegeven worden voor dit relatietype in het LGM.
 
 _Interpretatie van de semantische verwijzing_
 
 > “Verwijzing naar een conceptueel modelelement, vanuit een modelelement op het logische niveau, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodelelement is gebaseerd. De verwijzing heeft de vorm van een term of een URI.”
 
-> “Verwijzing naar een begrip, vanuit een modelelement op het logische niveau, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodelelement is gebaseerd. De verwijzing heeft de vorm van een term of een URI.”
-
 De formulering *is gebaseerd op* wijst op een meer vrije en mogelijk meervoudige interpretatie van de relatie tussen een logisch modelelement en een begrip.
 
-_Indirecte semantische verwijzing_
+#### Specificatie voor gegevensobjecttype
+
+| Metagegeven | Beschrijving      | 
+| ------------ | ------------------------------------------------------ | -
+| onderwerp van gesprek | aanduiding welk objecttype uit een CIM het onderwerp van gesprek is van het gegevensobjecttype |
+
+De volgende metagegevens worden gespecificeerd bij een semantische verwijzing naar een objecttype uit een CIM:
+
+| Metagegeven  | beschrijving      | kardinaliteit | datatype | voorbeeld | 
+| ------------ | ------------------------------------------------------ | -------------- | -------------- | 
+| modelelement identificatie | zie MIM algemeen | 0..1 | zie MIM algemeen | ... | 
+| modelelement naam | zie MIM algemeen | 0..1 | zie MIM algemeen | ... | 
+| model naam | zie MIM algemeen | 1..1 | zie MIM algemeen | ... | 
+
+Regels: 
+- ofwel de modelelement identificatie ofwel de modelelement naam is opgenomen, of beide
+- de model naam is opgenomen bij Lineage op model niveau
+
+Bij het aangeven van de semantische herleidbaarheid van een gegevenstype naar de bijbehorende semantiek kan uit analyse blijken dat de gegevensdefinitie van een gegevenstype volledig afgedekt kan worden door modelelementen in een CIM en/of begrippenkader. Dit is de gewenste situatie. Het kan echter ook zo zijn dat het niet het wat anders is dan gewenst. De mate van aanwijsbaarheid is dan maar deels mogelijk of zelfs geheel niet mogelijk. 
+
+#### Specificatie voor gegevenstype
+
+De manier waarop semantische herleidbaarheid is gespecificeerd wordt eerst aangegeven. 
+
+| Metagegeven | beschrijving      | datatype | voorbeeld | 
+| ------------ | ------------------------------------------------------ | -------------- | -------------- | 
+| semantische herleidbaarheid | zie H4, semantische herleidbaarheid | enumeratie | zie enumeratiewaarden | 
+
+De volgende enumeratiewaarden zijn mogelijk: 
+
+| waarde | beschrijving      | datatype | voorbeeld | 
+| ------------------ | ------------------------------------------------------ | -------------- | -------------- | 
+| "niet relevant" | aanduiding dat een modelelement semantisch niet relevant is en de semantische herleiding niet uitgewerkt hoeft te worden | CharacterString | "niet relevant" | 
+| "niet herleidbaar" | aanduiding dat voor een semantisch relevant modelelement de gehele semantische herleiding ontbreekt en dus niet herleidbaar is | CharacterString | "niet herleidbaar" |
+| "herleidbaar"      | aanduiding dat voor een semantisch relevant modelelement de semantische herleiding is uitgewerkt, voor zover mogelijk | 
+| "horizontale verwijzing" | aanduiding dat voor een semantisch relevant modelelement de semantische herleiding is uitgewerkt via een horizontale verwijzing | 
+
+Regel: De aanduiding van de van verwijsbaarheid is een van deze waarden. 
+
+Regel: Het is niet toegestaan om een andere aanduiding te kiezen die niet in MIM gedefinieerd is. Het is wel toegestaan om in een eigen toepassingsprofiel een 'nadere aanduiding' te specificeren, in aanvulling op de MIM aanduiding. 
+
+##### Horizontale semantische herleidbaarheid**
 
 Een gegevenstype kan 1 op 1 overgenomen zijn uit een ander logisch gegevensmodel. Het is mogelijk om daarnaar te verwijzen, en voor de semantische herleidbaarheid te stellen: zie aldaar. 
 
@@ -241,14 +325,80 @@ Een gegevenstype kan 1 op 1 overgenomen zijn uit een ander logisch gegevensmodel
 | gegevensobjecttype   | gegevensobjecttype uit ander LGM | 0..1 | als aangebracht, dan altijd tijd precies 1                        |  
 | gegevenstype         | gegevenstype uit ander LGMe      | 0..1 | als aangebracht, dan altijd tijd precies 1                        | 
 
+##### Verticale semantische herleidbaarheid
 
-#### Lexicaal pad
+Een gegevenstype kan een gegevensdefinitie hebben die gebaseerd is op bovenliggende definities. 
 
-| Modelelement | semantische verwijzing naar | kardinaliteit | spelregels                     | 
-| ------------ | --------------------------- | ------------- | --------------------------------------------------------------------- | 
-| modelelement startpunt  | objecttype die het onderwerp van gesprek is van het gegevensobject waartoe het gegevenstype behoort | 0..1 | als aangebracht, dan altijd tijd precies 1                 |  
-| modelelement eindpunt   | eigenschaptype waar het gegevenstype over gaat                                                      | 0..1 | als aangebracht, dan altijd tijd precies 1                 | 
-| lexicaal pad            | objecttypen en/of relatierollen                                                                     | 0..* |  in volgorde van het startpunt tot en met het eindpunt     | 
+Regel: indien de semantische herleidbaarheid 'herleidbaar' is dan worden de metagegevens 'semantische verwijzingen' en 'ontbrekende verwijzingen' ook gespecificeerd. 
+
+Voor elk gegevenstype kunnen meerdere semantische verwijzingen worden opgenomen. 
+
+| Metagegeven  | beschrijving      | kardinaliteit per gegevenstype | 
+| ------------ | ------------------------------------------------------ | -------------- | 
+| semantische verwijzing CIM | aanduiding van het modelelement in het CIM | 0..* |
+
+De volgende metagegevens worden gespecificeerd bij elke _semantische verwijzing_ naar een CIM: 
+
+| Metagegeven  | beschrijving      | kardinaliteit | datatype | 
+| ------------ | ------------------------------------------------------ | -------------- | -------------- | 
+| modelelement identificatie CIM | zie MIM algemeen | 0..1 | zie MIM algemeen 
+| modelelement naam | zie MIM algemeen | 0..1 | zie MIM algemeen 
+| model identificatie | zie MIM algemeen | 1..1 | zie MIM algemeen  
+| is exact     | aanduiding dat de semantische verwijzing wel of niet exact is, zoals bedoeld bij _exacte semantische verwijzing_ | 1..1 | boolean | 1 (ja, is exact) |
+| lexicaal pad | zie H4 | 0..1 | zie specificatie lexicaal pad verderop
+
+Regels: 
+- ofwel de modelelement identificatie ofwel de modelelement naam is opgenomen, of beide
+- de model naam is opgenomen bij Lineage op model niveau
+
+Voor elk gegevenstype kan aangegeven worden of er verwijzingen ontbreken, oftewel dat deze niet compleet zijn. 
+
+| Metagegeven  | beschrijving      | kardinaliteit | datatype | voorbeeld | 
+| ------------ | ------------------------------------------------------ | -------------- | -------------- | -------------- | 
+| onbrekende verwijzingen | aanduiding dat er in de semantische herleiding 1 of meerdere semantische verwijzingen ontbreken, zoals bedoeld bij _complete semantische herleiding _| 1..1 | boolean | 1 (ja, er ontbreken er) |
+
+Indien er ontbrekende verwijzingen zijn of indien er verwijzingen zijn die niet exact zijn, dan kan er een verklaring van verschil worden opgenomen. De modelleur heeft hiertoe eerst de definities van de bovenliggende CIM modelelementen en/of begrippen bestudeerd.
+
+**Verschillen met bovenliggende definities**
+
+Er wordt onderscheidt gemaakt tussen 2 soorten verschillen: 
+- verklaring van verschil, semantisch niet equivalent met bovenliggende definities
+- toelichting verwoordingsverschil, semantisch equivalent met bovenliggende definities
+
+| Metagegeven  | beschrijving      | kardinaliteit | datatype  | voorbeeld | 
+| ------------ | ----------------  | ------------- | --------- | -------------- | 
+| verklaring van verschil | zie H4 | 0..1          | tekst     | omissie in CIM  |
+
+Regel: de verklaring van verschil is in principe vrije tekst. Deze legt zo goed als mogelijk uit hoe de gegevensdefinitie verschilt van bestaande definities uit een CIM of begrippenkader. De verklaring is bedoeld voor de lezer van het model en niet voor de modelleur. Neem dus geen procesopmerkingen of oorzaken op, maar hou het bij het inhoudelijke verschil zelf. 
+
+Het is hierbij toegestaan om gebruik te maken van gestandaardiseerde teksten. Hierbij kan gebruik gemaakt worden van de volgende: 
+
+| Verklaring van verschil | Toelichting | 
+| ----------------- | --------------------------- |
+| omissie in CIM            | Er ontbreekt (vermoedelijk) een modelelement in het CIM. | 
+| omissie in begrippenkader | Er ontbreekt (vermoedelijk) een begrip in het begrippenkader. |  
+| niet relevant             | De betekenis is semantisch niet relevant op MIM niveau 1 of 2. Het gegeven is bijvoorbeeld geheel technisch van aard, of er is sprake van een modelmatige hulpconstructie. |  
+
+_Optionele spelregels:_
+
+1. Indien semantische herleiding bestaat uit 1 semantische verwijzing en deze exact is dan wordt de afspraak gehanteerd dat de definitie van het CIM modelelement 1 op 1 kan worden overgenomen naar de gegevensdefinitie van het gegevenstype of gegevensobjecttype.
+2. De verklaring van verschil is verplicht indien de semantisch herleiding wel herleidbaar is maar ofwel niet compleet is ofwel niet exact is. Het is in dit geval van belang om het verschil goed te duiden aan gebruikers. 
+
+--
+
+Indien de verwoording van de gegevensdefinitie afwijkt van de verwoording van de bovenliggende definities, maar de betekenis ervan gelijk is (semantisch equivalent) dan kan dit ook worden aangegeven: 
+
+| Metagegeven  | beschrijving      | kardinaliteit | datatype | voorbeeld |
+| ------------ | -------------- | -------------- | -------------- | ------------------------------------------------------ | 
+| toelichting verwoordingsverschil | zie H4 | 0..1 | tekst | Er is een oude term gebruikt die inmiddels is vervangen door een nieuwe term, maar de strekking en de betekenis ervan is hetzelfde.  |
+
+**Lexicaal pad**
+
+TODO: keuzes maken, zie issue 4. 
+
+| Modelelement | semantische verwijzing naar     | kardinaliteit | spelregels                     | 
+| ------------ | ------------------------------- | ------------- | ----------------------------------------------- | 
+| lexicaal pad | objecttypen en/of relatierollen | 0..*          |  het pad tussen het startpunt en het eindpunt     | 
 
 Bij de geboorteplaatscode in het voorbeeld hoort de volgende specificatie voor het lexicale pad: 
 - modelelement startpunt: objecttype Natuurlijk persoon 
@@ -265,80 +415,15 @@ _Optionele spelregels:_
 
 1. Het model hanteert een eigen notatiewijze voor het lexicale pad, te weten de volgende: ... 
 2. Start- en eindpunt hoeven niet te worden opgegeven door de modelleur en kunnen terug gevonden worden bij de overige specificaties van semantische herleidbaarheid.
+3. Het lexicale pad wordt gespecificeerd als pad met begin- en eindpunt. Strikt genomen horen het objecttype dat het onderwerp van gesprek is van het gegevensobjecttype (het beginpunt) en het eigenschaptype waarnaar verwezen wordt (het eindpunt) ook tot het pad (inclusief). Tegelijkertijd zijn deze al gespecificeerd als onderdeel van semantische herleiding via respectievelijk het onderwerp van gesprek en het de semantische verwijzing. Deze spelregel geeft aan dat deze expliciet (nogmaals) gespecificeerd moeten worden.  
 
-#### Lineage op model niveau 
-
-In een LGM kunnen modelelementen voorkomen die semantische verwijzingen hebben naar CIM modelelementen uit verschillende CIM's. Hierover kan extra informatie worden toegevoegd in het model. 
-
-Per model waarnaar wordt verwezen kan worden aangegeven: 
-
-| Metagegeven  | semantische verwijzing naar  | kardinaliteit  | voorbeeld | 
-| ------------ | ---------------------------  | ------------- | -------------- | 
-| model type          | model                 | 1..1   | CIM, LGM, begrippenkader
-| model identificatie | zie type, model       | 1..1   | ...                  | 
-| model naam          | zie type, model       | 1..1   | Natuurlijke personen | 
-| model versie        | zie type, modelversie | 1..1   |  1.0.0 | 
-
-_Optionele spelregels_ 
-
-Deze kunnen worden opgegeven bij een model en geven aan welke verwijzen op modelniveau opgenomen mogen worden in het model:  
-1. Er mag worden verwezen naar een CIM 
-2. Er mag (rechtstreeks) worden verwezen naar een begrippenkader 
-3. Als er een CIM is, dan wordt er naar het CIM verwezen en niet rechtstreeks naar het begrippenkader
-4. Er mag worden verwezen naar een LGM via indirecte semantische verwijzingen
-
+Ad 3. 
+| Metagegeven  | beschrijving      | kardinaliteit | spelregels | 
+| ------------ | -------------- | -------------- | ------------------------------------------------------ | 
+| lexicaal pad start  | CIM objecttype die het onderwerp van gesprek is van het gegevensobject waartoe het gegevenstype behoort | 0..1 | als aangebracht, dan altijd tijd precies 1                 |  
+| lexicaal pad start eind   | eigenschaptype waar het gegevenstype over gaat                                                      | 0..1 | als aangebracht, dan altijd tijd precies 1 en gelijk aan                  | 
 
 #### Metamodel
 *(Nog uit te werken in dit document.)*
 TODO: visueel diagram. 
-
-### Lineage vanuit logisch gegevensmodel naar een begrip uit een begrippen model 
-*(Nog uit te werken in dit document.)*
-
-## Mate van verwijsbaarheid 
-
-Bij het aangeven van de semantische herleidbaarheid van een gegevenstype naar de bijbehorende semantiek kan uit analyse blijken dat de gegevensdefinitie van een gegevenstype volledig afgedekt kan worden door modelelementen in een CIM en/of begrippenkader. Dit is de gewenste situatie. Het kan echter ook zo zijn dat het niet het wat anders is dan gewenst. De mate van aanwijsbaarheid is dan maar deels mogelijk of zelfs geheel niet mogelijk. 
-
-De aanduidingen die onderkend worden zijn: 
-
-| Mate van verwijsbaarheid | beschrijving      | 
-| ------------ | --------------------------- | 
-| volledig herleidbaar  | zie hoofdstuk Termen: volledige semantische verwijzingen | 
-| deels herleidbaar     | zie hoofdstuk Termen: deels ontbrekende semantische verwijzingen | 
-| niet herleidbaar      | zie hoofdstuk Termen: geheel ontbrekende semantische verwijzingen |  
-
-Deze aanduiding kan worden opgenomen bij een gegevensobjecttype of een gegevenstype. 
-
-| Modelelement | Mate van verwijsbaarheid | kardinaliteit | spelregels               | 
-| ------------ | --------------------------- | ------------- | --------------------------------------------------------------------- | 
-| gegevensobjecttype   | aanduiding  | 0..1 | verplicht indien semantische herleidbaarheid in het model is opgenomen |  
-| gegevenstype         | aanduiding  | 0..1 | verplicht indien semantische herleidbaarheid in het model is opgenomen | 
-
-Regel: De aanduiding van de van verwijsbaarheid komt uit de tabel uit het hoofdstuk Termen. 
-
-Regel: Het is niet toegestaan om een andere aanduiding te kiezen die niet in MIM gedefinieerd is. Het is wel toegestaan om in een eigen toepassingsprofiel een 'nadere aanduiding' te specificeren, in aanvulling op de MIM aanduiding. 
-
-Indien de aanduiding wat anders is dan volledig, dan kan er een verklaring van verschil worden opgenomen. 
-
-| Modelelement | Mate van verwijsbaarheid | kardinaliteit | spelregels               | 
-| ------------ | --------------------------- | ------------- | --------------------------------------------------------------------- | 
-| gegevensobjecttype   | verklaring van verschil  | 0..1 |  |  
-| gegevenstype         | verklaring van verschil  | 0..1 |  | 
-
-De verklaring van verschil is in principe vrije tekst. 
-- Deze legt zo goed als mogelijk uit hoe de gegevensdefinitie verschilt van bestaande definities uit een CIM of begrippenkader.
-- De verklaring is bedoeld voor de lezer van het model en niet voor de modelleur. Neem dus geen oorzaken op, maar hou het bij het inhoudelijke verschil zelf.
-- Het is hierbij toegestaan om gebruik te maken van gestandaardiseerde teksten. Hierbij kan gebruik gemaakt worden van de volgende: 
-
-| Verklaring van verschil | Toelichting | 
-| ----------------- | --------------------------- |
-| omissie in CIM            | Er ontbreekt (vermoedelijk) een modelelement in het CIM. | 
-| omissie in begrippenkader | Er ontbreekt (vermoedelijk) een begrip in het begrippenkader. |  
-| niet relevant             | De betekenis is semantisch niet relevant op MIM niveau 1 of 2. Het gegeven is bijvoorbeeld geheel technisch van aard, of er is sprake van een modelmatige hulpconstructie. |  
-
-_Optionele spelregels:_
-
-1. Indien de mate van verwijsbaarheid volledig is en de semantische verwijzing is 1 op 1 dan kan de definitie van het CIM modelelement 1 op 1 worden overgenomen naar de gegevensdefinitie van het gegevenstype of gegevensobjecttype.
-2. De verklaring van verschil is verplicht indien de aanduiding wat anders is dan volledig.
-
 
