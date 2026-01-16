@@ -60,7 +60,7 @@ Zie: onderwerp van gesprek.
 In MIM is een definitie voor veel modelelementen een verplicht metagegeven. 
 Wanneer de definitie van een modelelement exact gelijk is aan die van een modelelement of begrip waarmee een lineage-relatie bestaat, kan dit als redundant worden ervaren.  
 
-Het verdient echter de voorkeur om deze definities toch te herhalen, zodat het model ook zelfstandig goed te begrijpen blijft.
+Het verdient echter de voorkeur om deze definities toch te herhalen, zodat het model ook zelfstandig goed te begrijpen blijft. In een eigen beheer omgeving zou de gegevensdefinitie leeg gelaten kunnen worden waarmee bedoeld wordt dat deze rechtstreeks van het gerelateerde begrip overgenomen kan worden, maar bij de publicatie van het model hoort er altijd een gegevensdefinitie te zijn die te lezen is door gebruikers.
 
 ####
 Elk gegevenstype verdiend een definitie. Daarom is de definitie hiervan verplicht. Elk gegevensobjecttype verdiend een definitie. Daarom is de definitie hiervan verplicht. Om deze reden is het mogelijk om de verklaring van verschil bij beide op te nemen. 
@@ -283,8 +283,10 @@ _Optionele spelregels_
 
 Deze kunnen worden opgegeven bij een model en geven aan welke verwijzen op modelniveau opgenomen mogen worden in het model:  
 1. Er mag worden verwezen naar een CIM 
-2. Er mag (rechtstreeks) worden verwezen naar een begrippenkader
-3. Er mag worden verwezen naar een LGM via indirecte semantische verwijzingen 
+2. Er mag (rechtstreeks) worden verwezen naar een begrippenkader 
+3. Als er een CIM is, dan wordt er naar het CIM verwezen en niet rechtstreeks naar het begrippenkader
+4. Er mag worden verwezen naar een LGM via indirecte semantische verwijzingen
+
 
 #### Metamodel
 *(Nog uit te werken in dit document.)*
