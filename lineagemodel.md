@@ -62,8 +62,8 @@ Wanneer de definitie van een modelelement exact gelijk is aan die van een modele
 
 Het verdient echter de voorkeur om deze definities toch te herhalen, zodat het model ook zelfstandig goed te begrijpen blijft. In een eigen beheer omgeving zou de gegevensdefinitie leeg gelaten kunnen worden waarmee bedoeld wordt dat deze rechtstreeks van het gerelateerde begrip overgenomen kan worden, maar bij de publicatie van het model hoort er altijd een gegevensdefinitie te zijn die te lezen is door gebruikers.
 
-####
-Elk gegevenstype verdiend een definitie. Daarom is de definitie hiervan verplicht. Elk gegevensobjecttype verdiend een definitie. Daarom is de definitie hiervan verplicht. Om deze reden is het mogelijk om de verklaring van verschil bij beide op te nemen. 
+#### Elk gegevenstype heeft een gegevensdefinitie
+Elk gegevenstype verdiend een definitie. Daarom is de definitie hiervan verplicht. Elk gegevensobjecttype verdiend een definitie. Daarom is de definitie hiervan verplicht. Om deze reden is het ook nodig om het mogelijk te maken om verschillen tussen de gegevensdefinitie en de bovenliggende definities uit CIM en begrippenkader (en daarboven) te kunnen beschrijven.  
 
 ### Aanpak: per raakvlak tussen MIM niveaus een model maken
 *(Nog uit te werken in dit document.)*
