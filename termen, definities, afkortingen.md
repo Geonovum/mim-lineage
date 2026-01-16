@@ -1,18 +1,18 @@
 # Termen, definities en afkortingen
 
-Semantische herleidbaarheid bestaat uit een aantal concepten, samengevat in dit diagram. 
-
-<img width="1117" height="701" alt="20251212 diagram sem herleid (conceptueel)" src="https://github.com/user-attachments/assets/6fa935b6-053f-4142-98b6-84ad9282d6ba" />
-
-Dit diagram geeft herleidbaarheid weer tussen verschillende beschouwingsniveaus op generieke wijze. Het kan zijn dat er per beschouwingsniveau andere termen worden gekozen. 
-
-Centraal in het diagram staat een semantisch relevant modelelement. Dit is een modelelement waarvoor het zinvol en nodig is om deze te verbinden met bovenliggende semantiek uit een CIM en/of begrippenkader. Anders gezegd, de gegevensdefinitie ervan wordt zo goed als mogelijk in verband gebracht met bovenliggende definities, door de semantische herleiding ervoor te beschrijven. 
+Centraal bij semantische herleidbaarheid is het **semantisch relevant modelelement**. Dit is een modelelement waarvoor het zinvol en nodig is om deze te verbinden met bovenliggende semantiek uit een CIM en/of begrippenkader. Anders gezegd, de gegevensdefinitie ervan wordt zo goed als mogelijk in verband gebracht met bovenliggende definities, door de semantische herleiding ervoor te beschrijven. 
 
 Semantische herleiding kan verticaal en horizontaal aangebracht worden. 
 - Verticaal geeft aan dat er verwijzingen naar CIM modelelementen en/of begrippen uit een begrippenkader worden benoemd;
 - Horizontaal geeft aan dat de semantische herleiding al elders is beschreven, en het modelelement in het eigen model er qua betekenis mee gelijk gesteld wordt.  
 
 Semantische herleiding bestaat uit een of meerdere verwijzingen. Deze set kan wel of niet compleet zijn om er de gegevensdefinitie mee af te dekken. Aanvullend kan de bovenliggende defintie waarnaar verwezen wordt, hierbij elke verwijzing op zichzelf beschouwend, wel of niet exact in overeenstemming zijn met de tekstuele verwoording van de gegevensdefinitie. 
+
+Semantische herleidbaarheid in een diagram. 
+
+<img width="1117" height="701" alt="20251212 diagram sem herleid (conceptueel)" src="https://github.com/user-attachments/assets/6fa935b6-053f-4142-98b6-84ad9282d6ba" />
+
+Dit diagram geeft herleidbaarheid weer tussen verschillende beschouwingsniveaus op generieke wijze. Het kan zijn dat er per beschouwingsniveau (LGM --> CIM en/of CIM --> begrippenkader en/of LGM --> begrippenkader) andere termen worden gekozen. 
 
 Hieronder worden de begrippen beschreven die nodig zijn om semantische herleidbaarheid te begrijpen.
 
