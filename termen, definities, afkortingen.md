@@ -29,7 +29,7 @@ _Algemene_
 
 _Mate van verwijsbaarheid_
 
-De mate van verwijsbaarheid geeft aan in hoeverre de semantische herleidbaarheid goed is gespecificeerd. Dit is alleen relevant voor modelelementen waarvoor semantiek nodig is, oftewel modelelementen die semantisch relevant zijn. 
+De mate van verwijsbaarheid geeft aan in hoeverre de semantische herleidbaarheid klopt met de bovenliggende definities, zoals via verticale of horizontale semantische herleiding gespecificeerd. Dit is alleen relevant voor modelelementen waarvoor semantiek nodig is, oftewel modelelementen die semantisch relevant zijn. 
 
 | Term                   | Definitie                                                                        | Toelichting                         |
 | ---------------------- | -------------------------------------------------------------------------------- | ----------------------------------- |
