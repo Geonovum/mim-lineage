@@ -76,6 +76,9 @@ Elk gegevenstype verdiend een definitie. Daarom is de definitie hiervan verplich
 | 3 naar 1   | vanuit LGM naar een begrippenkader | in deze module van MIM, zie verderop |
 | 4 naar ... | vanuit logisch gegevensmodel naar een LGM, CIM of begrippenkader | Buiten scope van MIM. Dit wordt momenteel in detail beschreven in de *Handreiking data lineage*. |
 
+Mapping in een diagram. 
+![Semantische herleidbaarheid in een diagram](media/MIM-lineage_informatie-architectuur.png "In een diagram")
+
 ## Semantische herleidbaarheid 
 
 Een begrippenkader met begrippen en een conceptueel informatiemodel (CIM) kunnen gebruikt worden om te komen tot een welgevormde definitie van een gegevenstype die goed leesbaar en ook nog steed heel helder is voor gebruikers. Hierbij wordt zowel gekeken naar definities en naar semantische herleibaarheid, beide horen bij elkaar. De laatste is een aanvulling op de eerste. Het doel is telkens om betekenis van elementen op ieder beschouwingsniveau uit te drukken met een welgevormde verwoording van die betekenis met een definitie en om hierna semantische verwijzingen aan te geven waarop de tekst van deze definitie is gebaseerd. 
@@ -151,6 +154,8 @@ Althans, dit is zo wanneer _semantische herleidbaarheid_ ook is aangebracht **in
 - aanvullend geeft het CIM aan dat er sprake is van een code van een woonplaats en dat de geboorteplaats een rol is die ingevuld wordt door een woonplaats. 
 
 Wat er met het gegevenstype 'geboorteplaatscode' bedoeld wordt is dan volledig helder. Merk ook op dat hoe meer er gewerkt wordt met specialistische begrippen, of hoe meer "platgeslagen" een logisch gegevensmodel is opgezet, hoe belangrijker een goede definitie met bijbehorende semantische herleidbaarheid wordt. 
+
+![5.2.1_Voorbeeld.png](media/5.2.1_Voorbeeld.png "Voorbeeld.png")
 
 Tot dusver het voorbeeld. Onderstaande werkt nader uit hoe semantische herleidbaarheid precies gespecificeerd wordt. Merk op dat dit per modeltype verschillend is zijn omdat semantische verwijzingen in een CIM naar begrippen verwijzen en in LGM naar CIM modelelementen en van daaruit naar begrippen. Het doel is hierbij echter telkens hetzelfde. 
 

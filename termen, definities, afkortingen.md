@@ -9,8 +9,7 @@ Semantische herleiding kan verticaal en horizontaal aangebracht worden.
 Semantische herleiding bestaat uit een of meerdere **semantische verwijzingen**. De set van verwijzing kan _wel of niet compleet_ zijn om er de gegevensdefinitie mee af te dekken. Aanvullend kan de bovenliggende definitie waarnaar verwezen wordt, hierbij elke verwijzing op zichzelf beschouwend, _wel of niet exact_ in overeenstemming zijn met de tekstuele verwoording van de gegevensdefinitie. 
 
 Semantische herleidbaarheid in een diagram. 
-
-<img width="1117" height="701" alt="20251212 diagram sem herleid (conceptueel)" src="https://github.com/user-attachments/assets/6fa935b6-053f-4142-98b6-84ad9282d6ba" />
+![Semantische herleidbaarheid in een diagram](media/Semantische_herleidbaarheid.png "Semantische herleidbaarheid in een diagram")
 
 Dit diagram geeft herleidbaarheid weer tussen verschillende beschouwingsniveaus op generieke wijze. Het kan zijn dat er per beschouwingsniveau (LGM --> CIM en/of CIM --> begrippenkader en/of LGM --> begrippenkader) andere termen worden gekozen. 
 
