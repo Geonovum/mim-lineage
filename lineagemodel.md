@@ -74,7 +74,7 @@ Elk gegevenstype verdiend een definitie. Daarom is de definitie hiervan verplich
 | 2 naar 1   | vanuit CIM naar een begrippenkader | in deze module van MIM, zie verderop |
 | 3 naar 2   | vanuit LGM naar conceptueel informatiemodel | in deze module van MIM, zie verderop |
 | 3 naar 1   | vanuit LGM naar een begrippenkader | in deze module van MIM, zie verderop |
-| 4 naar ... | vanuit logisch gegevensmodel naar een LGM, CIM of begrippenkader | Buiten scope van MIM. Dit wordt momenteel in detail beschreven in de *Handreiking data lineage*. |
+| 4 naar ... | vanuit een technisch datamodel naar een LGM, CIM of begrippenkader | Buiten scope van MIM. Dit wordt momenteel in detail beschreven in de *Handreiking data lineage*. |
 
 Mapping in een diagram. 
 ![Semantische herleidbaarheid in een diagram](media/MIM-lineage_informatie-architectuur.png "In een diagram")

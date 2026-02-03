@@ -57,16 +57,10 @@ De definitie daarvan luidt:
 In MIM 1.2 kunnen logische modelelementen gekoppeld aan een begrip met behulp van het metagegeven `mim:begrip`. 
 De definitie daarvan luidt: 
 
---
-
-<p class="note" title="">
-Geef de term op deze manier aan in de tekst:  
-We gebruiken een <a>fiets</a> om te fietsen.
-</p>
-
-
 ## Afkortingen
 
 |                   |                                                                                                                                            |
-| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| MIM     | Metamodel Informatiemodellering        |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| CIM     | Conceptueel Informatiemodel      |  
+| LGM     | Logisch gegevensmodel      |                                                                                                             
+| MIM     | Metamodel informatiemodellering        |
