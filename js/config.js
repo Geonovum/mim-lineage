@@ -81,6 +81,11 @@ let respecConfig = {
         company: "Logius",
         companyURL: "https://www.logius.nl",
       },
+       {
+        name: "Danny Greefhorst",
+        company: "Archixl",
+        companyURL: "https://www.archixl.nl",
+      },
 	  
     ],
   // TODO: Vul de github URL in.
