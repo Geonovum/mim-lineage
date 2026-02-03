@@ -1,6 +1,6 @@
 # Termen, definities en afkortingen
 
-Centraal bij semantische herleidbaarheid staat het **semantisch relevant modelelement**. Dit is een modelelement waarvoor het zinvol en nodig is om deze te verbinden met bovenliggende semantiek uit een CIM en/of begrippenkader. Anders gezegd, de gegevensdefinitie ervan wordt zo goed als mogelijk in verband gebracht met bovenliggende definities, door de **semantische herleiding** ervoor te beschrijven. 
+Centraal bij semantische herleidbaarheid staat het **semantisch relevant modelelement**. Dit is een modelelement waarvoor het zinvol en nodig is om deze te verbinden met bovenliggende semantiek uit een CIM en/of begrippenkader. Anders gezegd, de definitie van een semantisch relevant modelelement wordt zo goed als mogelijk in verband gebracht met bovenliggende definities, door de **semantische herleiding** ervoor te beschrijven. 
 
 Semantische herleiding kan verticaal en horizontaal aangebracht worden. 
 - verticaal geeft aan dat er verwijzingen naar CIM modelelementen en/of begrippen uit een begrippenkader worden benoemd;
@@ -24,6 +24,10 @@ _Algemene_
 | semantische herleidbaarheid	| Semantische herleidbaarheid is het vermogen om definities van modelelementen uit lagere beschouwingsniveaus expliciet en traceerbaar te verbinden met de  betekenis die met begrippen is vastgelegd in het semantische beschouwingsniveau. | Semantische herleidbaarheid is in opzet 'verticaal', dat wil zeggen dat we deze vormgeven door het aanbrengen van semantische verwijzingen tussen modelelementen uit modellen op de verschillende beschouwingsniveaus, van technische modellen naar logische modellen naar conceptuele modellen naar semantische modellen (die zelf weer gebasseerd kunnen zijn op bovenliggende kennisbronnen). | 	
 | verticale semantische verwijzing |	Een directe semantische verwijzing is een semantische verwijzing naar een modelelement uit een hogerliggend beschouwingsniveau.	| Wanneer de beschouwingsniveaus boven elkaar worden afgebeeld, lopen directe semantische verwijzingen verticaal naar boven. | 
 | horizontale semantische verwijzing | Een indirecte semantische verwijzing is een semantische gelijkstelling, door middel van een verwijzing naar een ander gelijkgetypeerd modelelement in een ander logisch gegevensmodel. | We spreken over indirecte verwijzing omdat voor de semantische herleiding wordt verwezen naar de semantische herleiding elders. Deze verwijzing is niet 'verticaal' (tussen beschouwingsniveaus), maar 'horizontaal', binnen hetzelfde beschouwingsniveau. De indirecte semantische verwijzing is vooral onderkend om aan te geven dat een gegevenstype in een gegevensmodel van een gegevensuitwisseling qua betekenis exact overeenkomt met een gegevenstype in een administratie van waaruit gegevens zijn gebruikt voor een informatieproduct of zijn overgenomen naar een kopie. Vaak loopt deze herleidbaarheid gelijk op met een logistieke herleidbaarheid (datalineage, waar komt het gegeven vandaan komt). | 
+| definite | De beschrijving van de betekenis van dit modelelement. | Dit is een definitie van het metagegeven 'Definitie' uit MIM-1.2. (!) | 
+| gegevensdefintitie | Het totaal van verplichte en optionele metagegevens die in MIM aan een modelelement toegekend kunnen worden.| |
+
+
 
 
 _Mate van verwijsbaarheid_
