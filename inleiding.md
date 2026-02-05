@@ -3,3 +3,4 @@ Het metamodel voor informatiemodellering (MIM) biedt een gemeenschappelijk vertr
 
 Dit document beschrijft een specifiek onderdeel van het MIM namelijk de semantische herleidbaarheid. Het doel van semantische herleidbaarheid is om aan te geven hoe definities van modelelementen in informatie- en gegevensmodellen (MIM-2 en MIM-3) zich verhouden tot bovenliggende semantiek, in het bijzonder definities van begrippen uit begrippenkaders (MIM-1). Hierbij wordt in de kern vooral gekeken naar de tekstuele verwoording van de definities uit de verschillende modellen die voorhanden zijn. 
 
+Merk op dat de semantische lineage in deze context de elementen uit modellen op de verschillende MIM lagen met elkaar verbindt. We spreken daarom over verticale semantische lineage.

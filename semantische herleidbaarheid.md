@@ -1,6 +1,6 @@
 # Semantische herleidbaarheid
 
-Uitgangspunt is dat elk modelelement een eigen definitie kent en daarmee op zichzelf staat en dat semantische herleidbaarheid hier een aanvullende specificatie op is. In deze specificatie zelf kan aangegeven worden of herleidbaarheid wel of niet exact is, en wel of niet compleet (de mate van herleidbaarheid). 
+Uitgangspunt is dat elk modelelelement  in elke MIM laag, een eigen definitie kent en daarmee op zichzelf staat en dat semantische herleidbaarheid hier een aanvullende specificatie op is. In deze specificatie zelf kan aangegeven worden of herleidbaarheid wel of niet exact is, en wel of niet compleet (de mate van herleidbaarheid). 
 
 Voorbeeld van een definitie in een logisch gegevensmodel, van een attribuuttype 'bsn': 
 - de identificatie van een geregistreerd persoon
