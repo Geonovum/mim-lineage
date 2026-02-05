@@ -115,24 +115,6 @@ ul.index code{color:inherit}
 </style>
 <meta name="description" content="TODO: vul in abstract.md een abstract in.">
 <style>
-.hljs{--base:#fafafa;--mono-1:#383a42;--mono-2:#686b77;--mono-3:#717277;--hue-1:#0b76c5;--hue-2:#336ae3;--hue-3:#a626a4;--hue-4:#42803c;--hue-5:#ca4706;--hue-5-2:#c91243;--hue-6:#986801;--hue-6-2:#9a6a01}
-@media (prefers-color-scheme:dark){
-.hljs{--base:#282c34;--mono-1:#abb2bf;--mono-2:#818896;--mono-3:#5c6370;--hue-1:#56b6c2;--hue-2:#61aeee;--hue-3:#c678dd;--hue-4:#98c379;--hue-5:#e06c75;--hue-5-2:#be5046;--hue-6:#d19a66;--hue-6-2:#e6c07b}
-}
-.hljs{display:block;overflow-x:auto;padding:.5em;color:#383a42;color:var(--mono-1,#383a42);background:#fafafa;background:var(--base,#fafafa)}
-.hljs-comment,.hljs-quote{color:#717277;color:var(--mono-3,#717277);font-style:italic}
-.hljs-doctag,.hljs-formula,.hljs-keyword{color:#a626a4;color:var(--hue-3,#a626a4)}
-.hljs-deletion,.hljs-name,.hljs-section,.hljs-selector-tag,.hljs-subst{color:#ca4706;color:var(--hue-5,#ca4706);font-weight:700}
-.hljs-literal{color:#0b76c5;color:var(--hue-1,#0b76c5)}
-.hljs-addition,.hljs-attribute,.hljs-meta-string,.hljs-regexp,.hljs-string{color:#42803c;color:var(--hue-4,#42803c)}
-.hljs-built_in,.hljs-class .hljs-title{color:#9a6a01;color:var(--hue-6-2,#9a6a01)}
-.hljs-attr,.hljs-number,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-pseudo,.hljs-template-variable,.hljs-type,.hljs-variable{color:#986801;color:var(--hue-6,#986801)}
-.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-symbol,.hljs-title{color:#336ae3;color:var(--hue-2,#336ae3)}
-.hljs-emphasis{font-style:italic}
-.hljs-strong{font-weight:700}
-.hljs-link{text-decoration:underline}
-</style>
-<style>
 
   .sidelabel {
     position: fixed;
@@ -1397,14 +1379,14 @@ ul.index code{color:inherit}
 }</script>
 <link rel="stylesheet" href="https://tools.geostandaarden.nl/respec/style/base.css"></head>
 
-<body class="h-entry"><div class="head">
+<body class="h-entry toc-inline"><div class="head">
     <a class="logo" href="https://www.geonovum.nl/geo-standaarden"><img alt="Geonovum" height="67" id="Geonovum" src="https://docs.geostandaarden.nl/media/Geonovum.svg" width="132">
   </a> <h1 id="title" class="title">MIM-Lineagemodel</h1>
     
     <h2>
       Geonovum Standaard<br>
       Werkversie
-      <time class="dt-published" datetime="2026-02-02">02 februari 2026</time>
+      <time class="dt-published" datetime="2026-02-03">03 februari 2026</time>
     </h2>
     <dl>
       
@@ -1455,7 +1437,7 @@ ul.index code{color:inherit}
   </div>
   <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>TODO: vul in abstract.md een abstract in.</p>
 </section>
-  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">2. </bdi>Toepassingsgebied</a></li><li class="tocline"><a class="tocxref" href="#normreferenties"><bdi class="secno">3. </bdi>Normreferenties</a></li><li class="tocline"><a class="tocxref" href="#termen-definities-en-afkortingen"><bdi class="secno">4. </bdi>Termen, definities en afkortingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#termen-definities"><bdi class="secno">4.1 </bdi>Termen, definities</a></li><li class="tocline"><a class="tocxref" href="#afkortingen"><bdi class="secno">4.2 </bdi>Afkortingen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#lineagemodel"><bdi class="secno">5. </bdi>Lineagemodel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#inleiding-0"><bdi class="secno">5.1 </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wat-is-lineage-in-deze-context"><bdi class="secno">5.1.1 </bdi>Wat is lineage in deze context?</a></li><li class="tocline"><a class="tocxref" href="#waarom-lineage"><bdi class="secno">5.1.2 </bdi>Waarom lineage?</a></li><li class="tocline"><a class="tocxref" href="#lineage-in-en-tussen-verschillende-mim-beschouwingsniveaus"><bdi class="secno">5.1.3 </bdi>Lineage in en tussen verschillende MIM-beschouwingsniveaus</a></li><li class="tocline"><a class="tocxref" href="#lineage-en-wet-en-regelgeving"><bdi class="secno">5.1.4 </bdi>Lineage en wet- en regelgeving</a></li><li class="tocline"><a class="tocxref" href="#lineage-en-definities"><bdi class="secno">5.1.5 </bdi>Lineage en definities</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#geannoteerde-definities"><bdi class="secno">5.1.5.1 </bdi>Geannoteerde definities</a></li><li class="tocline"><a class="tocxref" href="#het-hoofdonderwerp-van-een-definitie"><bdi class="secno">5.1.5.2 </bdi>Het hoofdonderwerp van een definitie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#ontwerpbeslissingen"><bdi class="secno">5.1.6 </bdi>Ontwerpbeslissingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#redundantie-van-definities"><bdi class="secno">5.1.6.1 </bdi>Redundantie van definities</a></li><li class="tocline"><a class="tocxref" href="#elk-gegevenstype-heeft-een-gegevensdefinitie"><bdi class="secno">5.1.6.2 </bdi>Elk gegevenstype heeft een gegevensdefinitie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#aanpak-per-raakvlak-tussen-mim-niveaus-een-model-maken"><bdi class="secno">5.1.7 </bdi>Aanpak: per raakvlak tussen MIM niveaus een model maken</a></li></ol></li><li class="tocline"><a class="tocxref" href="#semantische-herleidbaarheid"><bdi class="secno">5.2 </bdi>Semantische herleidbaarheid</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#voorbeeld"><bdi class="secno">5.2.1 </bdi>Voorbeeld</a></li><li class="tocline"><a class="tocxref" href="#lineage-vanuit-cim-naar-begrippenkader"><bdi class="secno">5.2.2 </bdi>Lineage vanuit CIM naar begrippenkader</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#lineage-op-model-niveau"><bdi class="secno">5.2.2.1 </bdi>Lineage op model niveau</a></li><li class="tocline"><a class="tocxref" href="#modelelementen-uit-een-cim-waarvoor-semantische-verwijzingen-mogelijk-zijn"><bdi class="secno">5.2.2.2 </bdi>Modelelementen uit een CIM waarvoor semantische verwijzingen mogelijk zijn</a></li><li class="tocline"><a class="tocxref" href="#metamodel"><bdi class="secno">5.2.2.3 </bdi>Metamodel</a></li></ol></li><li class="tocline"><a class="tocxref" href="#lineage-vanuit-logisch-gegevensmodel-naar-een-begrippenkader"><bdi class="secno">5.2.3 </bdi>Lineage vanuit logisch gegevensmodel naar een begrippenkader</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#modelelementen-uit-lgm-met-semantische-verwijzingen-naar-begrippenkader"><bdi class="secno">5.2.3.1 </bdi>Modelelementen uit LGM met semantische verwijzingen naar begrippenkader</a></li></ol></li><li class="tocline"><a class="tocxref" href="#lineage-vanuit-lgm-naar-cim"><bdi class="secno">5.2.4 </bdi>Lineage vanuit LGM naar CIM</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#lineage-op-model-niveau-0"><bdi class="secno">5.2.4.1 </bdi>Lineage op model niveau</a></li><li class="tocline"><a class="tocxref" href="#modelelementen-uit-lgm-met-semantische-verwijzingen-naar-cim"><bdi class="secno">5.2.4.2 </bdi>Modelelementen uit LGM met semantische verwijzingen naar CIM</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-gegevensobjecttype"><bdi class="secno">5.2.4.3 </bdi>Specificatie voor gegevensobjecttype</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-gegevenstype"><bdi class="secno">5.2.4.4 </bdi>Specificatie voor gegevenstype</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#horizontale-semantische-herleidbaarheid"><bdi class="secno">5.2.4.4.1 </bdi>Horizontale semantische herleidbaarheid**</a></li><li class="tocline"><a class="tocxref" href="#verticale-semantische-herleidbaarheid"><bdi class="secno">5.2.4.4.2 </bdi>Verticale semantische herleidbaarheid</a></li></ol></li><li class="tocline"><a class="tocxref" href="#metamodel-0"><bdi class="secno">5.2.4.5 </bdi>Metamodel</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#niet-normatieve-deel"><bdi class="secno">6. </bdi>Niet-normatieve deel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#een-subparagraaf"><bdi class="secno">6.1 </bdi>Een subparagraaf</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mermaid-diagram"><bdi class="secno">7. </bdi>Mermaid diagram</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">8. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">9. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li></ol></nav>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">2. </bdi>Toepassingsgebied</a></li><li class="tocline"><a class="tocxref" href="#termen-definities-en-afkortingen"><bdi class="secno">3. </bdi>Termen, definities en afkortingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#termen-definities"><bdi class="secno">3.1 </bdi>Termen, definities</a></li><li class="tocline"><a class="tocxref" href="#afkortingen"><bdi class="secno">3.2 </bdi>Afkortingen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#lineagemodel"><bdi class="secno">4. </bdi>Lineagemodel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#inleiding-0"><bdi class="secno">4.1 </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wat-is-lineage-in-deze-context"><bdi class="secno">4.1.1 </bdi>Wat is lineage in deze context?</a></li><li class="tocline"><a class="tocxref" href="#waarom-lineage"><bdi class="secno">4.1.2 </bdi>Waarom lineage?</a></li><li class="tocline"><a class="tocxref" href="#lineage-in-en-tussen-verschillende-mim-beschouwingsniveaus"><bdi class="secno">4.1.3 </bdi>Lineage in en tussen verschillende MIM-beschouwingsniveaus</a></li><li class="tocline"><a class="tocxref" href="#lineage-en-wet-en-regelgeving"><bdi class="secno">4.1.4 </bdi>Lineage en wet- en regelgeving</a></li><li class="tocline"><a class="tocxref" href="#lineage-en-definities"><bdi class="secno">4.1.5 </bdi>Lineage en definities</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#geannoteerde-definities"><bdi class="secno">4.1.5.1 </bdi>Geannoteerde definities</a></li><li class="tocline"><a class="tocxref" href="#het-hoofdonderwerp-van-een-definitie"><bdi class="secno">4.1.5.2 </bdi>Het hoofdonderwerp van een definitie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#ontwerpbeslissingen"><bdi class="secno">4.1.6 </bdi>Ontwerpbeslissingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#redundantie-van-definities"><bdi class="secno">4.1.6.1 </bdi>Redundantie van definities</a></li><li class="tocline"><a class="tocxref" href="#elk-gegevenstype-heeft-een-gegevensdefinitie"><bdi class="secno">4.1.6.2 </bdi>Elk gegevenstype heeft een gegevensdefinitie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#aanpak-per-raakvlak-tussen-mim-niveaus-een-model-maken"><bdi class="secno">4.1.7 </bdi>Aanpak: per raakvlak tussen MIM niveaus een model maken</a></li></ol></li><li class="tocline"><a class="tocxref" href="#semantische-herleidbaarheid"><bdi class="secno">4.2 </bdi>Semantische herleidbaarheid</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#voorbeeld"><bdi class="secno">4.2.1 </bdi>Voorbeeld</a></li><li class="tocline"><a class="tocxref" href="#lineage-vanuit-cim-naar-begrippenkader"><bdi class="secno">4.2.2 </bdi>Lineage vanuit CIM naar begrippenkader</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#lineage-op-model-niveau"><bdi class="secno">4.2.2.1 </bdi>Lineage op model niveau</a></li><li class="tocline"><a class="tocxref" href="#modelelementen-uit-een-cim-waarvoor-semantische-verwijzingen-mogelijk-zijn"><bdi class="secno">4.2.2.2 </bdi>Modelelementen uit een CIM waarvoor semantische verwijzingen mogelijk zijn</a></li><li class="tocline"><a class="tocxref" href="#metamodel"><bdi class="secno">4.2.2.3 </bdi>Metamodel</a></li></ol></li><li class="tocline"><a class="tocxref" href="#lineage-vanuit-logisch-gegevensmodel-naar-een-begrippenkader"><bdi class="secno">4.2.3 </bdi>Lineage vanuit logisch gegevensmodel naar een begrippenkader</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#modelelementen-uit-lgm-met-semantische-verwijzingen-naar-begrippenkader"><bdi class="secno">4.2.3.1 </bdi>Modelelementen uit LGM met semantische verwijzingen naar begrippenkader</a></li></ol></li><li class="tocline"><a class="tocxref" href="#lineage-vanuit-lgm-naar-cim"><bdi class="secno">4.2.4 </bdi>Lineage vanuit LGM naar CIM</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#lineage-op-model-niveau-0"><bdi class="secno">4.2.4.1 </bdi>Lineage op model niveau</a></li><li class="tocline"><a class="tocxref" href="#modelelementen-uit-lgm-met-semantische-verwijzingen-naar-cim"><bdi class="secno">4.2.4.2 </bdi>Modelelementen uit LGM met semantische verwijzingen naar CIM</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-gegevensobjecttype"><bdi class="secno">4.2.4.3 </bdi>Specificatie voor gegevensobjecttype</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-gegevenstype"><bdi class="secno">4.2.4.4 </bdi>Specificatie voor gegevenstype</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#horizontale-semantische-herleidbaarheid"><bdi class="secno">4.2.4.4.1 </bdi>Horizontale semantische herleidbaarheid**</a></li><li class="tocline"><a class="tocxref" href="#verticale-semantische-herleidbaarheid"><bdi class="secno">4.2.4.4.2 </bdi>Verticale semantische herleidbaarheid</a></li></ol></li><li class="tocline"><a class="tocxref" href="#metamodel-0"><bdi class="secno">4.2.4.5 </bdi>Metamodel</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">5. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">6. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li></ol></nav>
 
   
   <section id="inleiding"><div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 1."></a></div>
@@ -1499,9 +1481,7 @@ ul.index code{color:inherit}
 <p>Lineage in de context van deze toepassing is lineage op het gebied van informatie en semantiek. Het betreft semantische- en realisatie relaties tussen modelelementen op de verschillende MIM-beschouwingsniveaus. We noemen dit 'verticale lineage'.</p>
 <p>Met de toepassing van het model wordt de afkomstrelatie beschreven tussen een informatie-element in een specifiek MIM beschouwingsniveau naar een ander MIM beschouwingsniveau.</p>
 </section>
-  <section id="normreferenties"><div class="header-wrapper"><h2 id="x3-normreferenties"><bdi class="secno">3. </bdi>Normreferenties</h2><a class="self-link" href="#normreferenties" aria-label="Permalink for Section 3."></a></div>
-</section>
-  <section id="termen-definities-en-afkortingen"><div class="header-wrapper"><h2 id="x4-termen-definities-en-afkortingen"><bdi class="secno">4. </bdi>Termen, definities en afkortingen</h2><a class="self-link" href="#termen-definities-en-afkortingen" aria-label="Permalink for Section 4."></a></div>
+  <section id="termen-definities-en-afkortingen"><div class="header-wrapper"><h2 id="x3-termen-definities-en-afkortingen"><bdi class="secno">3. </bdi>Termen, definities en afkortingen</h2><a class="self-link" href="#termen-definities-en-afkortingen" aria-label="Permalink for Section 3."></a></div>
 <p>Centraal bij semantische herleidbaarheid staat het <strong>semantisch relevant modelelement</strong>. Dit is een modelelement waarvoor het zinvol en nodig is om deze te verbinden met bovenliggende semantiek uit een CIM en/of begrippenkader. Anders gezegd, de gegevensdefinitie ervan wordt zo goed als mogelijk in verband gebracht met bovenliggende definities, door de <strong>semantische herleiding</strong> ervoor te beschrijven. </p>
 <p>Semantische herleiding kan verticaal en horizontaal aangebracht worden. </p>
 <ul>
@@ -1518,7 +1498,7 @@ ul.index code{color:inherit}
     <p></p>
 <p>Dit diagram geeft herleidbaarheid weer tussen verschillende beschouwingsniveaus op generieke wijze. Het kan zijn dat er per beschouwingsniveau (LGM --&gt; CIM en/of CIM --&gt; begrippenkader en/of LGM --&gt; begrippenkader) andere termen worden gekozen. </p>
 <p>Hieronder worden de begrippen beschreven die nodig zijn om semantische herleidbaarheid te begrijpen.</p>
-<section id="termen-definities"><div class="header-wrapper"><h3 id="x4-1-termen-definities"><bdi class="secno">4.1 </bdi>Termen, definities</h3><a class="self-link" href="#termen-definities" aria-label="Permalink for Section 4.1"></a></div>
+<section id="termen-definities"><div class="header-wrapper"><h3 id="x3-1-termen-definities"><bdi class="secno">3.1 </bdi>Termen, definities</h3><a class="self-link" href="#termen-definities" aria-label="Permalink for Section 3.1"></a></div>
 <p><em>Algemene</em></p>
 <table>
 <thead>
@@ -1622,7 +1602,7 @@ We gebruiken een <a class="respec-offending-element" title="Linking error: not m
 </p></div>
 
 
-</section><section id="afkortingen"><div class="header-wrapper"><h3 id="x4-2-afkortingen"><bdi class="secno">4.2 </bdi>Afkortingen</h3><a class="self-link" href="#afkortingen" aria-label="Permalink for Section 4.2"></a></div>
+</section><section id="afkortingen"><div class="header-wrapper"><h3 id="x3-2-afkortingen"><bdi class="secno">3.2 </bdi>Afkortingen</h3><a class="self-link" href="#afkortingen" aria-label="Permalink for Section 3.2"></a></div>
 <table>
 <thead>
 <tr>
@@ -1636,9 +1616,9 @@ We gebruiken een <a class="respec-offending-element" title="Linking error: not m
 </tr>
 </tbody></table>
 </section></section> 
-  <section id="lineagemodel"><div class="header-wrapper"><h2 id="x5-lineagemodel"><bdi class="secno">5. </bdi>Lineagemodel</h2><a class="self-link" href="#lineagemodel" aria-label="Permalink for Section 5."></a></div>
-<section id="inleiding-0"><div class="header-wrapper"><h3 id="x5-1-inleiding"><bdi class="secno">5.1 </bdi>Inleiding</h3><a class="self-link" href="#inleiding-0" aria-label="Permalink for Section 5.1"></a></div>
-<section id="wat-is-lineage-in-deze-context"><div class="header-wrapper"><h4 id="x5-1-1-wat-is-lineage-in-deze-context"><bdi class="secno">5.1.1 </bdi>Wat is lineage in deze context?</h4><a class="self-link" href="#wat-is-lineage-in-deze-context" aria-label="Permalink for Section 5.1.1"></a></div>
+  <section id="lineagemodel"><div class="header-wrapper"><h2 id="x4-lineagemodel"><bdi class="secno">4. </bdi>Lineagemodel</h2><a class="self-link" href="#lineagemodel" aria-label="Permalink for Section 4."></a></div>
+<section id="inleiding-0"><div class="header-wrapper"><h3 id="x4-1-inleiding"><bdi class="secno">4.1 </bdi>Inleiding</h3><a class="self-link" href="#inleiding-0" aria-label="Permalink for Section 4.1"></a></div>
+<section id="wat-is-lineage-in-deze-context"><div class="header-wrapper"><h4 id="x4-1-1-wat-is-lineage-in-deze-context"><bdi class="secno">4.1.1 </bdi>Wat is lineage in deze context?</h4><a class="self-link" href="#wat-is-lineage-in-deze-context" aria-label="Permalink for Section 4.1.1"></a></div>
 <p>In figuur 1 uit de <em>Handreiking data lineage</em> worden de verschillende aspecten van lineage getoond. 
 De hier beschreven lineage geeft invulling aan de relaties tussen gegevens, gegevensmodellen en grondslagen. 
 De gegevensmodellen uit figuur 1 worden in dit document geïdentificeerd als modelelementen of begrippen.</p>
@@ -1649,7 +1629,7 @@ De gegevensmodellen uit figuur 1 worden in dit document geïdentificeerd als mod
       </figure>
     <p></p>
 <p>In de context van deze toepassing betekent lineage het leggen van betekenisvolle verbindingen tussen modelelementen en begrippen uit de vier beschouwingsniveaus die MIM onderkent.</p>
-</section><section id="waarom-lineage"><div class="header-wrapper"><h4 id="x5-1-2-waarom-lineage"><bdi class="secno">5.1.2 </bdi>Waarom lineage?</h4><a class="self-link" href="#waarom-lineage" aria-label="Permalink for Section 5.1.2"></a></div>
+</section><section id="waarom-lineage"><div class="header-wrapper"><h4 id="x4-1-2-waarom-lineage"><bdi class="secno">4.1.2 </bdi>Waarom lineage?</h4><a class="self-link" href="#waarom-lineage" aria-label="Permalink for Section 4.1.2"></a></div>
 <p>De waarde van lineage, zoals beschreven in de <em>Handreiking data lineage</em>, ligt op het gebied van:  </p>
 <ul>
 <li>Vertrouwen en transparantie  </li>
@@ -1664,34 +1644,34 @@ Hiermee kunnen de genoemde waarden daadwerkelijk worden gerealiseerd.</p>
 Modellen op alle niveaus hebben ieder een eigen toepassingsgebied en daarmee bestaansrecht. 
 In de praktijk zullen organisaties voor een specifiek model niet altijd alle beschouwingsniveaus hebben ingevuld of zullen invullen. 
 In dergelijke situaties zijn niet alle hier beschreven vormen van lineage mogelijk.</p>
-</section><section id="lineage-in-en-tussen-verschillende-mim-beschouwingsniveaus"><div class="header-wrapper"><h4 id="x5-1-3-lineage-in-en-tussen-verschillende-mim-beschouwingsniveaus"><bdi class="secno">5.1.3 </bdi>Lineage in en tussen verschillende MIM-beschouwingsniveaus</h4><a class="self-link" href="#lineage-in-en-tussen-verschillende-mim-beschouwingsniveaus" aria-label="Permalink for Section 5.1.3"></a></div>
+</section><section id="lineage-in-en-tussen-verschillende-mim-beschouwingsniveaus"><div class="header-wrapper"><h4 id="x4-1-3-lineage-in-en-tussen-verschillende-mim-beschouwingsniveaus"><bdi class="secno">4.1.3 </bdi>Lineage in en tussen verschillende MIM-beschouwingsniveaus</h4><a class="self-link" href="#lineage-in-en-tussen-verschillende-mim-beschouwingsniveaus" aria-label="Permalink for Section 4.1.3"></a></div>
 <p>We onderscheiden verticale en horizontale lineage.</p>
 <ul>
 <li><strong>Verticale lineage</strong> ontstaat door het leggen van relaties tussen modelelementen van verschillende niveaus, of tussen een modelelement en een begrip uit een begrippenkader.  </li>
 <li><strong>Horizontale lineage</strong> ontstaat door het leggen van relaties tussen modelelementen op hetzelfde niveau, maar afkomstig uit verschillende modellen.</li>
 </ul>
 <p>Horizontale lineage tussen begrippen uit verschillende begrippenkaders betreft de zogenoemde harmonisatierelaties uit de NL-SBB en wordt <a href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#harmonisatiesrelaties">aldaar</a> beschreven.</p>
-</section><section id="lineage-en-wet-en-regelgeving"><div class="header-wrapper"><h4 id="x5-1-4-lineage-en-wet-en-regelgeving"><bdi class="secno">5.1.4 </bdi>Lineage en wet- en regelgeving</h4><a class="self-link" href="#lineage-en-wet-en-regelgeving" aria-label="Permalink for Section 5.1.4"></a></div>
+</section><section id="lineage-en-wet-en-regelgeving"><div class="header-wrapper"><h4 id="x4-1-4-lineage-en-wet-en-regelgeving"><bdi class="secno">4.1.4 </bdi>Lineage en wet- en regelgeving</h4><a class="self-link" href="#lineage-en-wet-en-regelgeving" aria-label="Permalink for Section 4.1.4"></a></div>
 <p>Een van de doelstellingen van lineage is dat van een gegeven kan worden vastgesteld welke wet- en regelgeving van toepassing is. 
 Op die manier kan uiteindelijk ook worden nagegaan of aan de gestelde eisen wordt voldaan.</p>
-</section><section id="lineage-en-definities"><div class="header-wrapper"><h4 id="x5-1-5-lineage-en-definities"><bdi class="secno">5.1.5 </bdi>Lineage en definities</h4><a class="self-link" href="#lineage-en-definities" aria-label="Permalink for Section 5.1.5"></a></div>
-<section id="geannoteerde-definities"><div class="header-wrapper"><h5 id="x5-1-5-1-geannoteerde-definities"><bdi class="secno">5.1.5.1 </bdi>Geannoteerde definities</h5><a class="self-link" href="#geannoteerde-definities" aria-label="Permalink for Section 5.1.5.1"></a></div>
+</section><section id="lineage-en-definities"><div class="header-wrapper"><h4 id="x4-1-5-lineage-en-definities"><bdi class="secno">4.1.5 </bdi>Lineage en definities</h4><a class="self-link" href="#lineage-en-definities" aria-label="Permalink for Section 4.1.5"></a></div>
+<section id="geannoteerde-definities"><div class="header-wrapper"><h5 id="x4-1-5-1-geannoteerde-definities"><bdi class="secno">4.1.5.1 </bdi>Geannoteerde definities</h5><a class="self-link" href="#geannoteerde-definities" aria-label="Permalink for Section 4.1.5.1"></a></div>
 <p>De meeste modelelementen hebben verplicht een definitie: een beschrijving van de betekenis van dat modelelement. 
 In zo’n beschrijving kunnen een of meerdere gebruikte termen expliciet gekoppeld zijn aan een begrip. 
 Dit wordt een <em>geannoteerde definitie</em> genoemd.  </p>
 <p>Bij een geannoteerde definitie kunnen zowel de afzonderlijke termen uit de definitie als het modelelement in zijn geheel een lineage-relatie hebben met een begrip.  </p>
 <p>Zowel conceptuele informatiemodellen als logische gegevensmodellen kunnen geannoteerde definities bevatten.</p>
-</section><section id="het-hoofdonderwerp-van-een-definitie"><div class="header-wrapper"><h5 id="x5-1-5-2-het-hoofdonderwerp-van-een-definitie"><bdi class="secno">5.1.5.2 </bdi>Het hoofdonderwerp van een definitie</h5><a class="self-link" href="#het-hoofdonderwerp-van-een-definitie" aria-label="Permalink for Section 5.1.5.2"></a></div>
+</section><section id="het-hoofdonderwerp-van-een-definitie"><div class="header-wrapper"><h5 id="x4-1-5-2-het-hoofdonderwerp-van-een-definitie"><bdi class="secno">4.1.5.2 </bdi>Het hoofdonderwerp van een definitie</h5><a class="self-link" href="#het-hoofdonderwerp-van-een-definitie" aria-label="Permalink for Section 4.1.5.2"></a></div>
 <p><em>(Nog uit te werken in dit document.)</em>
 Zie: onderwerp van gesprek. </p>
-</section></section><section id="ontwerpbeslissingen"><div class="header-wrapper"><h4 id="x5-1-6-ontwerpbeslissingen"><bdi class="secno">5.1.6 </bdi>Ontwerpbeslissingen</h4><a class="self-link" href="#ontwerpbeslissingen" aria-label="Permalink for Section 5.1.6"></a></div>
-<section id="redundantie-van-definities"><div class="header-wrapper"><h5 id="x5-1-6-1-redundantie-van-definities"><bdi class="secno">5.1.6.1 </bdi>Redundantie van definities</h5><a class="self-link" href="#redundantie-van-definities" aria-label="Permalink for Section 5.1.6.1"></a></div>
+</section></section><section id="ontwerpbeslissingen"><div class="header-wrapper"><h4 id="x4-1-6-ontwerpbeslissingen"><bdi class="secno">4.1.6 </bdi>Ontwerpbeslissingen</h4><a class="self-link" href="#ontwerpbeslissingen" aria-label="Permalink for Section 4.1.6"></a></div>
+<section id="redundantie-van-definities"><div class="header-wrapper"><h5 id="x4-1-6-1-redundantie-van-definities"><bdi class="secno">4.1.6.1 </bdi>Redundantie van definities</h5><a class="self-link" href="#redundantie-van-definities" aria-label="Permalink for Section 4.1.6.1"></a></div>
 <p>In MIM is een definitie voor veel modelelementen een verplicht metagegeven. 
 Wanneer de definitie van een modelelement exact gelijk is aan die van een modelelement of begrip waarmee een lineage-relatie bestaat, kan dit als redundant worden ervaren.  </p>
 <p>Het verdient echter de voorkeur om deze definities toch te herhalen, zodat het model ook zelfstandig goed te begrijpen blijft. In een eigen beheer omgeving zou de gegevensdefinitie leeg gelaten kunnen worden waarmee bedoeld wordt dat deze rechtstreeks van het gerelateerde begrip overgenomen kan worden, maar bij de publicatie van het model hoort er altijd een gegevensdefinitie te zijn die te lezen is door gebruikers.</p>
-</section><section id="elk-gegevenstype-heeft-een-gegevensdefinitie"><div class="header-wrapper"><h5 id="x5-1-6-2-elk-gegevenstype-heeft-een-gegevensdefinitie"><bdi class="secno">5.1.6.2 </bdi>Elk gegevenstype heeft een gegevensdefinitie</h5><a class="self-link" href="#elk-gegevenstype-heeft-een-gegevensdefinitie" aria-label="Permalink for Section 5.1.6.2"></a></div>
+</section><section id="elk-gegevenstype-heeft-een-gegevensdefinitie"><div class="header-wrapper"><h5 id="x4-1-6-2-elk-gegevenstype-heeft-een-gegevensdefinitie"><bdi class="secno">4.1.6.2 </bdi>Elk gegevenstype heeft een gegevensdefinitie</h5><a class="self-link" href="#elk-gegevenstype-heeft-een-gegevensdefinitie" aria-label="Permalink for Section 4.1.6.2"></a></div>
 <p>Elk gegevenstype verdiend een definitie. Daarom is de definitie hiervan verplicht. Elk gegevensobjecttype verdiend een definitie. Daarom is de definitie hiervan verplicht. Om deze reden is het ook nodig om het mogelijk te maken om verschillen tussen de gegevensdefinitie en de bovenliggende definities uit CIM en begrippenkader (en daarboven) te kunnen beschrijven.  </p>
-</section></section><section id="aanpak-per-raakvlak-tussen-mim-niveaus-een-model-maken"><div class="header-wrapper"><h4 id="x5-1-7-aanpak-per-raakvlak-tussen-mim-niveaus-een-model-maken"><bdi class="secno">5.1.7 </bdi>Aanpak: per raakvlak tussen MIM niveaus een model maken</h4><a class="self-link" href="#aanpak-per-raakvlak-tussen-mim-niveaus-een-model-maken" aria-label="Permalink for Section 5.1.7"></a></div>
+</section></section><section id="aanpak-per-raakvlak-tussen-mim-niveaus-een-model-maken"><div class="header-wrapper"><h4 id="x4-1-7-aanpak-per-raakvlak-tussen-mim-niveaus-een-model-maken"><bdi class="secno">4.1.7 </bdi>Aanpak: per raakvlak tussen MIM niveaus een model maken</h4><a class="self-link" href="#aanpak-per-raakvlak-tussen-mim-niveaus-een-model-maken" aria-label="Permalink for Section 4.1.7"></a></div>
 <p><em>(Nog uit te werken in dit document.)</em></p>
 <table>
 <thead>
@@ -1734,10 +1714,10 @@ Wanneer de definitie van een modelelement exact gelijk is aan die van een modele
         <figcaption><a class="self-link" href="#fig-in-een-diagram">Figuur <bdi class="figno">4</bdi></a> <span class="fig-title">In een diagram</span></figcaption>
       </figure>
     <p></p>
-</section></section><section id="semantische-herleidbaarheid"><div class="header-wrapper"><h3 id="x5-2-semantische-herleidbaarheid"><bdi class="secno">5.2 </bdi>Semantische herleidbaarheid</h3><a class="self-link" href="#semantische-herleidbaarheid" aria-label="Permalink for Section 5.2"></a></div>
+</section></section><section id="semantische-herleidbaarheid"><div class="header-wrapper"><h3 id="x4-2-semantische-herleidbaarheid"><bdi class="secno">4.2 </bdi>Semantische herleidbaarheid</h3><a class="self-link" href="#semantische-herleidbaarheid" aria-label="Permalink for Section 4.2"></a></div>
 <p>Een begrippenkader met begrippen en een conceptueel informatiemodel (CIM) kunnen gebruikt worden om te komen tot een welgevormde definitie van een gegevenstype die goed leesbaar en ook nog steed heel helder is voor gebruikers. Hierbij wordt zowel gekeken naar definities en naar semantische herleibaarheid, beide horen bij elkaar. De laatste is een aanvulling op de eerste. Het doel is telkens om betekenis van elementen op ieder beschouwingsniveau uit te drukken met een welgevormde verwoording van die betekenis met een definitie en om hierna semantische verwijzingen aan te geven waarop de tekst van deze definitie is gebaseerd. </p>
 <p>Dit wordt uitgewerkt aan de hand van een voorbeeld. </p>
-<section id="voorbeeld"><div class="header-wrapper"><h4 id="x5-2-1-voorbeeld"><bdi class="secno">5.2.1 </bdi>Voorbeeld</h4><a class="self-link" href="#voorbeeld" aria-label="Permalink for Section 5.2.1"></a></div>
+<section id="voorbeeld"><div class="header-wrapper"><h4 id="x4-2-1-voorbeeld"><bdi class="secno">4.2.1 </bdi>Voorbeeld</h4><a class="self-link" href="#voorbeeld" aria-label="Permalink for Section 4.2.1"></a></div>
 <p>In dit voorbeeld is een begrippenkader uitgewerkt naar een CIM en beide weer zijn gebruikt bij het maken van gegevensobjecttype en een gegevenstype in een LGM. </p>
 <p><strong>Begrippen in een begrippenkader:</strong></p>
 <ul>
@@ -1816,10 +1796,10 @@ Wanneer de definitie van een modelelement exact gelijk is aan die van een modele
       </figure>
     <p></p>
 <p>Tot dusver het voorbeeld. Onderstaande werkt nader uit hoe semantische herleidbaarheid precies gespecificeerd wordt. Merk op dat dit per modeltype verschillend is zijn omdat semantische verwijzingen in een CIM naar begrippen verwijzen en in LGM naar CIM modelelementen en van daaruit naar begrippen. Het doel is hierbij echter telkens hetzelfde. </p>
-</section><section id="lineage-vanuit-cim-naar-begrippenkader"><div class="header-wrapper"><h4 id="x5-2-2-lineage-vanuit-cim-naar-begrippenkader"><bdi class="secno">5.2.2 </bdi>Lineage vanuit CIM naar begrippenkader</h4><a class="self-link" href="#lineage-vanuit-cim-naar-begrippenkader" aria-label="Permalink for Section 5.2.2"></a></div>
+</section><section id="lineage-vanuit-cim-naar-begrippenkader"><div class="header-wrapper"><h4 id="x4-2-2-lineage-vanuit-cim-naar-begrippenkader"><bdi class="secno">4.2.2 </bdi>Lineage vanuit CIM naar begrippenkader</h4><a class="self-link" href="#lineage-vanuit-cim-naar-begrippenkader" aria-label="Permalink for Section 4.2.2"></a></div>
 <p>In deze paragraaf wordt aangegeven hoe een begrippenkader met begrippen gebruikt kan worden om semantische herleidbaarheid aan te brengen in een CIM. </p>
 <p>De definitie van een modelelement in een CIM heeft een zeer sterke relatie met de definitie van een begrip uit een begrippenkader. Een begrippenkader en een conceptueel informatiemodel beschrijven immers beiden een model van dezelfde werkelijkheid. De ene beschrijft begrippen waarmee we uitdrukking geven aan het beschrijven van die werkelijkeheid, de andere geeft de conceptualisatie aan van dezelfde werkelijkheid, door middel van objecttypen, eigenschaptypen, relatietypen enzovoorts. Het is daarom in principe zo dat de terminologie in een CIM overeenkomt met de voorkeurstermen van de gerelateerde begrippen, daar waar mogelijk, mede ook om geen onnodige (spraak) verschillen te krijgen. Dit is niet altijd mogelijk, maar dit is wel een streven. De spelregels in onderstaande tabel geven dit aan. </p>
-<section id="lineage-op-model-niveau"><div class="header-wrapper"><h5 id="x5-2-2-1-lineage-op-model-niveau"><bdi class="secno">5.2.2.1 </bdi>Lineage op model niveau</h5><a class="self-link" href="#lineage-op-model-niveau" aria-label="Permalink for Section 5.2.2.1"></a></div>
+<section id="lineage-op-model-niveau"><div class="header-wrapper"><h5 id="x4-2-2-1-lineage-op-model-niveau"><bdi class="secno">4.2.2.1 </bdi>Lineage op model niveau</h5><a class="self-link" href="#lineage-op-model-niveau" aria-label="Permalink for Section 4.2.2.1"></a></div>
 <p>In een CIM kunnen modelelementen voorkomen die semantische verwijzingen hebben naar begrippen uit verschillende begrippenkaders. Hierover kan extra informatie worden toegevoegd in het model, zodat helder is welke dit zijn. </p>
 <p>Per model waarnaar wordt verwezen kan worden aangegeven. </p>
 <table>
@@ -1863,7 +1843,7 @@ Wanneer de definitie van een modelelement exact gelijk is aan die van een modele
 <li>Verwijzingen naar kennisbronnen die niet als begrippenkader zijn uitgewerkt, zijn toegestaan. In dit geval is het metagegeven 'kennisbron' bij een modelelement met een definitie gevuld.</li>
 </ol>
 <p><em>TODO: 3 is hier nog niet uitgewerkt.</em></p>
-</section><section id="modelelementen-uit-een-cim-waarvoor-semantische-verwijzingen-mogelijk-zijn"><div class="header-wrapper"><h5 id="x5-2-2-2-modelelementen-uit-een-cim-waarvoor-semantische-verwijzingen-mogelijk-zijn"><bdi class="secno">5.2.2.2 </bdi>Modelelementen uit een CIM waarvoor semantische verwijzingen mogelijk zijn</h5><a class="self-link" href="#modelelementen-uit-een-cim-waarvoor-semantische-verwijzingen-mogelijk-zijn" aria-label="Permalink for Section 5.2.2.2"></a></div>
+</section><section id="modelelementen-uit-een-cim-waarvoor-semantische-verwijzingen-mogelijk-zijn"><div class="header-wrapper"><h5 id="x4-2-2-2-modelelementen-uit-een-cim-waarvoor-semantische-verwijzingen-mogelijk-zijn"><bdi class="secno">4.2.2.2 </bdi>Modelelementen uit een CIM waarvoor semantische verwijzingen mogelijk zijn</h5><a class="self-link" href="#modelelementen-uit-een-cim-waarvoor-semantische-verwijzingen-mogelijk-zijn" aria-label="Permalink for Section 4.2.2.2"></a></div>
 <p>Dit zijn in principe alle modelelementen die een definitie kunnen hebben en ten minste alle modelelementen die een definitie hebben (altijd behoren te hebben). </p>
 <table>
 <thead>
@@ -1920,12 +1900,12 @@ Wanneer de definitie van een modelelement exact gelijk is aan die van een modele
 <p><em>Interpretatie van de semantische verwijzing</em></p>
 <p>De relatie tussen een conceptueel modelelement en een begrip moet strikt worden opgevat. Het gaat immers om een formele modellering van (informatie over) de werkelijkheid. De semantische verwijzing tussen een conceptueel modelelement en een begrip geeft altijd aan dat de definities overeenkomen, oftewel 1 op 1 op elkaar gebaseerd zijn en in ieder geval grotendeels overeenkomen. De verwoording is mogelijk anders, maar de betekenis is hetzelfde. Het kan zijn dat er meerdere begrippen zijn gebruikt, de betekenis is dan nog steeds geheel overeenkomend, er is enkel sprake van een combinatie. </p>
 <p>Het is mogelijk dat MIM in een latere versie ook niet exact overeenkomende semantische verwijzingen toestaat. De semantische verwijzingen zullen dan een aanduiding of classificatie krijgen. Dit is op het moment nog niet uitgewerkt.</p>
-</section><section id="metamodel"><div class="header-wrapper"><h5 id="x5-2-2-3-metamodel"><bdi class="secno">5.2.2.3 </bdi>Metamodel</h5><a class="self-link" href="#metamodel" aria-label="Permalink for Section 5.2.2.3"></a></div>
+</section><section id="metamodel"><div class="header-wrapper"><h5 id="x4-2-2-3-metamodel"><bdi class="secno">4.2.2.3 </bdi>Metamodel</h5><a class="self-link" href="#metamodel" aria-label="Permalink for Section 4.2.2.3"></a></div>
 <p><em>(Nog uit te werken in dit document.)</em>
 TODO: visueel diagram. </p>
-</section></section><section id="lineage-vanuit-logisch-gegevensmodel-naar-een-begrippenkader"><div class="header-wrapper"><h4 id="x5-2-3-lineage-vanuit-logisch-gegevensmodel-naar-een-begrippenkader"><bdi class="secno">5.2.3 </bdi>Lineage vanuit logisch gegevensmodel naar een begrippenkader</h4><a class="self-link" href="#lineage-vanuit-logisch-gegevensmodel-naar-een-begrippenkader" aria-label="Permalink for Section 5.2.3"></a></div>
+</section></section><section id="lineage-vanuit-logisch-gegevensmodel-naar-een-begrippenkader"><div class="header-wrapper"><h4 id="x4-2-3-lineage-vanuit-logisch-gegevensmodel-naar-een-begrippenkader"><bdi class="secno">4.2.3 </bdi>Lineage vanuit logisch gegevensmodel naar een begrippenkader</h4><a class="self-link" href="#lineage-vanuit-logisch-gegevensmodel-naar-een-begrippenkader" aria-label="Permalink for Section 4.2.3"></a></div>
 <p><em>(Nog uit te werken in dit document.)</em></p>
-<section id="modelelementen-uit-lgm-met-semantische-verwijzingen-naar-begrippenkader"><div class="header-wrapper"><h5 id="x5-2-3-1-modelelementen-uit-lgm-met-semantische-verwijzingen-naar-begrippenkader"><bdi class="secno">5.2.3.1 </bdi>Modelelementen uit LGM met semantische verwijzingen naar begrippenkader</h5><a class="self-link" href="#modelelementen-uit-lgm-met-semantische-verwijzingen-naar-begrippenkader" aria-label="Permalink for Section 5.2.3.1"></a></div>
+<section id="modelelementen-uit-lgm-met-semantische-verwijzingen-naar-begrippenkader"><div class="header-wrapper"><h5 id="x4-2-3-1-modelelementen-uit-lgm-met-semantische-verwijzingen-naar-begrippenkader"><bdi class="secno">4.2.3.1 </bdi>Modelelementen uit LGM met semantische verwijzingen naar begrippenkader</h5><a class="self-link" href="#modelelementen-uit-lgm-met-semantische-verwijzingen-naar-begrippenkader" aria-label="Permalink for Section 4.2.3.1"></a></div>
 <table>
 <thead>
 <tr>
@@ -1958,11 +1938,11 @@ TODO: visueel diagram. </p>
 </blockquote>
 <p>De formulering <em>is gebaseerd op</em> wijst op een meer vrije en mogelijk meervoudige interpretatie van de relatie tussen een logisch modelelement en een begrip.</p>
 <p><em>TODO: hoe precies verwijzen naar een begrip. Dit is analoog aan MIM 1.2, wellicht nog met een extra uitbreiding of dit wel of niet exact is.</em></p>
-</section></section><section id="lineage-vanuit-lgm-naar-cim"><div class="header-wrapper"><h4 id="x5-2-4-lineage-vanuit-lgm-naar-cim"><bdi class="secno">5.2.4 </bdi>Lineage vanuit LGM naar CIM</h4><a class="self-link" href="#lineage-vanuit-lgm-naar-cim" aria-label="Permalink for Section 5.2.4"></a></div>
+</section></section><section id="lineage-vanuit-lgm-naar-cim"><div class="header-wrapper"><h4 id="x4-2-4-lineage-vanuit-lgm-naar-cim"><bdi class="secno">4.2.4 </bdi>Lineage vanuit LGM naar CIM</h4><a class="self-link" href="#lineage-vanuit-lgm-naar-cim" aria-label="Permalink for Section 4.2.4"></a></div>
 <p>Gegevens gaan over eigenschappen van een object. Door semantische herleidbaarheid aan te brengen wordt aangegeven hoe (en in hoeverre) de gegevenswerkelijkheid en de gemodelleerde werkelijkheid in het begrippenkader en het conceptuele inforatiemodel met elkaar overeenkomen. </p>
 <p>Een gegevensmodel gaat over gegevens die er zijn, een informatiemodel gaat over informatie die we over de werkelijkheid nodig hebben. De definitie van een gegevensobject of een gegevenstype is daarom sterk gebaseerd de conceptualisatie van de informatie die beschreven is in het CIM. Het CIM definieert immers het objecttype, of het eigenschaptype, waarover het gegevenstype gaat. Dit is in een begrippenkader nog open en nog niet formeel vastgesteld. Daarom heeft het de sterke voorkeur om bij het aanbrengen van semantische herleidbaarheid in een logische gegevensmodel verwijzingen aan te brengen naar een modelelment in een CIM, en alleen te verwijzen naar een begrip als er geen CIM is. </p>
 <p>Semantische herleidbaarheid in een logisch gegevensmodel beschrijft op welke modelelementen uit een CIM een gegevenstype is gebaseerd. In het verlengde hiervan geldt dat de definitie van het gegevenstype weer op de begrippen is gebaseerd die daarin zijn aangegeven. </p>
-<section id="lineage-op-model-niveau-0"><div class="header-wrapper"><h5 id="x5-2-4-1-lineage-op-model-niveau"><bdi class="secno">5.2.4.1 </bdi>Lineage op model niveau</h5><a class="self-link" href="#lineage-op-model-niveau-0" aria-label="Permalink for Section 5.2.4.1"></a></div>
+<section id="lineage-op-model-niveau-0"><div class="header-wrapper"><h5 id="x4-2-4-1-lineage-op-model-niveau"><bdi class="secno">4.2.4.1 </bdi>Lineage op model niveau</h5><a class="self-link" href="#lineage-op-model-niveau-0" aria-label="Permalink for Section 4.2.4.1"></a></div>
 <p>In een LGM kunnen modelelementen voorkomen die semantische verwijzingen hebben naar CIM modelelementen uit verschillende CIM's. Hierover kan extra informatie worden toegevoegd in het model. </p>
 <p>Per model waarnaar wordt verwezen kan worden aangegeven: </p>
 <table>
@@ -2013,7 +1993,7 @@ TODO: visueel diagram. </p>
 <li>Als er een CIM is, dan wordt er naar het CIM verwezen en niet rechtstreeks naar het begrippenkader</li>
 <li>Er mag worden verwezen naar een LGM via indirecte semantische verwijzingen</li>
 </ol>
-</section><section id="modelelementen-uit-lgm-met-semantische-verwijzingen-naar-cim"><div class="header-wrapper"><h5 id="x5-2-4-2-modelelementen-uit-lgm-met-semantische-verwijzingen-naar-cim"><bdi class="secno">5.2.4.2 </bdi>Modelelementen uit LGM met semantische verwijzingen naar CIM</h5><a class="self-link" href="#modelelementen-uit-lgm-met-semantische-verwijzingen-naar-cim" aria-label="Permalink for Section 5.2.4.2"></a></div>
+</section><section id="modelelementen-uit-lgm-met-semantische-verwijzingen-naar-cim"><div class="header-wrapper"><h5 id="x4-2-4-2-modelelementen-uit-lgm-met-semantische-verwijzingen-naar-cim"><bdi class="secno">4.2.4.2 </bdi>Modelelementen uit LGM met semantische verwijzingen naar CIM</h5><a class="self-link" href="#modelelementen-uit-lgm-met-semantische-verwijzingen-naar-cim" aria-label="Permalink for Section 4.2.4.2"></a></div>
 <table>
 <thead>
 <tr>
@@ -2046,7 +2026,7 @@ TODO: visueel diagram. </p>
 <p>“Verwijzing naar een conceptueel modelelement, vanuit een modelelement op het logische niveau, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodelelement is gebaseerd. De verwijzing heeft de vorm van een term of een URI.”</p>
 </blockquote>
 <p>De formulering <em>is gebaseerd op</em> wijst op een meer vrije en mogelijk meervoudige interpretatie van de relatie tussen een logisch modelelement en een begrip.</p>
-</section><section id="specificatie-voor-gegevensobjecttype"><div class="header-wrapper"><h5 id="x5-2-4-3-specificatie-voor-gegevensobjecttype"><bdi class="secno">5.2.4.3 </bdi>Specificatie voor gegevensobjecttype</h5><a class="self-link" href="#specificatie-voor-gegevensobjecttype" aria-label="Permalink for Section 5.2.4.3"></a></div>
+</section><section id="specificatie-voor-gegevensobjecttype"><div class="header-wrapper"><h5 id="x4-2-4-3-specificatie-voor-gegevensobjecttype"><bdi class="secno">4.2.4.3 </bdi>Specificatie voor gegevensobjecttype</h5><a class="self-link" href="#specificatie-voor-gegevensobjecttype" aria-label="Permalink for Section 4.2.4.3"></a></div>
 <p>| Metagegeven | Beschrijving      | 
 | ------------ | ------------------------------------------------------ | -
 | onderwerp van gesprek | aanduiding welk objecttype uit een CIM het onderwerp van gesprek is van het gegevensobjecttype |</p>
@@ -2062,7 +2042,7 @@ TODO: visueel diagram. </p>
 <li>de model naam is opgenomen bij Lineage op model niveau</li>
 </ul>
 <p>Bij het aangeven van de semantische herleidbaarheid van een gegevenstype naar de bijbehorende semantiek kan uit analyse blijken dat de gegevensdefinitie van een gegevenstype volledig afgedekt kan worden door modelelementen in een CIM en/of begrippenkader. Dit is de gewenste situatie. Het kan echter ook zo zijn dat het niet het wat anders is dan gewenst. De mate van aanwijsbaarheid is dan maar deels mogelijk of zelfs geheel niet mogelijk. </p>
-</section><section id="specificatie-voor-gegevenstype"><div class="header-wrapper"><h5 id="x5-2-4-4-specificatie-voor-gegevenstype"><bdi class="secno">5.2.4.4 </bdi>Specificatie voor gegevenstype</h5><a class="self-link" href="#specificatie-voor-gegevenstype" aria-label="Permalink for Section 5.2.4.4"></a></div>
+</section><section id="specificatie-voor-gegevenstype"><div class="header-wrapper"><h5 id="x4-2-4-4-specificatie-voor-gegevenstype"><bdi class="secno">4.2.4.4 </bdi>Specificatie voor gegevenstype</h5><a class="self-link" href="#specificatie-voor-gegevenstype" aria-label="Permalink for Section 4.2.4.4"></a></div>
 <p>De manier waarop semantische herleidbaarheid is gespecificeerd wordt eerst aangegeven. </p>
 <table>
 <thead>
@@ -2117,7 +2097,7 @@ TODO: visueel diagram. </p>
 </tbody></table>
 <p>Regel: De aanduiding van de van verwijsbaarheid is een van deze waarden. </p>
 <p>Regel: Het is niet toegestaan om een andere aanduiding te kiezen die niet in MIM gedefinieerd is. Het is wel toegestaan om in een eigen toepassingsprofiel een 'nadere aanduiding' te specificeren, in aanvulling op de MIM aanduiding. </p>
-<section id="horizontale-semantische-herleidbaarheid"><div class="header-wrapper"><h6 id="x5-2-4-4-1-horizontale-semantische-herleidbaarheid"><bdi class="secno">5.2.4.4.1 </bdi>Horizontale semantische herleidbaarheid**</h6><a class="self-link" href="#horizontale-semantische-herleidbaarheid" aria-label="Permalink for Section 5.2.4.4.1"></a></div>
+<section id="horizontale-semantische-herleidbaarheid"><div class="header-wrapper"><h6 id="x4-2-4-4-1-horizontale-semantische-herleidbaarheid"><bdi class="secno">4.2.4.4.1 </bdi>Horizontale semantische herleidbaarheid**</h6><a class="self-link" href="#horizontale-semantische-herleidbaarheid" aria-label="Permalink for Section 4.2.4.4.1"></a></div>
 <p>Een gegevenstype kan 1 op 1 overgenomen zijn uit een ander logisch gegevensmodel. Het is mogelijk om daarnaar te verwijzen, en voor de semantische herleidbaarheid te stellen: zie aldaar. </p>
 <table>
 <thead>
@@ -2141,7 +2121,7 @@ TODO: visueel diagram. </p>
 <td>als aangebracht, dan altijd tijd precies 1</td>
 </tr>
 </tbody></table>
-</section><section id="verticale-semantische-herleidbaarheid"><div class="header-wrapper"><h6 id="x5-2-4-4-2-verticale-semantische-herleidbaarheid"><bdi class="secno">5.2.4.4.2 </bdi>Verticale semantische herleidbaarheid</h6><a class="self-link" href="#verticale-semantische-herleidbaarheid" aria-label="Permalink for Section 5.2.4.4.2"></a></div>
+</section><section id="verticale-semantische-herleidbaarheid"><div class="header-wrapper"><h6 id="x4-2-4-4-2-verticale-semantische-herleidbaarheid"><bdi class="secno">4.2.4.4.2 </bdi>Verticale semantische herleidbaarheid</h6><a class="self-link" href="#verticale-semantische-herleidbaarheid" aria-label="Permalink for Section 4.2.4.4.2"></a></div>
 <p>Een gegevenstype kan een gegevensdefinitie hebben die gebaseerd is op bovenliggende definities. </p>
 <p>Regel: indien de semantische herleidbaarheid 'herleidbaar' is dan worden de metagegevens 'semantische verwijzingen' en 'ontbrekende verwijzingen' ook gespecificeerd. </p>
 <p>Voor elk gegevenstype kunnen meerdere semantische verwijzingen worden opgenomen. </p>
@@ -2352,49 +2332,14 @@ TODO: visueel diagram. </p>
 <td>als aangebracht, dan altijd tijd precies 1 en gelijk aan</td>
 </tr>
 </tbody></table>
-</section></section><section id="metamodel-0"><div class="header-wrapper"><h5 id="x5-2-4-5-metamodel"><bdi class="secno">5.2.4.5 </bdi>Metamodel</h5><a class="self-link" href="#metamodel-0" aria-label="Permalink for Section 5.2.4.5"></a></div>
+</section></section><section id="metamodel-0"><div class="header-wrapper"><h5 id="x4-2-4-5-metamodel"><bdi class="secno">4.2.4.5 </bdi>Metamodel</h5><a class="self-link" href="#metamodel-0" aria-label="Permalink for Section 4.2.4.5"></a></div>
 <p><em>(Nog uit te werken in dit document.)</em>
 TODO: visueel diagram.</p>
 </section></section></section></section>
   
   
-  
-  <section class="informative" id="niet-normatieve-deel"><div class="header-wrapper"><h2 id="x6-niet-normatieve-deel"><bdi class="secno">6. </bdi>Niet-normatieve deel</h2><a class="self-link" href="#niet-normatieve-deel" aria-label="Permalink for Section 6."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
-<p>Bijvoorbeeld een introductie is niet normatief.</p>
-<div class="note" role="note" id="issue-container-generatedID-0"><div role="heading" class="note-title marker" id="h-note-0" aria-level="3"><span>Noot</span><span class="issue-label">: index</span></div><p class="">
-Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config.js</code>.
-</p></div>
-
-<section id="een-subparagraaf"><div class="header-wrapper"><h3 id="x6-1-een-subparagraaf"><bdi class="secno">6.1 </bdi>Een subparagraaf</h3><a class="self-link" href="#een-subparagraaf" aria-label="Permalink for Section 6.1"></a></div>
-<table>
-<thead>
-<tr>
-<th>Sleutel</th>
-<th>Waarde</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>key</td>
-<td>value</td>
-</tr>
-</tbody></table>
-</section></section>
-  <section id="mermaid-diagram"><div class="header-wrapper"><h2 id="x7-mermaid-diagram"><bdi class="secno">7. </bdi>Mermaid diagram</h2><a class="self-link" href="#mermaid-diagram" aria-label="Permalink for Section 7."></a></div>
-<figure id="Mermaidvoorbeeld">
-
-<pre><svg id="diagram-1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="max-width: 128.234375px;" viewBox="0 0 128.234375 248"><style>
-#diagram-1 {font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#diagram-1 .error-icon{fill:#552222;}#diagram-1 .error-text{fill:#552222;stroke:#552222;}#diagram-1 .edge-thickness-normal{stroke-width:2px;}#diagram-1 .edge-thickness-thick{stroke-width:3.5px;}#diagram-1 .edge-pattern-solid{stroke-dasharray:0;}#diagram-1 .edge-pattern-dashed{stroke-dasharray:3;}#diagram-1 .edge-pattern-dotted{stroke-dasharray:2;}#diagram-1 .marker{fill:#333333;stroke:#333333;}#diagram-1 .marker.cross{stroke:#333333;}#diagram-1 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#diagram-1 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#diagram-1 .cluster-label text{fill:#333;}#diagram-1 .cluster-label span{color:#333;}#diagram-1 .label text,#diagram-1 span{fill:#333;color:#333;}#diagram-1 .node rect,#diagram-1 .node circle,#diagram-1 .node ellipse,#diagram-1 .node polygon,#diagram-1 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#diagram-1 .node .label{text-align:center;}#diagram-1 .node.clickable{cursor:pointer;}#diagram-1 .arrowheadPath{fill:#333333;}#diagram-1 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#diagram-1 .flowchart-link{stroke:#333333;fill:none;}#diagram-1 .edgeLabel{background-color:#e8e8e8;text-align:center;}#diagram-1 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#diagram-1 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#diagram-1 .cluster text{fill:#333;}#diagram-1 .cluster span{color:#333;}#diagram-1 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#diagram-1 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}
-</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-A LE-B" id="L-A-B" style="opacity: 1;"><path class="path" d="M48.55859375,47.77154964846383L44.354817708333336,52.64295804038653C40.151041666666664,57.514366432309224,31.743489583333332,67.25718321615462,27.539713541666668,76.29525827474397C23.3359375,85.33333333333333,23.3359375,93.66666666666667,23.3359375,97.83333333333333L23.3359375,102" marker-end="url(#arrowhead31)" style="fill:none"></path><defs><marker id="arrowhead31" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-A LE-C" id="L-A-C" style="opacity: 1;"><path class="path" d="M79.23046875,47.77154964846383L83.43424479166667,52.64295804038653C87.63802083333333,57.514366432309224,96.04557291666667,67.25718321615462,100.24934895833333,76.29525827474397C104.453125,85.33333333333333,104.453125,93.66666666666667,104.453125,97.83333333333333L104.453125,102" marker-end="url(#arrowhead32)" style="fill:none"></path><defs><marker id="arrowhead32" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-D" id="L-B-D" style="opacity: 1;"><path class="path" d="M23.3359375,146L23.3359375,150.16666666666666C23.3359375,154.33333333333334,23.3359375,162.66666666666666,27.465494791666668,171.6187357539568C31.595052083333332,180.57080484124694,39.854166666666664,190.14160968249382,43.983723958333336,194.92701210311728L48.11328125,199.71241452374073" marker-end="url(#arrowhead33)" style="fill:none"></path><defs><marker id="arrowhead33" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-C LE-D" id="L-C-D" style="opacity: 1;"><path class="path" d="M104.453125,146L104.453125,150.16666666666666C104.453125,154.33333333333334,104.453125,162.66666666666666,100.32356770833333,171.6187357539568C96.19401041666667,180.57080484124694,87.93489583333333,190.14160968249382,83.80533854166667,194.92701210311728L79.67578125,199.71241452374073" marker-end="url(#arrowhead34)" style="fill:none"></path><defs><marker id="arrowhead34" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-B" class="edgeLabel L-LS-A' L-LE-B"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-C" class="edgeLabel L-LS-A' L-LE-C"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-D" class="edgeLabel L-LS-B' L-LE-D"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-C-D" class="edgeLabel L-LS-C' L-LE-D"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-24" transform="translate(63.89453125,30)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.3359375" y="-22" width="30.671875" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.3359375,-12)"><foreignObject width="10.671875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">A</div></foreignObject></g></g></g><g class="node default" id="flowchart-B-25" transform="translate(23.3359375,124)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.3359375" y="-22" width="30.671875" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.3359375,-12)"><foreignObject width="10.671875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">B</div></foreignObject></g></g></g><g class="node default" id="flowchart-C-27" transform="translate(104.453125,124)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.78125" y="-22" width="31.5625" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.78125,-12)"><foreignObject width="11.5625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">C</div></foreignObject></g></g></g><g class="node default" id="flowchart-D-29" transform="translate(63.89453125,218)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.78125" y="-22" width="31.5625" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.78125,-12)"><foreignObject width="11.5625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">D</div></foreignObject></g></g></g></g></g></g></svg></pre>
-<figcaption><a class="self-link" href="#Mermaidvoorbeeld">Figuur <bdi class="figno">6</bdi></a> <span class="fig-title">Mermaid voorbeeld</span></figcaption>
-</figure></section>
-
-  
-  
-  
-
-  
-  <section id="conformance"><div class="header-wrapper"><h2 id="x8-conformiteit"><bdi class="secno">8. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 8."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section> 
-  <section id="tof"><div class="header-wrapper"><h2 id="x9-lijst-met-figuren"><bdi class="secno">9. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section 9."></a></div><ul class="tof">
+  <section id="conformance"><div class="header-wrapper"><h2 id="x5-conformiteit"><bdi class="secno">5. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 5."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section> 
+  <section id="tof"><div class="header-wrapper"><h2 id="x6-lijst-met-figuren"><bdi class="secno">6. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section 6."></a></div><ul class="tof">
         <li class="tofline">
     <a class="tocxref" href="#fig-het-bsn-voorbeeld-in-een-diagram"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title">Het BSN voorbeeld in een diagram</span></a>
   </li><li class="tofline">
@@ -2405,8 +2350,6 @@ Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config
     <a class="tocxref" href="#fig-in-een-diagram"><span class="self-link">Figuur <bdi class="figno">4</bdi></span> <span class="fig-title">In een diagram</span></a>
   </li><li class="tofline">
     <a class="tocxref" href="#fig-voorbeeld-png"><span class="self-link">Figuur <bdi class="figno">5</bdi></span> <span class="fig-title">Voorbeeld.png</span></a>
-  </li><li class="tofline">
-    <a class="tocxref" href="#Mermaidvoorbeeld"><span class="self-link">Figuur <bdi class="figno">6</bdi></span> <span class="fig-title">Mermaid voorbeeld</span></a>
   </li>
       </ul></section>
   <section id="index" class="appendix"><div class="header-wrapper"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix A."></a></div><section id="index-defined-here">
@@ -2425,7 +2368,7 @@ Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config
 
 <p role="navigation" id="back-to-top">
     <a href="#title"><abbr title="Back to Top">↑</abbr></a>
-  </p><div class="mermaidTooltip" style="opacity: 0;"></div><script id="respec-dfn-panel">(() => {
+  </p><script id="respec-dfn-panel">(() => {
 // @ts-check
 if (document.respec) {
   document.respec.ready.then(setupPanel);
