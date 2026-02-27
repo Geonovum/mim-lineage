@@ -1441,17 +1441,15 @@ ul.index code{color:inherit}
 </section>
   <section id="semantische-herleidbaarheid"><div class="header-wrapper"><h2 id="x2-semantische-herleidbaarheid"><bdi class="secno">2. </bdi>Semantische herleidbaarheid</h2><a class="self-link" href="#semantische-herleidbaarheid" aria-label="Permalink for Section 2."></a></div>
 <p>Uitgangspunt is dat elk modelelelement  in elke MIM laag, een eigen definitie kent en daarmee op zichzelf staat en dat semantische herleidbaarheid hier een aanvullende specificatie op is. In deze specificatie zelf kan aangegeven worden of herleidbaarheid wel of niet exact is, en wel of niet compleet (de mate van herleidbaarheid). </p>
-<p>Voorbeeld van een definitie in een logisch gegevensmodel, van een attribuuttype 'bsn': </p>
+<p>Neem bij voorbeeld een attribute '<strong>bsn</strong>' in een logisch gegevensmodel met als definitie: de identificatie van een geregistreerd persoon. </p>
+<p>In dit voorbeeld is de bijbehorende semantische herleidbing: </p>
 <ul>
-<li>de identificatie van een geregistreerd persoon</li>
+<li><strong>bsn</strong> is een <em>gegevenstype</em> dat onderdeel uitmaakt van het <em>gegevensobjecttype GeregistreerdNP</em> in een logisch gegevensmodel;</li>
+<li>voorgaande is gebaseerd op modelelementen die in een conceptueel informatiemodel zijn uitgewerkt, te weten een <em>objecttype Ingeschrevene</em>, met een <em>eigenschaptype burgerservicenummer</em>, waarbij de Ingeschrevene een <em>specialisatie is van  objecttype Natuurlijk persoon</em> (niet elke natuurlijk persoon is een ingeschrevene);</li>
+<li>voorgaande is gebaseerd op begrippen zoals: <em>begrip natuurlijk persoon</em>, een <em>begrip ingeschrevene</em>, en een <em>begrip burgerservicenummer</em>;</li>
+<li>deze begrippen zelf kunnen weer gebaseerd zijn op gepubliceerde brondocumenten, zoals in dit voorbeeld <em>het Burgerlijk Wetboek</em> en de <em>Wet algemene bepalingen burgerservicenummer</em>.</li>
 </ul>
-<p>Voorbeeld van de bijbehorende semantische herleidbaarheid: </p>
-<ul>
-<li>bsn is een gegevenstype dat onderdeel uitmaakt van het gegevensobjecttype GeregistreerdNP in een logisch gegevensmodel;</li>
-<li>voorgaande is gebaseerd op modelelementen die in een conceptueel informatiemodel zijn uitgewerkt, te weten een objecttype Ingeschrevene, met een eigenschaptype burgerservicenummer, waarbij de Ingeschrevene een specialisatie is van een objecttype Natuurlijk persoon (niet elke natuurlijk persoon is een ingeschrevene);</li>
-<li>voorgaande is gebaseerd op begrippen zoals natuurlijk persoon, een ingeschrevene, en een burgerservicenummer;</li>
-</ul>
-<p>Deze begrippen zelf kunnen weer gebaseerd zijn op gepubliceerde brondocumenten, zoals in dit voorbeeld het Burgerlijk Wetboek en de Wet algemene bepalingen burgerservicenummer. Merk op dat met dit voorbeeld niet bedoeld wordt dat er altijd sprake is of moet zijn van wet- en regelgeving. Er zijn vele domeinen waarbij dit niet of minder van belang is. </p>
+<p>Opmerking: met dit voorbeeld wordt niet bedoeld dat er altijd sprake is of moet zijn van wet- en regelgeving. Er zijn vele domeinen waarbij dit niet of minder van belang is. </p>
 <p>
       </p><figure id="fig-het-bsn-voorbeeld-in-een-diagram">
         <img src="media/BSN_voorbeeld.png" alt="Het BSN voorbeeld in een diagram">
