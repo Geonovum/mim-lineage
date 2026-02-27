@@ -1,7 +1,7 @@
 # Inleiding
 Het metamodel voor informatiemodellering (MIM) biedt een gemeenschappelijk vertrekpunt voor het maken van informatie- en gegevensmodellen. Het bevat afspraken en conventies voor het creëren van modellen en modelelementen, met daarbij standaard metagegevens. Het leidt tot meer uniforme beschrijvingen van modellen en zorgt daardoor voor meer begrijpelijkheid en andere vormen van kwaliteit.
 
-Dit document beschrijft een specifiek onderdeel van het MIM namelijk de semantische herleidbaarheid en de standaard voor het modelleren van de bijbehorende specificaties.  
+Dit document beschrijft een specifiek onderdeel van het MIM, te weten **semantische herleidbaarheid** en de standaard voor het modelleren ervan met behuld van bijbehorende specificaties.  
 
 Het doel van semantische herleidbaarheid is om aan te geven hoe definities van modelelementen in informatie- en gegevensmodellen (MIM-2 en MIM-3) zich verhouden tot bovenliggende semantiek, in het bijzonder definities van begrippen uit begrippenkaders (MIM-1). Hierbij wordt in de kern vooral gekeken naar de tekstuele verwoording van de definities uit de verschillende modellen die voorhanden zijn. 
 
