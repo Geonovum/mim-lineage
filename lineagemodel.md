@@ -6,20 +6,7 @@ De uitwerking bestaat uit:
 - een abstract model met de terminologie van het vorige hoofdstuk. Dit abstract model is voor meerdere modeltypen en modelelelementen van toepassing 
 - specifieke uitwerkingen per type modelelement in een bepaald modeltype, zoals dit gemodelleerd kan worden in een CIM of LGM
 
-## Modelelementen 
-
-Voor een CIM is uitgewerkt
-   - objecttype
-   - attribuuttype (attribueerde eigenschap)
-   - relatietype
-   - relatie met eigenschappen
-
-Voor een LGM is uitgewerkt:
-   - gegevensobjecttype
-   - gegevenstype
-   - TODO, eventueel: relatietype tussen twee gegevensobjecttypen
-
-### Lineage in en tussen verschillende MIM-beschouwingsniveaus
+## Lineage in en tussen verschillende MIM-beschouwingsniveaus
 
 Er zijn verschillende beschouwingsniveaus om kennis en gegevens te modelleren (en andere concerns, die hier niet benoemd zijn). Bij het specificeren van semantische herleidbaarheid wordt hierbij veelvuldig gebruik gemaakt van verwijzingen tussen modelelementen uit verschillende beschouwingsniveaus. De volgende verbanden worden hierbij als binnen scope gezien. 
 
@@ -51,6 +38,21 @@ Er is meer lineage tussen en binnen beschouwingsniveaus mogelijk, maar er is bew
 | 3 naar 4      | vanuit LGM naar een technisch datamodel |  Buiten scope van MIM. Zie ontwerpbeslissingen. |
 | 4 naar ...    | vanuit een technisch datamodel naar een LGM, CIM of begrippenkader | Buiten scope van MIM. |
 
+## Modelelementen met lineage
+
+Voor de volgende modelelementen is semantische herleidbaarheid uitgewerkt.
+
+CIM modelelementen:
+   - objecttype
+   - attribuuttype (attribueerde eigenschap)
+   - relatietype
+   - relatie met eigenschappen
+
+LGM modelelementen:
+   - gegevensobjecttype
+   - gegevenstype
+   - TODO, eventueel: relatietype tussen twee gegevensobjecttypen
+ 
 ## Uitgangspunten en ontwerpbeslissingen
 
 #### Elk modelelement kent een eigen definitie
