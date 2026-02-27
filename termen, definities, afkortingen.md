@@ -2,6 +2,15 @@
 
 Dit hoofdstuk beschrijft de belangrijkste termen om semantische herleidbaarheid te begrijpen. Deze worden in de specificatie van het hoofdstuk hierna gebruikt. 
 
+## Afkortingen
+
+| Afkorting |  Uitgeschreven |
+| --------- | ---------------------------------------------------------- |
+| CIM     | Conceptueel Informatiemodel      |  
+| LGM     | Logisch gegevensmodel      |                                                                                                             
+| MIM     | Metamodel informatiemodellering        |
+
+
 ## Model van semantische herleidbaarheid
 
 Centraal bij semantische herleidbaarheid staat het **semantisch relevant modelelement**. Dit is een modelelement waarvoor het zinvol en nodig is om deze te verbinden met bovenliggende semantiek uit een CIM en/of begrippenkader. Anders gezegd, de definitie van een semantisch relevant modelelement wordt zo goed als mogelijk in verband gebracht met bovenliggende definities, door de **semantische herleiding** ervoor te beschrijven. 
@@ -74,11 +83,3 @@ De definitie daarvan luidt:
 
 In MIM 1.2 kunnen logische modelelementen gekoppeld aan een begrip met behulp van het metagegeven `mim:begrip`. 
 De definitie daarvan luidt: 
-
-## Afkortingen
-
-|                   |                                                                                                                                            |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| CIM     | Conceptueel Informatiemodel      |  
-| LGM     | Logisch gegevensmodel      |                                                                                                             
-| MIM     | Metamodel informatiemodellering        |
