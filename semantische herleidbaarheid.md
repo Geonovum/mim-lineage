@@ -34,13 +34,13 @@ Opmerking: met dit voorbeeld wordt niet bedoeld dat er altijd sprake is of moet 
 
 ![Het BSN voorbeeld in een diagram](media/BSN_voorbeeld.png "Het BSN voorbeeld in een diagram")
 
-## Focus
+## Focus in MIM
 
 Dit document heeft als focus de MIM modellen zelf en behandeld primair de volgende verticale lineage:  
 - van een conceptuele informatiemodel naar de bijbehorende semantiek, zoals bijvoorbeeld een begrippenkader (dat bijvoorbeeld uitgewerkt is in de NL-SBB standaard)
 - van een logisch gegevensmodel naar een conceptueel informatiemodel
 
-> De focus van MIM is om semantische herleidbaarheid van elk modelelement volledig aan te kunnen brengen van een LGM naar een CIM en van een COIM naar een begrippenkader
+> De focus van MIM is om semantische herleidbaarheid van elk modelelement volledig aan te kunnen brengen van een LGM naar een CIM en van een CIM naar een begrippenkader
 
 Echter, er is niet altijd sprake van een ideale situatie. Denk bij voorbeeld aan de volgende: 
 - dat definities niet altijd gebaseerd zijn op eigen kennis en definities. Het komt voor dat de bovenliggende semantiek wordt bepaald door andere organisaties;  
