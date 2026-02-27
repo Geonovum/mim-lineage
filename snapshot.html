@@ -1371,7 +1371,7 @@ ul.index code{color:inherit}
 }</script>
 <link rel="stylesheet" href="https://tools.geostandaarden.nl/respec/style/base.css"></head>
 
-<body class="h-entry toc-inline"><div class="head">
+<body class="h-entry"><div class="head">
     <a class="logo" href="https://www.geonovum.nl/geo-standaarden"><img alt="Geonovum" height="67" id="Geonovum" src="https://docs.geostandaarden.nl/media/Geonovum.svg" width="132">
   </a> <h1 id="title" class="title">MIM-Lineagemodel</h1>
     
@@ -1521,6 +1521,11 @@ ul.index code{color:inherit}
 <td>Hiermee wordt aangegeven: de semantische herleidbaarheid van dit gegevenstype is exact gelijk aan die van een ander gegevenstype in een ander gegevensmodel, kijk voor de semantische herleidbaarheid naar bovenliggende definities daar. Deze verwijzing is niet 'verticaal' (tussen beschouwingsniveaus), maar 'horizontaal', binnen hetzelfde beschouwingsniveau. Deze semantische verwijzing is vooral onderkend om aan te geven dat een gegevenstype in een gegevensmodel van een gegevensuitwisseling qua betekenis exact overeenkomt met een gegevenstype in een administratie van waaruit gegevens zijn gebruikt voor een informatieproduct of zijn overgenomen naar een kopie. Vaak loopt deze herleidbaarheid gelijk op met een logistieke herleidbaarheid (datalineage, waar het gegeven vandaan komt).</td>
 </tr>
 <tr>
+<td>semantisch relevant modelelement</td>
+<td>Een modelelement waarvoor het nuttig of noodzakelijk is dat de definitie grotendeels gebaseerd is op bovenliggende definities uit het semantische beschouwingsniveau.</td>
+<td>Hiermee wordt aangegeven dat het de bedoeling is dat begrippen uit een begrippenkader worden gebruikt in de definitie van dit modelelement in een CIM of LGM. Dit gebruik hoeft niet tekstueel exact te zijn. Hiermee wordt niet aangegeven dat er een begrippenkader of CIM ontbreekt, ook als deze er niet zijn kan aangegeven worden dat een modelelement semantisch relevant is. Een voorbeeld van een niet relevant modelelement is bv. een volgnummer om iets in de techniek uniek te maken of een betekenisloos hulpgegeven om iets aan te sturen of iets te koppelen.</td>
+</tr>
+<tr>
 <td>gegevensdefinitie</td>
 <td>De beschrijving van de betekenis van dit modelelement, zijnd een gegevenstype of gegevensobjecttype.</td>
 <td>Dit komt overeen met het metagegeven 'Definitie' uit MIM-1.2. (!)</td>
@@ -1529,6 +1534,11 @@ ul.index code{color:inherit}
 <td>gegevensspecificatie</td>
 <td>Het totaal van verplichte en optionele metagegevens die in MIM aan een modelelement toegekend kunnen worden aan een gegevenstype of gegevensobjecttype.</td>
 <td>Het gaat hier om onderkende modelelementen, in MIM of in een MIM-extensie.</td>
+</tr>
+<tr>
+<td>semantiek</td>
+<td>zie begrippenkader</td>
+<td>De MIM-1 laag</td>
 </tr>
 </tbody></table>
 <p><em>Detaillering van semantische herleidbaarheid</em></p>
@@ -1542,11 +1552,6 @@ ul.index code{color:inherit}
 </tr>
 </thead>
 <tbody><tr>
-<td>semantisch relevant modelelement</td>
-<td>Een modelelement waarvoor het nuttig of noodzakelijk is dat de definitie grotendeels gebaseerd is op bovenliggende definities uit het semantische beschouwingsniveau.</td>
-<td>Hiermee wordt aangegeven dat het de bedoeling is dat begrippen uit een begrippenkader worden gebruikt in de definitie van dit modelelement in een CIM of LGM. Dit gebruik hoeft niet tekstueel exact te zijn. Hiermee wordt niet aangegeven dat er een begrippenkader of CIM ontbreekt, ook als deze er niet zijn kan aangegeven worden dat een modelelement semantisch relevant is. Een voorbeeld van een niet relevant modelelement is bv. een volgnummer om iets in de techniek uniek te maken of een betekenisloos hulpgegeven om iets aan te sturen of iets te koppelen.</td>
-</tr>
-<tr>
 <td>complete semantische herleiding</td>
 <td>Een duiding van dat alle relevante semantische verwijzingen zijn aangebracht.</td>
 <td>Er ontbreekt er geen (ook niet vanwege het ontbreken van een CIM of een begrippenkader). Wanneer de herleiding niet compleet is dan is er altijd sprake van ten minste 1 ontbrekende verwijzing, die er wel zou moeten zijn om de gehele gegevensdefinitie af te dekken. Als de gehele gegevensdefinitie afgedekt wordt dan ontbreken er geen verwijzingen en is de herleiding dus compleet.</td>
@@ -1557,9 +1562,9 @@ ul.index code{color:inherit}
 <td>De  verwoording kan net anders zijn, maar dit heeft geen invloed op de betekenis. De strekking is hetzelfde. Wanneer er meerdere verwijzingen nodig zijn, dan betreft het exact overeenstemmen alleen deze betreffende verwijzing en het gedeelte van de gegevensdefinitie die hierbij hoort.</td>
 </tr>
 <tr>
-<td>compleet en exact</td>
+<td>volledige semantische herleiding</td>
 <td>De semantische herleiding is compleet en alle semantische verwijzingen zijn exact.</td>
-<td>De gegevensdefinitie kan volledig verklaard worden via de betekenis die te vinden is via de semantische verwijzingen en is daarmee in overeenstemming. De verwoording is mogelijk net anders, maar de betekenis is hetzelfde (semantisch equivalent).</td>
+<td><strong>Volledig = compleet en exact</strong>. De gegevensdefinitie kan volledig verklaard worden via de betekenis die te vinden is via de semantische verwijzingen en is daarmee in overeenstemming. De verwoording is mogelijk net anders, maar de betekenis is hetzelfde (semantisch equivalent).</td>
 </tr>
 <tr>
 <td>verklaring van verschil</td>
