@@ -89,7 +89,7 @@ Dit wordt momenteel in detail beschreven in de *Handreiking data lineage*.
 
 Deze lineage betreft vaak een mapping en/of een vertaalspeficiatie tussen technisch en logisch. Deze *kan* vanwege pragmatische overwegingen eventueel opgenomen worden *bij* een LGM, maar zit strikt genomen **niet** *in* het LGM. Wellicht dat deze mapping generiek kan worden gespecificeerd zonder afhankelijkheden met de diverse implementatie technieken en als zodanig een plek in MIM kan krijgen, maar dit is nu niet zo.
 
-### Lineage vanuit CIM naar begrippenkader
+## Lineage vanuit CIM naar begrippenkader
 
 In deze paragraaf wordt aangegeven hoe een begrippenkader met begrippen gebruikt kan worden om semantische herleidbaarheid aan te brengen in een CIM. 
  
@@ -140,7 +140,7 @@ Het is mogelijk dat MIM in een latere versie ook niet exact overeenkomende seman
 *(Nog uit te werken in dit document.)*
 TODO: visueel diagram. 
 
-### Lineage vanuit LGM naar begrippenkader 
+## Lineage vanuit LGM naar begrippenkader 
 *(Nog uit te werken in dit document.)*
 
 **Modelelementen uit LGM met semantische verwijzingen naar begrippenkader**
@@ -209,7 +209,7 @@ _Interpretatie van de semantische verwijzing_
 
 De formulering *is gebaseerd op* wijst op een meer vrije en mogelijk meervoudige interpretatie van de relatie tussen een logisch modelelement en een begrip.
 
-#### Specificatie voor gegevensobjecttype
+### Specificatie voor gegevensobjecttype
 
 | Metagegeven | Beschrijving      | 
 | ------------ | ------------------------------------------------------ |
@@ -232,7 +232,7 @@ Regels:
 
 Bij het aangeven van de semantische herleidbaarheid van een gegevenstype naar de bijbehorende semantiek kan uit analyse blijken dat de gegevensdefinitie van een gegevenstype volledig afgedekt kan worden door modelelementen in een CIM en/of begrippenkader. Dit is de gewenste situatie. Het kan echter ook zo zijn dat het niet het wat anders is dan gewenst. De mate van aanwijsbaarheid is dan maar deels mogelijk of zelfs geheel niet mogelijk. 
 
-#### Specificatie voor gegevenstype
+### Specificatie voor gegevenstype
 
 De manier waarop semantische herleidbaarheid is gespecificeerd wordt eerst aangegeven. 
 
@@ -303,7 +303,7 @@ Voor elk gegevenstype kan aangegeven worden of er verwijzingen ontbreken, oftewe
 
 Indien er ontbrekende verwijzingen zijn of indien er verwijzingen zijn die niet exact zijn, dan kan er een verklaring van verschil worden opgenomen. De modelleur heeft hiertoe eerst de definities van de bovenliggende CIM modelelementen en/of begrippen bestudeerd.
 
-#### Verschillen met bovenliggende definities
+### Verschillen met bovenliggende definities
 
 Er wordt onderscheidt gemaakt tussen 2 soorten verschillen: 
 - verklaring van verschil, semantisch niet equivalent met bovenliggende definities
@@ -336,7 +336,7 @@ Indien de verwoording van de gegevensdefinitie afwijkt van de verwoording van de
 | ------------ | -------------- | -------------- | -------------- | ------------------------------------------------------ | 
 | toelichting verwoordingsverschil | zie H4 | 0..1 | tekst | Er is een oude term gebruikt die inmiddels is vervangen door een nieuwe term, maar de strekking en de betekenis ervan is hetzelfde.  |
 
-#### Lexicaal pad
+### Lexicaal pad
 
 TODO: keuzes maken, zie issue 4. 
 
