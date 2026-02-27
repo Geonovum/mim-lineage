@@ -4,12 +4,13 @@ Dit hoofdstuk beschrijft een specificatie van semantische herleidbaarheid in een
 
 In het vorige hoofdstuk is een een abstract model uitgewerkt. Dit abstract model beschrijft concepten die voor meerdere modeltypen en modelelelementen van toepassing zijn. In dit hoofdstuk is dit verder uitgewerkt naar hoe dit er precies uitziet in een CIM of LGM, zoals een modelleur deze maakt. De uitwerking bestaat uit specifiek te beschrijven metagegevens, per type modelelement van een bepaald type model.
 
-In de uitwerking wordt verder gebruik gemaakt van de volgende insteek: 
-- ALS het model geen gebruik maakt van deze MIM module, die optioneel is, dan hoeft dit niet expliciet te worden aangegeven.
+## Wel of niet toegepast
+Het toepassen van deze MIM-module verhoogd de begrijpelijkheid van een model en maakt consistentie met bovenliggende semantiek inzichtelijk. Dit kan er ook toe leiden dat gegevensdefinities verbeterd kunnen worden. Deze modele is echter niet verplicht in MIM, omdat er een bepaalde inspanning nodig is om deze toe te passen. Om aan te geven of en hoe deze module is toegepast in een model wordt het volgende beschreven: 
+- ALS het model geen gebruik maakt van deze MIM module, dan hoeft dit niet expliciet te worden aangegeven.
 - ALS het model wel gebruik maakt van deze MIM module, dan:
    - wordt dit aangegeven bij de metagegevens op model niveau: MIM-SH = Ja
    - worden de spelregels gevolgd die in deze module zijn aangegeven (deze volgen uit voorgaand punt) 
-   - is er de mogelijkheid om aan te geven welke optionele spelregels er toegepast zijn in het model. Deze optionele spelregels zijn bedoeld om de kwaliteit en de betrouwbaarheid van het model te verhogen. De lezer of gebruiker van het model mag er bij het lezen en interpreteren van het model op vertrouwen dat deze spelregels zijn toegepast. 
+   - is er de mogelijkheid om aan te geven welke _optionele spelregels_ er verder nog toegepast zijn in het model om de kwaliteit van de specificatie verder te verhogen. 
 
 ## Modelelementen met lineage
 
