@@ -212,7 +212,7 @@ Het is mogelijk dat MIM in een latere versie ook niet exact overeenkomende seman
 *(Nog uit te werken in dit document.)*
 TODO: visueel diagram. 
 
-### Lineage vanuit logisch gegevensmodel naar een begrippenkader 
+### Lineage vanuit LGM naar begrippenkader 
 *(Nog uit te werken in dit document.)*
 
 #### Modelelementen uit LGM met semantische verwijzingen naar begrippenkader
