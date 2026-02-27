@@ -1671,14 +1671,9 @@ De definitie daarvan luidt: </p>
 </tr>
 </thead>
 <tbody><tr>
-<td>1 naar ...</td>
-<td>vanuit een begripppenkader naar kennisbronnen</td>
-<td>Buiten scope van MIM.</td>
-</tr>
-<tr>
-<td>1 naar 1</td>
-<td>vanuit een begrippenkader naar een ander begrippenkader</td>
-<td>Buiten scope van MIM.</td>
+<td>2 naar ...</td>
+<td>vanuit CIM naar een kennisbronnen</td>
+<td>In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' .</td>
 </tr>
 <tr>
 <td>2 naar 1</td>
@@ -1701,33 +1696,53 @@ De definitie daarvan luidt: </p>
 <td>In scope, in deze module van MIM, zie verderop bij semantische gelijkstelling</td>
 </tr>
 <tr>
-<td>4 naar ...</td>
-<td>vanuit een technisch datamodel naar een LGM, CIM of begrippenkader</td>
-<td>Buiten scope van MIM.</td>
-</tr>
-<tr>
-<td>2 naar ...</td>
-<td>vanuit CIM naar een kennisbronnen</td>
-<td>In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' .</td>
-</tr>
-<tr>
 <td>3 naar ...</td>
 <td>vanuit LGM naar een kennisbronnen</td>
 <td>In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' .</td>
 </tr>
-<tr>
-<td>3 naar 4</td>
-<td>vanuit LGM naar een technisch datamodel</td>
-<td>Buiten scope van MIM.</td>
-</tr>
 </tbody></table>
-<p>Mapping in een diagram. 
-
+<p>Mapping in een diagram. </p>
+<p>
       </p><figure id="fig-in-een-diagram">
         <img src="media/MIM-lineage_informatie-architectuur.png" alt="Semantische herleidbaarheid in een diagram">
         <figcaption><a class="self-link" href="#fig-in-een-diagram">Figuur <bdi class="figno">3</bdi></a> <span class="fig-title">In een diagram</span></figcaption>
       </figure>
     <p></p>
+<p>Er is meer lineage tussen beschouwingsniveaus mogelijk, maar er is bewust gekozen om deze niet in MIM uit te werken. </p>
+<table>
+<thead>
+<tr>
+<th>MIM niveau</th>
+<th>Lineage</th>
+<th>Uitwerking te vinden in</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1 naar ...</td>
+<td>vanuit een begripppenkader naar kennisbronnen</td>
+<td>Buiten scope van MIM.</td>
+</tr>
+<tr>
+<td>1 naar 1</td>
+<td>vanuit een begrippenkader naar een ander begrippenkader</td>
+<td>Buiten scope van MIM.</td>
+</tr>
+<tr>
+<td>2 naar 2</td>
+<td>vanuit CIM naar een begrippenkader</td>
+<td>In scope, dit is uitgewerkt bij het gewone metamodel, bij view en extern en niet hier.</td>
+</tr>
+<tr>
+<td>3 naar 4</td>
+<td>vanuit LGM naar een technisch datamodel</td>
+<td>Buiten scope van MIM. Zie ontwerpbeslissingen.</td>
+</tr>
+<tr>
+<td>4 naar ...</td>
+<td>vanuit een technisch datamodel naar een LGM, CIM of begrippenkader</td>
+<td>Buiten scope van MIM.</td>
+</tr>
+</tbody></table>
 </section></section><section id="uitgangspunten-en-ontwerpbeslissingen"><div class="header-wrapper"><h3 id="x5-2-uitgangspunten-en-ontwerpbeslissingen"><bdi class="secno">5.2 </bdi>Uitgangspunten en ontwerpbeslissingen</h3><a class="self-link" href="#uitgangspunten-en-ontwerpbeslissingen" aria-label="Permalink for Section 5.2"></a></div>
 <section id="elk-modelelement-kent-een-eigen-definitie"><div class="header-wrapper"><h4 id="x5-2-1-elk-modelelement-kent-een-eigen-definitie"><bdi class="secno">5.2.1 </bdi>Elk modelelement kent een eigen definitie</h4><a class="self-link" href="#elk-modelelement-kent-een-eigen-definitie" aria-label="Permalink for Section 5.2.1"></a></div>
 <p>In MIM is een definitie voor veel modelelementen een verplicht metagegeven.  In principe zijn definities op elk beschouwingsniveau ook zelfstandig voor specifiek dat beschouwingsniveau, ook al komen ze tekstueel overeen. Wanneer de definitie van een modelelement exact gelijk is aan die van een modelelement of begrip waarmee een lineage-relatie bestaat, kan dit als redundant worden ervaren. Het verdient echter de voorkeur om deze definities expliciet te specificeren, zodat het model ook zelfstandig goed te begrijpen blijft. In een eigen beheer omgeving zou de gegevensdefinitie leeg gelaten kunnen worden waarmee bedoeld wordt dat deze rechtstreeks van het gerelateerde begrip overgenomen kan worden, maar bij de publicatie van het model hoort er altijd een gegevensdefinitie te zijn die te lezen is door gebruikers.</p>
