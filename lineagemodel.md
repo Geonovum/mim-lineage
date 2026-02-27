@@ -43,16 +43,17 @@ Dit diagram in tekstvorm is weergegeven in de volgende tabel:
 
 | MIM niveau    | Lineage                                     | Uitwerking te vinden in | 
 | ------------- | ------------------------------------------- | --------------------------- |
-| 2 naar ...    | vanuit CIM naar kennisbronnen               |  In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' . |
+| 2 naar ...    | vanuit CIM naar kennisbronnen               | In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' |
 | 2 naar 1      | vanuit CIM naar een begrippenkader          | In scope, in deze module van MIM. |
 | 3 naar 2      | vanuit LGM naar een CIM                     | In scope, in deze module van MIM. |
 | 3 naar 1      | vanuit LGM naar een begrippenkader          | In scope, in deze module van MIM. |
 | 3 naar 3      | vanuit LGM naar een ander LGM               | In scope, in deze module van MIM, zie verderop bij semantische gelijkstelling |
-| 3 naar ...    | vanuit LGM naar kennisbronnen               |  In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' . |
+| 3 naar ...    | vanuit LGM naar kennisbronnen               | In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' . |
 
 Merk op dat er verticale en horizontale lineage wordt onderscheiden. Zo is van 3 naar 3 een voorbeeld van horizontale lineage, of beter gezegd verticale lineage waarvoor eerst een horizontale zijstap wordt gedaan. 
 
 **Buiten scope**
+
 Er is meer lineage tussen en binnen beschouwingsniveaus mogelijk, maar er is bewust gekozen om deze niet in MIM uit te werken. 
 
 | MIM niveau    | Lineage | Uitwerking te vinden in | 
