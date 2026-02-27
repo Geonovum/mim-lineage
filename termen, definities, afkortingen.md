@@ -1,5 +1,9 @@
 # Termen, definities en afkortingen
 
+Dit hoofdstuk beschrijft de belangrijkste termen om semantische herleidbaarheid te begrijpen. Deze worden in de specificatie van het hoofdstuk hierna gebruikt. 
+
+## Model van semantische herleidbaarheid
+
 Centraal bij semantische herleidbaarheid staat het **semantisch relevant modelelement**. Dit is een modelelement waarvoor het zinvol en nodig is om deze te verbinden met bovenliggende semantiek uit een CIM en/of begrippenkader. Anders gezegd, de definitie van een semantisch relevant modelelement wordt zo goed als mogelijk in verband gebracht met bovenliggende definities, door de **semantische herleiding** ervoor te beschrijven. 
 
 Semantische herleiding kan verticaal en horizontaal aangebracht worden. 
