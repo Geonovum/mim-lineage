@@ -4,7 +4,7 @@ In dit hoofdstuk maakt u kennis met het onderwerp.
 
 Uitgangspunt is dat elk modelelelement uit een (MIM) model een eigen definitie kent. Deze definitie staat op zichzelf en is zodanig opgesteld dat deze past bij het beschouwingsniveau dat uitgewerkt is in het betreffende model. Semantische herleidbaarheid is hierop een _aanvullende specificatie_, die de modelelementen en definities uit de verschillende modellen met elkaar verbindt. 
 
-## Voorbeeld 1
+## Eenvoudig voorbeeld
 
 Neem bij voorbeeld een attribute '**bsn**' in een logisch gegevensmodel met als definitie: de identificatie van een geregistreerd persoon. 
 
@@ -35,11 +35,13 @@ Met dit soort situaties wordt rekening gehouden. Deze zijn meegenomen in deze ui
 
 ## Opstellen van goede definities
 
-Een begrippenkader met begrippen en een conceptueel informatiemodel (CIM) kunnen gebruikt worden om te komen tot een welgevormde definitie van een gegevenstype die goed leesbaar en ook nog steed heel helder is voor gebruikers. Hierbij wordt zowel gekeken naar definities en naar semantische herleidbaarheid, beide horen bij elkaar. De laatste is een aanvulling op de eerste. Het doel is telkens om betekenis van elementen op ieder beschouwingsniveau uit te drukken met een welgevormde verwoording van die betekenis met een definitie en om hierna semantische verwijzingen aan te geven waarop de tekst van deze definitie is gebaseerd. 
+Een begrippenkader met begrippen en een conceptueel informatiemodel (CIM) kunnen gebruikt worden om te komen tot een welgevormde definitie van een gegevenstype die goed leesbaar en ook nog steed heel helder is voor gebruikers. 
 
-Dit wordt uitgewerkt aan de hand van een voorbeeld. 
+Hierbij wordt gekeken naar de definities en naar de bijbehorende semantische herleidbaarheid, beide horen bij elkaar. De laatste is een aanvulling op de eerste. Het doel is telkens om betekenis van elementen op ieder beschouwingsniveau uit te drukken met een welgevormde verwoording van die betekenis met een eigen definitie, waarbij semantische verwijzingen worden aangebracht naar voorliggende of bovenliggende definities, om aan te geven waarop de tekst van de eigen definitie is gebaseerd. 
 
-### Voorbeeld 2
+Dit wordt uitgewerkt aan de hand van een uitgebreid voorbeeld. 
+
+### Uitgebreid voorbeeld
 
 In dit voorbeeld is een begrippenkader uitgewerkt naar een CIM en beide weer zijn gebruikt bij het maken van gegevensobjecttype en een gegevenstype in een LGM. 
 
