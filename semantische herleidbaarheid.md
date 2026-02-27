@@ -2,9 +2,11 @@
 
 In dit hoofdstuk maakt u kennis met het onderwerp. 
 
+## Introductie 
+
 Uitgangspunt is dat elk modelelelement uit een (MIM) model een eigen definitie kent. Deze definitie staat op zichzelf en is zodanig opgesteld dat deze past bij het beschouwingsniveau dat uitgewerkt is in het betreffende model. Semantische herleidbaarheid is hierop een _aanvullende specificatie_, die de modelelementen en definities uit de verschillende modellen met elkaar verbindt. 
 
-## Eenvoudig voorbeeld
+### Eenvoudig voorbeeld
 
 Neem bij voorbeeld een attribute '**bsn**' in een logisch gegevensmodel met als definitie: de identificatie van een geregistreerd persoon. 
 
@@ -33,7 +35,7 @@ Tot slot is het van belang om op te merken dat het aanbrengen van semantische he
 
 Met dit soort situaties wordt rekening gehouden. Deze zijn meegenomen in deze uitwerking (in scope) waardoor het ook mogelijkheid is om te beschrijven dat we te maken hebben met een niet ideale situatie. 
 
-## Opstellen van goede definities
+## Goede definities in samenhang
 
 Een begrippenkader met begrippen en een conceptueel informatiemodel (CIM) kunnen gebruikt worden om te komen tot een welgevormde definitie van een gegevenstype die goed leesbaar en ook nog steed heel helder is voor gebruikers. 
 
