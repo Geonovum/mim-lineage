@@ -214,7 +214,6 @@ Het is mogelijk dat MIM in een latere versie ook niet exact overeenkomende seman
 *(Nog uit te werken in dit document.)*
 TODO: visueel diagram. 
 
-
 ### Lineage vanuit logisch gegevensmodel naar een begrippenkader 
 *(Nog uit te werken in dit document.)*
 
@@ -298,6 +297,9 @@ De volgende metagegevens worden gespecificeerd bij een semantische verwijzing na
 | modelelement naam | zie MIM algemeen | 0..1 | zie MIM algemeen | ... | 
 | model naam | zie MIM algemeen | 1..1 | zie MIM algemeen | ... | 
 
+*In diagram vorm:*
+**TODO: Frans, diagram SH Gegevensobjecttype verticaal naar CIM** 
+
 Regels: 
 - ofwel de modelelement identificatie ofwel de modelelement naam is opgenomen, of beide
 - de model naam is opgenomen bij Lineage op model niveau
@@ -334,6 +336,10 @@ Een gegevenstype kan 1 op 1 overgenomen zijn uit een ander logisch gegevensmodel
 | gegevensobjecttype   | gegevensobjecttype uit ander LGM | 0..1 | als aangebracht, dan altijd tijd precies 1                        |  
 | gegevenstype         | gegevenstype uit ander LGMe      | 0..1 | als aangebracht, dan altijd tijd precies 1                        | 
 
+*In diagram vorm:*
+**TODO: Frans, diagram SH Gegevenstype horizontaal naar gegevenstype in ander LGM** 
+
+
 ##### Verticale semantische herleidbaarheid
 
 Een gegevenstype kan een gegevensdefinitie hebben die gebaseerd is op bovenliggende definities. 
@@ -355,6 +361,9 @@ De volgende metagegevens worden gespecificeerd bij elke _semantische verwijzing_
 | model identificatie | zie MIM algemeen | 1..1 | zie MIM algemeen  
 | is exact     | aanduiding dat de semantische verwijzing wel of niet exact is, zoals bedoeld bij _exacte semantische verwijzing_ | 1..1 | boolean | 1 (ja, is exact) |
 | lexicaal pad | zie H4 | 0..1 | zie specificatie lexicaal pad verderop
+
+*In diagram vorm:*
+**TODO: Frans, diagram SH Gegevenstype horizontaal naar gegevenstype in ander LGM** 
 
 Regels: 
 - ofwel de modelelement identificatie ofwel de modelelement naam is opgenomen, of beide
