@@ -1,10 +1,8 @@
 # Lineagemodel
 
-Dit hoofdstuk beschrijft een specificatie van de uitwerking van semantische herleidbaarheid, met behulp van diagrammen en specificaties. 
+Dit hoofdstuk beschrijft een specificatie van semantische herleidbaarheid in een CIM of LGM, met behulp van diagrammen en specificaties. 
 
-De uitwerking bestaat uit:
-- een abstract model met de terminologie van het vorige hoofdstuk. Dit abstract model is voor meerdere modeltypen en modelelelementen van toepassing 
-- specifieke uitwerkingen per type modelelement in een bepaald modeltype, zoals dit gemodelleerd kan worden in een CIM of LGM
+In het vorige hoofdstuk is een een abstract model uitgewerkt. Dit abstract model beschrijft concepten die voor meerdere modeltypen en modelelelementen van toepassing zijn. In dit hoofdstuk is dit verder uitgewerkt naar hoe dit er precies uitziet in een CIM of LGM, zoals een modelleur deze maakt. De uitwerking bestaat uit specifiek te beschrijven metagegevens, per type modelelement van een bepaald type model.
 
 ## Modelelementen met lineage
 
