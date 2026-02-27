@@ -57,13 +57,13 @@ Dit wordt uitgewerkt aan de hand van een uitgebreid voorbeeld.
 
 In dit voorbeeld is een begrippenkader uitgewerkt naar een CIM en beide weer zijn gebruikt bij het maken van gegevensobjecttype en een gegevenstype in een LGM. 
 
-**Begrippen in een begrippenkader:**
+*Begrippen in een begrippenkader:*
 
 - Werknemer: Een werknemer is een natuurlijk persoon die werkt voor een organisatie. 
 - Woonplaats: Een woonplaats is een afgebakend grondgebied met een eigen begrenzing dat gelegen is binnen het grondgebied van een gemeente, dat onder andere bestemd is voor bewoning door mensen.
 - Geboorteplaats: Een geboorteplaats is de plaats waar een natuurlijk persoon is geboren, in Nederland is dit altijd een woonplaats. 
 
-**Modelelementen in een CIM:** 
+*Modelelementen in een CIM:* 
 
 - een objecttype _Natuurlijk persoon_
    - een relatietype '_is geboren in_'
@@ -76,7 +76,7 @@ In dit voorbeeld is een begrippenkader uitgewerkt naar een CIM en beide weer zij
    - een eigenschaptype 'naam', met definitie: De officiele naam van een Woonlaats.
    - een eigenschaptype 'code', met definitie: De code is de officiele identificatie van een Woonplaats
 
-**Modelelementen in een LGM:**
+*Modelelementen in een LGM:*
 
 Het model beschrijft een aantal gegevens die bijgehouden worden over werknemers die werken bij de eigen organisatie, in een registratie die enkele van deze gegevens uitwisselt met gebruikers: 
 
@@ -94,7 +94,7 @@ Een ander antwoord zou daarom kunnen zijn om de definitie van het begrip geboort
 
 Laten we daarom eerst kijken naar de semantische herleidbaarheid, gebruik makende van de bijbehorende concepten uit het vorige hoofdstuk.
 
-**Semantische herleidbaarheid van het gegevenstype geboorteplaatscode:**
+*Semantische herleidbaarheid van het gegevenstype geboorteplaatscode:*
 
 - onderwerp van gesprek: Natuurlijk persoon uit het CIM
    - niet zomaar een Natuurlijk persoon, maar een natuurlijk persoon die een werknemer is bij onze organisatie
@@ -108,7 +108,7 @@ Wanneer we de semantische herleidbaarheid beschouwen als onderdeel van een forme
 
 Dit is heel exact, maar niet goed leesbaar. Merk ook op dat er extra woorden nodig zijn zoals 'die de' en 'van een' en 'is bij'. Semantische herleidbaarheid letterlijk uitschrijven levert meestal geen goed leesbare definities op voor de doelgroep van een model. Het is dan ook niet gebruikelijk om een definitie van een gegevenstype in een gegevensmodel op deze manier uit te schrijven. Het moet daarom altijd mogelijk zijn eigen verwoordingen toe te kennen. 
 
-**Definitie van het gegevenstype geboorteplaatscode:**
+*Definitie van het gegevenstype geboorteplaatscode:*
 
 Semantische herleidbaarheid is erg nuttig om te komen tot een goede definitie. Hiervan gebruik makende komen we tot teksten zoals: 
 - De geboorteplaatscode is de code van de woonplaats die de geboorteplaats is van de natuurlijk persoon die werknemer is bij onze organisatie. 
