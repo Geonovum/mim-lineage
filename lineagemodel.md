@@ -43,7 +43,7 @@ Dit diagram in tekstvorm is weergegeven in de volgende tabel:
 
 Merk op dat er verticale en horizontale lineage wordt onderscheiden. Zo is van 3 naar 3 een voorbeeld van horizontale lineage, of beter gezegd verticale lineage waarvoor eerst een horizontale zijstap wordt gedaan. 
 
-## Buiten scope
+**Buiten scope**
 Er is meer lineage tussen en binnen beschouwingsniveaus mogelijk, maar er is bewust gekozen om deze niet in MIM uit te werken. 
 
 | MIM niveau    | Lineage | Uitwerking te vinden in | 
