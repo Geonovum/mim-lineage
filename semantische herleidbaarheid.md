@@ -90,7 +90,7 @@ Echter, er is niet altijd sprake van een ideale situatie. Het aanbrengen van sem
 
 Met dit soort situaties wordt daarom ook rekening gehouden in deze specificatie. Deze zijn meegenomen in deze uitwerking (in scope) waardoor het ook mogelijkheid is om te beschrijven dat we te maken hebben met een niet ideale situatie. 
 
-> De specificatie ondersteund ideale en minder ideale situaties die je kan aantreffen in het vakgebied van informatie- en gegevensmodellering.
+> De specificatie ondersteund ideale en minder ideale situaties die je kan aantreffen.
 
 ## Goede definities in samenhang
 
