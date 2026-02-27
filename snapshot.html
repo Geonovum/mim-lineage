@@ -1656,12 +1656,14 @@ De definitie daarvan luidt: </p>
 <li>TODO, eventueel: relatietype tussen twee gegevensobjecttypen</li>
 </ul>
 <section id="lineage-in-en-tussen-verschillende-mim-beschouwingsniveaus"><div class="header-wrapper"><h4 id="x5-1-1-lineage-in-en-tussen-verschillende-mim-beschouwingsniveaus"><bdi class="secno">5.1.1 </bdi>Lineage in en tussen verschillende MIM-beschouwingsniveaus</h4><a class="self-link" href="#lineage-in-en-tussen-verschillende-mim-beschouwingsniveaus" aria-label="Permalink for Section 5.1.1"></a></div>
-<p>We onderscheiden verticale en horizontale lineage.</p>
-<ul>
-<li><strong>Verticale lineage</strong> ontstaat door het leggen van relaties tussen modelelementen van verschillende niveaus, of tussen een modelelement en een begrip uit een begrippenkader.  </li>
-<li><strong>Horizontale lineage</strong> ontstaat door het leggen van relaties tussen modelelementen op hetzelfde niveau, maar afkomstig uit verschillende modellen.</li>
-</ul>
-<p>Er wordt veelvuldig gebruik gemaakt van verwijzingen tussen modelelementen uit verschillende beschouwingsniveaus. De volgende verwijzingen worden onderkend in MIM:</p>
+<p>Er zijn verschillende beschouwingsniveaus om kennis en gegevens te modelleren (en andere concerns, die hier niet benoemd zijn). Bij het specificeren van semantische herleidbaarheid wordt hierbij veelvuldig gebruik gemaakt van verwijzingen tussen modelelementen uit verschillende beschouwingsniveaus. De volgende verbanden worden hierbij als binnen scope gezien. </p>
+<p>
+      </p><figure id="fig-in-een-diagram">
+        <img src="media/MIM-lineage_informatie-architectuur.png" alt="Semantische herleidbaarheid in een diagram">
+        <figcaption><a class="self-link" href="#fig-in-een-diagram">Figuur <bdi class="figno">3</bdi></a> <span class="fig-title">In een diagram</span></figcaption>
+      </figure>
+    <p></p>
+<p>Wanneer dit diagram als tekst wordt uitgeschreven ontstaan de volgende tabel: </p>
 <table>
 <thead>
 <tr>
@@ -1701,14 +1703,12 @@ De definitie daarvan luidt: </p>
 <td>In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' .</td>
 </tr>
 </tbody></table>
-<p>Mapping in een diagram. </p>
-<p>
-      </p><figure id="fig-in-een-diagram">
-        <img src="media/MIM-lineage_informatie-architectuur.png" alt="Semantische herleidbaarheid in een diagram">
-        <figcaption><a class="self-link" href="#fig-in-een-diagram">Figuur <bdi class="figno">3</bdi></a> <span class="fig-title">In een diagram</span></figcaption>
-      </figure>
-    <p></p>
-<p>Er is meer lineage tussen beschouwingsniveaus mogelijk, maar er is bewust gekozen om deze niet in MIM uit te werken. </p>
+<p>Merk op dat er verticale en horizontale lineage wordt onderscheiden. Zo is van 3 naar 3 een voorbeeld van horizontale lineage, of beter gezegd verticale lineage waarvoor eerst een horizontale zijstap wordt gedaan. </p>
+<ul>
+<li><strong>Verticale lineage</strong> ontstaat door het leggen van relaties tussen modelelementen van verschillende niveaus, of tussen een modelelement en een begrip uit een begrippenkader.  </li>
+<li><strong>Horizontale lineage</strong> ontstaat door het leggen van relaties tussen modelelementen op hetzelfde niveau, maar afkomstig uit verschillende modellen.</li>
+</ul>
+<p>Er is meer lineage tussen en binnen beschouwingsniveaus mogelijk, maar er is bewust gekozen om deze niet in MIM uit te werken. </p>
 <table>
 <thead>
 <tr>
