@@ -8,7 +8,8 @@ Semantische herleiding kan verticaal en horizontaal aangebracht worden.
 
 Semantische herleiding bestaat uit één of meerdere **semantische verwijzingen**. De set van verwijzingen kan _wel of niet compleet_ zijn om er de gegevensdefinitie mee af te dekken. Aanvullend kan de bovenliggende definitie waarnaar verwezen wordt, hierbij elke verwijzing op zichzelf beschouwend, _wel of niet exact_ in overeenstemming zijn met de tekstuele verwoording van de gegevensdefinitie. 
 
-Semantische herleidbaarheid in een diagram. 
+*Semantische herleidbaarheid in een diagram.*
+
 ![Semantische herleidbaarheid in een diagram](media/Semantische_herleidbaarheid.png "Semantische herleidbaarheid in een diagram")
 **TODO Frans, vervangen door nieuwe versie.**
 
