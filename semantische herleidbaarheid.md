@@ -1,14 +1,14 @@
 # Semantische herleidbaarheid
 
-In dit hoofdstuk maakt u kennis met dit onderwerp. 
+In dit hoofdstuk maakt u kennis met het onderwerp. 
 
-Uitgangspunt is dat elk modelelelement uit een MIM model een eigen definitie kent. Deze definitie staat op zichzelf en zodanig opgesteld dat deze past bij het beschouwingsniveau dat uitgewerkt is in het betreffende model. Semantische herleidbaarheid is hierop een aanvullende specificatie, die de modelelementen en definities uit de verschillende modellen met elkaar verbindt. 
+Uitgangspunt is dat elk modelelelement uit een (MIM) model een eigen definitie kent. Deze definitie staat op zichzelf en is zodanig opgesteld dat deze past bij het beschouwingsniveau dat uitgewerkt is in het betreffende model. Semantische herleidbaarheid is hierop een _aanvullende specificatie_, die de modelelementen en definities uit de verschillende modellen met elkaar verbindt. 
 
 ## Voorbeeld 1
 
 Neem bij voorbeeld een attribute '**bsn**' in een logisch gegevensmodel met als definitie: de identificatie van een geregistreerd persoon. 
 
-In dit voorbeeld is de bijbehorende semantische herleidbing: 
+In dit voorbeeld is de bijbehorende semantische herleiding als volgt: 
 - **bsn** is een _gegevenstype_ dat onderdeel uitmaakt van het _gegevensobjecttype GeregistreerdNP_ in een logisch gegevensmodel;
 - voorgaande is gebaseerd op modelelementen die in een conceptueel informatiemodel zijn uitgewerkt, te weten een _objecttype Ingeschrevene_, met een _eigenschaptype burgerservicenummer_, waarbij de Ingeschrevene een _specialisatie is van  objecttype Natuurlijk persoon_ (niet elke natuurlijk persoon is een ingeschrevene);
 - voorgaande is gebaseerd op begrippen zoals: _begrip natuurlijk persoon_, een _begrip ingeschrevene_, en een _begrip burgerservicenummer_;
