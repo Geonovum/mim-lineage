@@ -125,6 +125,6 @@ Wat er met het gegevenstype 'geboorteplaatscode' bedoeld wordt is dan volledig h
 
 ![5.2.1_Voorbeeld.png](media/5.2.1_Voorbeeld.png "Voorbeeld.png")
 
-> Van dit voorbeeld leren we dat definities met elkaar samenhangen en dat het aanbrengen van deze samenhang kan leiedn tot betere en beter begrijpelijke definities. 
+> Van dit voorbeeld leren we dat definities met elkaar samenhangen en dat het aanbrengen van deze samenhang kan leiden tot betere en beter begrijpelijke definities. 
 
 Tot dusver het voorbeeld. In de volgende hoofdstukken wordt nader uitgewerkt hoe semantische herleidbaarheid precies gespecificeerd wordt. Merk op dat dit per modeltype verschillend is zijn omdat semantische verwijzingen in een CIM naar begrippen verwijzen en in LGM naar CIM modelelementen en van daaruit naar begrippen. Het doel is hierbij echter telkens hetzelfde. 
