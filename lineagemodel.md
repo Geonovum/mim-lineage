@@ -284,13 +284,13 @@ De formulering *is gebaseerd op* wijst op een meer vrije en mogelijk meervoudige
 #### Specificatie voor gegevensobjecttype
 
 | Metagegeven | Beschrijving      | 
-| ------------ | ------------------------------------------------------ | -
+| ------------ | ------------------------------------------------------ |
 | onderwerp van gesprek | aanduiding welk objecttype uit een CIM het onderwerp van gesprek is van het gegevensobjecttype |
 
 De volgende metagegevens worden gespecificeerd bij een semantische verwijzing naar een objecttype uit een CIM:
 
 | Metagegeven  | beschrijving      | kardinaliteit | datatype | voorbeeld | 
-| ------------ | ------------------------------------------------------ | -------------- | -------------- | 
+| ------------ | ------------------------------------------------------ | -------------- | -------------- | -------------- | 
 | modelelement identificatie | zie MIM algemeen | 0..1 | zie MIM algemeen | ... | 
 | modelelement naam | zie MIM algemeen | 0..1 | zie MIM algemeen | ... | 
 | model naam | zie MIM algemeen | 1..1 | zie MIM algemeen | ... | 
