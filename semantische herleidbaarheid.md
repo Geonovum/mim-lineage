@@ -4,9 +4,7 @@ In dit hoofdstuk maakt u kennis met het onderwerp.
 
 ## Introductie 
 
-Het doel van semantische herleidbaarheid is om aan te geven hoe definities van modelelementen in informatie- en gegevensmodellen (MIM-2 en MIM-3) zich verhouden tot bovenliggende semantiek, in het bijzonder definities van begrippen uit begrippenkaders (MIM-1). Hierbij wordt in de kern vooral gekeken naar de tekstuele verwoording van de definities uit de verschillende modellen die voorhanden zijn. 
-
-Semantische herleidbaarheid wordt hierin gezien als het aanbrengen van verticale lineage met betrekking tot deze definities, waarbij deze herleiding uiteindelijk uitkomt bij de kennis die beschreven is in kennisbronnen (of kennis in de hoofden van materiedeskundigen). Verticaal refereert hierbij naar de verbanden tussen de beschouwingsniveaus. Het realiseren van informatievoorzieningen start met definities, van boven naar onder, maar in het uiteindelijk gebruik gaat de herleiding de andere kant op, van onder naar boven.   
+Semantische herleidbaarheid gaat over het aanbrengen van verticale lineage met betrekking tot definities van modelelementen, waarbij deze herleiding uiteindelijk uitkomt bij de kennis die beschreven is in kennisbronnen (of kennis in de hoofden van materiedeskundigen). 
 
 Je kan semantische herleidbaarheid ook zien als het aanbrengen van afkomstrelaties, of is gebaseerd op relaties, tussen modelelementen van modellen uit de verschillende beschouwingsniveaus, zoals o.a. MIM deze onderkent. Denk hierbij aan: 
 - een begrippenmodel van een begrippenkader, ook wel een semantisch begrippen model genoemd, waarnaar verwezen wordt vanuit: 
@@ -14,7 +12,9 @@ Je kan semantische herleidbaarheid ook zien als het aanbrengen van afkomstrelati
 - een logisch gegevensmodel van een administratie of een gegevensuitwisseling of een gegevensproduct, waarnaar verwezen wordt vanuit: 
 - een fysieke datamodel of technisch schema
 
-Uitgangspunt is dat elk modelelelement uit een (MIM) model een eigen definitie kent. Deze definitie staat op zichzelf en is zodanig opgesteld dat deze past bij het beschouwingsniveau dat uitgewerkt is in het betreffende model. Semantische herleidbaarheid is hierop een _aanvullende specificatie_, die de modelelementen en definities uit de verschillende modellen met elkaar verbindt. 
+Het doel van semantische herleidbaarheid is hierbij om aan te geven hoe definities van modelelementen in informatie- en gegevensmodellen (MIM-2 en MIM-3) zich verhouden tot bovenliggende semantiek, in het bijzonder definities van begrippen uit begrippenkaders (MIM-1). 
+
+Hierbij wordt in de kern vooral gekeken naar de tekstuele verwoording van de definities uit de verschillende modellen die voorhanden zijn. Uitgangspunt is dan ook dat elk modelelelement uit een (MIM) model een eigen definitie kent. Deze definitie staat op zichzelf en is zodanig opgesteld dat deze past bij het beschouwingsniveau dat uitgewerkt is in het betreffende model. Semantische herleidbaarheid is hierop een _aanvullende specificatie_, die de modelelementen en definities uit de verschillende modellen met elkaar verbindt. 
 
 ### Eenvoudig voorbeeld
 
@@ -30,26 +30,31 @@ Opmerking: met dit voorbeeld wordt niet bedoeld dat er altijd sprake is of moet 
 
 ![Het BSN voorbeeld in een diagram](media/BSN_voorbeeld.png "Het BSN voorbeeld in een diagram")
 
-Voorgaande samenhang noemen we ook wel verticale lineage of afkomstrelaties tussen de modelelementen in de verschillende beschouwingsniveaus. Hierbij kan ook aangegeven worden of herleidbaarheid wel of niet exact is, en wel of niet compleet is.  
+## Verticale lineage tussen modellen 
 
-In de modellering van een domein onderscheidt MIM verschillende beschouwingsniveaus. Bijvoorbeeld van begrip naar conceptueel naar logisch naar fysieke implementatie. Omdat dit aparte lagen zijn is het van belang om de relatie tussen de lagen te kunnen beschrijven op het niveau van de individuele informatie-elementen. Er onstaat hiermee een systematiek van 'voortbouwende en uitbreidende' specificatie waarbij de afkomstrelaties traceerbaar en bruikbaar zijn van begrips- tot dataniveau, of eigenlijk van dataniveau terug naar begripsniveau. 
+De in het voorbeeld beschreven samenhang noemen we ook wel verticale lineage. Dit betreft afkomstrelaties tussen de definities van modelelementen in de verschillende modellen. 
+
+Verticaal refereert hierbij naar de verbanden tussen de beschouwingsniveaus, zoals hier beschreven in MIM (MIM v1.2 paragraaf 1.6). 
+Omdat dit aparte lagen zijn is het van belang om de relatie tussen de lagen te kunnen beschrijven op het niveau van de individuele informatie-elementen. Er onstaat hiermee een systematiek van 'voortbouwende en uitbreidende' specificatie waarbij de afkomstrelaties traceerbaar en bruikbaar zijn van begrips- tot dataniveau, of eigenlijk van dataniveau terug naar begripsniveau. 
 
 Dit document beperkt zich hierbij qua scope tot de MIM modellen zelf: 
 - van een conceptuele informatiemodel naar de bijbehorende semantiek, zoals bijvoorbeeld een begrippenkader (dat bijvoorbeeld uitgewerkt is in de NL-SBB standaard)
 - van een logisch gegevensmodel naar een conceptueel informatiemodel
 
-Tot slot is het van belang om op te merken dat het aanbrengen van semantische herleidbaarheid best complex kan zijn. Denk aan: 
+In de ideale situatie is de semantische herleidbaarheid van elk modelelement volledig aan te brengen. Echter, er is niet altijd sprake van een ideale situatie. Het aanbrengen van semantische herleidbaarheid best complex kan zijn en vereist veel kennis. Denk aan: 
 - dat definities niet altijd gebaseerd zijn op eigen kennis en definities. Het komt voor dat de bovenliggende semantiek wordt bepaald door andere organisaties;  
 - dat definities niet geheel op elkaar aansluiten en het goed zou zijn om dit verschil zichtbaar te maken. 
 - dat het niet mogelijk is om naar een modelelement in een model van een bovenliggende MIM laag te verwijzen, omdat bijvoorbeeld een conceptueel informatiemodel nog niet gemaakt is of er nog geen begrippenkader is opgesteld of gepubliceerd. Het kan dan nuttig of nodig zijn om rechtstreeks naar een begrip of kennisbron te verwijzen.
 
-Met dit soort situaties wordt rekening gehouden. Deze zijn meegenomen in deze uitwerking (in scope) waardoor het ook mogelijkheid is om te beschrijven dat we te maken hebben met een niet ideale situatie. 
+Met dit soort situaties wordt daarom rekening gehouden in deze specificatie. Deze zijn meegenomen in deze uitwerking (in scope) waardoor het ook mogelijkheid is om te beschrijven dat we te maken hebben met een niet ideale situatie. 
+
+> De specificatie ondersteund ideale en minder ideale situaties die je kan aantreffen in het vakgebied van informatie- en gegevensmodellering. 
 
 ## Goede definities in samenhang
 
-Een begrippenkader met begrippen en een conceptueel informatiemodel (CIM) kunnen gebruikt worden om te komen tot een welgevormde definitie van een gegevenstype die goed leesbaar en ook nog steed heel helder is voor gebruikers. 
+Een begrippenkader met begrippen en een conceptueel informatiemodel (CIM) kunnen gebruikt worden om te komen tot een welgevormde definitie van een gegevenstype die goed leesbaar en ook nog steed heel helder is voor gebruikers. Modelleren start doorgaans met opstellen van definities, van boven naar onder, maar in het uiteindelijk gebruik gaat de herleiding de andere kant op, van onder naar boven.
 
-Hierbij wordt gekeken naar de definities en naar de bijbehorende semantische herleidbaarheid, beide horen bij elkaar. De laatste is een aanvulling op de eerste. Het doel is telkens om betekenis van elementen op ieder beschouwingsniveau uit te drukken met een welgevormde verwoording van die betekenis met een eigen definitie, waarbij semantische verwijzingen worden aangebracht naar voorliggende of bovenliggende definities, om aan te geven waarop de tekst van de eigen definitie is gebaseerd. 
+Hierbij wordt gekeken naar de definities en naar de bijbehorende semantische herleidbaarheid, beide horen bij elkaar. De laatste is een aanvulling op de eerste. Het doel is telkens om betekenis van elementen op ieder beschouwingsniveau uit te drukken met een welgevormde verwoording van die betekenis met een eigen definitie, waarbij semantische verwijzingen worden aangebracht naar voorliggende of bovenliggende definities, om aan te geven waarop de tekst van de eigen definitie is gebaseerd. Hierbij kan ook aangegeven worden of de aangebrachte herleidbaarheid wel of niet exact is, en wel of niet compleet is.  
 
 Dit wordt uitgewerkt aan de hand van een uitgebreid voorbeeld. 
 
