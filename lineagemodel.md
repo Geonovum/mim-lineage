@@ -7,9 +7,10 @@ In het vorige hoofdstuk is een een abstract model uitgewerkt. Dit abstract model
 ## Wijze van toepassing
 Het toepassen van deze MIM-module verhoogd de begrijpelijkheid van een model en maakt consistentie met bovenliggende semantiek inzichtelijk. Dit kan er ook toe leiden dat gegevensdefinities verbeterd kunnen worden. Deze modele is echter niet verplicht in MIM, omdat er een bepaalde inspanning nodig is om deze toe te passen. Om aan te geven of en hoe deze module is toegepast in een model wordt het volgende beschreven: 
 - ALS het model geen gebruik maakt van deze MIM module, dan hoeft dit niet expliciet te worden aangegeven.
+   - Het is toegestaan om aan te geven: MIM-SH = Nee
 - ALS het model wel gebruik maakt van deze MIM module, dan:
    - wordt dit aangegeven bij de metagegevens op model niveau: MIM-SH = Ja
-   - worden de spelregels gevolgd die in deze module zijn aangegeven (deze volgen uit voorgaand punt) 
+   - worden de spelregels gevolgd die in deze module zijn aangegeven (deze volgen uit MIM-SH = Ja) 
    - is er de mogelijkheid om aan te geven welke _optionele spelregels_ er verder nog toegepast zijn in het model om de kwaliteit van de specificatie verder te verhogen. Deze lezer of gebruiker kan hier van op vertrouwen. 
 
 ## Modelelementen met lineage
