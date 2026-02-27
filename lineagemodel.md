@@ -21,30 +21,30 @@ Voor een LGM is uitgewerkt:
 
 ### Lineage in en tussen verschillende MIM-beschouwingsniveaus
 
-We onderscheiden verticale en horizontale lineage.
-
-* **Verticale lineage** ontstaat door het leggen van relaties tussen modelelementen van verschillende niveaus, of tussen een modelelement en een begrip uit een begrippenkader.  
-* **Horizontale lineage** ontstaat door het leggen van relaties tussen modelelementen op hetzelfde niveau, maar afkomstig uit verschillende modellen.  
-
-Er wordt veelvuldig gebruik gemaakt van verwijzingen tussen modelelementen uit verschillende beschouwingsniveaus. De volgende verwijzingen worden onderkend in MIM:
-
-| MIM niveau    | Lineage | Uitwerking te vinden in | 
-| -----------   | ------------------------------ | --------------------------- |
-| 2 naar ...    | vanuit CIM naar een kennisbronnen |  In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' . |
-| 2 naar 1      | vanuit CIM naar een begrippenkader | In scope, in deze module van MIM. |
-| 3 naar 2      | vanuit LGM naar conceptueel informatiemodel | In scope, in deze module van MIM. |
-| 3 naar 1      | vanuit LGM naar een begrippenkader | In scope, in deze module van MIM. |
-| 3 naar 3      | vanuit LGM naar een ander LGM | In scope, in deze module van MIM, zie verderop bij semantische gelijkstelling |
-| 3 naar ...    | vanuit LGM naar een kennisbronnen |  In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' . |
-
-Mapping in een diagram. 
+Er zijn verschillende beschouwingsniveaus om kennis en gegevens te modelleren (en andere concerns, die hier niet benoemd zijn). Bij het specificeren van semantische herleidbaarheid wordt hierbij veelvuldig gebruik gemaakt van verwijzingen tussen modelelementen uit verschillende beschouwingsniveaus. De volgende verbanden worden hierbij als binnen scope gezien. 
 
 ![Semantische herleidbaarheid in een diagram](media/MIM-lineage_informatie-architectuur.png "In een diagram")
 
-Er is meer lineage tussen beschouwingsniveaus mogelijk, maar er is bewust gekozen om deze niet in MIM uit te werken. 
+Wanneer dit diagram als tekst wordt uitgeschreven ontstaan de volgende tabel: 
+
+| MIM niveau    | Lineage                                     | Uitwerking te vinden in | 
+| ------------- | ------------------------------------------- | --------------------------- |
+| 2 naar ...    | vanuit CIM naar een kennisbronnen           |  In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' . |
+| 2 naar 1      | vanuit CIM naar een begrippenkader          | In scope, in deze module van MIM. |
+| 3 naar 2      | vanuit LGM naar conceptueel informatiemodel | In scope, in deze module van MIM. |
+| 3 naar 1      | vanuit LGM naar een begrippenkader          | In scope, in deze module van MIM. |
+| 3 naar 3      | vanuit LGM naar een ander LGM               | In scope, in deze module van MIM, zie verderop bij semantische gelijkstelling |
+| 3 naar ...    | vanuit LGM naar een kennisbronnen           |  In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' . |
+
+Merk op dat er verticale en horizontale lineage wordt onderscheiden. Zo is van 3 naar 3 een voorbeeld van horizontale lineage, of beter gezegd verticale lineage waarvoor eerst een horizontale zijstap wordt gedaan. 
+
+* **Verticale lineage** ontstaat door het leggen van relaties tussen modelelementen van verschillende niveaus, of tussen een modelelement en een begrip uit een begrippenkader.  
+* **Horizontale lineage** ontstaat door het leggen van relaties tussen modelelementen op hetzelfde niveau, maar afkomstig uit verschillende modellen.
+
+Er is meer lineage tussen en binnen beschouwingsniveaus mogelijk, maar er is bewust gekozen om deze niet in MIM uit te werken. 
 
 | MIM niveau    | Lineage | Uitwerking te vinden in | 
-| -----------   | ------------------------------ | --------------------------- |
+| -------------   | ------------------------------------------- | --------------------------- |
 | 1 naar ...    | vanuit een begripppenkader naar kennisbronnen | Buiten scope van MIM. |
 | 1 naar 1      | vanuit een begrippenkader naar een ander begrippenkader | Buiten scope van MIM. |
 | 2 naar 2      | vanuit CIM naar een begrippenkader | In scope, dit is uitgewerkt bij het gewone metamodel, bij view en extern en niet hier. |
