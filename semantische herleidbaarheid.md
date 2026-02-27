@@ -34,6 +34,23 @@ Opmerking: met dit voorbeeld wordt niet bedoeld dat er altijd sprake is of moet 
 
 ![Het BSN voorbeeld in een diagram](media/BSN_voorbeeld.png "Het BSN voorbeeld in een diagram")
 
+## Focus
+
+Dit document heeft als focus de MIM modellen zelf en behandeld primair de volgende verticale lineage:  
+- van een conceptuele informatiemodel naar de bijbehorende semantiek, zoals bijvoorbeeld een begrippenkader (dat bijvoorbeeld uitgewerkt is in de NL-SBB standaard)
+- van een logisch gegevensmodel naar een conceptueel informatiemodel
+
+> De focus van MIM is om semantische herleidbaarheid van elk modelelement volledig aan te kunnen brengen van een LGM naar een CIM en van een COIM naar een begrippenkader
+
+Echter, er is niet altijd sprake van een ideale situatie. Denk bij voorbeeld aan de volgende: 
+- dat definities niet altijd gebaseerd zijn op eigen kennis en definities. Het komt voor dat de bovenliggende semantiek wordt bepaald door andere organisaties;  
+- dat definities niet geheel op elkaar aansluiten en het goed zou zijn om dit verschil zichtbaar te maken. 
+- dat het niet mogelijk is om naar een modelelement in een model van een bovenliggende MIM laag te verwijzen, omdat bijvoorbeeld een conceptueel informatiemodel nog niet gemaakt is of er nog geen begrippenkader is opgesteld of gepubliceerd. Het kan dan nuttig of nodig zijn om rechtstreeks naar een begrip of kennisbron te verwijzen.
+
+Met dit soort situaties wordt daarom ook rekening gehouden in deze specificatie. Deze zijn meegenomen in deze uitwerking (in scope) waardoor het ook mogelijkheid is om te beschrijven dat we te maken hebben met een niet ideale situatie. 
+
+> De specificatie ondersteund ideale en minder ideale situaties die je kan aantreffen.
+
 ## Verticale lineage in en tussen de MIM-beschouwingsniveaus
 
 De in het voorbeeld beschreven samenhang noemen we ook wel verticale lineage. Dit betreft afkomstrelaties tussen de definities van modelelementen in de verschillende modellen. 
@@ -74,23 +91,6 @@ Er is meer lineage tussen en binnen beschouwingsniveaus mogelijk, maar er is bew
 | 2 naar 2      | vanuit CIM naar een begrippenkader | In scope, dit is uitgewerkt bij het gewone metamodel, bij view en extern en niet hier. |
 | 3 naar 4      | vanuit LGM naar een technisch datamodel |  Buiten scope van MIM. Zie ontwerpbeslissingen. |
 | 4 naar ...    | vanuit een technisch datamodel naar een LGM, CIM of begrippenkader | Buiten scope van MIM. |
-
-## Scope
-
-Dit document beperkt zich qua scope tot de MIM modellen zelf en behandeld primair de volgende verticale lineage:  
-- van een conceptuele informatiemodel naar de bijbehorende semantiek, zoals bijvoorbeeld een begrippenkader (dat bijvoorbeeld uitgewerkt is in de NL-SBB standaard)
-- van een logisch gegevensmodel naar een conceptueel informatiemodel
-
-> De focus van MIM is om semantische herleidbaarheid van elk modelelement volledig aan te kunnen brengen m.b.v. een CIM en een begrippenkader
-
-Echter, er is niet altijd sprake van een ideale situatie. Het aanbrengen van semantische herleidbaarheid best dan ook complex worden. Denk aan de volgende niet ideale situaties: 
-- dat definities niet altijd gebaseerd zijn op eigen kennis en definities. Het komt voor dat de bovenliggende semantiek wordt bepaald door andere organisaties;  
-- dat definities niet geheel op elkaar aansluiten en het goed zou zijn om dit verschil zichtbaar te maken. 
-- dat het niet mogelijk is om naar een modelelement in een model van een bovenliggende MIM laag te verwijzen, omdat bijvoorbeeld een conceptueel informatiemodel nog niet gemaakt is of er nog geen begrippenkader is opgesteld of gepubliceerd. Het kan dan nuttig of nodig zijn om rechtstreeks naar een begrip of kennisbron te verwijzen.
-
-Met dit soort situaties wordt daarom ook rekening gehouden in deze specificatie. Deze zijn meegenomen in deze uitwerking (in scope) waardoor het ook mogelijkheid is om te beschrijven dat we te maken hebben met een niet ideale situatie. 
-
-> De specificatie ondersteund ideale en minder ideale situaties die je kan aantreffen.
 
 ## Goede definities in samenhang
 
