@@ -30,20 +30,25 @@ Er wordt veelvuldig gebruik gemaakt van verwijzingen tussen modelelementen uit v
 
 | MIM niveau    | Lineage | Uitwerking te vinden in | 
 | -----------   | ------------------------------ | --------------------------- |
-| 1 naar ...    | vanuit een begripppenkader naar kennisbronnen | Buiten scope van MIM. |
-| 1 naar 1      | vanuit een begrippenkader naar een ander begrippenkader | Buiten scope van MIM. |
+| 2 naar ...    | vanuit CIM naar een kennisbronnen |  In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' . |
 | 2 naar 1      | vanuit CIM naar een begrippenkader | In scope, in deze module van MIM. |
 | 3 naar 2      | vanuit LGM naar conceptueel informatiemodel | In scope, in deze module van MIM. |
 | 3 naar 1      | vanuit LGM naar een begrippenkader | In scope, in deze module van MIM. |
 | 3 naar 3      | vanuit LGM naar een ander LGM | In scope, in deze module van MIM, zie verderop bij semantische gelijkstelling |
-| 4 naar ...    | vanuit een technisch datamodel naar een LGM, CIM of begrippenkader | Buiten scope van MIM. |
-| 2 naar ...    | vanuit CIM naar een kennisbronnen |  In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' . |
 | 3 naar ...    | vanuit LGM naar een kennisbronnen |  In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' . |
-| 3 naar 4      | vanuit LGM naar een technisch datamodel |  Buiten scope van MIM. |
 
 Mapping in een diagram. 
 ![Semantische herleidbaarheid in een diagram](media/MIM-lineage_informatie-architectuur.png "In een diagram")
 
+Er is meer lineage tussen beschouwingsniveaus mogelijk, maar er is bewust gekozen om deze niet in MIM uit te werken. 
+
+| MIM niveau    | Lineage | Uitwerking te vinden in | 
+| -----------   | ------------------------------ | --------------------------- |
+| 1 naar ...    | vanuit een begripppenkader naar kennisbronnen | Buiten scope van MIM. |
+| 1 naar 1      | vanuit een begrippenkader naar een ander begrippenkader | Buiten scope van MIM. |
+| 2 naar 2      | vanuit CIM naar een begrippenkader | In scope, dit is uitgewerkt bij het gewone metamodel, bij view en extern en niet hier. |
+| 3 naar 4      | vanuit LGM naar een technisch datamodel |  Buiten scope van MIM. Zie ontwerpbeslissingen. |
+| 4 naar ...    | vanuit een technisch datamodel naar een LGM, CIM of begrippenkader | Buiten scope van MIM. |
 
 ## Uitgangspunten en ontwerpbeslissingen
 
