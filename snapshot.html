@@ -1641,6 +1641,16 @@ De definitie daarvan luidt: </p>
   <section id="lineagemodel"><div class="header-wrapper"><h2 id="x5-lineagemodel"><bdi class="secno">5. </bdi>Lineagemodel</h2><a class="self-link" href="#lineagemodel" aria-label="Permalink for Section 5."></a></div>
 <p>Dit hoofdstuk beschrijft een specificatie van semantische herleidbaarheid in een CIM of LGM, met behulp van diagrammen en specificaties. </p>
 <p>In het vorige hoofdstuk is een een abstract model uitgewerkt. Dit abstract model beschrijft concepten die voor meerdere modeltypen en modelelelementen van toepassing zijn. In dit hoofdstuk is dit verder uitgewerkt naar hoe dit er precies uitziet in een CIM of LGM, zoals een modelleur deze maakt. De uitwerking bestaat uit specifiek te beschrijven metagegevens, per type modelelement van een bepaald type model.</p>
+<p>In de uitwerking wordt verder gebruik gemaakt van de volgende insteek: </p>
+<ul>
+<li>ALS het model geen gebruik maakt van deze MIM module, die optioneel is, dan hoeft dit niet expliciet te worden aangegeven.</li>
+<li>ALS het model wel gebruik maakt van deze MIM module, dan:<ul>
+<li>wordt dit aangegeven bij de metagegevens op model niveau: MIM-SH = Ja</li>
+<li>worden de spelregels gevolgd die in deze module zijn aangegeven (deze volgen uit voorgaand punt) </li>
+<li>is er de mogelijkheid om aan te geven welke optionele spelregels er toegepast zijn in het model. Deze optionele spelregels zijn bedoeld om de kwaliteit en de betrouwbaarheid van het model te verhogen. De lezer of gebruiker van het model mag er bij het lezen en interpreteren van het model op vertrouwen dat deze spelregels zijn toegepast.</li>
+</ul>
+</li>
+</ul>
 <section id="modelelementen-met-lineage"><div class="header-wrapper"><h3 id="x5-1-modelelementen-met-lineage"><bdi class="secno">5.1 </bdi>Modelelementen met lineage</h3><a class="self-link" href="#modelelementen-met-lineage" aria-label="Permalink for Section 5.1"></a></div>
 <p>Voor de volgende modelelementen is semantische herleidbaarheid uitgewerkt.</p>
 <p>CIM modelelementen:</p>
