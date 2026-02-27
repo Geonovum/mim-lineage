@@ -445,9 +445,7 @@ Ad 3.
 
 ## Mogelijke openstaande punten en teksten om nog een plek te geven: 
 
-### Lineage en definities
-
-#### Geannoteerde definities
+**Geannoteerde definities**
 De meeste modelelementen hebben verplicht een definitie: een beschrijving van de betekenis van dat modelelement. 
 In zo’n beschrijving kunnen een of meerdere gebruikte termen expliciet gekoppeld zijn aan een begrip. 
 Dit wordt een *geannoteerde definitie* genoemd.  
