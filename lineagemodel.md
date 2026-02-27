@@ -15,9 +15,9 @@ Voor een CIM is uitgewerkt
    - relatie met eigenschappen
 
 Voor een LGM is uitgewerkt:
-      - gegevensobjecttype
-      - gegevenstype
-      - TODO, eventueel: relatietype tussen twee gegevensobjecttypen
+   - gegevensobjecttype
+   - gegevenstype
+   - TODO, eventueel: relatietype tussen twee gegevensobjecttypen
 
 ### Lineage in en tussen verschillende MIM-beschouwingsniveaus
 
