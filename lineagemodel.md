@@ -1,83 +1,68 @@
 # Lineagemodel
 
-## Inleiding
+Dit hoofdstuk beschrijft een specificatie van de uitwerking van semantische herleidbaarheid, met behulp van diagrammen en specificaties. 
 
-### Wat is lineage in deze context?
-In figuur 1 uit de *Handreiking data lineage* worden de verschillende aspecten van lineage getoond. 
-De hier beschreven lineage geeft invulling aan de relaties tussen gegevens, gegevensmodellen en grondslagen. 
-De gegevensmodellen uit figuur 1 worden in dit document geïdentificeerd als modelelementen of begrippen.
+De uitwerking bestaat uit:
+- een abstract model met de terminologie van het vorige hoofdstuk. Dit abstract model is voor meerdere modeltypen en modelelelementen van toepassing 
+- specifieke uitwerkingen per type modelelement in een bepaald modeltype, zoals dit gemodelleerd kan worden in een CIM of LGM
 
-![Gegevens in context](media/Gegevens_in_context.jpg "Gegevens in context")
+## Modelelementen 
 
-In de context van deze toepassing betekent lineage het leggen van betekenisvolle verbindingen tussen modelelementen en begrippen uit de vier beschouwingsniveaus die MIM onderkent.
+Voor een CIM is uitgewerkt
+   - objecttype
+   - attribuuttype (attribueerde eigenschap)
+   - relatietype
+   - relatie met eigenschappen
 
-### Waarom lineage?
-De waarde van lineage, zoals beschreven in de *Handreiking data lineage*, ligt op het gebied van:  
-* Vertrouwen en transparantie  
-* Voldoen aan wet- en regelgeving  
-* Impact- en foutanalyse  
-* Verbetering van gegevenskwaliteit  
-* Kennis, overzicht, inzicht en sturing  
-
-In de optimale situatie is van ieder (bron)gegeven in een technisch datamodel bekend hoe het zich verhoudt tot de modelelementen en begrippen op de hogere beschouwingsniveaus. 
-Hiermee kunnen de genoemde waarden daadwerkelijk worden gerealiseerd.
-
-Lineage wordt aanbevolen, maar is niet verplicht. 
-Modellen op alle niveaus hebben ieder een eigen toepassingsgebied en daarmee bestaansrecht. 
-In de praktijk zullen organisaties voor een specifiek model niet altijd alle beschouwingsniveaus hebben ingevuld of zullen invullen. 
-In dergelijke situaties zijn niet alle hier beschreven vormen van lineage mogelijk.
+Voor een LGM is uitgewerkt:
+      - gegevensobjecttype
+      - gegevenstype
+      - TODO, eventueel: relatietype tussen twee gegevensobjecttypen
 
 ### Lineage in en tussen verschillende MIM-beschouwingsniveaus
+
 We onderscheiden verticale en horizontale lineage.
 
 * **Verticale lineage** ontstaat door het leggen van relaties tussen modelelementen van verschillende niveaus, of tussen een modelelement en een begrip uit een begrippenkader.  
 * **Horizontale lineage** ontstaat door het leggen van relaties tussen modelelementen op hetzelfde niveau, maar afkomstig uit verschillende modellen.  
 
-Horizontale lineage tussen begrippen uit verschillende begrippenkaders betreft de zogenoemde harmonisatierelaties uit de NL-SBB en wordt [aldaar](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#harmonisatiesrelaties) beschreven.
-
-### Lineage en wet- en regelgeving
-Een van de doelstellingen van lineage is dat van een gegeven kan worden vastgesteld welke wet- en regelgeving van toepassing is. 
-Op die manier kan uiteindelijk ook worden nagegaan of aan de gestelde eisen wordt voldaan.
-
-### Lineage en definities
-
-#### Geannoteerde definities
-De meeste modelelementen hebben verplicht een definitie: een beschrijving van de betekenis van dat modelelement. 
-In zo’n beschrijving kunnen een of meerdere gebruikte termen expliciet gekoppeld zijn aan een begrip. 
-Dit wordt een *geannoteerde definitie* genoemd.  
-
-Bij een geannoteerde definitie kunnen zowel de afzonderlijke termen uit de definitie als het modelelement in zijn geheel een lineage-relatie hebben met een begrip.  
-
-Zowel conceptuele informatiemodellen als logische gegevensmodellen kunnen geannoteerde definities bevatten.
-
-#### Het hoofdonderwerp van een definitie
-*(Nog uit te werken in dit document.)*
-Zie: onderwerp van gesprek. 
-
-### Ontwerpbeslissingen 
-
-#### Redundantie van definities
-In MIM is een definitie voor veel modelelementen een verplicht metagegeven. 
-Wanneer de definitie van een modelelement exact gelijk is aan die van een modelelement of begrip waarmee een lineage-relatie bestaat, kan dit als redundant worden ervaren.  
-
-Het verdient echter de voorkeur om deze definities toch te herhalen, zodat het model ook zelfstandig goed te begrijpen blijft. In een eigen beheer omgeving zou de gegevensdefinitie leeg gelaten kunnen worden waarmee bedoeld wordt dat deze rechtstreeks van het gerelateerde begrip overgenomen kan worden, maar bij de publicatie van het model hoort er altijd een gegevensdefinitie te zijn die te lezen is door gebruikers.
-
-#### Elk gegevenstype heeft een gegevensdefinitie
-Elk gegevenstype verdiend een definitie. Daarom is de definitie hiervan verplicht. Elk gegevensobjecttype verdiend een definitie. Daarom is de definitie hiervan verplicht. Om deze reden is het ook nodig om het mogelijk te maken om verschillen tussen de gegevensdefinitie en de bovenliggende definities uit CIM en begrippenkader (en daarboven) te kunnen beschrijven.  
-
-### Aanpak: per raakvlak tussen MIM niveaus een model maken
-*(Nog uit te werken in dit document.)*
+Er wordt veelvuldig gebruik gemaakt van verwijzingen tussen modelelementen uit verschillende beschouwingsniveaus. De volgende verwijzingen worden onderkend in MIM:
 
 | MIM niveau | Lineage | Uitwerking te vinden in | 
 | --------   | --------------------------- | --------------------------- |
-| 1 naar ... | vanuit een begripppenkader naar kennisbronnen | Buiten scope van MIM. Dit wordt momenteel in detail beschreven in de *NL-SBB standaard*. |
-| 2 naar 1   | vanuit CIM naar een begrippenkader | in deze module van MIM, zie verderop |
-| 3 naar 2   | vanuit LGM naar conceptueel informatiemodel | in deze module van MIM, zie verderop |
-| 3 naar 1   | vanuit LGM naar een begrippenkader | in deze module van MIM, zie verderop |
+| 1 naar ... | vanuit een begripppenkader naar kennisbronnen | Buiten scope van MIM. |
+| 1 naar 1   | vanuit een begrippenkader naar een ander begrippenkader | Buiten scope van MIM. |
+| 2 naar 1   | vanuit CIM naar een begrippenkader | In scope, in deze module van MIM. |
+| 3 naar 2   | vanuit LGM naar conceptueel informatiemodel | In scope, in deze module van MIM. |
+| 3 naar 1   | vanuit LGM naar een begrippenkader | In scope, in deze module van MIM. |
+| 3 naar 3   | vanuit LGM naar een ander LGM | In scope, in deze module van MIM, zie verderop bij semantische gelijkstelling |
 | 4 naar ... | vanuit een technisch datamodel naar een LGM, CIM of begrippenkader | Buiten scope van MIM. Dit wordt momenteel in detail beschreven in de *Handreiking data lineage*. |
+| 2 naar ... | vanuit CIM naar een kennisbronnen |  In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' . |
+| 3 naar ... | vanuit LGM naar een kennisbronnen |  In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' . |
+| 3 naar 4   | vanuit LGM naar een technisch datamodel |  Buiten scope van MIM. Dit betreft een mapping tussen technisch en logisch die opgenomen kan worden *bij* een LGM, deze zit strikt genomen niet in het LGM. Wellicht dat deze mapping generiek kan worden gespecificeerd zonder afhankelijkheden met de diverse implementatie technieken en als zodanig een plek in MIM kan krijgen maar dit is nu niet zo. |
 
 Mapping in een diagram. 
 ![Semantische herleidbaarheid in een diagram](media/MIM-lineage_informatie-architectuur.png "In een diagram")
+
+
+## Uitgangspunten en ontwerpbeslissingen
+
+#### Elk modelelement kent een eigen definitie
+In MIM is een definitie voor veel modelelementen een verplicht metagegeven.  In principe zijn definities op elk beschouwingsniveau ook zelfstandig voor specifiek dat beschouwingsniveau, ook al komen ze tekstueel overeen. Wanneer de definitie van een modelelement exact gelijk is aan die van een modelelement of begrip waarmee een lineage-relatie bestaat, kan dit als redundant worden ervaren. Het verdient echter de voorkeur om deze definities expliciet te specificeren, zodat het model ook zelfstandig goed te begrijpen blijft. In een eigen beheer omgeving zou de gegevensdefinitie leeg gelaten kunnen worden waarmee bedoeld wordt dat deze rechtstreeks van het gerelateerde begrip overgenomen kan worden, maar bij de publicatie van het model hoort er altijd een gegevensdefinitie te zijn die te lezen is door gebruikers.
+
+#### Elk gegevenstype heeft een gegevensdefinitie
+Elk gegevenstype verdiend een definitie. Ook als het gegeventype semantisch niet relevant is is het zinvol om te begrijpen wat ermee bedoeld wordt. Daarom is de definitie hiervan verplicht. 
+
+### Semantische relaties tussen begrippen worden niet uitgewerkt in MIM 
+
+Dit wordt momenteel in detail beschreven in o.a. de *NL-SBB standaard*. Horizontale lineage tussen begrippen uit verschillende begrippenkaders betreft de zogenoemde harmonisatierelaties uit de NL-SBB en wordt [aldaar](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#harmonisatiesrelaties) beschreven. MIM beperkt zich tot het volgende: 
+
+### Lineage naar wet- en regelgeving en andere kennisbronnen mag rechtstreeks worden gelegd 
+Een van de doelstellingen van lineage is dat van een gegeven kan worden vastgesteld welke wet- en regelgeving van toepassing is. Op die manier kan uiteindelijk ook worden nagegaan of aan de gestelde eisen wordt voldaan. 
+
+Er zullen organisaties zijn die kiezen om deze lineage in een begrippenkader, zoals o.a. bedoeld in de NL-SBB standaard, op te nemen. Alsmede om vervolgens vanuit een CIM of LGM naar begrippen naar dit begrippenkader te verwijzen. Deze modellen zijn echter niet altijd gemaakt. Wet- en regelgeving en (openbaar) uitvoeringsbeleid is echter wel altijd gepubliceerd, we noemen dit kennisbronnen. Naar deze kennisbronnen kan daarom ook vanuit MIM modellen verwezen worden, via een kennisbron verwijzing. 
+
+Omdat de NL-SBB ook kennisbron verwijzingen kent maakt MIM deze manier van verwijzen ook beschikbaar vanuit MIM. Er zijn ook kennisbronnen die zelf specificeren hoe er naar hen verwezen kan of moet worden. Uitgangspunt is dat dit soort aspecten meegenomen worden bij de NL-SBB en MIM hetzelfde mechanisme ook mogelijk maakt. 
 
 ## Semantische herleidbaarheid 
 
@@ -430,5 +415,18 @@ Ad 3.
 
 #### Metamodel
 *(Nog uit te werken in dit document.)*
-TODO: visueel diagram. 
+
+
+## Mogelijke openstaande punten en teksten om nog een plek te geven: 
+
+### Lineage en definities
+
+#### Geannoteerde definities
+De meeste modelelementen hebben verplicht een definitie: een beschrijving van de betekenis van dat modelelement. 
+In zo’n beschrijving kunnen een of meerdere gebruikte termen expliciet gekoppeld zijn aan een begrip. 
+Dit wordt een *geannoteerde definitie* genoemd.  
+
+Bij een geannoteerde definitie kunnen zowel de afzonderlijke termen uit de definitie als het modelelement in zijn geheel een lineage-relatie hebben met een begrip.  
+
+Zowel conceptuele informatiemodellen als logische gegevensmodellen kunnen geannoteerde definities bevatten.O: visueel diagram. 
 
