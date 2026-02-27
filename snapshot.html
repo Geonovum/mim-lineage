@@ -1463,7 +1463,9 @@ ul.index code{color:inherit}
 <li>een fysieke datamodel of technisch schema</li>
 </ul>
 <p>Het doel van semantische herleidbaarheid is hierbij om aan te geven hoe definities van modelelementen in informatie- en gegevensmodellen (MIM-2 en MIM-3) zich verhouden tot bovenliggende semantiek, in het bijzonder definities van begrippen uit begrippenkaders (MIM-1). </p>
-<p>Hierbij wordt in de kern vooral gekeken naar de tekstuele verwoording van de definities uit de verschillende modellen die voorhanden zijn. Uitgangspunt is dan ook dat elk modelelelement uit een (MIM) model een eigen definitie kent. Deze definitie staat op zichzelf en is zodanig opgesteld dat deze past bij het beschouwingsniveau dat uitgewerkt is in het betreffende model. Semantische herleidbaarheid is hierop een <em>aanvullende specificatie</em>, die de modelelementen en definities uit de verschillende modellen met elkaar verbindt. </p>
+<p>Hierbij wordt in de kern vooral gekeken naar de tekstuele verwoording van de definities uit de verschillende modellen die voorhanden zijn. </p>
+<p>Uitgangspunt is dan ook dat elk modelelelement uit een (MIM) model een eigen definitie kent. Deze definitie staat op zichzelf en is zodanig opgesteld dat deze past bij het beschouwingsniveau dat uitgewerkt is in het betreffende model. </p>
+<p>Semantische herleidbaarheid is hierop een <em>aanvullende specificatie</em>, die de modelelementen en definities uit de verschillende modellen met elkaar verbindt. </p>
 <section id="eenvoudig-voorbeeld"><div class="header-wrapper"><h4 id="x3-1-1-eenvoudig-voorbeeld"><bdi class="secno">3.1.1 </bdi>Eenvoudig voorbeeld</h4><a class="self-link" href="#eenvoudig-voorbeeld" aria-label="Permalink for Section 3.1.1"></a></div>
 <p>Neem bij voorbeeld een attribute '<strong>bsn</strong>' in een logisch gegevensmodel met als definitie: de identificatie van een geregistreerd persoon. </p>
 <p>In dit voorbeeld is de bijbehorende semantische herleiding als volgt: </p>
@@ -1484,12 +1486,15 @@ ul.index code{color:inherit}
 <p>De in het voorbeeld beschreven samenhang noemen we ook wel verticale lineage. Dit betreft afkomstrelaties tussen de definities van modelelementen in de verschillende modellen. </p>
 <p>Verticaal refereert hierbij naar de verbanden tussen de beschouwingsniveaus, zoals hier beschreven in MIM (MIM v1.2 paragraaf 1.6). 
 Omdat dit aparte lagen zijn is het van belang om de relatie tussen de lagen te kunnen beschrijven op het niveau van de individuele informatie-elementen. Er onstaat hiermee een systematiek van 'voortbouwende en uitbreidende' specificatie waarbij de afkomstrelaties traceerbaar en bruikbaar zijn van begrips- tot dataniveau, of eigenlijk van dataniveau terug naar begripsniveau. </p>
-<p>Dit document beperkt zich hierbij qua scope tot de MIM modellen zelf: </p>
+<p>Dit document beperkt zich qua scope tot de MIM modellen zelf en behandeld primair de volgende verticale lineage:  </p>
 <ul>
 <li>van een conceptuele informatiemodel naar de bijbehorende semantiek, zoals bijvoorbeeld een begrippenkader (dat bijvoorbeeld uitgewerkt is in de NL-SBB standaard)</li>
 <li>van een logisch gegevensmodel naar een conceptueel informatiemodel</li>
 </ul>
-<p>In de ideale situatie is de semantische herleidbaarheid van elk modelelement volledig aan te brengen. Echter, er is niet altijd sprake van een ideale situatie. Het aanbrengen van semantische herleidbaarheid best complex kan zijn en vereist veel kennis. Denk aan: </p>
+<blockquote>
+<p>In de ideale situatie is de semantische herleidbaarheid van elk modelelement hiermee volledig aan te brengen.</p>
+</blockquote>
+<p>Echter, er is niet altijd sprake van een ideale situatie. Het aanbrengen van semantische herleidbaarheid best dan ook complex worden. Denk aan de volgende niet ideale situaties: </p>
 <ul>
 <li>dat definities niet altijd gebaseerd zijn op eigen kennis en definities. Het komt voor dat de bovenliggende semantiek wordt bepaald door andere organisaties;  </li>
 <li>dat definities niet geheel op elkaar aansluiten en het goed zou zijn om dit verschil zichtbaar te maken. </li>
