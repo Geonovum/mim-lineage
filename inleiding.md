@@ -13,5 +13,5 @@ Je kan semantische herleidbaarheid ook zien als het aanbrengen van afkomstrelati
 - een logisch gegevensmodel van een administratie of een gegevensuitwisseling of een gegevensproduct, waarnaar verwezen wordt vanuit: 
 - een fysieke datamodel of technisch schema
 
-- 
+Veel plezier met het uitwerken van semantische herleidbaarheid! 
 
