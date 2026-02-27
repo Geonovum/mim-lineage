@@ -1500,13 +1500,13 @@ ul.index code{color:inherit}
 <p>Dit wordt uitgewerkt aan de hand van een uitgebreid voorbeeld. </p>
 <section id="uitgebreid-voorbeeld"><div class="header-wrapper"><h4 id="x3-2-1-uitgebreid-voorbeeld"><bdi class="secno">3.2.1 </bdi>Uitgebreid voorbeeld</h4><a class="self-link" href="#uitgebreid-voorbeeld" aria-label="Permalink for Section 3.2.1"></a></div>
 <p>In dit voorbeeld is een begrippenkader uitgewerkt naar een CIM en beide weer zijn gebruikt bij het maken van gegevensobjecttype en een gegevenstype in een LGM. </p>
-<p><strong>Begrippen in een begrippenkader:</strong></p>
+<p><em>Begrippen in een begrippenkader:</em></p>
 <ul>
 <li>Werknemer: Een werknemer is een natuurlijk persoon die werkt voor een organisatie. </li>
 <li>Woonplaats: Een woonplaats is een afgebakend grondgebied met een eigen begrenzing dat gelegen is binnen het grondgebied van een gemeente, dat onder andere bestemd is voor bewoning door mensen.</li>
 <li>Geboorteplaats: Een geboorteplaats is de plaats waar een natuurlijk persoon is geboren, in Nederland is dit altijd een woonplaats.</li>
 </ul>
-<p><strong>Modelelementen in een CIM:</strong> </p>
+<p><em>Modelelementen in een CIM:</em> </p>
 <ul>
 <li>een objecttype <em>Natuurlijk persoon</em><ul>
 <li>een relatietype '<em>is geboren in</em>'<ul>
@@ -1527,7 +1527,7 @@ ul.index code{color:inherit}
 </ul>
 </li>
 </ul>
-<p><strong>Modelelementen in een LGM:</strong></p>
+<p><em>Modelelementen in een LGM:</em></p>
 <p>Het model beschrijft een aantal gegevens die bijgehouden worden over werknemers die werken bij de eigen organisatie, in een registratie die enkele van deze gegevens uitwisselt met gebruikers: </p>
 <ul>
 <li>een gegevensobjecttype <em>Geregistreerde werknemer</em><ul>
@@ -1541,7 +1541,7 @@ ul.index code{color:inherit}
 <p>Een antwoord kan zijn om deze uit de in het CIM gedefinieerde code te halen: de officiele identificatie van een Woonplaats. We raken dan echter relevante context kwijt, te weten dat het om de geboorteplaats gaat. </p>
 <p>Een ander antwoord zou daarom kunnen zijn om de definitie van het begrip geboorteplaats te gebruiken: een woonplaats waar een natuurlijk persoon is geboren. Maar het gegeven zelf gaat over de code ervan, dus dat klopt ook niet echt. </p>
 <p>Laten we daarom eerst kijken naar de semantische herleidbaarheid, gebruik makende van de bijbehorende concepten uit het vorige hoofdstuk.</p>
-<p><strong>Semantische herleidbaarheid van het gegevenstype geboorteplaatscode:</strong></p>
+<p><em>Semantische herleidbaarheid van het gegevenstype geboorteplaatscode:</em></p>
 <ul>
 <li>onderwerp van gesprek: Natuurlijk persoon uit het CIM<ul>
 <li>niet zomaar een Natuurlijk persoon, maar een natuurlijk persoon die een werknemer is bij onze organisatie</li>
@@ -1556,7 +1556,7 @@ ul.index code{color:inherit}
 <p>Wanneer we de semantische herleidbaarheid beschouwen als onderdeel van een formele specificatie, en de oorspronklijke definities van de betrokken begrippen hierin subtitueren dan zou de formele definitie zijn: 
 'De code is de officiele identificatie van een Woonplaats.' die de 'Een geboorteplaats is een plaats waar een natuurlijk persoon is geboren, in Nederland is dit altijd een woonplaats.' van een 'Natuurlijk persoon' die 'Een werknemer is een natuurlijk persoon die werkt voor een organisatie.' is bij onze 'Organisatie. Merk op dat Natuurlijk persoon' en 'Organisatie' ook nog uitgeschreven kunnen worden. </p>
 <p>Dit is heel exact, maar niet goed leesbaar. Merk ook op dat er extra woorden nodig zijn zoals 'die de' en 'van een' en 'is bij'. Semantische herleidbaarheid letterlijk uitschrijven levert meestal geen goed leesbare definities op voor de doelgroep van een model. Het is dan ook niet gebruikelijk om een definitie van een gegevenstype in een gegevensmodel op deze manier uit te schrijven. Het moet daarom altijd mogelijk zijn eigen verwoordingen toe te kennen. </p>
-<p><strong>Definitie van het gegevenstype geboorteplaatscode:</strong></p>
+<p><em>Definitie van het gegevenstype geboorteplaatscode:</em></p>
 <p>Semantische herleidbaarheid is erg nuttig om te komen tot een goede definitie. Hiervan gebruik makende komen we tot teksten zoals: </p>
 <ul>
 <li>De geboorteplaatscode is de code van de woonplaats die de geboorteplaats is van de natuurlijk persoon die werknemer is bij onze organisatie. </li>
@@ -1797,7 +1797,7 @@ De definitie daarvan luidt: </p>
 <tbody><tr>
 <td>2 naar ...</td>
 <td>vanuit CIM naar kennisbronnen</td>
-<td>In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' .</td>
+<td>In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...'</td>
 </tr>
 <tr>
 <td>2 naar 1</td>
@@ -1826,8 +1826,8 @@ De definitie daarvan luidt: </p>
 </tr>
 </tbody></table>
 <p>Merk op dat er verticale en horizontale lineage wordt onderscheiden. Zo is van 3 naar 3 een voorbeeld van horizontale lineage, of beter gezegd verticale lineage waarvoor eerst een horizontale zijstap wordt gedaan. </p>
-<p><strong>Buiten scope</strong>
-Er is meer lineage tussen en binnen beschouwingsniveaus mogelijk, maar er is bewust gekozen om deze niet in MIM uit te werken. </p>
+<p><strong>Buiten scope</strong></p>
+<p>Er is meer lineage tussen en binnen beschouwingsniveaus mogelijk, maar er is bewust gekozen om deze niet in MIM uit te werken. </p>
 <table>
 <thead>
 <tr>
