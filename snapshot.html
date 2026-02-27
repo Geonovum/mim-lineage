@@ -1436,8 +1436,17 @@ ul.index code{color:inherit}
   
   <section id="inleiding"><div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 1."></a></div>
 <p>Het metamodel voor informatiemodellering (MIM) biedt een gemeenschappelijk vertrekpunt voor het maken van informatie- en gegevensmodellen. Het bevat afspraken en conventies voor het creëren van modellen en modelelementen, met daarbij standaard metagegevens. Het leidt tot meer uniforme beschrijvingen van modellen en zorgt daardoor voor meer begrijpelijkheid en andere vormen van kwaliteit.</p>
-<p>Dit document beschrijft een specifiek onderdeel van het MIM namelijk de semantische herleidbaarheid. Het doel van semantische herleidbaarheid is om aan te geven hoe definities van modelelementen in informatie- en gegevensmodellen (MIM-2 en MIM-3) zich verhouden tot bovenliggende semantiek, in het bijzonder definities van begrippen uit begrippenkaders (MIM-1). Hierbij wordt in de kern vooral gekeken naar de tekstuele verwoording van de definities uit de verschillende modellen die voorhanden zijn. </p>
-<p>Merk op dat de semantische lineage in deze context de elementen uit modellen op de verschillende MIM lagen met elkaar verbindt. We spreken daarom over verticale semantische lineage.</p>
+<p>Dit document beschrijft een specifiek onderdeel van het MIM namelijk de semantische herleidbaarheid en de standaard voor het modelleren van de bijbehorende specificaties.  </p>
+<p>Het doel van semantische herleidbaarheid is om aan te geven hoe definities van modelelementen in informatie- en gegevensmodellen (MIM-2 en MIM-3) zich verhouden tot bovenliggende semantiek, in het bijzonder definities van begrippen uit begrippenkaders (MIM-1). Hierbij wordt in de kern vooral gekeken naar de tekstuele verwoording van de definities uit de verschillende modellen die voorhanden zijn. </p>
+<p>Semantische herleidbaarheid wordt hierin gezien als het aanbrengen van verticale lineage met betrekking tot deze definities, waarbij deze herleiding uiteindelijk uitkomt bij de kennis die beschreven is in kennisbronnen (of kennis in de hoofden van materiedeskundigen). Verticaal refereert hierbij naar de verbanden tussen de beschouwingsniveaus. Het realiseren van informatievoorzieningen start met definities, van boven naar onder, maar in het uiteindelijk gebruik gaat de herleiding de andere kant op, van onder naar boven.   </p>
+<p>Je kan semantische herleidbaarheid ook zien als het aanbrengen van afkomstrelaties, of is gebaseerd op relaties, tussen modelelementen van modellen uit de verschillende beschouwingsniveaus, zoals o.a. MIM deze onderkent. Denk hierbij aan: </p>
+<ul>
+<li>een begrippenmodel van een begrippenkader, ook wel een semantisch begrippen model genoemd, waarnaar verwezen wordt vanuit: </li>
+<li>een conceptuele informatiemodel van een bepaald informatiedomein, waarnaar verwezen wordt vanuit: </li>
+<li>een logisch gegevensmodel van een administratie of een gegevensuitwisseling of een gegevensproduct, waarnaar verwezen wordt vanuit: </li>
+<li>een fysieke datamodel of technisch schema</li>
+</ul>
+<p>Veel plezier met het uitwerken van semantische herleidbaarheid!</p>
 </section>
   <section id="semantische-herleidbaarheid"><div class="header-wrapper"><h2 id="x2-semantische-herleidbaarheid"><bdi class="secno">2. </bdi>Semantische herleidbaarheid</h2><a class="self-link" href="#semantische-herleidbaarheid" aria-label="Permalink for Section 2."></a></div>
 <p>Uitgangspunt is dat elk modelelelement  in elke MIM laag, een eigen definitie kent en daarmee op zichzelf staat en dat semantische herleidbaarheid hier een aanvullende specificatie op is. In deze specificatie zelf kan aangegeven worden of herleidbaarheid wel of niet exact is, en wel of niet compleet (de mate van herleidbaarheid). </p>
@@ -1473,8 +1482,9 @@ ul.index code{color:inherit}
 </section>
   <section id="toepassingsgebied"><div class="header-wrapper"><h2 id="x3-toepassingsgebied"><bdi class="secno">3. </bdi>Toepassingsgebied</h2><a class="self-link" href="#toepassingsgebied" aria-label="Permalink for Section 3."></a></div>
 <p>Deze MIM-module is een onderdeel van de MIM standaard. Het toepassingsgebied van deze module valt hier binnen. </p>
-<p>Deze module kan worden toegepast door organisaties die het belangrijk vinden om gegevensmodellen en concentuele informatiemodellen te verbinden met begrippen uit begrippenkaders en uit kennisbronnen zoals wet- en regelgeving en uitvoeringsbeleid. Dit komt sterk overeen met wat binnen de NORA het Nationaal Semantisch Vlak heet, zoals bedoeld vanuit NORA gegevensmanagement, en daarbinnen de informatie laag. </p>
-<p>Deze module is vooral van belang voor organisaties waarin dit soort concerns van belang zijn: </p>
+<p>Deze module kan worden toegepast door organisaties die het belangrijk vinden om gegevensmodellen en concentuele informatiemodellen te verbinden met begrippen uit begrippenkaders en uit kennisbronnen zoals wet- en regelgeving en uitvoeringsbeleid. </p>
+<p>Dit komt sterk overeen met wat binnen de NORA het Nationaal Semantisch Vlak heet, zoals bedoeld vanuit NORA gegevensmanagement, en daarbinnen de informatie laag. </p>
+<p>Deze module is vooral van belang voor organisaties waarin de volgende concerns van belang zijn: </p>
 <ul>
 <li>gezamelijke begripsvorming en aansluiting tussen de business en IT, heldere definities gaan vooraf aan realiseren van informatievoorzieningen en het inwinnen van gegevens</li>
 <li>gezamelijke begripsvorming tussen samenwerkende organisaties, die gegevens met elkaar uitwisselen en gebruiken, met elk een eigen perspectief op de wereld die net anders kan zijn</li>
