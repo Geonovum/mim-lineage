@@ -162,7 +162,7 @@ De formulering *is gebaseerd op* wijst op een meer vrije en mogelijk meervoudige
 _TODO: hoe precies verwijzen naar een begrip. Dit is analoog aan MIM 1.2, wellicht nog met een extra uitbreiding of dit wel of niet exact is._
 
 
-### Lineage vanuit LGM naar CIM
+## Lineage vanuit LGM naar CIM
 
 Gegevens gaan over eigenschappen van een object. Door semantische herleidbaarheid aan te brengen wordt aangegeven hoe (en in hoeverre) de gegevenswerkelijkheid en de gemodelleerde werkelijkheid in het begrippenkader en het conceptuele inforatiemodel met elkaar overeenkomen. 
 
