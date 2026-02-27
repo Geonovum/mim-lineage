@@ -1531,8 +1531,8 @@ ul.index code{color:inherit}
 <td>Het gaat hier om onderkende modelelementen, in MIM of in een MIM-extensie.</td>
 </tr>
 </tbody></table>
-<p><em>Mate van verwijsbaarheid</em></p>
-<p>De mate van verwijsbaarheid geeft aan in hoeverre de semantische herleidbaarheid klopt met de bovenliggende definities, zoals via verticale of horizontale semantische herleiding gespecificeerd. Dit is alleen relevant voor modelelementen waarvoor semantiek nodig is, oftewel modelelementen die semantisch relevant zijn. </p>
+<p><em>Detaillering van semantische herleidbaarheid</em></p>
+<p>Een gegevensdefinitie kan gebruik maken van meerdere begrippen en soms zelfs uit meerdere modelelementen uit een CIM (bijvoorbeeld een adresregel en een uitkomst van een berekening). Het is echter niet altijd zo dat er een begrippenkader of een CIM is om naar te verwijzen, of deels wel en deels niet. Soms klopt een definitie van een modelelement uit een onderliggende beschouwingsniveau ook wel ongeveer maar niet exact met de bovenliggende definities uit een bovenliggend beschouwingsniveau. Dit komt onder andere vanwege dat een begrippenkader (MIM-1) en een CIM (MIM-2) aangeven hoe iets bedoeld is en een LGM (MIM-3) en een implementatiemodel (MIM-4) gebaseerd zijn op welke gegevens er daadwerkelijk geadministreerd zijn en/of uitgewisseld worden en ook rekening houdt met de soms weerbarstige praktijk van het inwinnen van gegevens. Er kunnen dus, bedoeld of onbedoeld, verschillen zitten tussen de definities van de modelelementen uit verschillende beschouwingsniveaus. Dit kan leiden tot het elkaar niet goed begrijpen en spraakverwarring. Door semantische herleidbaarheid in detail uit te werken wordt inzichtelijk hoe het precies zit. Met al deze aspecten wordt rekening gehouden bij het uitwerken van semantische herleidbaarheid. </p>
 <table>
 <thead>
 <tr>
@@ -1542,6 +1542,11 @@ ul.index code{color:inherit}
 </tr>
 </thead>
 <tbody><tr>
+<td>semantisch relevant modelelement</td>
+<td>Een modelelement waarvoor het nuttig of noodzakelijk is dat de definitie grotendeels gebaseerd is op bovenliggende definities uit het semantische beschouwingsniveau.</td>
+<td>Hiermee wordt aangegeven dat het de bedoeling is dat begrippen uit een begrippenkader worden gebruikt in de definitie van dit modelelement in een CIM of LGM. Dit gebruik hoeft niet tekstueel exact te zijn. Hiermee wordt niet aangegeven dat er een begrippenkader of CIM ontbreekt, ook als deze er niet zijn kan aangegeven worden dat een modelelement semantisch relevant is. Een voorbeeld van een niet relevant modelelement is bv. een volgnummer om iets in de techniek uniek te maken of een betekenisloos hulpgegeven om iets aan te sturen of iets te koppelen.</td>
+</tr>
+<tr>
 <td>complete semantische herleiding</td>
 <td>Een duiding van dat alle relevante semantische verwijzingen zijn aangebracht.</td>
 <td>Er ontbreekt er geen (ook niet vanwege het ontbreken van een CIM of een begrippenkader). Wanneer de herleiding niet compleet is dan is er altijd sprake van ten minste 1 ontbrekende verwijzing, die er wel zou moeten zijn om de gehele gegevensdefinitie af te dekken. Als de gehele gegevensdefinitie afgedekt wordt dan ontbreken er geen verwijzingen en is de herleiding dus compleet.</td>
