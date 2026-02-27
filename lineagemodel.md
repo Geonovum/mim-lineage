@@ -28,18 +28,18 @@ We onderscheiden verticale en horizontale lineage.
 
 Er wordt veelvuldig gebruik gemaakt van verwijzingen tussen modelelementen uit verschillende beschouwingsniveaus. De volgende verwijzingen worden onderkend in MIM:
 
-| MIM niveau | Lineage | Uitwerking te vinden in | 
-| --------   | --------------------------- | --------------------------- |
-| 1 naar ... | vanuit een begripppenkader naar kennisbronnen | Buiten scope van MIM. |
-| 1 naar 1   | vanuit een begrippenkader naar een ander begrippenkader | Buiten scope van MIM. |
-| 2 naar 1   | vanuit CIM naar een begrippenkader | In scope, in deze module van MIM. |
-| 3 naar 2   | vanuit LGM naar conceptueel informatiemodel | In scope, in deze module van MIM. |
-| 3 naar 1   | vanuit LGM naar een begrippenkader | In scope, in deze module van MIM. |
-| 3 naar 3   | vanuit LGM naar een ander LGM | In scope, in deze module van MIM, zie verderop bij semantische gelijkstelling |
-| 4 naar ... | vanuit een technisch datamodel naar een LGM, CIM of begrippenkader | Buiten scope van MIM. Dit wordt momenteel in detail beschreven in de *Handreiking data lineage*. |
-| 2 naar ... | vanuit CIM naar een kennisbronnen |  In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' . |
-| 3 naar ... | vanuit LGM naar een kennisbronnen |  In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' . |
-| 3 naar 4   | vanuit LGM naar een technisch datamodel |  Buiten scope van MIM. Dit betreft een mapping tussen technisch en logisch die opgenomen kan worden *bij* een LGM, deze zit strikt genomen niet in het LGM. Wellicht dat deze mapping generiek kan worden gespecificeerd zonder afhankelijkheden met de diverse implementatie technieken en als zodanig een plek in MIM kan krijgen maar dit is nu niet zo. |
+| MIM niveau    | Lineage | Uitwerking te vinden in | 
+| -----------   | ------------------------------ | --------------------------- |
+| 1 naar ...    | vanuit een begripppenkader naar kennisbronnen | Buiten scope van MIM. |
+| 1 naar 1      | vanuit een begrippenkader naar een ander begrippenkader | Buiten scope van MIM. |
+| 2 naar 1      | vanuit CIM naar een begrippenkader | In scope, in deze module van MIM. |
+| 3 naar 2      | vanuit LGM naar conceptueel informatiemodel | In scope, in deze module van MIM. |
+| 3 naar 1      | vanuit LGM naar een begrippenkader | In scope, in deze module van MIM. |
+| 3 naar 3      | vanuit LGM naar een ander LGM | In scope, in deze module van MIM, zie verderop bij semantische gelijkstelling |
+| 4 naar ...    | vanuit een technisch datamodel naar een LGM, CIM of begrippenkader | Buiten scope van MIM. |
+| 2 naar ...    | vanuit CIM naar een kennisbronnen |  In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' . |
+| 3 naar ...    | vanuit LGM naar een kennisbronnen |  In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' . |
+| 3 naar 4      | vanuit LGM naar een technisch datamodel |  Buiten scope van MIM. |
 
 Mapping in een diagram. 
 ![Semantische herleidbaarheid in een diagram](media/MIM-lineage_informatie-architectuur.png "In een diagram")
@@ -53,16 +53,23 @@ In MIM is een definitie voor veel modelelementen een verplicht metagegeven.  In 
 #### Elk gegevenstype heeft een gegevensdefinitie
 Elk gegevenstype verdiend een definitie. Ook als het gegeventype semantisch niet relevant is is het zinvol om te begrijpen wat ermee bedoeld wordt. Daarom is de definitie hiervan verplicht. 
 
-### Semantische relaties tussen begrippen worden niet uitgewerkt in MIM 
-
-Dit wordt momenteel in detail beschreven in o.a. de *NL-SBB standaard*. Horizontale lineage tussen begrippen uit verschillende begrippenkaders betreft de zogenoemde harmonisatierelaties uit de NL-SBB en wordt [aldaar](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#harmonisatiesrelaties) beschreven. MIM beperkt zich tot het volgende: 
-
 ### Lineage naar wet- en regelgeving en andere kennisbronnen mag rechtstreeks worden gelegd 
 Een van de doelstellingen van lineage is dat van een gegeven kan worden vastgesteld welke wet- en regelgeving van toepassing is. Op die manier kan uiteindelijk ook worden nagegaan of aan de gestelde eisen wordt voldaan. 
 
 Er zullen organisaties zijn die kiezen om deze lineage in een begrippenkader, zoals o.a. bedoeld in de NL-SBB standaard, op te nemen. Alsmede om vervolgens vanuit een CIM of LGM naar begrippen naar dit begrippenkader te verwijzen. Deze modellen zijn echter niet altijd gemaakt. Wet- en regelgeving en (openbaar) uitvoeringsbeleid is echter wel altijd gepubliceerd, we noemen dit kennisbronnen. Naar deze kennisbronnen kan daarom ook vanuit MIM modellen verwezen worden, via een kennisbron verwijzing. 
 
 Omdat de NL-SBB ook kennisbron verwijzingen kent maakt MIM deze manier van verwijzen ook beschikbaar vanuit MIM. Er zijn ook kennisbronnen die zelf specificeren hoe er naar hen verwezen kan of moet worden. Uitgangspunt is dat dit soort aspecten meegenomen worden bij de NL-SBB en MIM hetzelfde mechanisme ook mogelijk maakt. 
+
+### Semantische relaties tussen begrippen worden niet uitgewerkt in MIM 
+
+Dit wordt momenteel in detail beschreven in o.a. de *NL-SBB standaard*. Horizontale lineage tussen begrippen uit verschillende begrippenkaders betreft de zogenoemde harmonisatierelaties uit de NL-SBB en wordt [aldaar](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#harmonisatiesrelaties) beschreven. 
+
+### Lineage van technische implementatiemodellen naar LGM worden niet uitgewerkt in MIM
+Een logisch gegevensmodel kan worden uitgewerkt in verschillende technische schema's, naar gelang welke gebruikers welke serialisatie willen ontvangen of welke applicaties of databases worden ontwikkelt. Hetzelfde logische model kan in vele technische verschijningsvormen zijn uitgewerkt, waarmee het ook eenvoudig wordt om deze eenduiding naar elkaar te vertalen. Lineage is in principe altijd van 'onder' naar 'boven' dus de lineage van technisch naar logisch hoort bij de technische uitwerking. 
+
+Dit wordt momenteel in detail beschreven in de *Handreiking data lineage*.
+
+Deze lineage betreft vaak een mapping en/of een vertaalspeficiatie tussen technisch en logisch. Deze *kan* vanwege pragmatische overwegingen eventueel opgenomen worden *bij* een LGM, maar zit strikt genomen **niet** *in* het LGM. Wellicht dat deze mapping generiek kan worden gespecificeerd zonder afhankelijkheden met de diverse implementatie technieken en als zodanig een plek in MIM kan krijgen, maar dit is nu niet zo.
 
 ## Semantische herleidbaarheid 
 
