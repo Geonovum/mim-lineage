@@ -10,7 +10,7 @@ Het toepassen van deze MIM-module verhoogd de begrijpelijkheid van een model en 
 - ALS het model wel gebruik maakt van deze MIM module, dan:
    - wordt dit aangegeven bij de metagegevens op model niveau: MIM-SH = Ja
    - worden de spelregels gevolgd die in deze module zijn aangegeven (deze volgen uit voorgaand punt) 
-   - is er de mogelijkheid om aan te geven welke _optionele spelregels_ er verder nog toegepast zijn in het model om de kwaliteit van de specificatie verder te verhogen. 
+   - is er de mogelijkheid om aan te geven welke _optionele spelregels_ er verder nog toegepast zijn in het model om de kwaliteit van de specificatie verder te verhogen. Deze lezer of gebruiker kan hier van op vertrouwen. 
 
 ## Modelelementen met lineage
 
