@@ -41,20 +41,41 @@ De in het voorbeeld beschreven samenhang noemen we ook wel verticale lineage. Di
 Verticaal refereert hierbij naar de verbanden tussen de beschouwingsniveaus, zoals hier beschreven in MIM (MIM v1.2 paragraaf 1.6). 
 Omdat dit aparte lagen zijn is het van belang om de relatie tussen de lagen te kunnen beschrijven op het niveau van de individuele informatie-elementen. Er onstaat hiermee een systematiek van 'voortbouwende en uitbreidende' specificatie waarbij de afkomstrelaties traceerbaar en bruikbaar zijn van begrips- tot dataniveau, of eigenlijk van dataniveau terug naar begripsniveau. 
 
-Dit document beperkt zich qua scope tot de MIM modellen zelf en behandeld primair de volgende verticale lineage:  
-- van een conceptuele informatiemodel naar de bijbehorende semantiek, zoals bijvoorbeeld een begrippenkader (dat bijvoorbeeld uitgewerkt is in de NL-SBB standaard)
-- van een logisch gegevensmodel naar een conceptueel informatiemodel
+## Lineage in en tussen verschillende MIM-beschouwingsniveaus
 
-> In de ideale situatie is de semantische herleidbaarheid van elk modelelement hiermee volledig aan te brengen.
+Er zijn verschillende beschouwingsniveaus om kennis en gegevens te modelleren (en andere concerns, die hier niet benoemd zijn). Bij het specificeren van semantische herleidbaarheid wordt hierbij veelvuldig gebruik gemaakt van verwijzingen tussen modelelementen uit verschillende beschouwingsniveaus. De volgende verbanden worden hierbij als binnen scope gezien. 
 
-Echter, er is niet altijd sprake van een ideale situatie. Het aanbrengen van semantische herleidbaarheid best dan ook complex worden. Denk aan de volgende niet ideale situaties: 
-- dat definities niet altijd gebaseerd zijn op eigen kennis en definities. Het komt voor dat de bovenliggende semantiek wordt bepaald door andere organisaties;  
-- dat definities niet geheel op elkaar aansluiten en het goed zou zijn om dit verschil zichtbaar te maken. 
-- dat het niet mogelijk is om naar een modelelement in een model van een bovenliggende MIM laag te verwijzen, omdat bijvoorbeeld een conceptueel informatiemodel nog niet gemaakt is of er nog geen begrippenkader is opgesteld of gepubliceerd. Het kan dan nuttig of nodig zijn om rechtstreeks naar een begrip of kennisbron te verwijzen.
+![Semantische herleidbaarheid in een diagram](media/MIM-lineage_informatie-architectuur.png "In een diagram")
 
-Met dit soort situaties wordt daarom rekening gehouden in deze specificatie. Deze zijn meegenomen in deze uitwerking (in scope) waardoor het ook mogelijkheid is om te beschrijven dat we te maken hebben met een niet ideale situatie. 
+Merk op dat verbanden meestal verticaal worden aangebracht, maar soms ook horizontaal. 
 
-> De specificatie ondersteund ideale en minder ideale situaties die je kan aantreffen in het vakgebied van informatie- en gegevensmodellering. 
+* **Verticale lineage** ontstaat door het leggen van relaties tussen modelelementen van verschillende niveaus, of tussen een modelelement en een begrip uit een begrippenkader.  
+* **Horizontale lineage** ontstaat door het leggen van relaties tussen modelelementen op hetzelfde niveau, maar afkomstig uit verschillende modellen.
+
+Dit diagram in tekstvorm is weergegeven in de volgende tabel: 
+
+| MIM niveau    | Lineage                                     | Uitwerking te vinden in | 
+| ------------- | ------------------------------------------- | --------------------------- |
+| 2 naar ...    | vanuit CIM naar kennisbronnen               | In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' |
+| 2 naar 1      | vanuit CIM naar een begrippenkader          | In scope, in deze module van MIM. |
+| 3 naar 2      | vanuit LGM naar een CIM                     | In scope, in deze module van MIM. |
+| 3 naar 1      | vanuit LGM naar een begrippenkader          | In scope, in deze module van MIM. |
+| 3 naar 3      | vanuit LGM naar een ander LGM               | In scope, in deze module van MIM, zie verderop bij semantische gelijkstelling |
+| 3 naar ...    | vanuit LGM naar kennisbronnen               | In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' . |
+
+Merk op dat er verticale en horizontale lineage wordt onderscheiden. Zo is van 3 naar 3 een voorbeeld van horizontale lineage, of beter gezegd verticale lineage waarvoor eerst een horizontale zijstap wordt gedaan. 
+
+**Buiten scope**
+
+Er is meer lineage tussen en binnen beschouwingsniveaus mogelijk, maar er is bewust gekozen om deze niet in MIM uit te werken. 
+
+| MIM niveau    | Lineage | Uitwerking te vinden in | 
+| -------------   | ------------------------------------------- | --------------------------- |
+| 1 naar ...    | vanuit een begripppenkader naar kennisbronnen | Buiten scope van MIM. |
+| 1 naar 1      | vanuit een begrippenkader naar een ander begrippenkader | Buiten scope van MIM. |
+| 2 naar 2      | vanuit CIM naar een begrippenkader | In scope, dit is uitgewerkt bij het gewone metamodel, bij view en extern en niet hier. |
+| 3 naar 4      | vanuit LGM naar een technisch datamodel |  Buiten scope van MIM. Zie ontwerpbeslissingen. |
+| 4 naar ...    | vanuit een technisch datamodel naar een LGM, CIM of begrippenkader | Buiten scope van MIM. |
 
 ## Goede definities in samenhang
 
@@ -138,4 +159,21 @@ Wat er met het gegevenstype 'geboorteplaatscode' bedoeld wordt is dan volledig h
 
 > Van dit voorbeeld leren we dat definities met elkaar samenhangen en dat het aanbrengen van deze samenhang kan leiden tot betere en beter begrijpelijke definities. 
 
-Tot dusver het voorbeeld. In de volgende hoofdstukken wordt nader uitgewerkt hoe semantische herleidbaarheid precies gespecificeerd wordt. Merk op dat dit per modeltype verschillend is zijn omdat semantische verwijzingen in een CIM naar begrippen verwijzen en in LGM naar CIM modelelementen en van daaruit naar begrippen. Het doel is hierbij echter telkens hetzelfde. 
+## Scope
+
+Dit document beperkt zich qua scope tot de MIM modellen zelf en behandeld primair de volgende verticale lineage:  
+- van een conceptuele informatiemodel naar de bijbehorende semantiek, zoals bijvoorbeeld een begrippenkader (dat bijvoorbeeld uitgewerkt is in de NL-SBB standaard)
+- van een logisch gegevensmodel naar een conceptueel informatiemodel
+
+> In de ideale situatie is de semantische herleidbaarheid van elk modelelement hiermee volledig aan te brengen.
+
+Echter, er is niet altijd sprake van een ideale situatie. Het aanbrengen van semantische herleidbaarheid best dan ook complex worden. Denk aan de volgende niet ideale situaties: 
+- dat definities niet altijd gebaseerd zijn op eigen kennis en definities. Het komt voor dat de bovenliggende semantiek wordt bepaald door andere organisaties;  
+- dat definities niet geheel op elkaar aansluiten en het goed zou zijn om dit verschil zichtbaar te maken. 
+- dat het niet mogelijk is om naar een modelelement in een model van een bovenliggende MIM laag te verwijzen, omdat bijvoorbeeld een conceptueel informatiemodel nog niet gemaakt is of er nog geen begrippenkader is opgesteld of gepubliceerd. Het kan dan nuttig of nodig zijn om rechtstreeks naar een begrip of kennisbron te verwijzen.
+
+Met dit soort situaties wordt daarom rekening gehouden in deze specificatie. Deze zijn meegenomen in deze uitwerking (in scope) waardoor het ook mogelijkheid is om te beschrijven dat we te maken hebben met een niet ideale situatie. 
+
+> De specificatie ondersteund ideale en minder ideale situaties die je kan aantreffen in het vakgebied van informatie- en gegevensmodellering.
+
+In de volgende hoofdstukken wordt nader uitgewerkt hoe semantische herleidbaarheid precies gespecificeerd wordt. Merk op dat dit per modeltype verschillend is zijn omdat semantische verwijzingen in een CIM naar begrippen verwijzen en in LGM naar CIM modelelementen en van daaruit naar begrippen. Het doel is hierbij echter telkens hetzelfde. 
