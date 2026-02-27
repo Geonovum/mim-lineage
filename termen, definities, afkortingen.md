@@ -11,7 +11,7 @@ Semantische herleiding bestaat uit één of meerdere **semantische verwijzingen*
 Semantische herleidbaarheid in een diagram. 
 ![Semantische herleidbaarheid in een diagram](media/Semantische_herleidbaarheid.png "Semantische herleidbaarheid in een diagram")
 
-Dit diagram geeft herleidbaarheid weer tussen verschillende beschouwingsniveaus op generieke wijze. Het kan zijn dat er per beschouwingsniveau (LGM --> CIM en/of CIM --> begrippenkader en/of LGM --> begrippenkader) andere termen worden gekozen. 
+Dit diagram geeft herleidbaarheid weer tussen verschillende beschouwingsniveaus op generieke wijze. Het kan zijn dat er per beschouwingsniveau (LGM --> CIM en/of CIM --> begrippenkader en/of LGM --> begrippenkader). Opmerking: er loopt een issue over wellicht andere termen. 
 
 Hieronder worden de begrippen beschreven die nodig zijn om semantische herleidbaarheid te begrijpen.
 
