@@ -37,11 +37,13 @@ De in het voorbeeld beschreven samenhang noemen we ook wel verticale lineage. Di
 Verticaal refereert hierbij naar de verbanden tussen de beschouwingsniveaus, zoals hier beschreven in MIM (MIM v1.2 paragraaf 1.6). 
 Omdat dit aparte lagen zijn is het van belang om de relatie tussen de lagen te kunnen beschrijven op het niveau van de individuele informatie-elementen. Er onstaat hiermee een systematiek van 'voortbouwende en uitbreidende' specificatie waarbij de afkomstrelaties traceerbaar en bruikbaar zijn van begrips- tot dataniveau, of eigenlijk van dataniveau terug naar begripsniveau. 
 
-Dit document beperkt zich hierbij qua scope tot de MIM modellen zelf: 
+Dit document beperkt zich qua scope tot de MIM modellen zelf en behandeld primair de volgende verticale lineage:  
 - van een conceptuele informatiemodel naar de bijbehorende semantiek, zoals bijvoorbeeld een begrippenkader (dat bijvoorbeeld uitgewerkt is in de NL-SBB standaard)
 - van een logisch gegevensmodel naar een conceptueel informatiemodel
 
-In de ideale situatie is de semantische herleidbaarheid van elk modelelement volledig aan te brengen. Echter, er is niet altijd sprake van een ideale situatie. Het aanbrengen van semantische herleidbaarheid best complex kan zijn en vereist veel kennis. Denk aan: 
+> In de ideale situatie is de semantische herleidbaarheid van elk modelelement hiermee volledig aan te brengen.
+
+Echter, er is niet altijd sprake van een ideale situatie. Het aanbrengen van semantische herleidbaarheid best dan ook complex worden. Denk aan de volgende niet ideale situaties: 
 - dat definities niet altijd gebaseerd zijn op eigen kennis en definities. Het komt voor dat de bovenliggende semantiek wordt bepaald door andere organisaties;  
 - dat definities niet geheel op elkaar aansluiten en het goed zou zijn om dit verschil zichtbaar te maken. 
 - dat het niet mogelijk is om naar een modelelement in een model van een bovenliggende MIM laag te verwijzen, omdat bijvoorbeeld een conceptueel informatiemodel nog niet gemaakt is of er nog geen begrippenkader is opgesteld of gepubliceerd. Het kan dan nuttig of nodig zijn om rechtstreeks naar een begrip of kennisbron te verwijzen.
