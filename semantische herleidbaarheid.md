@@ -39,7 +39,7 @@ Een begrippenkader met begrippen en een conceptueel informatiemodel (CIM) kunnen
 
 Dit wordt uitgewerkt aan de hand van een voorbeeld. 
 
-### Voorbeeld 2 
+### Voorbeeld 2
 
 In dit voorbeeld is een begrippenkader uitgewerkt naar een CIM en beide weer zijn gebruikt bij het maken van gegevensobjecttype en een gegevenstype in een LGM. 
 
