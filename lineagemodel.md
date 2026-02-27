@@ -167,7 +167,7 @@ In deze paragraaf wordt aangegeven hoe een begrippenkader met begrippen gebruikt
  
 De definitie van een modelelement in een CIM heeft een zeer sterke relatie met de definitie van een begrip uit een begrippenkader. Een begrippenkader en een conceptueel informatiemodel beschrijven immers beiden een model van dezelfde werkelijkheid. De ene beschrijft begrippen waarmee we uitdrukking geven aan het beschrijven van die werkelijkeheid, de andere geeft de conceptualisatie aan van dezelfde werkelijkheid, door middel van objecttypen, eigenschaptypen, relatietypen enzovoorts. Het is daarom in principe zo dat de terminologie in een CIM overeenkomt met de voorkeurstermen van de gerelateerde begrippen, daar waar mogelijk, mede ook om geen onnodige (spraak) verschillen te krijgen. Dit is niet altijd mogelijk, maar dit is wel een streven. De spelregels in onderstaande tabel geven dit aan. 
 
-#### Lineage op model niveau 
+**Lineage op model niveau**
 
 In een CIM kunnen modelelementen voorkomen die semantische verwijzingen hebben naar begrippen uit verschillende begrippenkaders. Hierover kan extra informatie worden toegevoegd in het model, zodat helder is welke dit zijn. 
 
@@ -188,7 +188,7 @@ _Optionele spelregels_
 
 _TODO: 3 is hier nog niet uitgewerkt._
 
-#### Modelelementen uit een CIM waarvoor semantische verwijzingen mogelijk zijn 
+**Modelelementen uit een CIM waarvoor semantische verwijzingen mogelijk zijn** 
 
 Dit zijn in principe alle modelelementen die een definitie kunnen hebben en ten minste alle modelelementen die een definitie hebben (altijd behoren te hebben). 
 
@@ -208,14 +208,14 @@ De relatie tussen een conceptueel modelelement en een begrip moet strikt worden 
 
 Het is mogelijk dat MIM in een latere versie ook niet exact overeenkomende semantische verwijzingen toestaat. De semantische verwijzingen zullen dan een aanduiding of classificatie krijgen. Dit is op het moment nog niet uitgewerkt.
 
-#### Metamodel
+**Metamodel**
 *(Nog uit te werken in dit document.)*
 TODO: visueel diagram. 
 
 ### Lineage vanuit LGM naar begrippenkader 
 *(Nog uit te werken in dit document.)*
 
-#### Modelelementen uit LGM met semantische verwijzingen naar begrippenkader
+**Modelelementen uit LGM met semantische verwijzingen naar begrippenkader**
 
 | Modelelement | semantische verwijzing naar | kardinaliteit | spelregels, bij 1 modelelement van dit type hoort: ...                | 
 | ------------ | --------------------------- | ------------- | --------------------------------------------------------------------- | 
@@ -242,7 +242,7 @@ Een gegevensmodel gaat over gegevens die er zijn, een informatiemodel gaat over 
 
 Semantische herleidbaarheid in een logisch gegevensmodel beschrijft op welke modelelementen uit een CIM een gegevenstype is gebaseerd. In het verlengde hiervan geldt dat de definitie van het gegevenstype weer op de begrippen is gebaseerd die daarin zijn aangegeven. 
 
-#### Lineage op model niveau 
+**Lineage op model niveau**
 
 In een LGM kunnen modelelementen voorkomen die semantische verwijzingen hebben naar CIM modelelementen uit verschillende CIM's. Hierover kan extra informatie worden toegevoegd in het model. 
 
@@ -264,7 +264,7 @@ Deze kunnen worden opgegeven bij een model en geven aan welke verwijzen op model
 3. Als er een CIM is, dan wordt er naar het CIM verwezen en niet rechtstreeks naar het begrippenkader
 4. Er mag worden verwezen naar een LGM via indirecte semantische verwijzingen
 
-#### Modelelementen uit LGM met semantische verwijzingen naar CIM
+**Modelelementen uit LGM met semantische verwijzingen naar CIM**
 
 | Modelelement | semantische verwijzing naar | kardinaliteit | spelregels, bij 1 modelelement van dit type hoort: ...                | 
 | ------------ | --------------------------- | ------------- | --------------------------------------------------------------------- | 
@@ -325,7 +325,7 @@ Regel: De aanduiding van de van verwijsbaarheid is een van deze waarden.
 
 Regel: Het is niet toegestaan om een andere aanduiding te kiezen die niet in MIM gedefinieerd is. Het is wel toegestaan om in een eigen toepassingsprofiel een 'nadere aanduiding' te specificeren, in aanvulling op de MIM aanduiding. 
 
-##### Horizontale semantische herleidbaarheid**
+**Horizontale semantische herleidbaarheid**
 
 Een gegevenstype kan 1 op 1 overgenomen zijn uit een ander logisch gegevensmodel. Het is mogelijk om daarnaar te verwijzen, en voor de semantische herleidbaarheid te stellen: zie aldaar. 
 
@@ -334,11 +334,11 @@ Een gegevenstype kan 1 op 1 overgenomen zijn uit een ander logisch gegevensmodel
 | gegevensobjecttype   | gegevensobjecttype uit ander LGM | 0..1 | als aangebracht, dan altijd tijd precies 1                        |  
 | gegevenstype         | gegevenstype uit ander LGMe      | 0..1 | als aangebracht, dan altijd tijd precies 1                        | 
 
-*In diagram vorm:*
+**Metamodel in diagram vorm:**
 **TODO: Frans, diagram SH Gegevenstype horizontaal naar gegevenstype in ander LGM** 
 
 
-##### Verticale semantische herleidbaarheid
+**Verticale semantische herleidbaarheid**
 
 Een gegevenstype kan een gegevensdefinitie hebben die gebaseerd is op bovenliggende definities. 
 
@@ -360,7 +360,7 @@ De volgende metagegevens worden gespecificeerd bij elke _semantische verwijzing_
 | is exact     | aanduiding dat de semantische verwijzing wel of niet exact is, zoals bedoeld bij _exacte semantische verwijzing_ | 1..1 | boolean | 1 (ja, is exact) |
 | lexicaal pad | zie H4 | 0..1 | zie specificatie lexicaal pad verderop
 
-*In diagram vorm:*
+**Metamodel in diagram vorm:**
 **TODO: Frans, diagram SH Gegevenstype horizontaal naar gegevenstype in ander LGM** 
 
 Regels: 
@@ -375,7 +375,7 @@ Voor elk gegevenstype kan aangegeven worden of er verwijzingen ontbreken, oftewe
 
 Indien er ontbrekende verwijzingen zijn of indien er verwijzingen zijn die niet exact zijn, dan kan er een verklaring van verschil worden opgenomen. De modelleur heeft hiertoe eerst de definities van de bovenliggende CIM modelelementen en/of begrippen bestudeerd.
 
-**Verschillen met bovenliggende definities**
+#### Verschillen met bovenliggende definities
 
 Er wordt onderscheidt gemaakt tussen 2 soorten verschillen: 
 - verklaring van verschil, semantisch niet equivalent met bovenliggende definities
@@ -408,7 +408,7 @@ Indien de verwoording van de gegevensdefinitie afwijkt van de verwoording van de
 | ------------ | -------------- | -------------- | -------------- | ------------------------------------------------------ | 
 | toelichting verwoordingsverschil | zie H4 | 0..1 | tekst | Er is een oude term gebruikt die inmiddels is vervangen door een nieuwe term, maar de strekking en de betekenis ervan is hetzelfde.  |
 
-**Lexicaal pad**
+#### Lexicaal pad
 
 TODO: keuzes maken, zie issue 4. 
 
@@ -438,10 +438,6 @@ Ad 3.
 | ------------ | -------------- | -------------- | ------------------------------------------------------ | 
 | lexicaal pad start  | CIM objecttype die het onderwerp van gesprek is van het gegevensobject waartoe het gegevenstype behoort | 0..1 | als aangebracht, dan altijd tijd precies 1                 |  
 | lexicaal pad start eind   | eigenschaptype waar het gegevenstype over gaat                                                      | 0..1 | als aangebracht, dan altijd tijd precies 1 en gelijk aan                  | 
-
-#### Metamodel
-*(Nog uit te werken in dit document.)*
-
 
 ## Mogelijke openstaande punten en teksten om nog een plek te geven: 
 
