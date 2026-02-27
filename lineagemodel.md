@@ -43,7 +43,7 @@ Dit diagram in tekstvorm is weergegeven in de volgende tabel:
 
 Merk op dat er verticale en horizontale lineage wordt onderscheiden. Zo is van 3 naar 3 een voorbeeld van horizontale lineage, of beter gezegd verticale lineage waarvoor eerst een horizontale zijstap wordt gedaan. 
 
-### Buiten scope
+## Buiten scope
 Er is meer lineage tussen en binnen beschouwingsniveaus mogelijk, maar er is bewust gekozen om deze niet in MIM uit te werken. 
 
 | MIM niveau    | Lineage | Uitwerking te vinden in | 
@@ -57,24 +57,24 @@ Er is meer lineage tussen en binnen beschouwingsniveaus mogelijk, maar er is bew
  
 ## Uitgangspunten en ontwerpbeslissingen
 
-#### Elk modelelement kent een eigen definitie
+**Elk modelelement kent een eigen definitie**
 In MIM is een definitie voor veel modelelementen een verplicht metagegeven.  In principe zijn definities op elk beschouwingsniveau ook zelfstandig voor specifiek dat beschouwingsniveau, ook al komen ze tekstueel overeen. Wanneer de definitie van een modelelement exact gelijk is aan die van een modelelement of begrip waarmee een lineage-relatie bestaat, kan dit als redundant worden ervaren. Het verdient echter de voorkeur om deze definities expliciet te specificeren, zodat het model ook zelfstandig goed te begrijpen blijft. In een eigen beheer omgeving zou de gegevensdefinitie leeg gelaten kunnen worden waarmee bedoeld wordt dat deze rechtstreeks van het gerelateerde begrip overgenomen kan worden, maar bij de publicatie van het model hoort er altijd een gegevensdefinitie te zijn die te lezen is door gebruikers.
 
-#### Elk gegevenstype heeft een gegevensdefinitie
+**Elk gegevenstype heeft een gegevensdefinitie**
 Elk gegevenstype verdiend een definitie. Ook als het gegeventype semantisch niet relevant is is het zinvol om te begrijpen wat ermee bedoeld wordt. Daarom is de definitie hiervan verplicht. 
 
-### Lineage naar wet- en regelgeving en andere kennisbronnen mag rechtstreeks worden gelegd 
+**Lineage naar wet- en regelgeving en andere kennisbronnen mag rechtstreeks worden gelegd**
 Een van de doelstellingen van lineage is dat van een gegeven kan worden vastgesteld welke wet- en regelgeving van toepassing is. Op die manier kan uiteindelijk ook worden nagegaan of aan de gestelde eisen wordt voldaan. 
 
 Er zullen organisaties zijn die kiezen om deze lineage in een begrippenkader, zoals o.a. bedoeld in de NL-SBB standaard, op te nemen. Alsmede om vervolgens vanuit een CIM of LGM naar begrippen naar dit begrippenkader te verwijzen. Deze modellen zijn echter niet altijd gemaakt. Wet- en regelgeving en (openbaar) uitvoeringsbeleid is echter wel altijd gepubliceerd, we noemen dit kennisbronnen. Naar deze kennisbronnen kan daarom ook vanuit MIM modellen verwezen worden, via een kennisbron verwijzing. 
 
 Omdat de NL-SBB ook kennisbron verwijzingen kent maakt MIM deze manier van verwijzen ook beschikbaar vanuit MIM. Er zijn ook kennisbronnen die zelf specificeren hoe er naar hen verwezen kan of moet worden. Uitgangspunt is dat dit soort aspecten meegenomen worden bij de NL-SBB en MIM hetzelfde mechanisme ook mogelijk maakt. 
 
-### Semantische relaties tussen begrippen worden niet uitgewerkt in MIM 
+**Semantische relaties tussen begrippen worden niet uitgewerkt in MIM**
 
 Dit wordt momenteel in detail beschreven in o.a. de *NL-SBB standaard*. Horizontale lineage tussen begrippen uit verschillende begrippenkaders betreft de zogenoemde harmonisatierelaties uit de NL-SBB en wordt [aldaar](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#harmonisatiesrelaties) beschreven. 
 
-### Lineage van technische implementatiemodellen naar LGM worden niet uitgewerkt in MIM
+**Lineage van technische implementatiemodellen naar LGM worden niet uitgewerkt in MIM**
 Een logisch gegevensmodel kan worden uitgewerkt in verschillende technische schema's, naar gelang welke gebruikers welke serialisatie willen ontvangen of welke applicaties of databases worden ontwikkelt. Hetzelfde logische model kan in vele technische verschijningsvormen zijn uitgewerkt, waarmee het ook eenvoudig wordt om deze eenduiding naar elkaar te vertalen. Lineage is in principe altijd van 'onder' naar 'boven' dus de lineage van technisch naar logisch hoort bij de technische uitwerking. 
 
 Dit wordt momenteel in detail beschreven in de *Handreiking data lineage*.
