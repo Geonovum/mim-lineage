@@ -38,6 +38,7 @@ Er wordt veelvuldig gebruik gemaakt van verwijzingen tussen modelelementen uit v
 | 3 naar ...    | vanuit LGM naar een kennisbronnen |  In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' . |
 
 Mapping in een diagram. 
+
 ![Semantische herleidbaarheid in een diagram](media/MIM-lineage_informatie-architectuur.png "In een diagram")
 
 Er is meer lineage tussen beschouwingsniveaus mogelijk, maar er is bewust gekozen om deze niet in MIM uit te werken. 
