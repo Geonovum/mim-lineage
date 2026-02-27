@@ -14,7 +14,11 @@ Je kan semantische herleidbaarheid ook zien als het aanbrengen van afkomstrelati
 
 Het doel van semantische herleidbaarheid is hierbij om aan te geven hoe definities van modelelementen in informatie- en gegevensmodellen (MIM-2 en MIM-3) zich verhouden tot bovenliggende semantiek, in het bijzonder definities van begrippen uit begrippenkaders (MIM-1). 
 
-Hierbij wordt in de kern vooral gekeken naar de tekstuele verwoording van de definities uit de verschillende modellen die voorhanden zijn. Uitgangspunt is dan ook dat elk modelelelement uit een (MIM) model een eigen definitie kent. Deze definitie staat op zichzelf en is zodanig opgesteld dat deze past bij het beschouwingsniveau dat uitgewerkt is in het betreffende model. Semantische herleidbaarheid is hierop een _aanvullende specificatie_, die de modelelementen en definities uit de verschillende modellen met elkaar verbindt. 
+Hierbij wordt in de kern vooral gekeken naar de tekstuele verwoording van de definities uit de verschillende modellen die voorhanden zijn. 
+
+Uitgangspunt is dan ook dat elk modelelelement uit een (MIM) model een eigen definitie kent. Deze definitie staat op zichzelf en is zodanig opgesteld dat deze past bij het beschouwingsniveau dat uitgewerkt is in het betreffende model. 
+
+Semantische herleidbaarheid is hierop een _aanvullende specificatie_, die de modelelementen en definities uit de verschillende modellen met elkaar verbindt. 
 
 ### Eenvoudig voorbeeld
 
