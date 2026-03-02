@@ -193,7 +193,8 @@ De volgende metagegevens worden gespecificeerd bij een semantische verwijzing na
 | model naam | zie MIM algemeen | 1..1 | zie MIM algemeen | ... | 
 
 *In diagram vorm:*
-**TODO: Frans, diagram SH Gegevensobjecttype verticaal naar CIM** 
+
+![SH Gegevensobjecttype verticaal naar CIM](media/SH_gegevensobjecttype.png "SH Gegevensobjecttype verticaal naar CIM")
 
 Regels: 
 - ofwel de modelelement identificatie ofwel de modelelement naam is opgenomen, of beide

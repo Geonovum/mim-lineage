@@ -7,7 +7,7 @@ In dit hoofdstuk maakt u kennis met het onderwerp.
 Semantische herleidbaarheid gaat over het aanbrengen van verticale lineage met betrekking tot definities van modelelementen, waarbij deze herleiding uiteindelijk uitkomt bij de kennis die beschreven is in kennisbronnen (of kennis in de hoofden van materiedeskundigen). 
 
 Je kan semantische herleidbaarheid ook zien als het aanbrengen van afkomstrelaties, of is gebaseerd op relaties, tussen modelelementen van modellen uit de verschillende beschouwingsniveaus, zoals o.a. MIM deze onderkent. Denk hierbij aan: 
-- een begrippenmodel van een begrippenkader, ook wel een semantisch begrippen model genoemd, waarnaar verwezen wordt vanuit: 
+- een begrip uit een begrippenkader, ook wel een semantisch begrippen model genoemd, waarnaar verwezen wordt vanuit: 
 - een conceptuele informatiemodel van een bepaald informatiedomein, waarnaar verwezen wordt vanuit: 
 - een logisch gegevensmodel van een administratie of een gegevensuitwisseling of een gegevensproduct, waarnaar verwezen wordt vanuit: 
 - een fysieke datamodel of technisch schema
@@ -22,7 +22,7 @@ Semantische herleidbaarheid is hierop een _aanvullende specificatie_, die de mod
 
 ### Eenvoudig voorbeeld
 
-Neem bij voorbeeld een attribute '**bsn**' in een logisch gegevensmodel met als definitie: de identificatie van een geregistreerd persoon. 
+Neem bij voorbeeld een attribute '**bsn**' in een logisch gegevensmodel met als definitie: "de identificatie van een geregistreerd persoon". 
 
 In dit voorbeeld is de bijbehorende semantische herleiding als volgt: 
 - **bsn** is een _gegevenstype_ dat onderdeel uitmaakt van het _gegevensobjecttype GeregistreerdNP_ in een logisch gegevensmodel;
@@ -60,7 +60,7 @@ Omdat dit aparte lagen zijn is het van belang om de relatie tussen de lagen te k
 
 Er zijn verschillende beschouwingsniveaus om kennis en gegevens te modelleren (en andere concerns, die hier niet benoemd zijn). Bij het specificeren van semantische herleidbaarheid wordt hierbij veelvuldig gebruik gemaakt van verwijzingen tussen modelelementen uit verschillende beschouwingsniveaus. De volgende verbanden worden hierbij als binnen scope gezien. 
 
-![Semantische herleidbaarheid in een diagram](media/MIM-lineage_informatie-architectuur.png "In een diagram")
+![Semantische herleidbaarheid in een diagram](media/SH conceptueel.png "In een diagram")
 
 Merk op dat verbanden meestal verticaal worden aangebracht, maar soms ook horizontaal. 
 
