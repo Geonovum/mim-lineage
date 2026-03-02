@@ -2,7 +2,7 @@
 
 Deze MIM-module is een onderdeel van de MIM standaard. Het toepassingsgebied van deze module valt hier binnen. 
 
-Deze module beschrijft een gestandaardiseerde manier om gegevensmodellen en concentuele informatiemodellen te verbinden, met elkaar en met begrippen uit begrippenkaders en eventueel kennisbronnen zoals bijvoorbeeld wet- en regelgeving of uitvoeringsbeleid. 
+Deze module beschrijft een gestandaardiseerde manier om gegevensmodellen en concentuele informatiemodellen te verbinden, met elkaar en met begrippen uit begrippenkaders, die zelf weer gebaseerd zijn op een kennisdomein zoals bijvoorbeeld (maar niet beperkt tot) wet- en regelgeving of uitvoeringsbeleid. 
 
 Dit komt sterk overeen met wat binnen de NORA het Nationaal Semantisch Vlak heet, zoals bedoeld vanuit NORA gegevensmanagement, en daarbinnen de informatie laag. 
 
