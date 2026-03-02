@@ -1053,6 +1053,14 @@ ul.index code{color:inherit}
       "date": "2020-06-30",
       "id": "NLISO19119"
     },
+    "NL-SBB-20241010": {
+      "title": "NNL-SBB - Standaard voor het beschrijven van begrippen",
+      "href": "https://docs.geostandaarden.nl/nl-sbb/def-st-nl-sbb-20241010/",
+      "status": "Vastgestelde versie",
+      "publisher": "Geonovum",
+      "date": "2024-10-10",
+      "id": "NL-SBB-20241010"
+    },
     "NLWFS": {
       "title": "Nederlands profiel op ISO 19142 Geographic information — Web Feature Service, Versie 1.1",
       "href": "https://www.geonovum.nl/geo-standaarden/services/nederlands-wfs-profiel-11-op-iso-19142-voor-web-feature-services-20",
@@ -2175,22 +2183,7 @@ TODO: visueel diagram. </p>
 <p>Bij het aangeven van de semantische herleidbaarheid van een gegevenstype naar de bijbehorende semantiek kan uit analyse blijken dat de gegevensdefinitie van een gegevenstype volledig afgedekt kan worden door modelelementen in een CIM en/of begrippenkader. Dit is de gewenste situatie. Het kan echter ook zo zijn dat het niet het wat anders is dan gewenst. De mate van aanwijsbaarheid is dan maar deels mogelijk of zelfs geheel niet mogelijk. </p>
 </section><section id="specificatie-voor-gegevenstype"><div class="header-wrapper"><h4 id="x5-6-2-specificatie-voor-gegevenstype"><bdi class="secno">5.6.2 </bdi>Specificatie voor gegevenstype</h4><a class="self-link" href="#specificatie-voor-gegevenstype" aria-label="Permalink for Section 5.6.2"></a></div>
 <p>De manier waarop semantische herleidbaarheid is gespecificeerd wordt eerst aangegeven. </p>
-<table>
-<thead>
-<tr>
-<th>Metagegeven</th>
-<th>beschrijving</th>
-<th>datatype</th>
-<th>voorbeeld</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>semantische herleidbaarheid</td>
-<td>zie H4, semantische herleidbaarheid</td>
-<td>enumeratie</td>
-<td>zie enumeratiewaarden</td>
-</tr>
-</tbody></table>
+<p>Eerst wordt bij het gegevenstype aangegeven of deze semantisch relevant is. </p>
 <p>De volgende enumeratiewaarden zijn mogelijk: </p>
 <table>
 <thead>
@@ -2228,8 +2221,38 @@ TODO: visueel diagram. </p>
 </tbody></table>
 <p>Regel: De aanduiding van de van verwijsbaarheid is een van deze waarden. </p>
 <p>Regel: Het is niet toegestaan om een andere aanduiding te kiezen die niet in MIM gedefinieerd is. Het is wel toegestaan om in een eigen toepassingsprofiel een 'nadere aanduiding' te specificeren, in aanvulling op de MIM aanduiding. </p>
+<p>Deze waarde wordt opgenomen in een apart metagegeven dat hier speciaal voor bedoeld is. </p>
+<table>
+<thead>
+<tr>
+<th>Metagegeven</th>
+<th>beschrijving</th>
+<th>datatype</th>
+<th>voorbeeld</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>semantische herleidbaarheid</td>
+<td>zie H4, semantische herleidbaarheid</td>
+<td>enumeratie</td>
+<td>zie voorgenoemde enumeratiewaarden</td>
+</tr>
+</tbody></table>
 <p><strong>Horizontale semantische herleidbaarheid</strong></p>
 <p>Een gegevenstype kan 1 op 1 overgenomen zijn uit een ander logisch gegevensmodel. Het is mogelijk om daarnaar te verwijzen, en voor de semantische herleidbaarheid te stellen: zie aldaar. </p>
+<p>De herleiding is in principe verticaal, maar met eerst een horizontale zijstap. Dit komt vooral voor wanneer een andere partij, die een bronadministratie voert, de gegevensdefinitie al heeft gegeven en ook zelf de semantische herleidbaarheid al heeft aangebracht. Het is dan beter om hiernaar te verwijzen.</p>
+<blockquote>
+<p>Voorbeeld 1
+Een gegevenstype woonplaatscode wordt semantisch gelijkgesteld aan het gegevenstype code van objecttype woonplaats, uit het gegevensmodel van de bronadministratie waarin woonplaatsen zijn geadministreerd. </p>
+</blockquote>
+<blockquote>
+<p>Niet goed voorbeeld A
+Een gegevenstype identificatie wordt semantisch gelijkgesteld aan de centrale begripsdefinitie voor een identificatie van een object. </p>
+</blockquote>
+<blockquote>
+<p>Niet goed voorbeeld B
+Een gegevenstype straatnaam (een onderdeel van het adres waar iemand in een verblijfsobject woont) wordt semantisch gelijkgesteld aan de naam van een openbare ruimte, uit het gegevensmodel van de bronadministratie waarin openbare ruimtes zijn geadministreerd. Hier is gewone verticale semantische herleiding nodig, want het betekent niet exact hetzelfde. Er zijn immers ook openbare ruimten die van het type spoorbaan zijn en daar wonen geen mensen aan, deze noemen we geen straat.  </p>
+</blockquote>
 <table>
 <thead>
 <tr>
@@ -2256,6 +2279,18 @@ TODO: visueel diagram. </p>
 <strong>TODO: Frans, diagram SH Gegevenstype horizontaal naar gegevenstype in ander LGM</strong> </p>
 <p><strong>Verticale semantische herleidbaarheid</strong></p>
 <p>Een gegevenstype kan een gegevensdefinitie hebben die gebaseerd is op bovenliggende definities. </p>
+<blockquote>
+<p>Voorbeeld 1
+Een gegevenstype geboorteplaatsnaam wordt semantisch herleid naar een kenmerk naam van objecttype woonplaats. </p>
+</blockquote>
+<blockquote>
+<p>Voorbeeld 2
+Een gegevenstype geboorteplaats wordt semantisch herleid naar een kenmerk code van objecttype woonplaats.</p>
+</blockquote>
+<blockquote>
+<p>Voorbeeld 3
+Een gegevenstype adresregel wordt semantisch herleid naar de kenmerken huisnummer, huisletter en huisnummertoevoeging van het objecttype Nummeraanduiding en naar de naam van het objecttype openbare ruimte en naar de naam van het objecttype woonplaats.   </p>
+</blockquote>
 <p>Regel: indien de semantische herleidbaarheid 'herleidbaar' is dan worden de metagegevens 'semantische verwijzingen' en 'ontbrekende verwijzingen' ook gespecificeerd. </p>
 <p>Voor elk gegevenstype kunnen meerdere semantische verwijzingen worden opgenomen. </p>
 <table>
@@ -2314,7 +2349,7 @@ TODO: visueel diagram. </p>
 </tr>
 </tbody></table>
 <p><strong>Metamodel in diagram vorm:</strong>
-<strong>TODO: Frans, diagram SH Gegevenstype horizontaal naar gegevenstype in ander LGM</strong> </p>
+<strong>TODO: Frans, diagram SH Gegevenstype verticaal naar gegevenstype in ander LGM</strong> </p>
 <p>Regels: </p>
 <ul>
 <li>ofwel de modelelement identificatie ofwel de modelelement naam is opgenomen, of beide</li>
