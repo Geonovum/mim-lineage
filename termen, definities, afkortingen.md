@@ -21,15 +21,15 @@ Semantische herleiding kan verticaal en horizontaal aangebracht worden.
 
 > Als de betekenis horizontaal niet exact hetzelfde is, dan wordt verticale lineage aangebracht. 
 
-Semantische herleiding bestaat uit één of meerdere **semantische verwijzingen**. De set van verwijzingen kan _wel of niet compleet_ zijn om er de gegevensdefinitie mee af te dekken. Aanvullend kan de bovenliggende definitie waarnaar verwezen wordt, hierbij elke verwijzing op zichzelf beschouwend, _wel of niet exact_ in overeenstemming zijn met de tekstuele verwoording van de gegevensdefinitie. 
+Semantische herleiding bestaat uit één of meerdere **semantische verwijzingen**. De set van verwijzingen kan _wel of niet compleet_ zijn om er de gegevensdefinitie mee af te dekken. Aanvullend kan per verwijzing worden aangegeven of de betekenis _wel of niet exact gelijk_ is aan de definitie uit het bovenliggende niveau.
 
 *Semantische herleidbaarheid in een diagram.*
 
+Dit diagram geeft de tekst uit voorgaande alinea weer in de vorm van een diagram. 
+
 ![Semantische herleidbaarheid in een diagram](media/SH_conceptueel.png "Semantische herleidbaarheid in een diagram")
 
-Dit diagram geeft herleidbaarheid weer tussen verschillende beschouwingsniveaus op generieke wijze. Het kan zijn dat er per beschouwingsniveau (LGM --> CIM en/of CIM --> begrippenkader en/of LGM --> begrippenkader). Opmerking: er loopt een issue over wellicht andere termen. 
-
-Dit diagram zal per modelelement concreet worden uitgewerkt in het volgende hoofdstuk. 
+Dit diagram zal per modelelement concreet worden uitgewerkt in het volgende hoofdstuk, per modelelement in een CIM of LGM dat een definitie kan hebben. 
 
 Hieronder worden de begrippen beschreven die nodig zijn om semantische herleidbaarheid te begrijpen.
 
