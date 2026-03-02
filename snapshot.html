@@ -1378,7 +1378,7 @@ ul.index code{color:inherit}
     <h2>
       Geonovum Standaard<br>
       Werkversie
-      <time class="dt-published" datetime="2026-02-05">05 februari 2026</time>
+      <time class="dt-published" datetime="2026-02-27">27 februari 2026</time>
     </h2>
     <dl>
       
@@ -1431,53 +1431,280 @@ ul.index code{color:inherit}
   </div>
   <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>TODO: vul in abstract.md een abstract in.</p>
 </section>
-  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#semantische-herleidbaarheid"><bdi class="secno">2. </bdi>Semantische herleidbaarheid</a></li><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">3. </bdi>Toepassingsgebied</a></li><li class="tocline"><a class="tocxref" href="#termen-definities-en-afkortingen"><bdi class="secno">4. </bdi>Termen, definities en afkortingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#termen-definities"><bdi class="secno">4.1 </bdi>Termen, definities</a></li><li class="tocline"><a class="tocxref" href="#afkortingen"><bdi class="secno">4.2 </bdi>Afkortingen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#lineagemodel"><bdi class="secno">5. </bdi>Lineagemodel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#inleiding-0"><bdi class="secno">5.1 </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wat-is-lineage-in-deze-context"><bdi class="secno">5.1.1 </bdi>Wat is lineage in deze context?</a></li><li class="tocline"><a class="tocxref" href="#waarom-lineage"><bdi class="secno">5.1.2 </bdi>Waarom lineage?</a></li><li class="tocline"><a class="tocxref" href="#lineage-in-en-tussen-verschillende-mim-beschouwingsniveaus"><bdi class="secno">5.1.3 </bdi>Lineage in en tussen verschillende MIM-beschouwingsniveaus</a></li><li class="tocline"><a class="tocxref" href="#lineage-en-wet-en-regelgeving"><bdi class="secno">5.1.4 </bdi>Lineage en wet- en regelgeving</a></li><li class="tocline"><a class="tocxref" href="#lineage-en-definities"><bdi class="secno">5.1.5 </bdi>Lineage en definities</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#geannoteerde-definities"><bdi class="secno">5.1.5.1 </bdi>Geannoteerde definities</a></li><li class="tocline"><a class="tocxref" href="#het-hoofdonderwerp-van-een-definitie"><bdi class="secno">5.1.5.2 </bdi>Het hoofdonderwerp van een definitie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#ontwerpbeslissingen"><bdi class="secno">5.1.6 </bdi>Ontwerpbeslissingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#redundantie-van-definities"><bdi class="secno">5.1.6.1 </bdi>Redundantie van definities</a></li><li class="tocline"><a class="tocxref" href="#elk-gegevenstype-heeft-een-gegevensdefinitie"><bdi class="secno">5.1.6.2 </bdi>Elk gegevenstype heeft een gegevensdefinitie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#aanpak-per-raakvlak-tussen-mim-niveaus-een-model-maken"><bdi class="secno">5.1.7 </bdi>Aanpak: per raakvlak tussen MIM niveaus een model maken</a></li></ol></li><li class="tocline"><a class="tocxref" href="#semantische-herleidbaarheid-0"><bdi class="secno">5.2 </bdi>Semantische herleidbaarheid</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#voorbeeld"><bdi class="secno">5.2.1 </bdi>Voorbeeld</a></li><li class="tocline"><a class="tocxref" href="#lineage-vanuit-cim-naar-begrippenkader"><bdi class="secno">5.2.2 </bdi>Lineage vanuit CIM naar begrippenkader</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#lineage-op-model-niveau"><bdi class="secno">5.2.2.1 </bdi>Lineage op model niveau</a></li><li class="tocline"><a class="tocxref" href="#modelelementen-uit-een-cim-waarvoor-semantische-verwijzingen-mogelijk-zijn"><bdi class="secno">5.2.2.2 </bdi>Modelelementen uit een CIM waarvoor semantische verwijzingen mogelijk zijn</a></li><li class="tocline"><a class="tocxref" href="#metamodel"><bdi class="secno">5.2.2.3 </bdi>Metamodel</a></li></ol></li><li class="tocline"><a class="tocxref" href="#lineage-vanuit-logisch-gegevensmodel-naar-een-begrippenkader"><bdi class="secno">5.2.3 </bdi>Lineage vanuit logisch gegevensmodel naar een begrippenkader</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#modelelementen-uit-lgm-met-semantische-verwijzingen-naar-begrippenkader"><bdi class="secno">5.2.3.1 </bdi>Modelelementen uit LGM met semantische verwijzingen naar begrippenkader</a></li></ol></li><li class="tocline"><a class="tocxref" href="#lineage-vanuit-lgm-naar-cim"><bdi class="secno">5.2.4 </bdi>Lineage vanuit LGM naar CIM</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#lineage-op-model-niveau-0"><bdi class="secno">5.2.4.1 </bdi>Lineage op model niveau</a></li><li class="tocline"><a class="tocxref" href="#modelelementen-uit-lgm-met-semantische-verwijzingen-naar-cim"><bdi class="secno">5.2.4.2 </bdi>Modelelementen uit LGM met semantische verwijzingen naar CIM</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-gegevensobjecttype"><bdi class="secno">5.2.4.3 </bdi>Specificatie voor gegevensobjecttype</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-gegevenstype"><bdi class="secno">5.2.4.4 </bdi>Specificatie voor gegevenstype</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#horizontale-semantische-herleidbaarheid"><bdi class="secno">5.2.4.4.1 </bdi>Horizontale semantische herleidbaarheid**</a></li><li class="tocline"><a class="tocxref" href="#verticale-semantische-herleidbaarheid"><bdi class="secno">5.2.4.4.2 </bdi>Verticale semantische herleidbaarheid</a></li></ol></li><li class="tocline"><a class="tocxref" href="#metamodel-0"><bdi class="secno">5.2.4.5 </bdi>Metamodel</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">6. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">7. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li></ol></nav>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">2. </bdi>Toepassingsgebied</a></li><li class="tocline"><a class="tocxref" href="#semantische-herleidbaarheid"><bdi class="secno">3. </bdi>Semantische herleidbaarheid</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#introductie"><bdi class="secno">3.1 </bdi>Introductie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eenvoudig-voorbeeld"><bdi class="secno">3.1.1 </bdi>Eenvoudig voorbeeld</a></li></ol></li><li class="tocline"><a class="tocxref" href="#focus-in-mim"><bdi class="secno">3.2 </bdi>Focus in MIM</a></li><li class="tocline"><a class="tocxref" href="#verticale-lineage-in-en-tussen-de-mim-beschouwingsniveaus"><bdi class="secno">3.3 </bdi>Verticale lineage in en tussen de MIM-beschouwingsniveaus</a></li><li class="tocline"><a class="tocxref" href="#goede-definities-in-samenhang"><bdi class="secno">3.4 </bdi>Goede definities in samenhang</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#uitgebreid-voorbeeld"><bdi class="secno">3.4.1 </bdi>Uitgebreid voorbeeld</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#termen-definities-en-afkortingen"><bdi class="secno">4. </bdi>Termen, definities en afkortingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#afkortingen"><bdi class="secno">4.1 </bdi>Afkortingen</a></li><li class="tocline"><a class="tocxref" href="#model-van-semantische-herleidbaarheid"><bdi class="secno">4.2 </bdi>Model van semantische herleidbaarheid</a></li><li class="tocline"><a class="tocxref" href="#termen-definities"><bdi class="secno">4.3 </bdi>Termen, definities</a></li></ol></li><li class="tocline"><a class="tocxref" href="#lineagemodel"><bdi class="secno">5. </bdi>Lineagemodel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wijze-van-toepassing"><bdi class="secno">5.1 </bdi>Wijze van toepassing</a></li><li class="tocline"><a class="tocxref" href="#modelelementen-met-lineage"><bdi class="secno">5.2 </bdi>Modelelementen met lineage</a></li><li class="tocline"><a class="tocxref" href="#uitgangspunten-en-ontwerpbeslissingen"><bdi class="secno">5.3 </bdi>Uitgangspunten en ontwerpbeslissingen</a></li><li class="tocline"><a class="tocxref" href="#lineage-vanuit-cim-naar-begrippenkader"><bdi class="secno">5.4 </bdi>Lineage vanuit CIM naar begrippenkader</a></li><li class="tocline"><a class="tocxref" href="#lineage-vanuit-lgm-naar-begrippenkader"><bdi class="secno">5.5 </bdi>Lineage vanuit LGM naar begrippenkader</a></li><li class="tocline"><a class="tocxref" href="#lineage-vanuit-lgm-naar-cim"><bdi class="secno">5.6 </bdi>Lineage vanuit LGM naar CIM</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#specificatie-voor-gegevensobjecttype"><bdi class="secno">5.6.1 </bdi>Specificatie voor gegevensobjecttype</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-gegevenstype"><bdi class="secno">5.6.2 </bdi>Specificatie voor gegevenstype</a></li><li class="tocline"><a class="tocxref" href="#verschillen-met-bovenliggende-definities"><bdi class="secno">5.6.3 </bdi>Verschillen met bovenliggende definities</a></li><li class="tocline"><a class="tocxref" href="#lexicaal-pad"><bdi class="secno">5.6.4 </bdi>Lexicaal pad</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mogelijke-openstaande-punten-en-teksten-om-nog-een-plek-te-geven"><bdi class="secno">5.7 </bdi>Mogelijke openstaande punten en teksten om nog een plek te geven:</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">6. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">7. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li></ol></nav>
 
   
   <section id="inleiding"><div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 1."></a></div>
 <p>Het metamodel voor informatiemodellering (MIM) biedt een gemeenschappelijk vertrekpunt voor het maken van informatie- en gegevensmodellen. Het bevat afspraken en conventies voor het creëren van modellen en modelelementen, met daarbij standaard metagegevens. Het leidt tot meer uniforme beschrijvingen van modellen en zorgt daardoor voor meer begrijpelijkheid en andere vormen van kwaliteit.</p>
-<p>Dit document beschrijft een specifiek onderdeel van het MIM namelijk de semantische herleidbaarheid. Het doel van semantische herleidbaarheid is om aan te geven hoe definities van modelelementen in informatie- en gegevensmodellen (MIM-2 en MIM-3) zich verhouden tot bovenliggende semantiek, in het bijzonder definities van begrippen uit begrippenkaders (MIM-1). Hierbij wordt in de kern vooral gekeken naar de tekstuele verwoording van de definities uit de verschillende modellen die voorhanden zijn.</p>
+<p>Dit document beschrijft een specifiek onderdeel van het MIM, te weten <strong>semantische herleidbaarheid</strong> en de standaard voor het modelleren ervan met behuld van bijbehorende specificaties.  </p>
+<p>Veel plezier met het uitwerken van semantische herleidbaarheid!</p>
 </section>
-  <section id="semantische-herleidbaarheid"><div class="header-wrapper"><h2 id="x2-semantische-herleidbaarheid"><bdi class="secno">2. </bdi>Semantische herleidbaarheid</h2><a class="self-link" href="#semantische-herleidbaarheid" aria-label="Permalink for Section 2."></a></div>
-<p>Uitgangspunt is dat elk modelelement een eigen definitie kent en daarmee op zichzelf staat en dat semantische herleidbaarheid hier een aanvullende specificatie op is. In deze specificatie zelf kan aangegeven worden of herleidbaarheid wel of niet exact is, en wel of niet compleet (de mate van herleidbaarheid). </p>
-<p>Voorbeeld van een definitie in een logisch gegevensmodel, van een attribuuttype 'bsn': </p>
+  <section id="toepassingsgebied"><div class="header-wrapper"><h2 id="x2-toepassingsgebied"><bdi class="secno">2. </bdi>Toepassingsgebied</h2><a class="self-link" href="#toepassingsgebied" aria-label="Permalink for Section 2."></a></div>
+<p>Deze MIM-module is een onderdeel van de MIM standaard. Het toepassingsgebied van deze module valt hier binnen. </p>
+<p>Deze module kan worden toegepast door organisaties die het belangrijk vinden om gegevensmodellen en concentuele informatiemodellen te verbinden met begrippen uit begrippenkaders en uit kennisbronnen zoals wet- en regelgeving en uitvoeringsbeleid. </p>
+<p>Dit komt sterk overeen met wat binnen de NORA het Nationaal Semantisch Vlak heet, zoals bedoeld vanuit NORA gegevensmanagement, en daarbinnen de informatie laag. </p>
+<p>Deze module is vooral van belang voor organisaties waarin de volgende concerns van belang zijn: </p>
 <ul>
-<li>de identificatie van een geregistreerd persoon</li>
+<li>gezamelijke begripsvorming en aansluiting tussen de business en IT. Heldere definities gaan vooraf aan realiseren van informatievoorzieningen en het inwinnen van gegevens, de informatievoorziening moet hiermee in lijn zijn en blijven; </li>
+<li>gezamelijke begripsvorming tussen samenwerkende organisaties, die gegevens met elkaar uitwisselen en gebruiken. Elk heeft mogelijk een eigen perspectief op de wereld die net van elkaar kan verschillen. Door het opstellen van goede definities met semantische herleidbaarheid kunnen beide perspectieven goed met elkaar worden vergeleken;</li>
+<li>de eis dat gegevensverwerkende processen aantoonbaar in lijn zijn met de kennis van de materiedeskundigen uit een organisatie en/of wet- en regelgeving. Het is zeker niet zo dat elke organisatie deze eis heeft, maar organisaties waarbij deze eis wel geldt, daar is deze MIM-module zeker (ook) voor bedoeld.</li>
 </ul>
-<p>Voorbeeld van de bijbehorende semantische herleidbaarheid: </p>
+<p>Of semantische herleidbaarheid van belang is voor een model of een organisatie, is een afweging voor elke organisatie of samenwerkingsketen zelf. Daarom is dit onderwerp als een aparte module opgenomen in de standaard. Het is niet verplicht om dit te doen, maar als er gekozen wordt om het wel te beschrijven doe het dan zoals in dit document is gespecificeerd.</p>
+</section>
+  <section id="semantische-herleidbaarheid"><div class="header-wrapper"><h2 id="x3-semantische-herleidbaarheid"><bdi class="secno">3. </bdi>Semantische herleidbaarheid</h2><a class="self-link" href="#semantische-herleidbaarheid" aria-label="Permalink for Section 3."></a></div>
+<p>In dit hoofdstuk maakt u kennis met het onderwerp. </p>
+<section id="introductie"><div class="header-wrapper"><h3 id="x3-1-introductie"><bdi class="secno">3.1 </bdi>Introductie</h3><a class="self-link" href="#introductie" aria-label="Permalink for Section 3.1"></a></div>
+<p>Semantische herleidbaarheid gaat over het aanbrengen van verticale lineage met betrekking tot definities van modelelementen, waarbij deze herleiding uiteindelijk uitkomt bij de kennis die beschreven is in kennisbronnen (of kennis in de hoofden van materiedeskundigen). </p>
+<p>Je kan semantische herleidbaarheid ook zien als het aanbrengen van afkomstrelaties, of is gebaseerd op relaties, tussen modelelementen van modellen uit de verschillende beschouwingsniveaus, zoals o.a. MIM deze onderkent. Denk hierbij aan: </p>
 <ul>
-<li>bsn is een gegevenstype dat onderdeel uitmaakt van het gegevensobjecttype GeregistreerdNP in een logisch gegevensmodel;</li>
-<li>voorgaande is gebaseerd op modelelementen die in een conceptueel informatiemodel zijn uitgewerkt, te weten een objecttype Ingeschrevene, met een eigenschaptype burgerservicenummer, waarbij de Ingeschrevene een specialisatie is van een objecttype Natuurlijk persoon (niet elke natuurlijk persoon is een ingeschrevene);</li>
-<li>voorgaande is gebaseerd op begrippen zoals natuurlijk persoon, een ingeschrevene, en een burgerservicenummer;</li>
+<li>een begrippenmodel van een begrippenkader, ook wel een semantisch begrippen model genoemd, waarnaar verwezen wordt vanuit: </li>
+<li>een conceptuele informatiemodel van een bepaald informatiedomein, waarnaar verwezen wordt vanuit: </li>
+<li>een logisch gegevensmodel van een administratie of een gegevensuitwisseling of een gegevensproduct, waarnaar verwezen wordt vanuit: </li>
+<li>een fysieke datamodel of technisch schema</li>
 </ul>
-<p>Deze begrippen zelf kunnen weer gebaseerd zijn op gepubliceerde brondocumenten, zoals in dit voorbeeld het Burgerlijk Wetboek en de Wet algemene bepalingen burgerservicenummer. Merk op dat met dit voorbeeld niet bedoeld wordt dat er altijd sprake is of moet zijn van wet- en regelgeving. Er zijn vele domeinen waarbij dit niet of minder van belang is. </p>
+<p>Het doel van semantische herleidbaarheid is hierbij om aan te geven hoe definities van modelelementen in informatie- en gegevensmodellen (MIM-2 en MIM-3) zich verhouden tot bovenliggende semantiek, in het bijzonder definities van begrippen uit begrippenkaders (MIM-1). </p>
+<p>Hierbij wordt in de kern vooral gekeken naar de tekstuele verwoording van de definities uit de verschillende modellen die voorhanden zijn. </p>
+<p>Uitgangspunt is dan ook dat elk modelelelement uit een (MIM) model een eigen definitie kent. Deze definitie staat op zichzelf en is zodanig opgesteld dat deze past bij het beschouwingsniveau dat uitgewerkt is in het betreffende model. </p>
+<p>Semantische herleidbaarheid is hierop een <em>aanvullende specificatie</em>, die de modelelementen en definities uit de verschillende modellen met elkaar verbindt. </p>
+<section id="eenvoudig-voorbeeld"><div class="header-wrapper"><h4 id="x3-1-1-eenvoudig-voorbeeld"><bdi class="secno">3.1.1 </bdi>Eenvoudig voorbeeld</h4><a class="self-link" href="#eenvoudig-voorbeeld" aria-label="Permalink for Section 3.1.1"></a></div>
+<p>Neem bij voorbeeld een attribute '<strong>bsn</strong>' in een logisch gegevensmodel met als definitie: de identificatie van een geregistreerd persoon. </p>
+<p>In dit voorbeeld is de bijbehorende semantische herleiding als volgt: </p>
+<ul>
+<li><strong>bsn</strong> is een <em>gegevenstype</em> dat onderdeel uitmaakt van het <em>gegevensobjecttype GeregistreerdNP</em> in een logisch gegevensmodel;</li>
+<li>voorgaande is gebaseerd op modelelementen die in een conceptueel informatiemodel zijn uitgewerkt, te weten een <em>objecttype Ingeschrevene</em>, met een <em>eigenschaptype burgerservicenummer</em>, waarbij de Ingeschrevene een <em>specialisatie is van  objecttype Natuurlijk persoon</em> (niet elke natuurlijk persoon is een ingeschrevene);</li>
+<li>voorgaande is gebaseerd op begrippen zoals: <em>begrip natuurlijk persoon</em>, een <em>begrip ingeschrevene</em>, en een <em>begrip burgerservicenummer</em>;</li>
+<li>deze begrippen zelf kunnen weer gebaseerd zijn op gepubliceerde brondocumenten, zoals in dit voorbeeld <em>het Burgerlijk Wetboek</em> en de <em>Wet algemene bepalingen burgerservicenummer</em>.</li>
+</ul>
+<p>Opmerking: met dit voorbeeld wordt niet bedoeld dat er altijd sprake is of moet zijn van wet- en regelgeving. Er zijn vele domeinen waarbij dit niet of minder van belang is. </p>
 <p>
       </p><figure id="fig-het-bsn-voorbeeld-in-een-diagram">
         <img src="media/BSN_voorbeeld.png" alt="Het BSN voorbeeld in een diagram">
         <figcaption><a class="self-link" href="#fig-het-bsn-voorbeeld-in-een-diagram">Figuur <bdi class="figno">1</bdi></a> <span class="fig-title">Het BSN voorbeeld in een diagram</span></figcaption>
       </figure>
     <p></p>
-<p>Voorgaande samenhang noemen we ook wel verticale lineage of afkomstrelaties tussen de modelelementen in de verschillende beschouwingsniveaus. In de modellering van een domein onderscheidt MIM verschillende beschouwingsniveaus. Bijvoorbeeldvan begrip naar conceptueel naar logisch naar fysieke implementatie. Omdat dit aparte lagen zijn is het van belang om de relatie tussen de lagen te kunnen beschrijven op het niveau van de individuele informatie-elementen. Er onstaat hiermee een systematiek van 'voortbouwende en uitbreidende' specificatie waarbij de afkomstrelaties traceerbaar en bruikbaar zijn van begrips- tot dataniveau, of eigenlijk van dataniveau terug naar begripsniveau. </p>
-<p>Of semantische herleidbaarheid van belang is voor een model of een organisatie, is een afweging voor elke organisatie zelf. Daarom is dit onderwerp als een aparte module opgenomen in de standaard. Het is niet verplicht om dit te doen, maar als er gekozen wordt om het wel te beschrijven doe het dan zoals in dit document is gespecificeerd. </p>
-<p>Dit document beperkt zich hierbij qua scope tot de MIM modellen zelf: </p>
+</section></section><section id="focus-in-mim"><div class="header-wrapper"><h3 id="x3-2-focus-in-mim"><bdi class="secno">3.2 </bdi>Focus in MIM</h3><a class="self-link" href="#focus-in-mim" aria-label="Permalink for Section 3.2"></a></div>
+<p>Dit document heeft als focus de MIM modellen zelf en behandeld primair de volgende verticale lineage:  </p>
 <ul>
 <li>van een conceptuele informatiemodel naar de bijbehorende semantiek, zoals bijvoorbeeld een begrippenkader (dat bijvoorbeeld uitgewerkt is in de NL-SBB standaard)</li>
 <li>van een logisch gegevensmodel naar een conceptueel informatiemodel</li>
 </ul>
-<p>Tot slot is het van belang om op te merken dat het aanbrengen van semantische herleidbaarheid best complex kan zijn. Denk aan: </p>
+<blockquote>
+<p>De focus van MIM is om semantische herleidbaarheid van elk modelelement volledig aan te kunnen brengen van een LGM naar een CIM en van een CIM naar een begrippenkader</p>
+</blockquote>
+<p>Echter, er is niet altijd sprake van een ideale situatie. Denk bij voorbeeld aan de volgende: </p>
 <ul>
 <li>dat definities niet altijd gebaseerd zijn op eigen kennis en definities. Het komt voor dat de bovenliggende semantiek wordt bepaald door andere organisaties;  </li>
-<li>dat het niet mogelijk is om naar een modelelement in een model van een bovenliggende MIM laag te verwijzen, omdat bijvoorbeeld een conceptueel informatiemodel nog niet gemaakt is, en het dus nuttig en nodig kan zijn om rechtstreeks naar een begrip te verwijzen;</li>
-<li>dat definities niet geheel op elkaar aansluiten en het goed zou zijn om dit verschil zichtbaar te maken.</li>
+<li>dat definities niet geheel op elkaar aansluiten en het goed zou zijn om dit verschil zichtbaar te maken. </li>
+<li>dat het niet mogelijk is om naar een modelelement in een model van een bovenliggende MIM laag te verwijzen, omdat bijvoorbeeld een conceptueel informatiemodel nog niet gemaakt is of er nog geen begrippenkader is opgesteld of gepubliceerd. Het kan dan nuttig of nodig zijn om rechtstreeks naar een begrip of kennisbron te verwijzen.</li>
 </ul>
-<p>Met dit soort situaties wordt rekening gehouden.</p>
-</section>
-  <section id="toepassingsgebied"><div class="header-wrapper"><h2 id="x3-toepassingsgebied"><bdi class="secno">3. </bdi>Toepassingsgebied</h2><a class="self-link" href="#toepassingsgebied" aria-label="Permalink for Section 3."></a></div>
-<p>Deze MIM-module beschrijft een model voor de lineage of afkomstrelaties tussen de modelelementen in de verschillende beschouwingsniveau's die MIM onderkent: het begrippenmodel, het conceptuele informatiemodel het logisch gegevensmodel en het fysieke datamodel.</p>
-<p>Lineage in de context van deze toepassing is lineage op het gebied van informatie en semantiek. Het betreft semantische- en realisatie relaties tussen modelelementen op de verschillende MIM-beschouwingsniveaus. We noemen dit 'verticale lineage'.</p>
-<p>Met de toepassing van het model wordt de afkomstrelatie beschreven tussen een informatie-element in een specifiek MIM beschouwingsniveau naar een ander MIM beschouwingsniveau.</p>
-</section>
+<p>Met dit soort situaties wordt daarom ook rekening gehouden in deze specificatie. Deze zijn meegenomen in deze uitwerking (in scope) waardoor het ook mogelijkheid is om te beschrijven dat we te maken hebben met een niet ideale situatie. </p>
+<blockquote>
+<p>De specificatie ondersteund ideale en minder ideale situaties die je kan aantreffen.</p>
+</blockquote>
+</section><section id="verticale-lineage-in-en-tussen-de-mim-beschouwingsniveaus"><div class="header-wrapper"><h3 id="x3-3-verticale-lineage-in-en-tussen-de-mim-beschouwingsniveaus"><bdi class="secno">3.3 </bdi>Verticale lineage in en tussen de MIM-beschouwingsniveaus</h3><a class="self-link" href="#verticale-lineage-in-en-tussen-de-mim-beschouwingsniveaus" aria-label="Permalink for Section 3.3"></a></div>
+<p>De in het voorbeeld beschreven samenhang noemen we ook wel verticale lineage. Dit betreft afkomstrelaties tussen de definities van modelelementen in de verschillende modellen. </p>
+<p>Verticaal refereert hierbij naar de verbanden tussen de beschouwingsniveaus, zoals hier beschreven in MIM (MIM v1.2 paragraaf 1.6). 
+Omdat dit aparte lagen zijn is het van belang om de relatie tussen de lagen te kunnen beschrijven op het niveau van de individuele informatie-elementen. Er onstaat hiermee een systematiek van 'voortbouwende en uitbreidende' specificatie waarbij de afkomstrelaties traceerbaar en bruikbaar zijn van begrips- tot dataniveau, of eigenlijk van dataniveau terug naar begripsniveau. </p>
+<p>Er zijn verschillende beschouwingsniveaus om kennis en gegevens te modelleren (en andere concerns, die hier niet benoemd zijn). Bij het specificeren van semantische herleidbaarheid wordt hierbij veelvuldig gebruik gemaakt van verwijzingen tussen modelelementen uit verschillende beschouwingsniveaus. De volgende verbanden worden hierbij als binnen scope gezien. </p>
+<p>
+      </p><figure id="fig-in-een-diagram">
+        <img src="media/MIM-lineage_informatie-architectuur.png" alt="Semantische herleidbaarheid in een diagram">
+        <figcaption><a class="self-link" href="#fig-in-een-diagram">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title">In een diagram</span></figcaption>
+      </figure>
+    <p></p>
+<p>Merk op dat verbanden meestal verticaal worden aangebracht, maar soms ook horizontaal. </p>
+<ul>
+<li><strong>Verticale lineage</strong> ontstaat door het leggen van relaties tussen modelelementen van verschillende niveaus, of tussen een modelelement en een begrip uit een begrippenkader.  </li>
+<li><strong>Horizontale lineage</strong> ontstaat door het leggen van relaties tussen modelelementen op hetzelfde niveau, maar afkomstig uit verschillende modellen.</li>
+</ul>
+<p>Dit diagram in tekstvorm is weergegeven in de volgende tabel: </p>
+<table>
+<thead>
+<tr>
+<th>MIM niveau</th>
+<th>Lineage</th>
+<th>Uitwerking te vinden in</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2 naar ...</td>
+<td>vanuit CIM naar kennisbronnen</td>
+<td>In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...'</td>
+</tr>
+<tr>
+<td>2 naar 1</td>
+<td>vanuit CIM naar een begrippenkader</td>
+<td>In scope, in deze module van MIM.</td>
+</tr>
+<tr>
+<td>3 naar 2</td>
+<td>vanuit LGM naar een CIM</td>
+<td>In scope, in deze module van MIM.</td>
+</tr>
+<tr>
+<td>3 naar 1</td>
+<td>vanuit LGM naar een begrippenkader</td>
+<td>In scope, in deze module van MIM.</td>
+</tr>
+<tr>
+<td>3 naar 3</td>
+<td>vanuit LGM naar een ander LGM</td>
+<td>In scope, in deze module van MIM, zie verderop bij semantische gelijkstelling</td>
+</tr>
+<tr>
+<td>3 naar ...</td>
+<td>vanuit LGM naar kennisbronnen</td>
+<td>In scope van MIM, maar volgt de werkwijze zoals bij 'van 1 naar ...' .</td>
+</tr>
+</tbody></table>
+<p>Merk op dat er verticale en horizontale lineage wordt onderscheiden. Zo is van 3 naar 3 een voorbeeld van horizontale lineage, of beter gezegd verticale lineage waarvoor eerst een horizontale zijstap wordt gedaan. </p>
+<p><strong>Buiten scope</strong></p>
+<p>Er is meer lineage tussen en binnen beschouwingsniveaus mogelijk, maar er is bewust gekozen om deze niet in MIM uit te werken. </p>
+<table>
+<thead>
+<tr>
+<th>MIM niveau</th>
+<th>Lineage</th>
+<th>Uitwerking te vinden in</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1 naar ...</td>
+<td>vanuit een begripppenkader naar kennisbronnen</td>
+<td>Buiten scope van MIM.</td>
+</tr>
+<tr>
+<td>1 naar 1</td>
+<td>vanuit een begrippenkader naar een ander begrippenkader</td>
+<td>Buiten scope van MIM.</td>
+</tr>
+<tr>
+<td>2 naar 2</td>
+<td>vanuit CIM naar een begrippenkader</td>
+<td>In scope, dit is uitgewerkt bij het gewone metamodel, bij view en extern en niet hier.</td>
+</tr>
+<tr>
+<td>3 naar 4</td>
+<td>vanuit LGM naar een technisch datamodel</td>
+<td>Buiten scope van MIM. Zie ontwerpbeslissingen.</td>
+</tr>
+<tr>
+<td>4 naar ...</td>
+<td>vanuit een technisch datamodel naar een LGM, CIM of begrippenkader</td>
+<td>Buiten scope van MIM.</td>
+</tr>
+</tbody></table>
+</section><section id="goede-definities-in-samenhang"><div class="header-wrapper"><h3 id="x3-4-goede-definities-in-samenhang"><bdi class="secno">3.4 </bdi>Goede definities in samenhang</h3><a class="self-link" href="#goede-definities-in-samenhang" aria-label="Permalink for Section 3.4"></a></div>
+<p>Een begrippenkader met begrippen en een conceptueel informatiemodel (CIM) kunnen gebruikt worden om te komen tot een welgevormde definitie van een gegevenstype die goed leesbaar en ook nog steed heel helder is voor gebruikers. Modelleren start doorgaans met opstellen van definities, van boven naar onder, maar in het uiteindelijk gebruik gaat de herleiding de andere kant op, van onder naar boven.</p>
+<p>Hierbij wordt gekeken naar de definities en naar de bijbehorende semantische herleidbaarheid, beide horen bij elkaar. De laatste is een aanvulling op de eerste. Het doel is telkens om betekenis van elementen op ieder beschouwingsniveau uit te drukken met een welgevormde verwoording van die betekenis met een eigen definitie, waarbij semantische verwijzingen worden aangebracht naar voorliggende of bovenliggende definities, om aan te geven waarop de tekst van de eigen definitie is gebaseerd. Hierbij kan ook aangegeven worden of de aangebrachte herleidbaarheid wel of niet exact is, en wel of niet compleet is.  </p>
+<p>Dit wordt uitgewerkt aan de hand van een uitgebreid voorbeeld. </p>
+<section id="uitgebreid-voorbeeld"><div class="header-wrapper"><h4 id="x3-4-1-uitgebreid-voorbeeld"><bdi class="secno">3.4.1 </bdi>Uitgebreid voorbeeld</h4><a class="self-link" href="#uitgebreid-voorbeeld" aria-label="Permalink for Section 3.4.1"></a></div>
+<p>In dit voorbeeld is een begrippenkader uitgewerkt naar een CIM en beide weer zijn gebruikt bij het maken van gegevensobjecttype en een gegevenstype in een LGM. </p>
+<p><em>Begrippen in een begrippenkader:</em></p>
+<ul>
+<li>Werknemer: Een werknemer is een natuurlijk persoon die werkt voor een organisatie. </li>
+<li>Woonplaats: Een woonplaats is een afgebakend grondgebied met een eigen begrenzing dat gelegen is binnen het grondgebied van een gemeente, dat onder andere bestemd is voor bewoning door mensen.</li>
+<li>Geboorteplaats: Een geboorteplaats is de plaats waar een natuurlijk persoon is geboren, in Nederland is dit altijd een woonplaats.</li>
+</ul>
+<p><em>Modelelementen in een CIM:</em> </p>
+<ul>
+<li>een objecttype <em>Natuurlijk persoon</em><ul>
+<li>een relatietype '<em>is geboren in</em>'<ul>
+<li>Deze relatie ligt tussen objecttype Natuurlijk Persoon en een objecttype Woonplaats.</li>
+<li>De rol die een plaats speelt in deze relatie is dat deze de <em>geboorteplaats</em> is van de natuurlijk persoon.</li>
+</ul>
+</li>
+<li>een relatietype '<em>werkt bij</em>'<ul>
+<li>Deze relatie ligt tussen objecttype Natuurlijk Persoon en een objecttype Organisatie.</li>
+<li>De rol die een natuurlijk persoon speelt in deze relatie is dat deze de <em>werknemer</em> is van de organisatie</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>een objecttype <em>Woonplaats</em><ul>
+<li>een eigenschaptype 'naam', met definitie: De officiele naam van een Woonlaats.</li>
+<li>een eigenschaptype 'code', met definitie: De code is de officiele identificatie van een Woonplaats</li>
+</ul>
+</li>
+</ul>
+<p><em>Modelelementen in een LGM:</em></p>
+<p>Het model beschrijft een aantal gegevens die bijgehouden worden over werknemers die werken bij de eigen organisatie, in een registratie die enkele van deze gegevens uitwisselt met gebruikers: </p>
+<ul>
+<li>een gegevensobjecttype <em>Geregistreerde werknemer</em><ul>
+<li>een aantal gegevenstypen betreffende de naam en een werknemersnummer (maar deze worden niet nader uitgewerkt in het voorbeeld) </li>
+<li>een attribuuttype 'geboorteplaatscode' --&gt; deze wordt uitgewerkt in onderstaand voorbeeld</li>
+</ul>
+</li>
+</ul>
+<p>Merk op dat het gegeven in geboorteplaatscode gaat over het gegevenstype: code van woonplaats. Het gegevenstype had dus ook woonplaats of code kunnen heten, maar dat is onvoldoende helder als het gaat om de geboorteplaats van de werknemer. Om soortgelijke redenen is ook niet de term geboorteplaats gebruikt maar geboorteplaatscode, om aan te geven dat het gegevenstype over de code gaat en niet over de naam van de woonplaats. Dit zorgt ervoor dat het logische gegevensmodel niet verwarrend is. Echter, er is geen begrip met de voorkeursterm geboorteplaatscode. </p>
+<p>Vraag: wat is nou een goede definitie van het gegevenstype geboorteplaatscode? </p>
+<p>Een antwoord kan zijn om deze uit de in het CIM gedefinieerde code te halen: de officiele identificatie van een Woonplaats. We raken dan echter relevante context kwijt, te weten dat het om de geboorteplaats gaat. </p>
+<p>Een ander antwoord zou daarom kunnen zijn om de definitie van het begrip geboorteplaats te gebruiken: een woonplaats waar een natuurlijk persoon is geboren. Maar het gegeven zelf gaat over de code ervan, dus dat klopt ook niet echt. </p>
+<p>Laten we daarom eerst kijken naar de semantische herleidbaarheid, gebruik makende van de bijbehorende concepten uit het vorige hoofdstuk.</p>
+<p><em>Semantische herleidbaarheid van het gegevenstype geboorteplaatscode:</em></p>
+<ul>
+<li>onderwerp van gesprek: Natuurlijk persoon uit het CIM<ul>
+<li>niet zomaar een Natuurlijk persoon, maar een natuurlijk persoon die een werknemer is bij onze organisatie</li>
+</ul>
+</li>
+<li>eigenschaptype: 'code' van Woonplaats uit het CIM <ul>
+<li>lexicaal pad: de geboorteplaats van een natuurlijk persoon, in CIM termen: de rol die de woonplaats speelt in de relatie met een natuurlijk persoon (en dit is wat anders dan waar de persoon woont)</li>
+</ul>
+</li>
+</ul>
+<p>Merk op dat alleen de code van de woonplaats niet duidelijk maakt dat het om de geboorteplaats van een natuurlijk persoon gaat, het onderwerp van gesprek van dit gegevenstype is de natuurlijk persoon (niet de woonplaats). Het lexicale pad verbind het eigenschaptype code van woonplaats met het onderwerp van gesprek. </p>
+<p>Wanneer we de semantische herleidbaarheid beschouwen als onderdeel van een formele specificatie, en de oorspronklijke definities van de betrokken begrippen hierin subtitueren dan zou de formele definitie zijn: 
+'De code is de officiele identificatie van een Woonplaats.' die de 'Een geboorteplaats is een plaats waar een natuurlijk persoon is geboren, in Nederland is dit altijd een woonplaats.' van een 'Natuurlijk persoon' die 'Een werknemer is een natuurlijk persoon die werkt voor een organisatie.' is bij onze 'Organisatie. Merk op dat Natuurlijk persoon' en 'Organisatie' ook nog uitgeschreven kunnen worden. </p>
+<p>Dit is heel exact, maar niet goed leesbaar. Merk ook op dat er extra woorden nodig zijn zoals 'die de' en 'van een' en 'is bij'. Semantische herleidbaarheid letterlijk uitschrijven levert meestal geen goed leesbare definities op voor de doelgroep van een model. Het is dan ook niet gebruikelijk om een definitie van een gegevenstype in een gegevensmodel op deze manier uit te schrijven. Het moet daarom altijd mogelijk zijn eigen verwoordingen toe te kennen. </p>
+<p><em>Definitie van het gegevenstype geboorteplaatscode:</em></p>
+<p>Semantische herleidbaarheid is erg nuttig om te komen tot een goede definitie. Hiervan gebruik makende komen we tot teksten zoals: </p>
+<ul>
+<li>De geboorteplaatscode is de code van de woonplaats die de geboorteplaats is van de natuurlijk persoon die werknemer is bij onze organisatie. </li>
+<li>De geboorteplaatscode is de code van de woonplaats waarin een werknemer van onze organisatie is geboren.</li>
+</ul>
+<p>Beide zijn heel helder. De eerste volgt zo veel als mogelijk de semantische herleidbaarheid. De tweede is ook heel helder en is nog prettiger leesbaar voor mensen. Deze beide verwoordingen zijn daarom goed. </p>
+<p>Althans, dit is zo wanneer <em>semantische herleidbaarheid</em> ook is aangebracht <strong>in aanvulling op</strong> de <em>definitie van het gegevenstype</em>. Met de gespecificeerde semantische verwijzingen zijn dan <em>alle</em> bijbehorende begrippen terug vinden en kan het bijbehorende CIM bestudeerd worden om te duiden of het om hieribj een eigenschaptype of relatietype of objecttype of iets anders gaat. Zo vinden we terug: </p>
+<ul>
+<li>de begrippen: werknemer, woonplaats en geboorteplaats uit het begrippenkader</li>
+<li>extra begrippen die relevant zijn zoals natuurlijk persoon en organisatie</li>
+<li>aanvullend geeft het CIM aan dat er sprake is van een code van een woonplaats en dat de geboorteplaats een rol is die ingevuld wordt door een woonplaats.</li>
+</ul>
+<p>Wat er met het gegevenstype 'geboorteplaatscode' bedoeld wordt is dan volledig helder. Merk ook op dat hoe meer er gewerkt wordt met specialistische begrippen, of hoe meer "platgeslagen" een logisch gegevensmodel is opgezet, hoe belangrijker een goede definitie met bijbehorende semantische herleidbaarheid wordt. </p>
+<p>
+      </p><figure id="fig-voorbeeld-png">
+        <img src="media/5.2.1_Voorbeeld.png" alt="5.2.1_Voorbeeld.png">
+        <figcaption><a class="self-link" href="#fig-voorbeeld-png">Figuur <bdi class="figno">3</bdi></a> <span class="fig-title">Voorbeeld.png</span></figcaption>
+      </figure>
+    <p></p>
+<blockquote>
+<p>Van dit voorbeeld leren we dat definities met elkaar samenhangen en dat het aanbrengen van deze samenhang kan leiden tot betere en beter begrijpelijke definities. </p>
+</blockquote>
+<p>In de volgende hoofdstukken wordt nader uitgewerkt hoe semantische herleidbaarheid precies gespecificeerd wordt. Merk op dat dit per modeltype verschillend is zijn omdat semantische verwijzingen in een CIM naar begrippen verwijzen en in LGM naar CIM modelelementen en van daaruit naar begrippen. Het doel is hierbij echter telkens hetzelfde.</p>
+</section></section></section>
   <section id="termen-definities-en-afkortingen"><div class="header-wrapper"><h2 id="x4-termen-definities-en-afkortingen"><bdi class="secno">4. </bdi>Termen, definities en afkortingen</h2><a class="self-link" href="#termen-definities-en-afkortingen" aria-label="Permalink for Section 4."></a></div>
+<p>Dit hoofdstuk beschrijft de belangrijkste termen om semantische herleidbaarheid te begrijpen. Deze worden in de specificatie van het hoofdstuk hierna gebruikt. </p>
+<section id="afkortingen"><div class="header-wrapper"><h3 id="x4-1-afkortingen"><bdi class="secno">4.1 </bdi>Afkortingen</h3><a class="self-link" href="#afkortingen" aria-label="Permalink for Section 4.1"></a></div>
+<table>
+<thead>
+<tr>
+<th>Afkorting</th>
+<th>Uitgeschreven</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CIM</td>
+<td>Conceptueel Informatiemodel</td>
+</tr>
+<tr>
+<td>LGM</td>
+<td>Logisch gegevensmodel</td>
+</tr>
+<tr>
+<td>MIM</td>
+<td>Metamodel informatiemodellering</td>
+</tr>
+</tbody></table>
+</section><section id="model-van-semantische-herleidbaarheid"><div class="header-wrapper"><h3 id="x4-2-model-van-semantische-herleidbaarheid"><bdi class="secno">4.2 </bdi>Model van semantische herleidbaarheid</h3><a class="self-link" href="#model-van-semantische-herleidbaarheid" aria-label="Permalink for Section 4.2"></a></div>
 <p>Centraal bij semantische herleidbaarheid staat het <strong>semantisch relevant modelelement</strong>. Dit is een modelelement waarvoor het zinvol en nodig is om deze te verbinden met bovenliggende semantiek uit een CIM en/of begrippenkader. Anders gezegd, de definitie van een semantisch relevant modelelement wordt zo goed als mogelijk in verband gebracht met bovenliggende definities, door de <strong>semantische herleiding</strong> ervoor te beschrijven. </p>
 <p>Semantische herleiding kan verticaal en horizontaal aangebracht worden. </p>
 <ul>
@@ -1485,16 +1712,18 @@ ul.index code{color:inherit}
 <li>horizontaal geeft aan dat de semantische herleiding al elders is beschreven, in een model van hetzelfde MIM-niveau, en het modelelement in het eigen model er qua betekenis mee gelijk gesteld wordt.</li>
 </ul>
 <p>Semantische herleiding bestaat uit één of meerdere <strong>semantische verwijzingen</strong>. De set van verwijzingen kan <em>wel of niet compleet</em> zijn om er de gegevensdefinitie mee af te dekken. Aanvullend kan de bovenliggende definitie waarnaar verwezen wordt, hierbij elke verwijzing op zichzelf beschouwend, <em>wel of niet exact</em> in overeenstemming zijn met de tekstuele verwoording van de gegevensdefinitie. </p>
-<p>Semantische herleidbaarheid in een diagram. 
-
+<p><em>Semantische herleidbaarheid in een diagram.</em></p>
+<p>
       </p><figure id="fig-semantische-herleidbaarheid-in-een-diagram">
         <img src="media/Semantische_herleidbaarheid.png" alt="Semantische herleidbaarheid in een diagram">
-        <figcaption><a class="self-link" href="#fig-semantische-herleidbaarheid-in-een-diagram">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title">Semantische herleidbaarheid in een diagram</span></figcaption>
+        <figcaption><a class="self-link" href="#fig-semantische-herleidbaarheid-in-een-diagram">Figuur <bdi class="figno">4</bdi></a> <span class="fig-title">Semantische herleidbaarheid in een diagram</span></figcaption>
       </figure>
-    <p></p>
-<p>Dit diagram geeft herleidbaarheid weer tussen verschillende beschouwingsniveaus op generieke wijze. Het kan zijn dat er per beschouwingsniveau (LGM --&gt; CIM en/of CIM --&gt; begrippenkader en/of LGM --&gt; begrippenkader) andere termen worden gekozen. </p>
+    
+<strong>TODO Frans, vervangen door nieuwe versie.</strong><p></p>
+<p>Dit diagram geeft herleidbaarheid weer tussen verschillende beschouwingsniveaus op generieke wijze. Het kan zijn dat er per beschouwingsniveau (LGM --&gt; CIM en/of CIM --&gt; begrippenkader en/of LGM --&gt; begrippenkader). Opmerking: er loopt een issue over wellicht andere termen. </p>
+<p>Dit diagram zal per modelelement concreet worden uitgewerkt in het volgende hoofdstuk. </p>
 <p>Hieronder worden de begrippen beschreven die nodig zijn om semantische herleidbaarheid te begrijpen.</p>
-<section id="termen-definities"><div class="header-wrapper"><h3 id="x4-1-termen-definities"><bdi class="secno">4.1 </bdi>Termen, definities</h3><a class="self-link" href="#termen-definities" aria-label="Permalink for Section 4.1"></a></div>
+</section><section id="termen-definities"><div class="header-wrapper"><h3 id="x4-3-termen-definities"><bdi class="secno">4.3 </bdi>Termen, definities</h3><a class="self-link" href="#termen-definities" aria-label="Permalink for Section 4.3"></a></div>
 <p><em>Algemene</em></p>
 <table>
 <thead>
@@ -1511,27 +1740,39 @@ ul.index code{color:inherit}
 </tr>
 <tr>
 <td>verticale semantische verwijzing</td>
-<td>Een directe semantische verwijzing is een semantische verwijzing naar een modelelement uit een hogerliggend beschouwingsniveau.</td>
-<td>Wanneer de beschouwingsniveaus boven elkaar worden afgebeeld, lopen directe semantische verwijzingen verticaal naar boven.</td>
+<td>Een semantische verwijzing naar een modelelement uit een hogerliggend beschouwingsniveau.</td>
+<td>Wanneer de beschouwingsniveaus boven elkaar worden afgebeeld, lopen deze semantische verwijzingen verticaal naar boven.</td>
 </tr>
 <tr>
 <td>horizontale semantische verwijzing</td>
-<td>Een indirecte semantische verwijzing is een semantische gelijkstelling, door middel van een verwijzing naar een ander gelijkgetypeerd modelelement in een ander logisch gegevensmodel.</td>
-<td>We spreken over indirecte verwijzing omdat voor de semantische herleiding wordt verwezen naar de semantische herleiding elders. Deze verwijzing is niet 'verticaal' (tussen beschouwingsniveaus), maar 'horizontaal', binnen hetzelfde beschouwingsniveau. De indirecte semantische verwijzing is vooral onderkend om aan te geven dat een gegevenstype in een gegevensmodel van een gegevensuitwisseling qua betekenis exact overeenkomt met een gegevenstype in een administratie van waaruit gegevens zijn gebruikt voor een informatieproduct of zijn overgenomen naar een kopie. Vaak loopt deze herleidbaarheid gelijk op met een logistieke herleidbaarheid (datalineage, waar komt het gegeven vandaan komt).</td>
+<td>Een semantische gelijkstelling, door middel van een semantische verwijzing naar een ander gelijkgetypeerd modelelement in een ander model op hetzelfde beschouwingsniveau.</td>
+<td>Hiermee wordt aangegeven: de semantische herleidbaarheid van dit gegevenstype is exact gelijk aan die van een ander gegevenstype in een ander gegevensmodel, kijk voor de semantische herleidbaarheid naar bovenliggende definities daar. Deze verwijzing is niet 'verticaal' (tussen beschouwingsniveaus), maar 'horizontaal', binnen hetzelfde beschouwingsniveau. Deze semantische verwijzing is vooral onderkend om aan te geven dat een gegevenstype in een gegevensmodel van een gegevensuitwisseling qua betekenis exact overeenkomt met een gegevenstype in een administratie van waaruit gegevens zijn gebruikt voor een informatieproduct of zijn overgenomen naar een kopie. Vaak loopt deze herleidbaarheid gelijk op met een logistieke herleidbaarheid (datalineage, waar het gegeven vandaan komt).</td>
 </tr>
 <tr>
-<td>definite</td>
-<td>De beschrijving van de betekenis van dit modelelement.</td>
-<td>Dit is een definitie van het metagegeven 'Definitie' uit MIM-1.2. (!)</td>
+<td>semantisch relevant modelelement</td>
+<td>Een modelelement waarvoor het nuttig of noodzakelijk is dat de definitie grotendeels gebaseerd is op bovenliggende definities uit het semantische beschouwingsniveau.</td>
+<td>Hiermee wordt aangegeven dat het de bedoeling is dat begrippen uit een begrippenkader worden gebruikt in de definitie van dit modelelement in een CIM of LGM. Dit gebruik hoeft niet tekstueel exact te zijn. Hiermee wordt niet aangegeven dat er een begrippenkader of CIM ontbreekt, ook als deze er niet zijn kan aangegeven worden dat een modelelement semantisch relevant is. Een voorbeeld van een niet relevant modelelement is bv. een volgnummer om iets in de techniek uniek te maken of een betekenisloos hulpgegeven om iets aan te sturen of iets te koppelen.</td>
 </tr>
 <tr>
-<td>gegevensdefintitie</td>
-<td>Het totaal van verplichte en optionele metagegevens die in MIM aan een modelelement toegekend kunnen worden.</td>
-<td></td>
+<td>gegevensdefinitie</td>
+<td>De beschrijving van de betekenis van dit modelelement, zijnd een gegevenstype of gegevensobjecttype.</td>
+<td>Dit komt overeen met het metagegeven 'Definitie' uit MIM-1.2. (!)</td>
+</tr>
+<tr>
+<td>gegevensspecificatie</td>
+<td>Het totaal van verplichte en optionele metagegevens die in MIM aan een modelelement toegekend kunnen worden aan een gegevenstype of gegevensobjecttype.</td>
+<td>Het gaat hier om onderkende modelelementen, in MIM of in een MIM-extensie.</td>
+</tr>
+<tr>
+<td>semantiek</td>
+<td>zie begrippenkader</td>
+<td>De MIM-1 laag</td>
 </tr>
 </tbody></table>
-<p><em>Mate van verwijsbaarheid</em></p>
-<p>De mate van verwijsbaarheid geeft aan in hoeverre de semantische herleidbaarheid klopt met de bovenliggende definities, zoals via verticale of horizontale semantische herleiding gespecificeerd. Dit is alleen relevant voor modelelementen waarvoor semantiek nodig is, oftewel modelelementen die semantisch relevant zijn. </p>
+<p><em>Detaillering van semantische herleidbaarheid</em></p>
+<p>Een gegevensdefinitie kan gebruik maken van meerdere begrippen en soms zelfs uit meerdere modelelementen uit een CIM (bijvoorbeeld een adresregel en een uitkomst van een berekening). Het is echter niet altijd zo dat er een begrippenkader of een CIM is om naar te verwijzen, of deels wel en deels niet. Soms klopt een definitie van een modelelement uit een onderliggende beschouwingsniveau ook wel ongeveer maar niet exact met de bovenliggende definities uit een bovenliggend beschouwingsniveau. </p>
+<p>Dit komt onder andere vanwege dat een begrippenkader (MIM-1) en een CIM (MIM-2) aangeven hoe iets bedoeld is en een LGM (MIM-3) en een implementatiemodel (MIM-4) gebaseerd zijn op welke gegevens er daadwerkelijk geadministreerd zijn en/of uitgewisseld worden en ook rekening houdt met de soms weerbarstige praktijk van het inwinnen van gegevens. </p>
+<p>Er kunnen dus, bedoeld of onbedoeld, verschillen zitten tussen de definities van de modelelementen uit verschillende beschouwingsniveaus. Dit kan leiden tot het elkaar niet goed begrijpen en spraakverwarring. Door semantische herleidbaarheid in detail uit te werken wordt inzichtelijk hoe het precies zit. Met al deze aspecten wordt rekening gehouden bij het uitwerken van semantische herleidbaarheid. </p>
 <table>
 <thead>
 <tr>
@@ -1542,18 +1783,18 @@ ul.index code{color:inherit}
 </thead>
 <tbody><tr>
 <td>complete semantische herleiding</td>
-<td>Een duiding van dat alle relevante semantische verwijzingen zijn aangebracht.</td>
+<td>Een duiding van dat alle relevante semantische verwijzingen zijn aangebracht op een semantisch relevant modelelement.</td>
 <td>Er ontbreekt er geen (ook niet vanwege het ontbreken van een CIM of een begrippenkader). Wanneer de herleiding niet compleet is dan is er altijd sprake van ten minste 1 ontbrekende verwijzing, die er wel zou moeten zijn om de gehele gegevensdefinitie af te dekken. Als de gehele gegevensdefinitie afgedekt wordt dan ontbreken er geen verwijzingen en is de herleiding dus compleet.</td>
 </tr>
 <tr>
 <td>exacte semantische verwijzing</td>
-<td>Een duiding dat de gegevensdefinitie en de betekenis waarnaar via alleen deze verwijzing naar verwezen wordt exact met elkaar in overeenstemming zijn.</td>
-<td>De  verwoording kan net anders zijn, maar dit heeft geen invloed op de betekenis. De strekking is hetzelfde. Wanneer er meerdere verwijzingen nodig zijn, dan betreft het exact overeenstemmen alleen deze betreffende verwijzing en het gedeelte van de gegevensdefinitie die hierbij hoort.</td>
+<td>Een duiding dat de definitie van dit semantische relevant modelelement en de betekenis waarnaar via alleen deze semantische verwijzing naar verwezen wordt exact met elkaar in overeenstemming zijn.</td>
+<td>Bij de semantische verwijzing wordt aangegeven of deze exact is. De verwoording, van het CIM modelelement of begrip, kan net anders zijn, maar dit heeft geen invloed op de betekenis. De strekking is 1 op 1 hetzelfde. Wanneer er meerdere verwijzingen nodig zijn, dan betreft het exact overeenstemmen alleen deze betreffende verwijzing en het gedeelte van de gegevensdefinitie die hierbij hoort.</td>
 </tr>
 <tr>
-<td>compleet en exact</td>
+<td>volledige semantische herleiding</td>
 <td>De semantische herleiding is compleet en alle semantische verwijzingen zijn exact.</td>
-<td>De gegevensdefinitie kan volledig verklaard worden via de betekenis die te vinden is via de semantische verwijzingen en is daarmee in overeenstemming. De verwoording is mogelijk net anders, maar de betekenis is hetzelfde (semantisch equivalent).</td>
+<td><strong>Volledig = compleet en exact</strong>. De gegevensdefinitie kan volledig verklaard worden via de betekenis die te vinden is via de semantische verwijzingen en is daarmee in overeenstemming. De verwoording is mogelijk net anders, maar de betekenis is hetzelfde (semantisch equivalent).</td>
 </tr>
 <tr>
 <td>verklaring van verschil</td>
@@ -1587,7 +1828,7 @@ ul.index code{color:inherit}
 </tr>
 <tr>
 <td>lexicaal pad</td>
-<td>Een lexicaal pad is de specificatie van de route tussen een gegevenstype en het bijbehorende eigenschaptype in een conceptueel informatiemodel waarnaar de semantische verwijzing naar gelegd is.</td>
+<td>Een lexicaal pad is de specificatie van de route tussen een gegevenstype en het bijbehorende eigenschaptype in een conceptueel informatiemodel waarnaar de semantische verwijzing gelegd is, waarbij de route uitgedrukt is m.b.v. de lexicale namen van de betrokken modelelementen van de route.</td>
 <td>Meestal hoort er bij 1 gegevensobjecttype ook 1 objecttype en hoort er bij 1 gegevenstype ook 1 eigenschaptype van dit objecttype. Er is dan niet echt sprake van een route of pad door het CIM, alleen maar van een verwijzing naar een eigenschaptype in het CIM. Het komt echter ook voor dat er wel pad door het CIM gelopen wordt, via een of meerdere relatietypen en objecttypen, vertrekkend vanuit het onderwerp van gesprek. Zie ook het voorbeeld aan het begin van dit hoofdstuk. Dan is de specificatie van het lexicale pad noodzakelijk om exact aan te geven hoe de semantische herleiding precies in elkaar zit. Elke semantische verwijzing heeft 0 of 1 lexicaal pad, nooit meerdere. Aangezien 1 gegevenstype wel meerdere semantische verwijzingen kan hebben (bv. een adresregel) kan bij 1 gegevenstype wel sprake zijn van meerdere lexicale paden.</td>
 </tr>
 <tr>
@@ -1600,213 +1841,59 @@ ul.index code{color:inherit}
 <p>In MIM 1.2 kunnen logische modelelementen gekoppeld aan een modelelement uit een conceptueel informatiemodel, met behulp van het metagegeven <code>mim:begrip</code>. 
 De definitie daarvan luidt:  </p>
 <p>In MIM 1.2 kunnen logische modelelementen gekoppeld aan een begrip met behulp van het metagegeven <code>mim:begrip</code>. 
-De definitie daarvan luidt: </p>
-</section><section id="afkortingen"><div class="header-wrapper"><h3 id="x4-2-afkortingen"><bdi class="secno">4.2 </bdi>Afkortingen</h3><a class="self-link" href="#afkortingen" aria-label="Permalink for Section 4.2"></a></div>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>CIM</td>
-<td>Conceptueel Informatiemodel</td>
-</tr>
-<tr>
-<td>LGM</td>
-<td>Logisch gegevensmodel</td>
-</tr>
-<tr>
-<td>MIM</td>
-<td>Metamodel informatiemodellering</td>
-</tr>
-</tbody></table>
+De definitie daarvan luidt:</p>
 </section></section> 
   <section id="lineagemodel"><div class="header-wrapper"><h2 id="x5-lineagemodel"><bdi class="secno">5. </bdi>Lineagemodel</h2><a class="self-link" href="#lineagemodel" aria-label="Permalink for Section 5."></a></div>
-<section id="inleiding-0"><div class="header-wrapper"><h3 id="x5-1-inleiding"><bdi class="secno">5.1 </bdi>Inleiding</h3><a class="self-link" href="#inleiding-0" aria-label="Permalink for Section 5.1"></a></div>
-<section id="wat-is-lineage-in-deze-context"><div class="header-wrapper"><h4 id="x5-1-1-wat-is-lineage-in-deze-context"><bdi class="secno">5.1.1 </bdi>Wat is lineage in deze context?</h4><a class="self-link" href="#wat-is-lineage-in-deze-context" aria-label="Permalink for Section 5.1.1"></a></div>
-<p>In figuur 1 uit de <em>Handreiking data lineage</em> worden de verschillende aspecten van lineage getoond. 
-De hier beschreven lineage geeft invulling aan de relaties tussen gegevens, gegevensmodellen en grondslagen. 
-De gegevensmodellen uit figuur 1 worden in dit document geïdentificeerd als modelelementen of begrippen.</p>
-<p>
-      </p><figure id="fig-gegevens-in-context">
-        <img src="media/Gegevens_in_context.jpg" alt="Gegevens in context">
-        <figcaption><a class="self-link" href="#fig-gegevens-in-context">Figuur <bdi class="figno">3</bdi></a> <span class="fig-title">Gegevens in context</span></figcaption>
-      </figure>
-    <p></p>
-<p>In de context van deze toepassing betekent lineage het leggen van betekenisvolle verbindingen tussen modelelementen en begrippen uit de vier beschouwingsniveaus die MIM onderkent.</p>
-</section><section id="waarom-lineage"><div class="header-wrapper"><h4 id="x5-1-2-waarom-lineage"><bdi class="secno">5.1.2 </bdi>Waarom lineage?</h4><a class="self-link" href="#waarom-lineage" aria-label="Permalink for Section 5.1.2"></a></div>
-<p>De waarde van lineage, zoals beschreven in de <em>Handreiking data lineage</em>, ligt op het gebied van:  </p>
+<p>Dit hoofdstuk beschrijft een specificatie van semantische herleidbaarheid in een CIM of LGM, met behulp van diagrammen en specificaties. </p>
+<p>In het vorige hoofdstuk is een een abstract model uitgewerkt. Dit abstract model beschrijft concepten die voor meerdere modeltypen en modelelelementen van toepassing zijn. In dit hoofdstuk is dit verder uitgewerkt naar hoe dit er precies uitziet in een CIM of LGM, zoals een modelleur deze maakt. De uitwerking bestaat uit specifiek te beschrijven metagegevens, per type modelelement van een bepaald type model.</p>
+<section id="wijze-van-toepassing"><div class="header-wrapper"><h3 id="x5-1-wijze-van-toepassing"><bdi class="secno">5.1 </bdi>Wijze van toepassing</h3><a class="self-link" href="#wijze-van-toepassing" aria-label="Permalink for Section 5.1"></a></div>
+<p>Het toepassen van deze MIM-module verhoogd de begrijpelijkheid van een model en maakt consistentie met bovenliggende semantiek inzichtelijk. Dit kan er ook toe leiden dat gegevensdefinities verbeterd kunnen worden. Deze modele is echter niet verplicht in MIM, omdat er een bepaalde inspanning nodig is om deze toe te passen. Om aan te geven of en hoe deze module is toegepast in een model wordt het volgende beschreven: </p>
 <ul>
-<li>Vertrouwen en transparantie  </li>
-<li>Voldoen aan wet- en regelgeving  </li>
-<li>Impact- en foutanalyse  </li>
-<li>Verbetering van gegevenskwaliteit  </li>
-<li>Kennis, overzicht, inzicht en sturing</li>
-</ul>
-<p>In de optimale situatie is van ieder (bron)gegeven in een technisch datamodel bekend hoe het zich verhoudt tot de modelelementen en begrippen op de hogere beschouwingsniveaus. 
-Hiermee kunnen de genoemde waarden daadwerkelijk worden gerealiseerd.</p>
-<p>Lineage wordt aanbevolen, maar is niet verplicht. 
-Modellen op alle niveaus hebben ieder een eigen toepassingsgebied en daarmee bestaansrecht. 
-In de praktijk zullen organisaties voor een specifiek model niet altijd alle beschouwingsniveaus hebben ingevuld of zullen invullen. 
-In dergelijke situaties zijn niet alle hier beschreven vormen van lineage mogelijk.</p>
-</section><section id="lineage-in-en-tussen-verschillende-mim-beschouwingsniveaus"><div class="header-wrapper"><h4 id="x5-1-3-lineage-in-en-tussen-verschillende-mim-beschouwingsniveaus"><bdi class="secno">5.1.3 </bdi>Lineage in en tussen verschillende MIM-beschouwingsniveaus</h4><a class="self-link" href="#lineage-in-en-tussen-verschillende-mim-beschouwingsniveaus" aria-label="Permalink for Section 5.1.3"></a></div>
-<p>We onderscheiden verticale en horizontale lineage.</p>
-<ul>
-<li><strong>Verticale lineage</strong> ontstaat door het leggen van relaties tussen modelelementen van verschillende niveaus, of tussen een modelelement en een begrip uit een begrippenkader.  </li>
-<li><strong>Horizontale lineage</strong> ontstaat door het leggen van relaties tussen modelelementen op hetzelfde niveau, maar afkomstig uit verschillende modellen.</li>
-</ul>
-<p>Horizontale lineage tussen begrippen uit verschillende begrippenkaders betreft de zogenoemde harmonisatierelaties uit de NL-SBB en wordt <a href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#harmonisatiesrelaties">aldaar</a> beschreven.</p>
-</section><section id="lineage-en-wet-en-regelgeving"><div class="header-wrapper"><h4 id="x5-1-4-lineage-en-wet-en-regelgeving"><bdi class="secno">5.1.4 </bdi>Lineage en wet- en regelgeving</h4><a class="self-link" href="#lineage-en-wet-en-regelgeving" aria-label="Permalink for Section 5.1.4"></a></div>
-<p>Een van de doelstellingen van lineage is dat van een gegeven kan worden vastgesteld welke wet- en regelgeving van toepassing is. 
-Op die manier kan uiteindelijk ook worden nagegaan of aan de gestelde eisen wordt voldaan.</p>
-</section><section id="lineage-en-definities"><div class="header-wrapper"><h4 id="x5-1-5-lineage-en-definities"><bdi class="secno">5.1.5 </bdi>Lineage en definities</h4><a class="self-link" href="#lineage-en-definities" aria-label="Permalink for Section 5.1.5"></a></div>
-<section id="geannoteerde-definities"><div class="header-wrapper"><h5 id="x5-1-5-1-geannoteerde-definities"><bdi class="secno">5.1.5.1 </bdi>Geannoteerde definities</h5><a class="self-link" href="#geannoteerde-definities" aria-label="Permalink for Section 5.1.5.1"></a></div>
-<p>De meeste modelelementen hebben verplicht een definitie: een beschrijving van de betekenis van dat modelelement. 
-In zo’n beschrijving kunnen een of meerdere gebruikte termen expliciet gekoppeld zijn aan een begrip. 
-Dit wordt een <em>geannoteerde definitie</em> genoemd.  </p>
-<p>Bij een geannoteerde definitie kunnen zowel de afzonderlijke termen uit de definitie als het modelelement in zijn geheel een lineage-relatie hebben met een begrip.  </p>
-<p>Zowel conceptuele informatiemodellen als logische gegevensmodellen kunnen geannoteerde definities bevatten.</p>
-</section><section id="het-hoofdonderwerp-van-een-definitie"><div class="header-wrapper"><h5 id="x5-1-5-2-het-hoofdonderwerp-van-een-definitie"><bdi class="secno">5.1.5.2 </bdi>Het hoofdonderwerp van een definitie</h5><a class="self-link" href="#het-hoofdonderwerp-van-een-definitie" aria-label="Permalink for Section 5.1.5.2"></a></div>
-<p><em>(Nog uit te werken in dit document.)</em>
-Zie: onderwerp van gesprek. </p>
-</section></section><section id="ontwerpbeslissingen"><div class="header-wrapper"><h4 id="x5-1-6-ontwerpbeslissingen"><bdi class="secno">5.1.6 </bdi>Ontwerpbeslissingen</h4><a class="self-link" href="#ontwerpbeslissingen" aria-label="Permalink for Section 5.1.6"></a></div>
-<section id="redundantie-van-definities"><div class="header-wrapper"><h5 id="x5-1-6-1-redundantie-van-definities"><bdi class="secno">5.1.6.1 </bdi>Redundantie van definities</h5><a class="self-link" href="#redundantie-van-definities" aria-label="Permalink for Section 5.1.6.1"></a></div>
-<p>In MIM is een definitie voor veel modelelementen een verplicht metagegeven. 
-Wanneer de definitie van een modelelement exact gelijk is aan die van een modelelement of begrip waarmee een lineage-relatie bestaat, kan dit als redundant worden ervaren.  </p>
-<p>Het verdient echter de voorkeur om deze definities toch te herhalen, zodat het model ook zelfstandig goed te begrijpen blijft. In een eigen beheer omgeving zou de gegevensdefinitie leeg gelaten kunnen worden waarmee bedoeld wordt dat deze rechtstreeks van het gerelateerde begrip overgenomen kan worden, maar bij de publicatie van het model hoort er altijd een gegevensdefinitie te zijn die te lezen is door gebruikers.</p>
-</section><section id="elk-gegevenstype-heeft-een-gegevensdefinitie"><div class="header-wrapper"><h5 id="x5-1-6-2-elk-gegevenstype-heeft-een-gegevensdefinitie"><bdi class="secno">5.1.6.2 </bdi>Elk gegevenstype heeft een gegevensdefinitie</h5><a class="self-link" href="#elk-gegevenstype-heeft-een-gegevensdefinitie" aria-label="Permalink for Section 5.1.6.2"></a></div>
-<p>Elk gegevenstype verdiend een definitie. Daarom is de definitie hiervan verplicht. Elk gegevensobjecttype verdiend een definitie. Daarom is de definitie hiervan verplicht. Om deze reden is het ook nodig om het mogelijk te maken om verschillen tussen de gegevensdefinitie en de bovenliggende definities uit CIM en begrippenkader (en daarboven) te kunnen beschrijven.  </p>
-</section></section><section id="aanpak-per-raakvlak-tussen-mim-niveaus-een-model-maken"><div class="header-wrapper"><h4 id="x5-1-7-aanpak-per-raakvlak-tussen-mim-niveaus-een-model-maken"><bdi class="secno">5.1.7 </bdi>Aanpak: per raakvlak tussen MIM niveaus een model maken</h4><a class="self-link" href="#aanpak-per-raakvlak-tussen-mim-niveaus-een-model-maken" aria-label="Permalink for Section 5.1.7"></a></div>
-<p><em>(Nog uit te werken in dit document.)</em></p>
-<table>
-<thead>
-<tr>
-<th>MIM niveau</th>
-<th>Lineage</th>
-<th>Uitwerking te vinden in</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1 naar ...</td>
-<td>vanuit een begripppenkader naar kennisbronnen</td>
-<td>Buiten scope van MIM. Dit wordt momenteel in detail beschreven in de <em>NL-SBB standaard</em>.</td>
-</tr>
-<tr>
-<td>2 naar 1</td>
-<td>vanuit CIM naar een begrippenkader</td>
-<td>in deze module van MIM, zie verderop</td>
-</tr>
-<tr>
-<td>3 naar 2</td>
-<td>vanuit LGM naar conceptueel informatiemodel</td>
-<td>in deze module van MIM, zie verderop</td>
-</tr>
-<tr>
-<td>3 naar 1</td>
-<td>vanuit LGM naar een begrippenkader</td>
-<td>in deze module van MIM, zie verderop</td>
-</tr>
-<tr>
-<td>4 naar ...</td>
-<td>vanuit een technisch datamodel naar een LGM, CIM of begrippenkader</td>
-<td>Buiten scope van MIM. Dit wordt momenteel in detail beschreven in de <em>Handreiking data lineage</em>.</td>
-</tr>
-</tbody></table>
-<p>Mapping in een diagram. 
-
-      </p><figure id="fig-in-een-diagram">
-        <img src="media/MIM-lineage_informatie-architectuur.png" alt="Semantische herleidbaarheid in een diagram">
-        <figcaption><a class="self-link" href="#fig-in-een-diagram">Figuur <bdi class="figno">4</bdi></a> <span class="fig-title">In een diagram</span></figcaption>
-      </figure>
-    <p></p>
-</section></section><section id="semantische-herleidbaarheid-0"><div class="header-wrapper"><h3 id="x5-2-semantische-herleidbaarheid"><bdi class="secno">5.2 </bdi>Semantische herleidbaarheid</h3><a class="self-link" href="#semantische-herleidbaarheid-0" aria-label="Permalink for Section 5.2"></a></div>
-<p>Een begrippenkader met begrippen en een conceptueel informatiemodel (CIM) kunnen gebruikt worden om te komen tot een welgevormde definitie van een gegevenstype die goed leesbaar en ook nog steed heel helder is voor gebruikers. Hierbij wordt zowel gekeken naar definities en naar semantische herleibaarheid, beide horen bij elkaar. De laatste is een aanvulling op de eerste. Het doel is telkens om betekenis van elementen op ieder beschouwingsniveau uit te drukken met een welgevormde verwoording van die betekenis met een definitie en om hierna semantische verwijzingen aan te geven waarop de tekst van deze definitie is gebaseerd. </p>
-<p>Dit wordt uitgewerkt aan de hand van een voorbeeld. </p>
-<section id="voorbeeld"><div class="header-wrapper"><h4 id="x5-2-1-voorbeeld"><bdi class="secno">5.2.1 </bdi>Voorbeeld</h4><a class="self-link" href="#voorbeeld" aria-label="Permalink for Section 5.2.1"></a></div>
-<p>In dit voorbeeld is een begrippenkader uitgewerkt naar een CIM en beide weer zijn gebruikt bij het maken van gegevensobjecttype en een gegevenstype in een LGM. </p>
-<p><strong>Begrippen in een begrippenkader:</strong></p>
-<ul>
-<li>Werknemer: Een werknemer is een natuurlijk persoon die werkt voor een organisatie. </li>
-<li>Woonplaats: Een woonplaats is een afgebakend grondgebied met een eigen begrenzing dat gelegen is binnen het grondgebied van een gemeente, dat onder andere bestemd is voor bewoning door mensen.</li>
-<li>Geboorteplaats: Een geboorteplaats is de plaats waar een natuurlijk persoon is geboren, in Nederland is dit altijd een woonplaats.</li>
-</ul>
-<p><strong>Modelelementen in een CIM:</strong> </p>
-<ul>
-<li>een objecttype <em>Natuurlijk persoon</em><ul>
-<li>een relatietype '<em>is geboren in</em>'<ul>
-<li>Deze relatie ligt tussen objecttype Natuurlijk Persoon en een objecttype Woonplaats.</li>
-<li>De rol die een plaats speelt in deze relatie is dat deze de <em>geboorteplaats</em> is van de natuurlijk persoon.</li>
+<li>ALS het model geen gebruik maakt van deze MIM module, dan hoeft dit niet expliciet te worden aangegeven.<ul>
+<li>Het is toegestaan om aan te geven: MIM-SH = Nee</li>
 </ul>
 </li>
-<li>een relatietype '<em>werkt bij</em>'<ul>
-<li>Deze relatie ligt tussen objecttype Natuurlijk Persoon en een objecttype Organisatie.</li>
-<li>De rol die een natuurlijk persoon speelt in deze relatie is dat deze de <em>werknemer</em> is van de organisatie</li>
+<li>ALS het model wel gebruik maakt van deze MIM module, dan:<ul>
+<li>wordt dit aangegeven bij de metagegevens op model niveau: MIM-SH = Ja</li>
+<li>worden de spelregels gevolgd die in deze module zijn aangegeven (deze volgen uit MIM-SH = Ja) </li>
+<li>is er de mogelijkheid om aan te geven welke <em>optionele spelregels</em> er verder nog toegepast zijn in het model om de kwaliteit van de specificatie verder te verhogen. Deze lezer of gebruiker kan hier van op vertrouwen.</li>
 </ul>
 </li>
 </ul>
-</li>
-<li>een objecttype <em>Woonplaats</em><ul>
-<li>een eigenschaptype 'naam', met definitie: De officiele naam van een Woonlaats.</li>
-<li>een eigenschaptype 'code', met definitie: De code is de officiele identificatie van een Woonplaats</li>
-</ul>
-</li>
-</ul>
-<p><strong>Modelelementen in een LGM:</strong></p>
-<p>Het model beschrijft een aantal gegevens die bijgehouden worden over werknemers die werken bij de eigen organisatie, in een registratie die enkele van deze gegevens uitwisselt met gebruikers: </p>
+</section><section id="modelelementen-met-lineage"><div class="header-wrapper"><h3 id="x5-2-modelelementen-met-lineage"><bdi class="secno">5.2 </bdi>Modelelementen met lineage</h3><a class="self-link" href="#modelelementen-met-lineage" aria-label="Permalink for Section 5.2"></a></div>
+<p>Voor de volgende modelelementen is semantische herleidbaarheid uitgewerkt.</p>
+<p>CIM modelelementen:</p>
 <ul>
-<li>een gegevensobjecttype <em>Geregistreerde werknemer</em><ul>
-<li>een aantal gegevenstypen betreffende de naam en een werknemersnummer (maar deze worden niet nader uitgewerkt in het voorbeeld) </li>
-<li>een attribuuttype 'geboorteplaatscode' --&gt; deze wordt uitgewerkt in onderstaand voorbeeld</li>
+<li>objecttype</li>
+<li>attribuuttype (attribueerde eigenschap)</li>
+<li>relatietype</li>
+<li>relatie met eigenschappen</li>
 </ul>
-</li>
-</ul>
-<p>Merk op dat het gegeven in geboorteplaatscode gaat over het gegevenstype: code van woonplaats. Het gegevenstype had dus ook woonplaats of code kunnen heten, maar dat is onvoldoende helder als het gaat om de geboorteplaats van de werknemer. Om soortgelijke redenen is ook niet de term geboorteplaats gebruikt maar geboorteplaatscode, om aan te geven dat het gegevenstype over de code gaat en niet over de naam van de woonplaats. Dit zorgt ervoor dat het logische gegevensmodel niet verwarrend is. Echter, er is geen begrip met de voorkeursterm geboorteplaatscode. </p>
-<p>Vraag: wat is nou een goede definitie van het gegevenstype geboorteplaatscode? </p>
-<p>Een antwoord kan zijn om deze uit de in het CIM gedefinieerde code te halen: de officiele identificatie van een Woonplaats. We raken dan echter relevante context kwijt, te weten dat het om de geboorteplaats gaat. </p>
-<p>Een ander antwoord zou daarom kunnen zijn om de definitie van het begrip geboorteplaats te gebruiken: een woonplaats waar een natuurlijk persoon is geboren. Maar het gegeven zelf gaat over de code ervan, dus dat klopt ook niet echt. </p>
-<p>Laten we daarom eerst kijken naar de semantische herleidbaarheid, gebruik makende van de bijbehorende concepten uit het vorige hoofdstuk.</p>
-<p><strong>Semantische herleidbaarheid van het gegevenstype geboorteplaatscode:</strong></p>
+<p>LGM modelelementen:</p>
 <ul>
-<li>onderwerp van gesprek: Natuurlijk persoon uit het CIM<ul>
-<li>niet zomaar een Natuurlijk persoon, maar een natuurlijk persoon die een werknemer is bij onze organisatie</li>
+<li>gegevensobjecttype</li>
+<li>gegevenstype</li>
+<li>TODO, eventueel: relatietype tussen twee gegevensobjecttypen</li>
 </ul>
-</li>
-<li>eigenschaptype: 'code' van Woonplaats uit het CIM <ul>
-<li>lexicaal pad: de geboorteplaats van een natuurlijk persoon, in CIM termen: de rol die de woonplaats speelt in de relatie met een natuurlijk persoon (en dit is wat anders dan waar de persoon woont)</li>
-</ul>
-</li>
-</ul>
-<p>Merk op dat alleen de code van de woonplaats niet duidelijk maakt dat het om de geboorteplaats van een natuurlijk persoon gaat, het onderwerp van gesprek van dit gegevenstype is de natuurlijk persoon (niet de woonplaats). Het lexicale pad verbind het eigenschaptype code van woonplaats met het onderwerp van gesprek. </p>
-<p>Wanneer we de semantische herleidbaarheid beschouwen als onderdeel van een formele specificatie, en de oorspronklijke definities van de betrokken begrippen hierin subtitueren dan zou de formele definitie zijn: 
-'De code is de officiele identificatie van een Woonplaats.' die de 'Een geboorteplaats is een plaats waar een natuurlijk persoon is geboren, in Nederland is dit altijd een woonplaats.' van een 'Natuurlijk persoon' die 'Een werknemer is een natuurlijk persoon die werkt voor een organisatie.' is bij onze 'Organisatie. Merk op dat Natuurlijk persoon' en 'Organisatie' ook nog uitgeschreven kunnen worden. </p>
-<p>Dit is heel exact, maar niet goed leesbaar. Merk ook op dat er extra woorden nodig zijn zoals 'die de' en 'van een' en 'is bij'. Semantische herleidbaarheid letterlijk uitschrijven levert meestal geen goed leesbare definities op voor de doelgroep van een model. Het is dan ook niet gebruikelijk om een definitie van een gegevenstype in een gegevensmodel op deze manier uit te schrijven. Het moet daarom altijd mogelijk zijn eigen verwoordingen toe te kennen. </p>
-<p><strong>Definitie van het gegevenstype geboorteplaatscode:</strong></p>
-<p>Semantische herleidbaarheid is erg nuttig om te komen tot een goede definitie. Hiervan gebruik makende komen we tot teksten zoals: </p>
-<ul>
-<li>De geboorteplaatscode is de code van de woonplaats die de geboorteplaats is van de natuurlijk persoon die werknemer is bij onze organisatie. </li>
-<li>De geboorteplaatscode is de code van de woonplaats waarin een werknemer van onze organisatie is geboren.</li>
-</ul>
-<p>Beide zijn heel helder. De eerste volgt zo veel als mogelijk de semantische herleidbaarheid. De tweede is ook heel helder en is nog prettiger leesbaar voor mensen. Deze beide verwoordingen zijn daarom goed. </p>
-<p>Althans, dit is zo wanneer <em>semantische herleidbaarheid</em> ook is aangebracht <strong>in aanvulling op</strong> de <em>definitie van het gegevenstype</em>. Met de gespecificeerde semantische verwijzingen zijn dan <em>alle</em> bijbehorende begrippen terug vinden en kan het bijbehorende CIM bestudeerd worden om te duiden of het om hieribj een eigenschaptype of relatietype of objecttype of iets anders gaat. Zo vinden we terug: </p>
-<ul>
-<li>de begrippen: werknemer, woonplaats en geboorteplaats uit het begrippenkader</li>
-<li>extra begrippen die relevant zijn zoals natuurlijk persoon en organisatie</li>
-<li>aanvullend geeft het CIM aan dat er sprake is van een code van een woonplaats en dat de geboorteplaats een rol is die ingevuld wordt door een woonplaats.</li>
-</ul>
-<p>Wat er met het gegevenstype 'geboorteplaatscode' bedoeld wordt is dan volledig helder. Merk ook op dat hoe meer er gewerkt wordt met specialistische begrippen, of hoe meer "platgeslagen" een logisch gegevensmodel is opgezet, hoe belangrijker een goede definitie met bijbehorende semantische herleidbaarheid wordt. </p>
-<p>
-      </p><figure id="fig-voorbeeld-png">
-        <img src="media/5.2.1_Voorbeeld.png" alt="5.2.1_Voorbeeld.png">
-        <figcaption><a class="self-link" href="#fig-voorbeeld-png">Figuur <bdi class="figno">5</bdi></a> <span class="fig-title">Voorbeeld.png</span></figcaption>
-      </figure>
-    <p></p>
-<p>Tot dusver het voorbeeld. Onderstaande werkt nader uit hoe semantische herleidbaarheid precies gespecificeerd wordt. Merk op dat dit per modeltype verschillend is zijn omdat semantische verwijzingen in een CIM naar begrippen verwijzen en in LGM naar CIM modelelementen en van daaruit naar begrippen. Het doel is hierbij echter telkens hetzelfde. </p>
-</section><section id="lineage-vanuit-cim-naar-begrippenkader"><div class="header-wrapper"><h4 id="x5-2-2-lineage-vanuit-cim-naar-begrippenkader"><bdi class="secno">5.2.2 </bdi>Lineage vanuit CIM naar begrippenkader</h4><a class="self-link" href="#lineage-vanuit-cim-naar-begrippenkader" aria-label="Permalink for Section 5.2.2"></a></div>
+</section><section id="uitgangspunten-en-ontwerpbeslissingen"><div class="header-wrapper"><h3 id="x5-3-uitgangspunten-en-ontwerpbeslissingen"><bdi class="secno">5.3 </bdi>Uitgangspunten en ontwerpbeslissingen</h3><a class="self-link" href="#uitgangspunten-en-ontwerpbeslissingen" aria-label="Permalink for Section 5.3"></a></div>
+<p><strong>Elk modelelement kent een eigen definitie</strong></p>
+<p>In MIM is een definitie voor veel modelelementen een verplicht metagegeven.  In principe zijn definities op elk beschouwingsniveau ook zelfstandig voor specifiek dat beschouwingsniveau, ook al komen ze tekstueel overeen. Wanneer de definitie van een modelelement exact gelijk is aan die van een modelelement of begrip waarmee een lineage-relatie bestaat, kan dit als redundant worden ervaren. Het verdient echter de voorkeur om deze definities expliciet te specificeren, zodat het model ook zelfstandig goed te begrijpen blijft. In een eigen beheer omgeving zou de gegevensdefinitie leeg gelaten kunnen worden waarmee bedoeld wordt dat deze rechtstreeks van het gerelateerde begrip overgenomen kan worden, maar bij de publicatie van het model hoort er altijd een gegevensdefinitie te zijn die te lezen is door gebruikers.</p>
+<p><strong>Elk gegevenstype heeft een gegevensdefinitie</strong></p>
+<p>Elk gegevenstype verdiend een definitie. Ook als het gegeventype semantisch niet relevant is is het zinvol om te begrijpen wat ermee bedoeld wordt. Daarom is de definitie hiervan verplicht. </p>
+<p><strong>Lineage naar wet- en regelgeving en andere kennisbronnen mag rechtstreeks worden gelegd</strong></p>
+<p>Een van de doelstellingen van lineage is dat van een gegeven kan worden vastgesteld welke wet- en regelgeving van toepassing is. Op die manier kan uiteindelijk ook worden nagegaan of aan de gestelde eisen wordt voldaan. </p>
+<p>Er zullen organisaties zijn die kiezen om deze lineage in een begrippenkader, zoals o.a. bedoeld in de NL-SBB standaard, op te nemen. Alsmede om vervolgens vanuit een CIM of LGM naar begrippen naar dit begrippenkader te verwijzen. Deze modellen zijn echter niet altijd gemaakt. Wet- en regelgeving en (openbaar) uitvoeringsbeleid is echter wel altijd gepubliceerd, we noemen dit kennisbronnen. Naar deze kennisbronnen kan daarom ook vanuit MIM modellen verwezen worden, via een kennisbron verwijzing. </p>
+<p>Omdat de NL-SBB ook kennisbron verwijzingen kent maakt MIM deze manier van verwijzen ook beschikbaar vanuit MIM. Er zijn ook kennisbronnen die zelf specificeren hoe er naar hen verwezen kan of moet worden. Uitgangspunt is dat dit soort aspecten meegenomen worden bij de NL-SBB en MIM hetzelfde mechanisme ook mogelijk maakt. </p>
+<p><strong>Semantische relaties tussen begrippen worden niet uitgewerkt in MIM</strong></p>
+<p>Dit wordt momenteel in detail beschreven in o.a. de <em>NL-SBB standaard</em>. Horizontale lineage tussen begrippen uit verschillende begrippenkaders betreft de zogenoemde harmonisatierelaties uit de NL-SBB en wordt <a href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#harmonisatiesrelaties">aldaar</a> beschreven. </p>
+<p><strong>Lineage van technische implementatiemodellen naar LGM worden niet uitgewerkt in MIM</strong></p>
+<p>Een logisch gegevensmodel kan worden uitgewerkt in verschillende technische schema's, naar gelang welke gebruikers welke serialisatie willen ontvangen of welke applicaties of databases worden ontwikkelt. Hetzelfde logische model kan in vele technische verschijningsvormen zijn uitgewerkt, waarmee het ook eenvoudig wordt om deze eenduiding naar elkaar te vertalen. Lineage is in principe altijd van 'onder' naar 'boven' dus de lineage van technisch naar logisch hoort bij de technische uitwerking. </p>
+<p>Dit wordt momenteel in detail beschreven in de <em>Handreiking data lineage</em>.</p>
+<p>Deze lineage betreft vaak een mapping en/of een vertaalspeficiatie tussen technisch en logisch. Deze <em>kan</em> vanwege pragmatische overwegingen eventueel opgenomen worden <em>bij</em> een LGM, maar zit strikt genomen <strong>niet</strong> <em>in</em> het LGM. Wellicht dat deze mapping generiek kan worden gespecificeerd zonder afhankelijkheden met de diverse implementatie technieken en als zodanig een plek in MIM kan krijgen, maar dit is nu niet zo.</p>
+</section><section id="lineage-vanuit-cim-naar-begrippenkader"><div class="header-wrapper"><h3 id="x5-4-lineage-vanuit-cim-naar-begrippenkader"><bdi class="secno">5.4 </bdi>Lineage vanuit CIM naar begrippenkader</h3><a class="self-link" href="#lineage-vanuit-cim-naar-begrippenkader" aria-label="Permalink for Section 5.4"></a></div>
 <p>In deze paragraaf wordt aangegeven hoe een begrippenkader met begrippen gebruikt kan worden om semantische herleidbaarheid aan te brengen in een CIM. </p>
 <p>De definitie van een modelelement in een CIM heeft een zeer sterke relatie met de definitie van een begrip uit een begrippenkader. Een begrippenkader en een conceptueel informatiemodel beschrijven immers beiden een model van dezelfde werkelijkheid. De ene beschrijft begrippen waarmee we uitdrukking geven aan het beschrijven van die werkelijkeheid, de andere geeft de conceptualisatie aan van dezelfde werkelijkheid, door middel van objecttypen, eigenschaptypen, relatietypen enzovoorts. Het is daarom in principe zo dat de terminologie in een CIM overeenkomt met de voorkeurstermen van de gerelateerde begrippen, daar waar mogelijk, mede ook om geen onnodige (spraak) verschillen te krijgen. Dit is niet altijd mogelijk, maar dit is wel een streven. De spelregels in onderstaande tabel geven dit aan. </p>
-<section id="lineage-op-model-niveau"><div class="header-wrapper"><h5 id="x5-2-2-1-lineage-op-model-niveau"><bdi class="secno">5.2.2.1 </bdi>Lineage op model niveau</h5><a class="self-link" href="#lineage-op-model-niveau" aria-label="Permalink for Section 5.2.2.1"></a></div>
+<p><strong>Lineage op model niveau</strong></p>
 <p>In een CIM kunnen modelelementen voorkomen die semantische verwijzingen hebben naar begrippen uit verschillende begrippenkaders. Hierover kan extra informatie worden toegevoegd in het model, zodat helder is welke dit zijn. </p>
 <p>Per model waarnaar wordt verwezen kan worden aangegeven. </p>
 <table>
@@ -1850,7 +1937,7 @@ Wanneer de definitie van een modelelement exact gelijk is aan die van een modele
 <li>Verwijzingen naar kennisbronnen die niet als begrippenkader zijn uitgewerkt, zijn toegestaan. In dit geval is het metagegeven 'kennisbron' bij een modelelement met een definitie gevuld.</li>
 </ol>
 <p><em>TODO: 3 is hier nog niet uitgewerkt.</em></p>
-</section><section id="modelelementen-uit-een-cim-waarvoor-semantische-verwijzingen-mogelijk-zijn"><div class="header-wrapper"><h5 id="x5-2-2-2-modelelementen-uit-een-cim-waarvoor-semantische-verwijzingen-mogelijk-zijn"><bdi class="secno">5.2.2.2 </bdi>Modelelementen uit een CIM waarvoor semantische verwijzingen mogelijk zijn</h5><a class="self-link" href="#modelelementen-uit-een-cim-waarvoor-semantische-verwijzingen-mogelijk-zijn" aria-label="Permalink for Section 5.2.2.2"></a></div>
+<p><strong>Modelelementen uit een CIM waarvoor semantische verwijzingen mogelijk zijn</strong> </p>
 <p>Dit zijn in principe alle modelelementen die een definitie kunnen hebben en ten minste alle modelelementen die een definitie hebben (altijd behoren te hebben). </p>
 <table>
 <thead>
@@ -1907,12 +1994,12 @@ Wanneer de definitie van een modelelement exact gelijk is aan die van een modele
 <p><em>Interpretatie van de semantische verwijzing</em></p>
 <p>De relatie tussen een conceptueel modelelement en een begrip moet strikt worden opgevat. Het gaat immers om een formele modellering van (informatie over) de werkelijkheid. De semantische verwijzing tussen een conceptueel modelelement en een begrip geeft altijd aan dat de definities overeenkomen, oftewel 1 op 1 op elkaar gebaseerd zijn en in ieder geval grotendeels overeenkomen. De verwoording is mogelijk anders, maar de betekenis is hetzelfde. Het kan zijn dat er meerdere begrippen zijn gebruikt, de betekenis is dan nog steeds geheel overeenkomend, er is enkel sprake van een combinatie. </p>
 <p>Het is mogelijk dat MIM in een latere versie ook niet exact overeenkomende semantische verwijzingen toestaat. De semantische verwijzingen zullen dan een aanduiding of classificatie krijgen. Dit is op het moment nog niet uitgewerkt.</p>
-</section><section id="metamodel"><div class="header-wrapper"><h5 id="x5-2-2-3-metamodel"><bdi class="secno">5.2.2.3 </bdi>Metamodel</h5><a class="self-link" href="#metamodel" aria-label="Permalink for Section 5.2.2.3"></a></div>
-<p><em>(Nog uit te werken in dit document.)</em>
+<p><strong>Metamodel</strong>
+<em>(Nog uit te werken in dit document.)</em>
 TODO: visueel diagram. </p>
-</section></section><section id="lineage-vanuit-logisch-gegevensmodel-naar-een-begrippenkader"><div class="header-wrapper"><h4 id="x5-2-3-lineage-vanuit-logisch-gegevensmodel-naar-een-begrippenkader"><bdi class="secno">5.2.3 </bdi>Lineage vanuit logisch gegevensmodel naar een begrippenkader</h4><a class="self-link" href="#lineage-vanuit-logisch-gegevensmodel-naar-een-begrippenkader" aria-label="Permalink for Section 5.2.3"></a></div>
+</section><section id="lineage-vanuit-lgm-naar-begrippenkader"><div class="header-wrapper"><h3 id="x5-5-lineage-vanuit-lgm-naar-begrippenkader"><bdi class="secno">5.5 </bdi>Lineage vanuit LGM naar begrippenkader</h3><a class="self-link" href="#lineage-vanuit-lgm-naar-begrippenkader" aria-label="Permalink for Section 5.5"></a></div>
 <p><em>(Nog uit te werken in dit document.)</em></p>
-<section id="modelelementen-uit-lgm-met-semantische-verwijzingen-naar-begrippenkader"><div class="header-wrapper"><h5 id="x5-2-3-1-modelelementen-uit-lgm-met-semantische-verwijzingen-naar-begrippenkader"><bdi class="secno">5.2.3.1 </bdi>Modelelementen uit LGM met semantische verwijzingen naar begrippenkader</h5><a class="self-link" href="#modelelementen-uit-lgm-met-semantische-verwijzingen-naar-begrippenkader" aria-label="Permalink for Section 5.2.3.1"></a></div>
+<p><strong>Modelelementen uit LGM met semantische verwijzingen naar begrippenkader</strong></p>
 <table>
 <thead>
 <tr>
@@ -1945,11 +2032,11 @@ TODO: visueel diagram. </p>
 </blockquote>
 <p>De formulering <em>is gebaseerd op</em> wijst op een meer vrije en mogelijk meervoudige interpretatie van de relatie tussen een logisch modelelement en een begrip.</p>
 <p><em>TODO: hoe precies verwijzen naar een begrip. Dit is analoog aan MIM 1.2, wellicht nog met een extra uitbreiding of dit wel of niet exact is.</em></p>
-</section></section><section id="lineage-vanuit-lgm-naar-cim"><div class="header-wrapper"><h4 id="x5-2-4-lineage-vanuit-lgm-naar-cim"><bdi class="secno">5.2.4 </bdi>Lineage vanuit LGM naar CIM</h4><a class="self-link" href="#lineage-vanuit-lgm-naar-cim" aria-label="Permalink for Section 5.2.4"></a></div>
+</section><section id="lineage-vanuit-lgm-naar-cim"><div class="header-wrapper"><h3 id="x5-6-lineage-vanuit-lgm-naar-cim"><bdi class="secno">5.6 </bdi>Lineage vanuit LGM naar CIM</h3><a class="self-link" href="#lineage-vanuit-lgm-naar-cim" aria-label="Permalink for Section 5.6"></a></div>
 <p>Gegevens gaan over eigenschappen van een object. Door semantische herleidbaarheid aan te brengen wordt aangegeven hoe (en in hoeverre) de gegevenswerkelijkheid en de gemodelleerde werkelijkheid in het begrippenkader en het conceptuele inforatiemodel met elkaar overeenkomen. </p>
 <p>Een gegevensmodel gaat over gegevens die er zijn, een informatiemodel gaat over informatie die we over de werkelijkheid nodig hebben. De definitie van een gegevensobject of een gegevenstype is daarom sterk gebaseerd de conceptualisatie van de informatie die beschreven is in het CIM. Het CIM definieert immers het objecttype, of het eigenschaptype, waarover het gegevenstype gaat. Dit is in een begrippenkader nog open en nog niet formeel vastgesteld. Daarom heeft het de sterke voorkeur om bij het aanbrengen van semantische herleidbaarheid in een logische gegevensmodel verwijzingen aan te brengen naar een modelelment in een CIM, en alleen te verwijzen naar een begrip als er geen CIM is. </p>
 <p>Semantische herleidbaarheid in een logisch gegevensmodel beschrijft op welke modelelementen uit een CIM een gegevenstype is gebaseerd. In het verlengde hiervan geldt dat de definitie van het gegevenstype weer op de begrippen is gebaseerd die daarin zijn aangegeven. </p>
-<section id="lineage-op-model-niveau-0"><div class="header-wrapper"><h5 id="x5-2-4-1-lineage-op-model-niveau"><bdi class="secno">5.2.4.1 </bdi>Lineage op model niveau</h5><a class="self-link" href="#lineage-op-model-niveau-0" aria-label="Permalink for Section 5.2.4.1"></a></div>
+<p><strong>Lineage op model niveau</strong></p>
 <p>In een LGM kunnen modelelementen voorkomen die semantische verwijzingen hebben naar CIM modelelementen uit verschillende CIM's. Hierover kan extra informatie worden toegevoegd in het model. </p>
 <p>Per model waarnaar wordt verwezen kan worden aangegeven: </p>
 <table>
@@ -2000,7 +2087,7 @@ TODO: visueel diagram. </p>
 <li>Als er een CIM is, dan wordt er naar het CIM verwezen en niet rechtstreeks naar het begrippenkader</li>
 <li>Er mag worden verwezen naar een LGM via indirecte semantische verwijzingen</li>
 </ol>
-</section><section id="modelelementen-uit-lgm-met-semantische-verwijzingen-naar-cim"><div class="header-wrapper"><h5 id="x5-2-4-2-modelelementen-uit-lgm-met-semantische-verwijzingen-naar-cim"><bdi class="secno">5.2.4.2 </bdi>Modelelementen uit LGM met semantische verwijzingen naar CIM</h5><a class="self-link" href="#modelelementen-uit-lgm-met-semantische-verwijzingen-naar-cim" aria-label="Permalink for Section 5.2.4.2"></a></div>
+<p><strong>Modelelementen uit LGM met semantische verwijzingen naar CIM</strong></p>
 <table>
 <thead>
 <tr>
@@ -2033,23 +2120,61 @@ TODO: visueel diagram. </p>
 <p>“Verwijzing naar een conceptueel modelelement, vanuit een modelelement op het logische niveau, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodelelement is gebaseerd. De verwijzing heeft de vorm van een term of een URI.”</p>
 </blockquote>
 <p>De formulering <em>is gebaseerd op</em> wijst op een meer vrije en mogelijk meervoudige interpretatie van de relatie tussen een logisch modelelement en een begrip.</p>
-</section><section id="specificatie-voor-gegevensobjecttype"><div class="header-wrapper"><h5 id="x5-2-4-3-specificatie-voor-gegevensobjecttype"><bdi class="secno">5.2.4.3 </bdi>Specificatie voor gegevensobjecttype</h5><a class="self-link" href="#specificatie-voor-gegevensobjecttype" aria-label="Permalink for Section 5.2.4.3"></a></div>
-<p>| Metagegeven | Beschrijving      | 
-| ------------ | ------------------------------------------------------ | -
-| onderwerp van gesprek | aanduiding welk objecttype uit een CIM het onderwerp van gesprek is van het gegevensobjecttype |</p>
+<section id="specificatie-voor-gegevensobjecttype"><div class="header-wrapper"><h4 id="x5-6-1-specificatie-voor-gegevensobjecttype"><bdi class="secno">5.6.1 </bdi>Specificatie voor gegevensobjecttype</h4><a class="self-link" href="#specificatie-voor-gegevensobjecttype" aria-label="Permalink for Section 5.6.1"></a></div>
+<table>
+<thead>
+<tr>
+<th>Metagegeven</th>
+<th>Beschrijving</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>onderwerp van gesprek</td>
+<td>aanduiding welk objecttype uit een CIM het onderwerp van gesprek is van het gegevensobjecttype</td>
+</tr>
+</tbody></table>
 <p>De volgende metagegevens worden gespecificeerd bij een semantische verwijzing naar een objecttype uit een CIM:</p>
-<p>| Metagegeven  | beschrijving      | kardinaliteit | datatype | voorbeeld | 
-| ------------ | ------------------------------------------------------ | -------------- | -------------- | 
-| modelelement identificatie | zie MIM algemeen | 0..1 | zie MIM algemeen | ... | 
-| modelelement naam | zie MIM algemeen | 0..1 | zie MIM algemeen | ... | 
-| model naam | zie MIM algemeen | 1..1 | zie MIM algemeen | ... | </p>
+<table>
+<thead>
+<tr>
+<th>Metagegeven</th>
+<th>beschrijving</th>
+<th>kardinaliteit</th>
+<th>datatype</th>
+<th>voorbeeld</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>modelelement identificatie</td>
+<td>zie MIM algemeen</td>
+<td>0..1</td>
+<td>zie MIM algemeen</td>
+<td>...</td>
+</tr>
+<tr>
+<td>modelelement naam</td>
+<td>zie MIM algemeen</td>
+<td>0..1</td>
+<td>zie MIM algemeen</td>
+<td>...</td>
+</tr>
+<tr>
+<td>model naam</td>
+<td>zie MIM algemeen</td>
+<td>1..1</td>
+<td>zie MIM algemeen</td>
+<td>...</td>
+</tr>
+</tbody></table>
+<p><em>In diagram vorm:</em>
+<strong>TODO: Frans, diagram SH Gegevensobjecttype verticaal naar CIM</strong> </p>
 <p>Regels: </p>
 <ul>
 <li>ofwel de modelelement identificatie ofwel de modelelement naam is opgenomen, of beide</li>
 <li>de model naam is opgenomen bij Lineage op model niveau</li>
 </ul>
 <p>Bij het aangeven van de semantische herleidbaarheid van een gegevenstype naar de bijbehorende semantiek kan uit analyse blijken dat de gegevensdefinitie van een gegevenstype volledig afgedekt kan worden door modelelementen in een CIM en/of begrippenkader. Dit is de gewenste situatie. Het kan echter ook zo zijn dat het niet het wat anders is dan gewenst. De mate van aanwijsbaarheid is dan maar deels mogelijk of zelfs geheel niet mogelijk. </p>
-</section><section id="specificatie-voor-gegevenstype"><div class="header-wrapper"><h5 id="x5-2-4-4-specificatie-voor-gegevenstype"><bdi class="secno">5.2.4.4 </bdi>Specificatie voor gegevenstype</h5><a class="self-link" href="#specificatie-voor-gegevenstype" aria-label="Permalink for Section 5.2.4.4"></a></div>
+</section><section id="specificatie-voor-gegevenstype"><div class="header-wrapper"><h4 id="x5-6-2-specificatie-voor-gegevenstype"><bdi class="secno">5.6.2 </bdi>Specificatie voor gegevenstype</h4><a class="self-link" href="#specificatie-voor-gegevenstype" aria-label="Permalink for Section 5.6.2"></a></div>
 <p>De manier waarop semantische herleidbaarheid is gespecificeerd wordt eerst aangegeven. </p>
 <table>
 <thead>
@@ -2104,7 +2229,7 @@ TODO: visueel diagram. </p>
 </tbody></table>
 <p>Regel: De aanduiding van de van verwijsbaarheid is een van deze waarden. </p>
 <p>Regel: Het is niet toegestaan om een andere aanduiding te kiezen die niet in MIM gedefinieerd is. Het is wel toegestaan om in een eigen toepassingsprofiel een 'nadere aanduiding' te specificeren, in aanvulling op de MIM aanduiding. </p>
-<section id="horizontale-semantische-herleidbaarheid"><div class="header-wrapper"><h6 id="x5-2-4-4-1-horizontale-semantische-herleidbaarheid"><bdi class="secno">5.2.4.4.1 </bdi>Horizontale semantische herleidbaarheid**</h6><a class="self-link" href="#horizontale-semantische-herleidbaarheid" aria-label="Permalink for Section 5.2.4.4.1"></a></div>
+<p><strong>Horizontale semantische herleidbaarheid</strong></p>
 <p>Een gegevenstype kan 1 op 1 overgenomen zijn uit een ander logisch gegevensmodel. Het is mogelijk om daarnaar te verwijzen, en voor de semantische herleidbaarheid te stellen: zie aldaar. </p>
 <table>
 <thead>
@@ -2128,7 +2253,9 @@ TODO: visueel diagram. </p>
 <td>als aangebracht, dan altijd tijd precies 1</td>
 </tr>
 </tbody></table>
-</section><section id="verticale-semantische-herleidbaarheid"><div class="header-wrapper"><h6 id="x5-2-4-4-2-verticale-semantische-herleidbaarheid"><bdi class="secno">5.2.4.4.2 </bdi>Verticale semantische herleidbaarheid</h6><a class="self-link" href="#verticale-semantische-herleidbaarheid" aria-label="Permalink for Section 5.2.4.4.2"></a></div>
+<p><strong>Metamodel in diagram vorm:</strong>
+<strong>TODO: Frans, diagram SH Gegevenstype horizontaal naar gegevenstype in ander LGM</strong> </p>
+<p><strong>Verticale semantische herleidbaarheid</strong></p>
 <p>Een gegevenstype kan een gegevensdefinitie hebben die gebaseerd is op bovenliggende definities. </p>
 <p>Regel: indien de semantische herleidbaarheid 'herleidbaar' is dan worden de metagegevens 'semantische verwijzingen' en 'ontbrekende verwijzingen' ook gespecificeerd. </p>
 <p>Voor elk gegevenstype kunnen meerdere semantische verwijzingen worden opgenomen. </p>
@@ -2187,6 +2314,8 @@ TODO: visueel diagram. </p>
 <td>zie specificatie lexicaal pad verderop</td>
 </tr>
 </tbody></table>
+<p><strong>Metamodel in diagram vorm:</strong>
+<strong>TODO: Frans, diagram SH Gegevenstype horizontaal naar gegevenstype in ander LGM</strong> </p>
 <p>Regels: </p>
 <ul>
 <li>ofwel de modelelement identificatie ofwel de modelelement naam is opgenomen, of beide</li>
@@ -2212,7 +2341,7 @@ TODO: visueel diagram. </p>
 </tr>
 </tbody></table>
 <p>Indien er ontbrekende verwijzingen zijn of indien er verwijzingen zijn die niet exact zijn, dan kan er een verklaring van verschil worden opgenomen. De modelleur heeft hiertoe eerst de definities van de bovenliggende CIM modelelementen en/of begrippen bestudeerd.</p>
-<p><strong>Verschillen met bovenliggende definities</strong></p>
+</section><section id="verschillen-met-bovenliggende-definities"><div class="header-wrapper"><h4 id="x5-6-3-verschillen-met-bovenliggende-definities"><bdi class="secno">5.6.3 </bdi>Verschillen met bovenliggende definities</h4><a class="self-link" href="#verschillen-met-bovenliggende-definities" aria-label="Permalink for Section 5.6.3"></a></div>
 <p>Er wordt onderscheidt gemaakt tussen 2 soorten verschillen: </p>
 <ul>
 <li>verklaring van verschil, semantisch niet equivalent met bovenliggende definities</li>
@@ -2283,7 +2412,7 @@ TODO: visueel diagram. </p>
 <td>Er is een oude term gebruikt die inmiddels is vervangen door een nieuwe term, maar de strekking en de betekenis ervan is hetzelfde.</td>
 </tr>
 </tbody></table>
-<p><strong>Lexicaal pad</strong></p>
+</section><section id="lexicaal-pad"><div class="header-wrapper"><h4 id="x5-6-4-lexicaal-pad"><bdi class="secno">5.6.4 </bdi>Lexicaal pad</h4><a class="self-link" href="#lexicaal-pad" aria-label="Permalink for Section 5.6.4"></a></div>
 <p>TODO: keuzes maken, zie issue 4. </p>
 <table>
 <thead>
@@ -2339,10 +2468,14 @@ TODO: visueel diagram. </p>
 <td>als aangebracht, dan altijd tijd precies 1 en gelijk aan</td>
 </tr>
 </tbody></table>
-</section></section><section id="metamodel-0"><div class="header-wrapper"><h5 id="x5-2-4-5-metamodel"><bdi class="secno">5.2.4.5 </bdi>Metamodel</h5><a class="self-link" href="#metamodel-0" aria-label="Permalink for Section 5.2.4.5"></a></div>
-<p><em>(Nog uit te werken in dit document.)</em>
-TODO: visueel diagram.</p>
-</section></section></section></section>
+</section></section><section id="mogelijke-openstaande-punten-en-teksten-om-nog-een-plek-te-geven"><div class="header-wrapper"><h3 id="x5-7-mogelijke-openstaande-punten-en-teksten-om-nog-een-plek-te-geven"><bdi class="secno">5.7 </bdi>Mogelijke openstaande punten en teksten om nog een plek te geven:</h3><a class="self-link" href="#mogelijke-openstaande-punten-en-teksten-om-nog-een-plek-te-geven" aria-label="Permalink for Section 5.7"></a></div>
+<p><strong>Geannoteerde definities</strong>
+De meeste modelelementen hebben verplicht een definitie: een beschrijving van de betekenis van dat modelelement. 
+In zo’n beschrijving kunnen een of meerdere gebruikte termen expliciet gekoppeld zijn aan een begrip. 
+Dit wordt een <em>geannoteerde definitie</em> genoemd.  </p>
+<p>Bij een geannoteerde definitie kunnen zowel de afzonderlijke termen uit de definitie als het modelelement in zijn geheel een lineage-relatie hebben met een begrip.  </p>
+<p>Zowel conceptuele informatiemodellen als logische gegevensmodellen kunnen geannoteerde definities bevatten.O: visueel diagram.</p>
+</section></section>
   
   
   <section id="conformance"><div class="header-wrapper"><h2 id="x6-conformiteit"><bdi class="secno">6. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 6."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section> 
@@ -2350,13 +2483,11 @@ TODO: visueel diagram.</p>
         <li class="tofline">
     <a class="tocxref" href="#fig-het-bsn-voorbeeld-in-een-diagram"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title">Het BSN voorbeeld in een diagram</span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#fig-semantische-herleidbaarheid-in-een-diagram"><span class="self-link">Figuur <bdi class="figno">2</bdi></span> <span class="fig-title">Semantische herleidbaarheid in een diagram</span></a>
+    <a class="tocxref" href="#fig-in-een-diagram"><span class="self-link">Figuur <bdi class="figno">2</bdi></span> <span class="fig-title">In een diagram</span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#fig-gegevens-in-context"><span class="self-link">Figuur <bdi class="figno">3</bdi></span> <span class="fig-title">Gegevens in context</span></a>
+    <a class="tocxref" href="#fig-voorbeeld-png"><span class="self-link">Figuur <bdi class="figno">3</bdi></span> <span class="fig-title">Voorbeeld.png</span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#fig-in-een-diagram"><span class="self-link">Figuur <bdi class="figno">4</bdi></span> <span class="fig-title">In een diagram</span></a>
-  </li><li class="tofline">
-    <a class="tocxref" href="#fig-voorbeeld-png"><span class="self-link">Figuur <bdi class="figno">5</bdi></span> <span class="fig-title">Voorbeeld.png</span></a>
+    <a class="tocxref" href="#fig-semantische-herleidbaarheid-in-een-diagram"><span class="self-link">Figuur <bdi class="figno">4</bdi></span> <span class="fig-title">Semantische herleidbaarheid in een diagram</span></a>
   </li>
       </ul></section>
   <section id="index" class="appendix"><div class="header-wrapper"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix A."></a></div><section id="index-defined-here">
