@@ -16,8 +16,10 @@ Dit hoofdstuk beschrijft de belangrijkste termen om semantische herleidbaarheid 
 Centraal bij semantische herleidbaarheid staat het **semantisch relevant modelelement**. Dit is een modelelement waarvoor het zinvol en nodig is om deze te verbinden met bovenliggende semantiek uit een CIM en/of begrippenkader. Anders gezegd, de definitie van een semantisch relevant modelelement wordt zo goed als mogelijk in verband gebracht met bovenliggende definities, door de **semantische herleiding** ervoor te beschrijven. 
 
 Semantische herleiding kan verticaal en horizontaal aangebracht worden. 
-- verticaal geeft aan dat er verwijzingen naar CIM modelelementen en/of naar begrippen uit een begrippenkader worden aangebracht;
-- horizontaal geeft aan dat de semantische herleiding al elders is beschreven, in een model van hetzelfde MIM-niveau, en het modelelement in het eigen model er qua betekenis mee gelijk gesteld wordt. In feite is dit een horizontale verwijzing naar een verder verticaal aangebracht herleiding.  
+- verticaal geeft aan dat er verwijzingen naar een hoger beschouwingsniveau worden aangebracht, oftewel naar CIM modelelementen en/of naar begrippen uit een begrippenkader;
+- horizontaal geeft aan dat de semantische herleiding al elders is beschreven, in een model van hetzelfde MIM-niveau, en het modelelement in het eigen model er qua betekenis mee gelijk gesteld wordt. In feite is dit een horizontale verwijzing naar een verder verticaal aangebracht herleiding.
+
+> Als de betekenis horizontaal niet exact hetzelfde is, dan wordt verticale lineage aangebracht. 
 
 Semantische herleiding bestaat uit één of meerdere **semantische verwijzingen**. De set van verwijzingen kan _wel of niet compleet_ zijn om er de gegevensdefinitie mee af te dekken. Aanvullend kan de bovenliggende definitie waarnaar verwezen wordt, hierbij elke verwijzing op zichzelf beschouwend, _wel of niet exact_ in overeenstemming zijn met de tekstuele verwoording van de gegevensdefinitie. 
 
