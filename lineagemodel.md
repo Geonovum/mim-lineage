@@ -206,9 +206,7 @@ Bij het aangeven van de semantische herleidbaarheid van een gegevenstype naar de
 
 De manier waarop semantische herleidbaarheid is gespecificeerd wordt eerst aangegeven. 
 
-| Metagegeven | beschrijving      | datatype | voorbeeld | 
-| ------------ | ------------------------------------------------------ | -------------- | -------------- | 
-| semantische herleidbaarheid | zie H4, semantische herleidbaarheid | enumeratie | zie enumeratiewaarden | 
+Eerst wordt bij het gegevenstype aangegeven of deze semantisch relevant is. 
 
 De volgende enumeratiewaarden zijn mogelijk: 
 
@@ -223,9 +221,29 @@ Regel: De aanduiding van de van verwijsbaarheid is een van deze waarden.
 
 Regel: Het is niet toegestaan om een andere aanduiding te kiezen die niet in MIM gedefinieerd is. Het is wel toegestaan om in een eigen toepassingsprofiel een 'nadere aanduiding' te specificeren, in aanvulling op de MIM aanduiding. 
 
+Deze waarde wordt opgenomen in een apart metagegeven dat hier speciaal voor bedoeld is. 
+
+| Metagegeven | beschrijving      | datatype | voorbeeld | 
+| ------------ | ------------------------------------------------------ | -------------- | -------------- | 
+| semantische herleidbaarheid | zie H4, semantische herleidbaarheid | enumeratie | zie voorgenoemde enumeratiewaarden | 
+
 **Horizontale semantische herleidbaarheid**
 
 Een gegevenstype kan 1 op 1 overgenomen zijn uit een ander logisch gegevensmodel. Het is mogelijk om daarnaar te verwijzen, en voor de semantische herleidbaarheid te stellen: zie aldaar. 
+
+De herleiding is in principe verticaal, maar met eerst een horizontale zijstap. Dit komt vooral voor wanneer een andere partij, die een bronadministratie voert, de gegevensdefinitie al heeft gegeven en ook zelf de semantische herleidbaarheid al heeft aangebracht. Het is dan beter om hiernaar te verwijzen.
+
+> Voorbeeld 1
+> Een gegevenstype woonplaatscode wordt semantisch gelijkgesteld aan het gegevenstype code van objecttype woonplaats, uit het gegevensmodel van de bronadministratie waarin woonplaatsen zijn geadministreerd. 
+
+> Niet goed voorbeeld A
+> Een gegevenstype identificatie wordt semantisch gelijkgesteld aan de centrale begripsdefinitie voor een identificatie van een object. 
+
+> Niet goed voorbeeld B
+> Een gegevenstype straatnaam (een onderdeel van het adres waar iemand in een verblijfsobject woont) wordt semantisch gelijkgesteld aan de naam van een openbare ruimte, uit het gegevensmodel van de bronadministratie waarin openbare ruimtes zijn geadministreerd. Hier is gewone verticale semantische herleiding nodig, want het betekent niet exact hetzelfde. Er zijn immers ook openbare ruimten die van het type spoorbaan zijn en daar wonen geen mensen aan, deze noemen we geen straat.  
+
+
+
 
 | Modelelement | indirecte semantische verwijzing naar | kardinaliteit | spelregels, bij 1 modelelement van dit type hoort                     | 
 | ------------ | --------------------------- | ------------- | --------------------------------------------------------------------- | 
@@ -239,6 +257,15 @@ Een gegevenstype kan 1 op 1 overgenomen zijn uit een ander logisch gegevensmodel
 **Verticale semantische herleidbaarheid**
 
 Een gegevenstype kan een gegevensdefinitie hebben die gebaseerd is op bovenliggende definities. 
+
+> Voorbeeld 1
+> Een gegevenstype geboorteplaatsnaam wordt semantisch herleid naar een kenmerk naam van objecttype woonplaats. 
+
+> Voorbeeld 2
+> Een gegevenstype geboorteplaats wordt semantisch herleid naar een kenmerk code van objecttype woonplaats.
+
+> Voorbeeld 3
+> Een gegevenstype adresregel wordt semantisch herleid naar de kenmerken huisnummer, huisletter en huisnummertoevoeging van het objecttype Nummeraanduiding en naar de naam van het objecttype openbare ruimte en naar de naam van het objecttype woonplaats.   
 
 Regel: indien de semantische herleidbaarheid 'herleidbaar' is dan worden de metagegevens 'semantische verwijzingen' en 'ontbrekende verwijzingen' ook gespecificeerd. 
 
@@ -259,7 +286,7 @@ De volgende metagegevens worden gespecificeerd bij elke _semantische verwijzing_
 | lexicaal pad | zie H4 | 0..1 | zie specificatie lexicaal pad verderop
 
 **Metamodel in diagram vorm:**
-![SH Gegevenstype verticaal naar CIM](media/SH_gegevenstype_logisch.png "SH Gegevenstype verticaal naar CIM")
+**TODO: Frans, diagram SH Gegevenstype verticaal naar gegevenstype in ander LGM** 
 
 Regels: 
 - ofwel de modelelement identificatie ofwel de modelelement naam is opgenomen, of beide

@@ -1053,6 +1053,14 @@ ul.index code{color:inherit}
       "date": "2020-06-30",
       "id": "NLISO19119"
     },
+    "NL-SBB-20241010": {
+      "title": "NNL-SBB - Standaard voor het beschrijven van begrippen",
+      "href": "https://docs.geostandaarden.nl/nl-sbb/def-st-nl-sbb-20241010/",
+      "status": "Vastgestelde versie",
+      "publisher": "Geonovum",
+      "date": "2024-10-10",
+      "id": "NL-SBB-20241010"
+    },
     "NLWFS": {
       "title": "Nederlands profiel op ISO 19142 Geographic information — Web Feature Service, Versie 1.1",
       "href": "https://www.geonovum.nl/geo-standaarden/services/nederlands-wfs-profiel-11-op-iso-19142-voor-web-feature-services-20",
@@ -1441,12 +1449,12 @@ ul.index code{color:inherit}
 </section>
   <section id="toepassingsgebied"><div class="header-wrapper"><h2 id="x2-toepassingsgebied"><bdi class="secno">2. </bdi>Toepassingsgebied</h2><a class="self-link" href="#toepassingsgebied" aria-label="Permalink for Section 2."></a></div>
 <p>Deze MIM-module is een onderdeel van de MIM standaard. Het toepassingsgebied van deze module valt hier binnen. </p>
-<p>Deze module kan worden toegepast door organisaties die het belangrijk vinden om gegevensmodellen en concentuele informatiemodellen te verbinden met begrippen uit begrippenkaders en uit kennisbronnen zoals wet- en regelgeving en uitvoeringsbeleid. </p>
+<p>Deze module beschrijft een gestandaardiseerde manier om gegevensmodellen en concentuele informatiemodellen te verbinden, met elkaar en met begrippen uit begrippenkaders, die zelf weer gebaseerd zijn op een kennisdomein zoals bijvoorbeeld (maar niet beperkt tot) wet- en regelgeving of uitvoeringsbeleid. </p>
 <p>Dit komt sterk overeen met wat binnen de NORA het Nationaal Semantisch Vlak heet, zoals bedoeld vanuit NORA gegevensmanagement, en daarbinnen de informatie laag. </p>
 <p>Deze module is vooral van belang voor organisaties waarin de volgende concerns van belang zijn: </p>
 <ul>
 <li>gezamelijke begripsvorming en aansluiting tussen de business en IT. Heldere definities gaan vooraf aan realiseren van informatievoorzieningen en het inwinnen van gegevens, de informatievoorziening moet hiermee in lijn zijn en blijven; </li>
-<li>gezamelijke begripsvorming tussen samenwerkende organisaties, die gegevens met elkaar uitwisselen en gebruiken. Elk heeft mogelijk een eigen perspectief op de wereld die net van elkaar kan verschillen. Door het opstellen van goede definities met semantische herleidbaarheid kunnen beide perspectieven goed met elkaar worden vergeleken;</li>
+<li>gezamelijke begripsvorming tussen samenwerkende organisaties, die gegevens met elkaar uitwisselen en gebruiken. Elk van deze organisaties heeft (mogelijk een eigen perspectief op de wereld, dat net van elkaar kan verschillen. Door het opstellen van goede definities met semantische herleidbaarheid kunnen beide perspectieven goed met elkaar worden vergeleken;</li>
 <li>de eis dat gegevensverwerkende processen aantoonbaar in lijn zijn met de kennis van de materiedeskundigen uit een organisatie en/of wet- en regelgeving. Het is zeker niet zo dat elke organisatie deze eis heeft, maar organisaties waarbij deze eis wel geldt, daar is deze MIM-module zeker (ook) voor bedoeld.</li>
 </ul>
 <p>Of semantische herleidbaarheid van belang is voor een model of een organisatie, is een afweging voor elke organisatie of samenwerkingsketen zelf. Daarom is dit onderwerp als een aparte module opgenomen in de standaard. Het is niet verplicht om dit te doen, maar als er gekozen wordt om het wel te beschrijven doe het dan zoals in dit document is gespecificeerd.</p>
@@ -1457,7 +1465,7 @@ ul.index code{color:inherit}
 <p>Semantische herleidbaarheid gaat over het aanbrengen van verticale lineage met betrekking tot definities van modelelementen, waarbij deze herleiding uiteindelijk uitkomt bij de kennis die beschreven is in kennisbronnen (of kennis in de hoofden van materiedeskundigen). </p>
 <p>Je kan semantische herleidbaarheid ook zien als het aanbrengen van afkomstrelaties, of is gebaseerd op relaties, tussen modelelementen van modellen uit de verschillende beschouwingsniveaus, zoals o.a. MIM deze onderkent. Denk hierbij aan: </p>
 <ul>
-<li>een begrippenmodel van een begrippenkader, ook wel een semantisch begrippen model genoemd, waarnaar verwezen wordt vanuit: </li>
+<li>een begrip uit een begrippenkader, ook wel een semantisch begrippen model genoemd, waarnaar verwezen wordt vanuit: </li>
 <li>een conceptuele informatiemodel van een bepaald informatiedomein, waarnaar verwezen wordt vanuit: </li>
 <li>een logisch gegevensmodel van een administratie of een gegevensuitwisseling of een gegevensproduct, waarnaar verwezen wordt vanuit: </li>
 <li>een fysieke datamodel of technisch schema</li>
@@ -1467,7 +1475,7 @@ ul.index code{color:inherit}
 <p>Uitgangspunt is dan ook dat elk modelelelement uit een (MIM) model een eigen definitie kent. Deze definitie staat op zichzelf en is zodanig opgesteld dat deze past bij het beschouwingsniveau dat uitgewerkt is in het betreffende model. </p>
 <p>Semantische herleidbaarheid is hierop een <em>aanvullende specificatie</em>, die de modelelementen en definities uit de verschillende modellen met elkaar verbindt. </p>
 <section id="eenvoudig-voorbeeld"><div class="header-wrapper"><h4 id="x3-1-1-eenvoudig-voorbeeld"><bdi class="secno">3.1.1 </bdi>Eenvoudig voorbeeld</h4><a class="self-link" href="#eenvoudig-voorbeeld" aria-label="Permalink for Section 3.1.1"></a></div>
-<p>Neem bij voorbeeld een attribute '<strong>bsn</strong>' in een logisch gegevensmodel met als definitie: de identificatie van een geregistreerd persoon. </p>
+<p>Neem bij voorbeeld een attribute '<strong>bsn</strong>' in een logisch gegevensmodel met als definitie: "de identificatie van een geregistreerd persoon". </p>
 <p>In dit voorbeeld is de bijbehorende semantische herleiding als volgt: </p>
 <ul>
 <li><strong>bsn</strong> is een <em>gegevenstype</em> dat onderdeel uitmaakt van het <em>gegevensobjecttype GeregistreerdNP</em> in een logisch gegevensmodel;</li>
@@ -1499,19 +1507,14 @@ ul.index code{color:inherit}
 </ul>
 <p>Met dit soort situaties wordt daarom ook rekening gehouden in deze specificatie. Deze zijn meegenomen in deze uitwerking (in scope) waardoor het ook mogelijkheid is om te beschrijven dat we te maken hebben met een niet ideale situatie. </p>
 <blockquote>
-<p>De specificatie ondersteund ideale en minder ideale situaties die je kan aantreffen.</p>
+<p>De specificatie ondersteunt ideale en minder ideale situaties die je kan aantreffen.</p>
 </blockquote>
 </section><section id="verticale-lineage-in-en-tussen-de-mim-beschouwingsniveaus"><div class="header-wrapper"><h3 id="x3-3-verticale-lineage-in-en-tussen-de-mim-beschouwingsniveaus"><bdi class="secno">3.3 </bdi>Verticale lineage in en tussen de MIM-beschouwingsniveaus</h3><a class="self-link" href="#verticale-lineage-in-en-tussen-de-mim-beschouwingsniveaus" aria-label="Permalink for Section 3.3"></a></div>
 <p>De in het voorbeeld beschreven samenhang noemen we ook wel verticale lineage. Dit betreft afkomstrelaties tussen de definities van modelelementen in de verschillende modellen. </p>
 <p>Verticaal refereert hierbij naar de verbanden tussen de beschouwingsniveaus, zoals hier beschreven in MIM (MIM v1.2 paragraaf 1.6). 
 Omdat dit aparte lagen zijn is het van belang om de relatie tussen de lagen te kunnen beschrijven op het niveau van de individuele informatie-elementen. Er onstaat hiermee een systematiek van 'voortbouwende en uitbreidende' specificatie waarbij de afkomstrelaties traceerbaar en bruikbaar zijn van begrips- tot dataniveau, of eigenlijk van dataniveau terug naar begripsniveau. </p>
 <p>Er zijn verschillende beschouwingsniveaus om kennis en gegevens te modelleren (en andere concerns, die hier niet benoemd zijn). Bij het specificeren van semantische herleidbaarheid wordt hierbij veelvuldig gebruik gemaakt van verwijzingen tussen modelelementen uit verschillende beschouwingsniveaus. De volgende verbanden worden hierbij als binnen scope gezien. </p>
-<p>
-      </p><figure id="fig-in-een-diagram">
-        <img src="media/MIM-lineage_informatie-architectuur.png" alt="Semantische herleidbaarheid in een diagram">
-        <figcaption><a class="self-link" href="#fig-in-een-diagram">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title">In een diagram</span></figcaption>
-      </figure>
-    <p></p>
+<p>![Semantische herleidbaarheid in een diagram](media/SH conceptueel.png "In een diagram")</p>
 <p>Merk op dat verbanden meestal verticaal worden aangebracht, maar soms ook horizontaal. </p>
 <ul>
 <li><strong>Verticale lineage</strong> ontstaat door het leggen van relaties tussen modelelementen van verschillende niveaus, of tussen een modelelement en een begrip uit een begrippenkader.  </li>
@@ -1673,7 +1676,7 @@ Omdat dit aparte lagen zijn is het van belang om de relatie tussen de lagen te k
 <p>
       </p><figure id="fig-voorbeeld-png">
         <img src="media/5.2.1_Voorbeeld.png" alt="5.2.1_Voorbeeld.png">
-        <figcaption><a class="self-link" href="#fig-voorbeeld-png">Figuur <bdi class="figno">3</bdi></a> <span class="fig-title">Voorbeeld.png</span></figcaption>
+        <figcaption><a class="self-link" href="#fig-voorbeeld-png">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title">Voorbeeld.png</span></figcaption>
       </figure>
     <p></p>
 <blockquote>
@@ -1708,20 +1711,22 @@ Omdat dit aparte lagen zijn is het van belang om de relatie tussen de lagen te k
 <p>Centraal bij semantische herleidbaarheid staat het <strong>semantisch relevant modelelement</strong>. Dit is een modelelement waarvoor het zinvol en nodig is om deze te verbinden met bovenliggende semantiek uit een CIM en/of begrippenkader. Anders gezegd, de definitie van een semantisch relevant modelelement wordt zo goed als mogelijk in verband gebracht met bovenliggende definities, door de <strong>semantische herleiding</strong> ervoor te beschrijven. </p>
 <p>Semantische herleiding kan verticaal en horizontaal aangebracht worden. </p>
 <ul>
-<li>verticaal geeft aan dat er verwijzingen naar CIM modelelementen en/of begrippen uit een begrippenkader worden benoemd;</li>
-<li>horizontaal geeft aan dat de semantische herleiding al elders is beschreven, in een model van hetzelfde MIM-niveau, en het modelelement in het eigen model er qua betekenis mee gelijk gesteld wordt.</li>
+<li>verticaal geeft aan dat er verwijzingen naar een hoger beschouwingsniveau worden aangebracht, oftewel naar CIM modelelementen en/of naar begrippen uit een begrippenkader;</li>
+<li>horizontaal geeft aan dat de semantische herleiding al elders is beschreven, in een model van hetzelfde MIM-niveau, en het modelelement in het eigen model er qua betekenis mee gelijk gesteld wordt. In feite is dit een horizontale verwijzing naar een verder verticaal aangebracht herleiding.</li>
 </ul>
-<p>Semantische herleiding bestaat uit één of meerdere <strong>semantische verwijzingen</strong>. De set van verwijzingen kan <em>wel of niet compleet</em> zijn om er de gegevensdefinitie mee af te dekken. Aanvullend kan de bovenliggende definitie waarnaar verwezen wordt, hierbij elke verwijzing op zichzelf beschouwend, <em>wel of niet exact</em> in overeenstemming zijn met de tekstuele verwoording van de gegevensdefinitie. </p>
+<blockquote>
+<p>Als de betekenis horizontaal niet exact hetzelfde is, dan wordt verticale lineage aangebracht. </p>
+</blockquote>
+<p>Semantische herleiding bestaat uit één of meerdere <strong>semantische verwijzingen</strong>. De set van verwijzingen kan <em>wel of niet compleet</em> zijn om er de gegevensdefinitie mee af te dekken. Aanvullend kan per verwijzing worden aangegeven of de betekenis <em>wel of niet exact gelijk</em> is aan de definitie uit het bovenliggende niveau.</p>
 <p><em>Semantische herleidbaarheid in een diagram.</em></p>
+<p>Dit diagram geeft de tekst uit voorgaande alinea weer in de vorm van een diagram. </p>
 <p>
       </p><figure id="fig-semantische-herleidbaarheid-in-een-diagram">
-        <img src="media/Semantische_herleidbaarheid.png" alt="Semantische herleidbaarheid in een diagram">
-        <figcaption><a class="self-link" href="#fig-semantische-herleidbaarheid-in-een-diagram">Figuur <bdi class="figno">4</bdi></a> <span class="fig-title">Semantische herleidbaarheid in een diagram</span></figcaption>
+        <img src="media/SH_conceptueel.png" alt="Semantische herleidbaarheid in een diagram">
+        <figcaption><a class="self-link" href="#fig-semantische-herleidbaarheid-in-een-diagram">Figuur <bdi class="figno">3</bdi></a> <span class="fig-title">Semantische herleidbaarheid in een diagram</span></figcaption>
       </figure>
-    
-<strong>TODO Frans, vervangen door nieuwe versie.</strong><p></p>
-<p>Dit diagram geeft herleidbaarheid weer tussen verschillende beschouwingsniveaus op generieke wijze. Het kan zijn dat er per beschouwingsniveau (LGM --&gt; CIM en/of CIM --&gt; begrippenkader en/of LGM --&gt; begrippenkader). Opmerking: er loopt een issue over wellicht andere termen. </p>
-<p>Dit diagram zal per modelelement concreet worden uitgewerkt in het volgende hoofdstuk. </p>
+    <p></p>
+<p>Dit diagram zal per modelelement concreet worden uitgewerkt in het volgende hoofdstuk, per modelelement in een CIM of LGM dat een definitie kan hebben. </p>
 <p>Hieronder worden de begrippen beschreven die nodig zijn om semantische herleidbaarheid te begrijpen.</p>
 </section><section id="termen-definities"><div class="header-wrapper"><h3 id="x4-3-termen-definities"><bdi class="secno">4.3 </bdi>Termen, definities</h3><a class="self-link" href="#termen-definities" aria-label="Permalink for Section 4.3"></a></div>
 <p><em>Algemene</em></p>
@@ -1734,9 +1739,14 @@ Omdat dit aparte lagen zijn is het van belang om de relatie tussen de lagen te k
 </tr>
 </thead>
 <tbody><tr>
+<td>kennisbron</td>
+<td>Een bron met beschreven kennis, die gevalideerd is.</td>
+<td>En indien mogelijk gepubliceerd zodat deze na te zoeken is. Zie NL-SBB voor verdere definitie.</td>
+</tr>
+<tr>
 <td>semantische herleidbaarheid</td>
 <td>Semantische herleidbaarheid is het vermogen om definities van modelelementen uit lagere beschouwingsniveaus expliciet en traceerbaar te verbinden met de  betekenis die met begrippen is vastgelegd in het semantische beschouwingsniveau.</td>
-<td>Semantische herleidbaarheid is in opzet 'verticaal', dat wil zeggen dat we deze vormgeven door het aanbrengen van semantische verwijzingen tussen modelelementen uit modellen op de verschillende beschouwingsniveaus, van technische modellen naar logische modellen naar conceptuele modellen naar semantische modellen (die zelf weer gebasseerd kunnen zijn op bovenliggende kennisbronnen).</td>
+<td>Semantische herleidbaarheid is in opzet 'verticaal', dat wil zeggen dat we deze vormgeven door het aanbrengen van semantische verwijzingen tussen modelelementen uit modellen op de verschillende beschouwingsniveaus, van technische modellen naar logische modellen naar conceptuele modellen naar semantische modellen (die zelf weer gebasseerd kunnen zijn op brondocumenten).</td>
 </tr>
 <tr>
 <td>verticale semantische verwijzing</td>
@@ -2166,8 +2176,13 @@ TODO: visueel diagram. </p>
 <td>...</td>
 </tr>
 </tbody></table>
-<p><em>In diagram vorm:</em>
-<strong>TODO: Frans, diagram SH Gegevensobjecttype verticaal naar CIM</strong> </p>
+<p><em>In diagram vorm:</em></p>
+<p>
+      </p><figure id="fig-sh-gegevensobjecttype-verticaal-naar-cim">
+        <img src="media/SH_gegevensobjecttype.png" alt="SH Gegevensobjecttype verticaal naar CIM">
+        <figcaption><a class="self-link" href="#fig-sh-gegevensobjecttype-verticaal-naar-cim">Figuur <bdi class="figno">4</bdi></a> <span class="fig-title">SH Gegevensobjecttype verticaal naar CIM</span></figcaption>
+      </figure>
+    <p></p>
 <p>Regels: </p>
 <ul>
 <li>ofwel de modelelement identificatie ofwel de modelelement naam is opgenomen, of beide</li>
@@ -2176,22 +2191,7 @@ TODO: visueel diagram. </p>
 <p>Bij het aangeven van de semantische herleidbaarheid van een gegevenstype naar de bijbehorende semantiek kan uit analyse blijken dat de gegevensdefinitie van een gegevenstype volledig afgedekt kan worden door modelelementen in een CIM en/of begrippenkader. Dit is de gewenste situatie. Het kan echter ook zo zijn dat het niet het wat anders is dan gewenst. De mate van aanwijsbaarheid is dan maar deels mogelijk of zelfs geheel niet mogelijk. </p>
 </section><section id="specificatie-voor-gegevenstype"><div class="header-wrapper"><h4 id="x5-6-2-specificatie-voor-gegevenstype"><bdi class="secno">5.6.2 </bdi>Specificatie voor gegevenstype</h4><a class="self-link" href="#specificatie-voor-gegevenstype" aria-label="Permalink for Section 5.6.2"></a></div>
 <p>De manier waarop semantische herleidbaarheid is gespecificeerd wordt eerst aangegeven. </p>
-<table>
-<thead>
-<tr>
-<th>Metagegeven</th>
-<th>beschrijving</th>
-<th>datatype</th>
-<th>voorbeeld</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>semantische herleidbaarheid</td>
-<td>zie H4, semantische herleidbaarheid</td>
-<td>enumeratie</td>
-<td>zie enumeratiewaarden</td>
-</tr>
-</tbody></table>
+<p>Eerst wordt bij het gegevenstype aangegeven of deze semantisch relevant is. </p>
 <p>De volgende enumeratiewaarden zijn mogelijk: </p>
 <table>
 <thead>
@@ -2229,8 +2229,38 @@ TODO: visueel diagram. </p>
 </tbody></table>
 <p>Regel: De aanduiding van de van verwijsbaarheid is een van deze waarden. </p>
 <p>Regel: Het is niet toegestaan om een andere aanduiding te kiezen die niet in MIM gedefinieerd is. Het is wel toegestaan om in een eigen toepassingsprofiel een 'nadere aanduiding' te specificeren, in aanvulling op de MIM aanduiding. </p>
+<p>Deze waarde wordt opgenomen in een apart metagegeven dat hier speciaal voor bedoeld is. </p>
+<table>
+<thead>
+<tr>
+<th>Metagegeven</th>
+<th>beschrijving</th>
+<th>datatype</th>
+<th>voorbeeld</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>semantische herleidbaarheid</td>
+<td>zie H4, semantische herleidbaarheid</td>
+<td>enumeratie</td>
+<td>zie voorgenoemde enumeratiewaarden</td>
+</tr>
+</tbody></table>
 <p><strong>Horizontale semantische herleidbaarheid</strong></p>
 <p>Een gegevenstype kan 1 op 1 overgenomen zijn uit een ander logisch gegevensmodel. Het is mogelijk om daarnaar te verwijzen, en voor de semantische herleidbaarheid te stellen: zie aldaar. </p>
+<p>De herleiding is in principe verticaal, maar met eerst een horizontale zijstap. Dit komt vooral voor wanneer een andere partij, die een bronadministratie voert, de gegevensdefinitie al heeft gegeven en ook zelf de semantische herleidbaarheid al heeft aangebracht. Het is dan beter om hiernaar te verwijzen.</p>
+<blockquote>
+<p>Voorbeeld 1
+Een gegevenstype woonplaatscode wordt semantisch gelijkgesteld aan het gegevenstype code van objecttype woonplaats, uit het gegevensmodel van de bronadministratie waarin woonplaatsen zijn geadministreerd. </p>
+</blockquote>
+<blockquote>
+<p>Niet goed voorbeeld A
+Een gegevenstype identificatie wordt semantisch gelijkgesteld aan de centrale begripsdefinitie voor een identificatie van een object. </p>
+</blockquote>
+<blockquote>
+<p>Niet goed voorbeeld B
+Een gegevenstype straatnaam (een onderdeel van het adres waar iemand in een verblijfsobject woont) wordt semantisch gelijkgesteld aan de naam van een openbare ruimte, uit het gegevensmodel van de bronadministratie waarin openbare ruimtes zijn geadministreerd. Hier is gewone verticale semantische herleiding nodig, want het betekent niet exact hetzelfde. Er zijn immers ook openbare ruimten die van het type spoorbaan zijn en daar wonen geen mensen aan, deze noemen we geen straat.  </p>
+</blockquote>
 <table>
 <thead>
 <tr>
@@ -2257,6 +2287,18 @@ TODO: visueel diagram. </p>
 <strong>TODO: Frans, diagram SH Gegevenstype horizontaal naar gegevenstype in ander LGM</strong> </p>
 <p><strong>Verticale semantische herleidbaarheid</strong></p>
 <p>Een gegevenstype kan een gegevensdefinitie hebben die gebaseerd is op bovenliggende definities. </p>
+<blockquote>
+<p>Voorbeeld 1
+Een gegevenstype geboorteplaatsnaam wordt semantisch herleid naar een kenmerk naam van objecttype woonplaats. </p>
+</blockquote>
+<blockquote>
+<p>Voorbeeld 2
+Een gegevenstype geboorteplaats wordt semantisch herleid naar een kenmerk code van objecttype woonplaats.</p>
+</blockquote>
+<blockquote>
+<p>Voorbeeld 3
+Een gegevenstype adresregel wordt semantisch herleid naar de kenmerken huisnummer, huisletter en huisnummertoevoeging van het objecttype Nummeraanduiding en naar de naam van het objecttype openbare ruimte en naar de naam van het objecttype woonplaats.   </p>
+</blockquote>
 <p>Regel: indien de semantische herleidbaarheid 'herleidbaar' is dan worden de metagegevens 'semantische verwijzingen' en 'ontbrekende verwijzingen' ook gespecificeerd. </p>
 <p>Voor elk gegevenstype kunnen meerdere semantische verwijzingen worden opgenomen. </p>
 <table>
@@ -2315,7 +2357,7 @@ TODO: visueel diagram. </p>
 </tr>
 </tbody></table>
 <p><strong>Metamodel in diagram vorm:</strong>
-<strong>TODO: Frans, diagram SH Gegevenstype horizontaal naar gegevenstype in ander LGM</strong> </p>
+<strong>TODO: Frans, diagram SH Gegevenstype verticaal naar gegevenstype in ander LGM</strong> </p>
 <p>Regels: </p>
 <ul>
 <li>ofwel de modelelement identificatie ofwel de modelelement naam is opgenomen, of beide</li>
@@ -2483,11 +2525,11 @@ Dit wordt een <em>geannoteerde definitie</em> genoemd.  </p>
         <li class="tofline">
     <a class="tocxref" href="#fig-het-bsn-voorbeeld-in-een-diagram"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title">Het BSN voorbeeld in een diagram</span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#fig-in-een-diagram"><span class="self-link">Figuur <bdi class="figno">2</bdi></span> <span class="fig-title">In een diagram</span></a>
+    <a class="tocxref" href="#fig-voorbeeld-png"><span class="self-link">Figuur <bdi class="figno">2</bdi></span> <span class="fig-title">Voorbeeld.png</span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#fig-voorbeeld-png"><span class="self-link">Figuur <bdi class="figno">3</bdi></span> <span class="fig-title">Voorbeeld.png</span></a>
+    <a class="tocxref" href="#fig-semantische-herleidbaarheid-in-een-diagram"><span class="self-link">Figuur <bdi class="figno">3</bdi></span> <span class="fig-title">Semantische herleidbaarheid in een diagram</span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#fig-semantische-herleidbaarheid-in-een-diagram"><span class="self-link">Figuur <bdi class="figno">4</bdi></span> <span class="fig-title">Semantische herleidbaarheid in een diagram</span></a>
+    <a class="tocxref" href="#fig-sh-gegevensobjecttype-verticaal-naar-cim"><span class="self-link">Figuur <bdi class="figno">4</bdi></span> <span class="fig-title">SH Gegevensobjecttype verticaal naar CIM</span></a>
   </li>
       </ul></section>
   <section id="index" class="appendix"><div class="header-wrapper"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix A."></a></div><section id="index-defined-here">
