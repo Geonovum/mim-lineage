@@ -259,7 +259,7 @@ De volgende metagegevens worden gespecificeerd bij elke _semantische verwijzing_
 | lexicaal pad | zie H4 | 0..1 | zie specificatie lexicaal pad verderop
 
 **Metamodel in diagram vorm:**
-**TODO: Frans, diagram SH Gegevenstype horizontaal naar gegevenstype in ander LGM** 
+![SH Gegevenstype verticaal naar CIM](media/SH_gegevenstype_logisch.png "SH Gegevenstype verticaal naar CIM")
 
 Regels: 
 - ofwel de modelelement identificatie ofwel de modelelement naam is opgenomen, of beide
