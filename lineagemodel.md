@@ -286,6 +286,8 @@ De volgende metagegevens worden gespecificeerd bij elke _semantische verwijzing_
 | lexicaal pad | zie H4 | 0..1 | zie specificatie lexicaal pad verderop
 
 **Metamodel in diagram vorm:**
+![SH Gegevenstype verticaal naar CIM](media/SH_gegevensobjecttypeSH_gegevenstype_logisch.png "SH Gegevenstype verticaal naar CIM")
+
 **TODO: Frans, diagram SH Gegevenstype verticaal naar gegevenstype in ander LGM** 
 
 Regels: 
