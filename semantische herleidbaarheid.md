@@ -60,7 +60,7 @@ Omdat dit aparte lagen zijn is het van belang om de relatie tussen de lagen te k
 
 Er zijn verschillende beschouwingsniveaus om kennis en gegevens te modelleren (en andere concerns, die hier niet benoemd zijn). Bij het specificeren van semantische herleidbaarheid wordt hierbij veelvuldig gebruik gemaakt van verwijzingen tussen modelelementen uit verschillende beschouwingsniveaus. De volgende verbanden worden hierbij als binnen scope gezien. 
 
-![Semantische herleidbaarheid in een diagram](media/SH conceptueel.png "In een diagram")
+![Semantische herleidbaarheid](media/MIM-lineage.png "In een diagram")
 
 Merk op dat verbanden meestal verticaal worden aangebracht, maar soms ook horizontaal. 
 

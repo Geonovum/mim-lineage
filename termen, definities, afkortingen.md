@@ -27,7 +27,7 @@ Semantische herleiding bestaat uit één of meerdere **semantische verwijzingen*
 
 Dit diagram geeft de tekst uit voorgaande alinea weer in de vorm van een diagram. 
 
-![Semantische herleidbaarheid in een diagram](media/SH_conceptueel.png "Semantische herleidbaarheid in een diagram")
+![Semantische herleidbaarheid in een diagram](media/SH_conceptueel_volledig.png "Semantische herleidbaarheid in een diagram")
 
 Dit diagram zal per modelelement concreet worden uitgewerkt in het volgende hoofdstuk, per modelelement in een CIM of LGM dat een definitie kan hebben. 
 
