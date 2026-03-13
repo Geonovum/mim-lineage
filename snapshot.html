@@ -1889,7 +1889,7 @@ De definitie daarvan luidt:</p>
 <ul>
 <li>gegevensobjecttype</li>
 <li>gegevenstype</li>
-<li>TODO, eventueel: relatietype tussen twee gegevensobjecttypen</li>
+<li>TODO, eventueel: relatietype tussen twee gegevensobjecttypen (of hebben deze altijd als definitie: de verwijzing naar de identificator van het gerelateerde gegevensobjecttype).</li>
 </ul>
 </section><section id="uitgangspunten-en-ontwerpbeslissingen"><div class="header-wrapper"><h3 id="x5-3-uitgangspunten-en-ontwerpbeslissingen"><bdi class="secno">5.3 </bdi>Uitgangspunten en ontwerpbeslissingen</h3><a class="self-link" href="#uitgangspunten-en-ontwerpbeslissingen" aria-label="Permalink for Section 5.3"></a></div>
 <p><strong>Elk modelelement kent een eigen definitie</strong></p>
@@ -2029,7 +2029,7 @@ TODO: visueel diagram. </p>
 <td>gegevensobjecttype</td>
 <td>begrip</td>
 <td>0..*</td>
-<td>precies 1, te weten het begrip waar het primair om gaat (en waarvoor een objecttype in een CIM zou moeten zijn, indien er een CIM is</td>
+<td>precies 1 begrip, te weten het begrip waar het primair om gaat (en waarvoor een objecttype in een CIM zou moeten zijn, indien er een CIM is</td>
 </tr>
 <tr>
 <td>gegevenstype</td>
@@ -2049,8 +2049,8 @@ TODO: visueel diagram. </p>
 <p>De formulering <em>is gebaseerd op</em> wijst op een meer vrije en mogelijk meervoudige interpretatie van de relatie tussen een logisch modelelement en een begrip.</p>
 <p><em>TODO: hoe precies verwijzen naar een begrip. Dit is analoog aan MIM 1.2, wellicht nog met een extra uitbreiding of dit wel of niet exact is.</em></p>
 </section><section id="lineage-vanuit-lgm-naar-cim"><div class="header-wrapper"><h3 id="x5-6-lineage-vanuit-lgm-naar-cim"><bdi class="secno">5.6 </bdi>Lineage vanuit LGM naar CIM</h3><a class="self-link" href="#lineage-vanuit-lgm-naar-cim" aria-label="Permalink for Section 5.6"></a></div>
-<p>Gegevens gaan over eigenschappen van een object. Door semantische herleidbaarheid aan te brengen wordt aangegeven hoe (en in hoeverre) de gegevenswerkelijkheid en de gemodelleerde werkelijkheid in het begrippenkader en het conceptuele inforatiemodel met elkaar overeenkomen. </p>
-<p>Een gegevensmodel gaat over gegevens die er zijn, een informatiemodel gaat over informatie die we over de werkelijkheid nodig hebben. De definitie van een gegevensobject of een gegevenstype is daarom sterk gebaseerd de conceptualisatie van de informatie die beschreven is in het CIM. Het CIM definieert immers het objecttype, of het eigenschaptype, waarover het gegevenstype gaat. Dit is in een begrippenkader nog open en nog niet formeel vastgesteld. Daarom heeft het de sterke voorkeur om bij het aanbrengen van semantische herleidbaarheid in een logische gegevensmodel verwijzingen aan te brengen naar een modelelment in een CIM, en alleen te verwijzen naar een begrip als er geen CIM is. </p>
+<p>Gegevens gaan over eigenschappen van een object. Door semantische herleidbaarheid aan te brengen wordt aangegeven hoe (en in hoeverre) de gegevenswerkelijkheid en de gemodelleerde werkelijkheid in het conceptuele informatiemodel (en begrippenkader) met elkaar overeenkomen. </p>
+<p>Een gegevensmodel gaat over gegevens die er zijn, een informatiemodel gaat over informatie die we over de werkelijkheid nodig hebben. De definitie van een gegevensobject of een gegevenstype is daarom sterk gebaseerd op de conceptualisatie van de informatie die beschreven is in het CIM. Het CIM definieert immers het objecttype, of het eigenschaptype, waarover het gegevenstype gaat. Dit is in een begrippenkader nog open en nog niet formeel vastgesteld. Daarom heeft het de sterke voorkeur om bij het aanbrengen van semantische herleidbaarheid in een logische gegevensmodel verwijzingen aan te brengen naar een modelelment in een CIM, en alleen te verwijzen naar een begrip als er geen CIM is. </p>
 <p>Semantische herleidbaarheid in een logisch gegevensmodel beschrijft op welke modelelementen uit een CIM een gegevenstype is gebaseerd. In het verlengde hiervan geldt dat de definitie van het gegevenstype weer op de begrippen is gebaseerd die daarin zijn aangegeven. </p>
 <p><strong>Lineage op model niveau</strong></p>
 <p>In een LGM kunnen modelelementen voorkomen die semantische verwijzingen hebben naar CIM modelelementen uit verschillende CIM's. Hierover kan extra informatie worden toegevoegd in het model. </p>
@@ -2194,7 +2194,7 @@ TODO: visueel diagram. </p>
 <li>ofwel de modelelement identificatie ofwel de modelelement naam is opgenomen, of beide</li>
 <li>de model naam is opgenomen bij Lineage op model niveau</li>
 </ul>
-<p>Bij het aangeven van de semantische herleidbaarheid van een gegevenstype naar de bijbehorende semantiek kan uit analyse blijken dat de gegevensdefinitie van een gegevenstype volledig afgedekt kan worden door modelelementen in een CIM en/of begrippenkader. Dit is de gewenste situatie. Het kan echter ook zo zijn dat het niet het wat anders is dan gewenst. De mate van aanwijsbaarheid is dan maar deels mogelijk of zelfs geheel niet mogelijk. </p>
+<p>Bij het aangeven van de semantische herleidbaarheid van een gegevenstype naar de bijbehorende semantiek kan uit analyse blijken dat de gegevensdefinitie van een gegevenstype volledig afgedekt kan worden door modelelementen in een CIM en/of begrippenkader. Dit is de gewenste situatie. Dit is echter niet altijd mogelijk, soms is de aanwijsbaarheid maar gedeeltelijk mogelijk of zelfs geheel onmogelijk. </p>
 </section><section id="specificatie-voor-gegevenstype"><div class="header-wrapper"><h4 id="x5-6-2-specificatie-voor-gegevenstype"><bdi class="secno">5.6.2 </bdi>Specificatie voor gegevenstype</h4><a class="self-link" href="#specificatie-voor-gegevenstype" aria-label="Permalink for Section 5.6.2"></a></div>
 <p>De manier waarop semantische herleidbaarheid is gespecificeerd wordt eerst aangegeven. </p>
 <p>Eerst wordt bij het gegevenstype aangegeven of deze wel of niet semantisch relevant is. </p>
