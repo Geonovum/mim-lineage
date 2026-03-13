@@ -206,16 +206,16 @@ Bij het aangeven van de semantische herleidbaarheid van een gegevenstype naar de
 
 De manier waarop semantische herleidbaarheid is gespecificeerd wordt eerst aangegeven. 
 
-Eerst wordt bij het gegevenstype aangegeven of deze semantisch relevant is. 
+Eerst wordt bij het gegevenstype aangegeven of deze wel of niet semantisch relevant is. 
 
 De volgende enumeratiewaarden zijn mogelijk: 
 
 | waarde | beschrijving      | datatype | voorbeeld | 
 | ------------------ | ------------------------------------------------------ | -------------- | -------------- | 
 | "niet relevant" | aanduiding dat een modelelement semantisch niet relevant is en de semantische herleiding niet uitgewerkt hoeft te worden | CharacterString | "niet relevant" | 
-| "niet herleidbaar" | aanduiding dat voor een semantisch relevant modelelement de gehele semantische herleiding ontbreekt en dus niet herleidbaar is | CharacterString | "niet herleidbaar" |
-| "herleidbaar"      | aanduiding dat voor een semantisch relevant modelelement de semantische herleiding is uitgewerkt, voor zover mogelijk | 
-| "horizontale verwijzing" | aanduiding dat voor een semantisch relevant modelelement de semantische herleiding is uitgewerkt via een horizontale verwijzing | 
+| "niet herleidbaar" | aanduiding dat een modelelement semantisch relevant is, maar dat de gehele semantische herleiding ontbreekt en dus niet herleidbaar is | CharacterString | "niet herleidbaar" |
+| "verticaal herleidbaar"      | aanduiding dat een modelelement semantisch relevant is en de semantische herleiding verticaal is uitgewerkt, voor zover mogelijk | 
+| "horizontaal herleidbaar" | aanduiding dat voor een semantisch relevant modelelement de semantische herleiding horizontaal is uitgewerkt | 
 
 Regel: De aanduiding van de van verwijsbaarheid is een van deze waarden. 
 
