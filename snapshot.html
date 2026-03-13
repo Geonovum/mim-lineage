@@ -2251,45 +2251,6 @@ TODO: visueel diagram. </p>
 <td>zie voorgenoemde enumeratiewaarden</td>
 </tr>
 </tbody></table>
-<p><strong>Horizontale semantische herleidbaarheid</strong></p>
-<p>Een gegevenstype kan 1 op 1 overgenomen zijn uit een ander logisch gegevensmodel. Het is mogelijk om daarnaar te verwijzen, en voor de semantische herleidbaarheid te stellen: zie aldaar. </p>
-<p>De herleiding is in principe verticaal, maar met eerst een horizontale zijstap. Dit komt vooral voor wanneer een andere partij, die een bronadministratie voert, de gegevensdefinitie al heeft gegeven en ook zelf de semantische herleidbaarheid al heeft aangebracht. Het is dan beter om hiernaar te verwijzen.</p>
-<blockquote>
-<p>Voorbeeld 1
-Een gegevenstype woonplaatscode wordt semantisch gelijkgesteld aan het gegevenstype code van objecttype woonplaats, uit het gegevensmodel van de bronadministratie waarin woonplaatsen zijn geadministreerd. </p>
-</blockquote>
-<blockquote>
-<p>Niet goed voorbeeld A
-Een gegevenstype identificatie wordt semantisch gelijkgesteld aan de centrale begripsdefinitie voor een identificatie van een object. </p>
-</blockquote>
-<blockquote>
-<p>Niet goed voorbeeld B
-Een gegevenstype straatnaam (een onderdeel van het adres waar iemand in een verblijfsobject woont) wordt semantisch gelijkgesteld aan de naam van een openbare ruimte, uit het gegevensmodel van de bronadministratie waarin openbare ruimtes zijn geadministreerd. Hier is gewone verticale semantische herleiding nodig, want het betekent niet exact hetzelfde. Er zijn immers ook openbare ruimten die van het type spoorbaan zijn en daar wonen geen mensen aan, deze noemen we geen straat.  </p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>Modelelement</th>
-<th>indirecte semantische verwijzing naar</th>
-<th>kardinaliteit</th>
-<th>spelregels, bij 1 modelelement van dit type hoort</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>gegevensobjecttype</td>
-<td>gegevensobjecttype uit ander LGM</td>
-<td>0..1</td>
-<td>als aangebracht, dan altijd tijd precies 1</td>
-</tr>
-<tr>
-<td>gegevenstype</td>
-<td>gegevenstype uit ander LGMe</td>
-<td>0..1</td>
-<td>als aangebracht, dan altijd tijd precies 1</td>
-</tr>
-</tbody></table>
-<p><strong>Metamodel in diagram vorm:</strong>
-<strong>TODO: Frans, diagram SH Gegevenstype horizontaal naar gegevenstype in ander LGM</strong> </p>
 <p><strong>Verticale semantische herleidbaarheid</strong></p>
 <p>Een gegevenstype kan een gegevensdefinitie hebben die gebaseerd is op bovenliggende definities. </p>
 <blockquote>
@@ -2520,6 +2481,52 @@ Een gegevenstype adresregel wordt semantisch herleid naar de kenmerken huisnumme
 <td>als aangebracht, dan altijd tijd precies 1 en gelijk aan</td>
 </tr>
 </tbody></table>
+<p><strong>Horizontale semantische herleidbaarheid</strong></p>
+<p>Een gegevenstype kan 1 op 1 overgenomen zijn uit een ander logisch gegevensmodel. Het is mogelijk om daarnaar te verwijzen, en voor de semantische herleidbaarheid te stellen: zie aldaar. </p>
+<p>De herleiding is in principe verticaal, maar met eerst een horizontale zijstap. Dit komt vooral voor wanneer een andere partij, die een bronadministratie voert, de gegevensdefinitie al heeft gegeven en ook zelf de semantische herleidbaarheid al heeft aangebracht. Het is dan beter om hiernaar te verwijzen.</p>
+<blockquote>
+<p>Voorbeeld 1
+Een gegevenstype woonplaatscode wordt semantisch gelijkgesteld aan het gegevenstype code van objecttype woonplaats, uit het gegevensmodel van de bronadministratie waarin woonplaatsen zijn geadministreerd. </p>
+</blockquote>
+<blockquote>
+<p>Niet goed voorbeeld A
+Een gegevenstype identificatie wordt semantisch gelijkgesteld aan de centrale begripsdefinitie voor een identificatie van een object. </p>
+</blockquote>
+<blockquote>
+<p>Niet goed voorbeeld B
+Een gegevenstype straatnaam (een onderdeel van het adres waar iemand in een verblijfsobject woont) wordt semantisch gelijkgesteld aan de naam van een openbare ruimte, uit het gegevensmodel van de bronadministratie waarin openbare ruimtes zijn geadministreerd. Hier is gewone verticale semantische herleiding nodig, want het betekent niet exact hetzelfde. Er zijn immers ook openbare ruimten die van het type spoorbaan zijn en daar wonen geen mensen aan, deze noemen we geen straat.  </p>
+</blockquote>
+<p>Merk op dat vanwege de aard van deze herleiding het volgende geldt: </p>
+<ul>
+<li>er is geen verticale semantische herleiding aangebracht (het is ofwel verticaal, ofwel horizontaal) </li>
+<li>er is geen sprake van een lexicaal pad, omdat er niet verwezen wordt naar een CIM</li>
+<li>er is nooit sprake zijn van een verschil dat verklaard moet worden. Als dit wel aan de hand is, dan is er geen sprake van een gelijkstelling en zal verticale semantische herleiding moeten worden aangebracht</li>
+<li>het kan zijn dat er sprake is van een net andere verwoording, maar vanwege de semantische gelijkstelling wordt al aangegeven dat dit zo is, en dat de verwoording van het gegevenstype waarnaar verwezen wordt leidend is.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Modelelement</th>
+<th>indirecte semantische verwijzing naar</th>
+<th>kardinaliteit</th>
+<th>spelregels, bij 1 modelelement van dit type hoort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>gegevensobjecttype</td>
+<td>gegevensobjecttype uit ander LGM</td>
+<td>0..1</td>
+<td>als aangebracht, dan altijd tijd precies 1</td>
+</tr>
+<tr>
+<td>gegevenstype</td>
+<td>gegevenstype uit ander LGMe</td>
+<td>0..1</td>
+<td>als aangebracht, dan altijd tijd precies 1</td>
+</tr>
+</tbody></table>
+<p><strong>Metamodel in diagram vorm:</strong>
+<strong>TODO: Frans, diagram SH Gegevenstype horizontaal naar gegevenstype in ander LGM</strong> </p>
 </section></section><section id="mogelijke-openstaande-punten-en-teksten-om-nog-een-plek-te-geven"><div class="header-wrapper"><h3 id="x5-7-mogelijke-openstaande-punten-en-teksten-om-nog-een-plek-te-geven"><bdi class="secno">5.7 </bdi>Mogelijke openstaande punten en teksten om nog een plek te geven:</h3><a class="self-link" href="#mogelijke-openstaande-punten-en-teksten-om-nog-een-plek-te-geven" aria-label="Permalink for Section 5.7"></a></div>
 <p><strong>Geannoteerde definities</strong>
 De meeste modelelementen hebben verplicht een definitie: een beschrijving van de betekenis van dat modelelement. 
