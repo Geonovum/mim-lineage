@@ -26,7 +26,7 @@ CIM modelelementen:
 LGM modelelementen:
    - gegevensobjecttype
    - gegevenstype
-   - TODO, eventueel: relatietype tussen twee gegevensobjecttypen
+   - TODO, eventueel: relatietype tussen twee gegevensobjecttypen (of hebben deze altijd als definitie: de verwijzing naar de identificator van het gerelateerde gegevensobjecttype).
 
 ## Uitgangspunten en ontwerpbeslissingen
 
