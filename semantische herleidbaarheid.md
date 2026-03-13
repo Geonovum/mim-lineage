@@ -88,7 +88,7 @@ Er is meer lineage tussen en binnen beschouwingsniveaus mogelijk, maar er is bew
 | -------------   | ------------------------------------------- | --------------------------- |
 | 1 naar ...    | vanuit een begripppenkader naar kennisbronnen | Buiten scope van MIM. |
 | 1 naar 1      | vanuit een begrippenkader naar een ander begrippenkader | Buiten scope van MIM. |
-| 2 naar 2      | vanuit CIM naar een begrippenkader | In scope, dit is uitgewerkt bij het gewone metamodel, bij view en extern en niet hier. |
+| 2 naar 2      | vanuit CIM naar een ander CIM | In scope van MIM maar niet van deze module, zie metamodel algemeen, bij view en extern en niet hier (TODO, of wel hier?). |
 | 3 naar 4      | vanuit LGM naar een technisch datamodel |  Buiten scope van MIM. Zie ontwerpbeslissingen. |
 | 4 naar ...    | vanuit een technisch datamodel naar een LGM, CIM of begrippenkader | Buiten scope van MIM. |
 
