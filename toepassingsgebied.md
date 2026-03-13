@@ -2,9 +2,9 @@
 
 Deze MIM-module is een onderdeel van de MIM standaard. Het toepassingsgebied van deze module valt hier binnen. 
 
-Deze module beschrijft een gestandaardiseerde manier om gegevensmodellen en concentuele informatiemodellen te verbinden, met elkaar en met begrippen uit begrippenkaders, die zelf weer gebaseerd zijn op een kennisdomein zoals bijvoorbeeld (maar niet beperkt tot) wet- en regelgeving of uitvoeringsbeleid. 
+Deze module beschrijft een gestandaardiseerde manier om gegevensmodellen en concentuele informatiemodellen te verbinden, met elkaar en met begrippen uit begrippenkaders. Omdat begrippenkaders zelf weer gebaseerd zijn op een kennisdomein, zoals bijvoorbeeld (maar niet beperkt tot) wet- en regelgeving of uitvoeringsbeleid, kunnen zo de verschillende lagen traceerbaar en beheersbaar met elkaar verbonden worden. De semantische herleiding is in deze standaard daarmee vooral in verticale richting, tussen de verschillende abstractieniveaus van modellering. Horizontale lineage tussen modellen op het zelfde niveau is ook opgenomen, voor die gevallen waarin modelelementen zijn overgenomen (hergebruikt) vanuit een ander model en de verticale lineage aldaar al gespecificeerd is. 
 
-Dit komt sterk overeen met wat binnen de NORA het Nationaal Semantisch Vlak heet, zoals bedoeld vanuit NORA gegevensmanagement, en daarbinnen de informatie laag. 
+Dit toepassingsgebied komt bevindt zich in de informatielaag van het Nationaal Semantisch Vlak van NORA, zoals bedoeld vanuit NORA gegevensmanagement.  
 
 Deze module is vooral van belang voor organisaties waarin de volgende concerns van belang zijn: 
 - gezamelijke begripsvorming en aansluiting tussen de business en IT. Heldere definities gaan vooraf aan realiseren van informatievoorzieningen en het inwinnen van gegevens, de informatievoorziening moet hiermee in lijn zijn en blijven; 
