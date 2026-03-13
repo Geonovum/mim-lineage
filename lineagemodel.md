@@ -339,7 +339,9 @@ Ad 3.
 
 **Horizontale semantische herleidbaarheid**
 
-Een gegevenstype kan 1 op 1 overgenomen zijn uit een ander logisch gegevensmodel. Het is mogelijk om daarnaar te verwijzen, en voor de semantische herleidbaarheid te stellen: zie aldaar. 
+In de paragrafen hiervoor ging het over verticale semantische herleiding naar een CIM of SBM. 
+
+Een gegevenstype kan echter ook 1 op 1 overgenomen zijn uit een ander logisch gegevensmodel, zonder enige intentie om de betekenis ervan aan te passen. Het is dan mogelijk om daarnaar te verwijzen, en voor de semantische herleidbaarheid te stellen: zie aldaar. 
 
 De herleiding is in principe verticaal, maar met eerst een horizontale zijstap. Dit komt vooral voor wanneer een andere partij, die een bronadministratie voert, de gegevensdefinitie al heeft gegeven en ook zelf de semantische herleidbaarheid al heeft aangebracht. Het is dan beter om hiernaar te verwijzen.
 
