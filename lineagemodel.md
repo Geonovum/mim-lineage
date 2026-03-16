@@ -26,7 +26,7 @@ CIM modelelementen:
 LGM modelelementen:
    - gegevensobjecttype
    - gegevenstype
-   - TODO, eventueel: relatietype tussen twee gegevensobjecttypen
+   - TODO, eventueel: relatietype tussen twee gegevensobjecttypen (of hebben deze altijd als definitie: de verwijzing naar de identificator van het gerelateerde gegevensobjecttype).
 
 ## Uitgangspunten en ontwerpbeslissingen
 
@@ -116,7 +116,7 @@ TODO: visueel diagram.
 
 | Modelelement | semantische verwijzing naar | kardinaliteit | spelregels, bij 1 modelelement van dit type hoort: ...                | 
 | ------------ | --------------------------- | ------------- | --------------------------------------------------------------------- | 
-| gegevensobjecttype   | begrip              | 0..* | precies 1, te weten het begrip waar het primair om gaat (en waarvoor een objecttype in een CIM zou moeten zijn, indien er een CIM is         |  
+| gegevensobjecttype   | begrip              | 0..* | precies 1 begrip, te weten het begrip waar het primair om gaat (en waarvoor een objecttype in een CIM zou moeten zijn, indien er een CIM is         |  
 | gegevenstype         | begrip                            | 0..* | ten minste 1, indien er geen CIM is maar wel een begrippenkader is met daarin een passend begrip | 
 
 Merk op:
@@ -133,9 +133,9 @@ _TODO: hoe precies verwijzen naar een begrip. Dit is analoog aan MIM 1.2, wellic
 
 ## Lineage vanuit LGM naar CIM
 
-Gegevens gaan over eigenschappen van een object. Door semantische herleidbaarheid aan te brengen wordt aangegeven hoe (en in hoeverre) de gegevenswerkelijkheid en de gemodelleerde werkelijkheid in het begrippenkader en het conceptuele inforatiemodel met elkaar overeenkomen. 
+Gegevens gaan over eigenschappen van een object. Door semantische herleidbaarheid aan te brengen wordt aangegeven hoe (en in hoeverre) de gegevenswerkelijkheid en de gemodelleerde werkelijkheid in het conceptuele informatiemodel (en begrippenkader) met elkaar overeenkomen. 
 
-Een gegevensmodel gaat over gegevens die er zijn, een informatiemodel gaat over informatie die we over de werkelijkheid nodig hebben. De definitie van een gegevensobject of een gegevenstype is daarom sterk gebaseerd de conceptualisatie van de informatie die beschreven is in het CIM. Het CIM definieert immers het objecttype, of het eigenschaptype, waarover het gegevenstype gaat. Dit is in een begrippenkader nog open en nog niet formeel vastgesteld. Daarom heeft het de sterke voorkeur om bij het aanbrengen van semantische herleidbaarheid in een logische gegevensmodel verwijzingen aan te brengen naar een modelelment in een CIM, en alleen te verwijzen naar een begrip als er geen CIM is. 
+Een gegevensmodel gaat over gegevens die er zijn, een informatiemodel gaat over informatie die we over de werkelijkheid nodig hebben. De definitie van een gegevensobject of een gegevenstype is daarom sterk gebaseerd op de conceptualisatie van de informatie die beschreven is in het CIM. Het CIM definieert immers het objecttype, of het eigenschaptype, waarover het gegevenstype gaat. Dit is in een begrippenkader nog open en nog niet formeel vastgesteld. Daarom heeft het de sterke voorkeur om bij het aanbrengen van semantische herleidbaarheid in een logische gegevensmodel verwijzingen aan te brengen naar een modelelment in een CIM, en alleen te verwijzen naar een begrip als er geen CIM is. 
 
 Semantische herleidbaarheid in een logisch gegevensmodel beschrijft op welke modelelementen uit een CIM een gegevenstype is gebaseerd. In het verlengde hiervan geldt dat de definitie van het gegevenstype weer op de begrippen is gebaseerd die daarin zijn aangegeven. 
 
@@ -200,22 +200,22 @@ Regels:
 - ofwel de modelelement identificatie ofwel de modelelement naam is opgenomen, of beide
 - de model naam is opgenomen bij Lineage op model niveau
 
-Bij het aangeven van de semantische herleidbaarheid van een gegevenstype naar de bijbehorende semantiek kan uit analyse blijken dat de gegevensdefinitie van een gegevenstype volledig afgedekt kan worden door modelelementen in een CIM en/of begrippenkader. Dit is de gewenste situatie. Het kan echter ook zo zijn dat het niet het wat anders is dan gewenst. De mate van aanwijsbaarheid is dan maar deels mogelijk of zelfs geheel niet mogelijk. 
+Bij het aangeven van de semantische herleidbaarheid van een gegevenstype naar de bijbehorende semantiek kan uit analyse blijken dat de gegevensdefinitie van een gegevenstype volledig afgedekt kan worden door modelelementen in een CIM en/of begrippenkader. Dit is de gewenste situatie. Dit is echter niet altijd mogelijk, soms is de aanwijsbaarheid maar gedeeltelijk mogelijk of zelfs geheel onmogelijk. 
 
 ### Specificatie voor gegevenstype
 
 De manier waarop semantische herleidbaarheid is gespecificeerd wordt eerst aangegeven. 
 
-Eerst wordt bij het gegevenstype aangegeven of deze semantisch relevant is. 
+Eerst wordt bij het gegevenstype aangegeven of deze wel of niet semantisch relevant is. 
 
 De volgende enumeratiewaarden zijn mogelijk: 
 
 | waarde | beschrijving      | datatype | voorbeeld | 
 | ------------------ | ------------------------------------------------------ | -------------- | -------------- | 
 | "niet relevant" | aanduiding dat een modelelement semantisch niet relevant is en de semantische herleiding niet uitgewerkt hoeft te worden | CharacterString | "niet relevant" | 
-| "niet herleidbaar" | aanduiding dat voor een semantisch relevant modelelement de gehele semantische herleiding ontbreekt en dus niet herleidbaar is | CharacterString | "niet herleidbaar" |
-| "herleidbaar"      | aanduiding dat voor een semantisch relevant modelelement de semantische herleiding is uitgewerkt, voor zover mogelijk | 
-| "horizontale verwijzing" | aanduiding dat voor een semantisch relevant modelelement de semantische herleiding is uitgewerkt via een horizontale verwijzing | 
+| "niet herleidbaar" | aanduiding dat een modelelement semantisch relevant is, maar dat de gehele semantische herleiding ontbreekt en dus niet herleidbaar is | CharacterString | "niet herleidbaar" |
+| "verticaal herleidbaar"      | aanduiding dat een modelelement semantisch relevant is en de semantische herleiding verticaal is uitgewerkt, voor zover mogelijk | 
+| "horizontaal herleidbaar" | aanduiding dat voor een semantisch relevant modelelement de semantische herleiding horizontaal is uitgewerkt | 
 
 Regel: De aanduiding van de van verwijsbaarheid is een van deze waarden. 
 
@@ -226,33 +226,6 @@ Deze waarde wordt opgenomen in een apart metagegeven dat hier speciaal voor bedo
 | Metagegeven | beschrijving      | datatype | voorbeeld | 
 | ------------ | ------------------------------------------------------ | -------------- | -------------- | 
 | semantische herleidbaarheid | zie H4, semantische herleidbaarheid | enumeratie | zie voorgenoemde enumeratiewaarden | 
-
-**Horizontale semantische herleidbaarheid**
-
-Een gegevenstype kan 1 op 1 overgenomen zijn uit een ander logisch gegevensmodel. Het is mogelijk om daarnaar te verwijzen, en voor de semantische herleidbaarheid te stellen: zie aldaar. 
-
-De herleiding is in principe verticaal, maar met eerst een horizontale zijstap. Dit komt vooral voor wanneer een andere partij, die een bronadministratie voert, de gegevensdefinitie al heeft gegeven en ook zelf de semantische herleidbaarheid al heeft aangebracht. Het is dan beter om hiernaar te verwijzen.
-
-> Voorbeeld 1
-> Een gegevenstype woonplaatscode wordt semantisch gelijkgesteld aan het gegevenstype code van objecttype woonplaats, uit het gegevensmodel van de bronadministratie waarin woonplaatsen zijn geadministreerd. 
-
-> Niet goed voorbeeld A
-> Een gegevenstype identificatie wordt semantisch gelijkgesteld aan de centrale begripsdefinitie voor een identificatie van een object. 
-
-> Niet goed voorbeeld B
-> Een gegevenstype straatnaam (een onderdeel van het adres waar iemand in een verblijfsobject woont) wordt semantisch gelijkgesteld aan de naam van een openbare ruimte, uit het gegevensmodel van de bronadministratie waarin openbare ruimtes zijn geadministreerd. Hier is gewone verticale semantische herleiding nodig, want het betekent niet exact hetzelfde. Er zijn immers ook openbare ruimten die van het type spoorbaan zijn en daar wonen geen mensen aan, deze noemen we geen straat.  
-
-
-
-
-| Modelelement | indirecte semantische verwijzing naar | kardinaliteit | spelregels, bij 1 modelelement van dit type hoort                     | 
-| ------------ | --------------------------- | ------------- | --------------------------------------------------------------------- | 
-| gegevensobjecttype   | gegevensobjecttype uit ander LGM | 0..1 | als aangebracht, dan altijd tijd precies 1                        |  
-| gegevenstype         | gegevenstype uit ander LGMe      | 0..1 | als aangebracht, dan altijd tijd precies 1                        | 
-
-**Metamodel in diagram vorm:**
-**TODO: Frans, diagram SH Gegevenstype horizontaal naar gegevenstype in ander LGM** 
-
 
 **Verticale semantische herleidbaarheid**
 
@@ -316,7 +289,7 @@ Het is hierbij toegestaan om gebruik te maken van gestandaardiseerde teksten. Hi
 
 | Verklaring van verschil | Toelichting | 
 | ----------------- | --------------------------- |
-| omissie in CIM            | Er ontbreekt (vermoedelijk) een modelelement in het CIM. | 
+| omissie in CIM            | Er ontbreekt (vermoedelijk) een modelelement in het CIM.| 
 | omissie in begrippenkader | Er ontbreekt (vermoedelijk) een begrip in het begrippenkader. |  
 | niet relevant             | De betekenis is semantisch niet relevant op MIM niveau 1 of 2. Het gegeven is bijvoorbeeld geheel technisch van aard, of er is sprake van een modelmatige hulpconstructie. |  
 
@@ -363,6 +336,38 @@ Ad 3.
 | ------------ | -------------- | -------------- | ------------------------------------------------------ | 
 | lexicaal pad start  | CIM objecttype die het onderwerp van gesprek is van het gegevensobject waartoe het gegevenstype behoort | 0..1 | als aangebracht, dan altijd tijd precies 1                 |  
 | lexicaal pad start eind   | eigenschaptype waar het gegevenstype over gaat                                                      | 0..1 | als aangebracht, dan altijd tijd precies 1 en gelijk aan                  | 
+
+**Horizontale semantische herleidbaarheid**
+
+In de paragrafen hiervoor ging het over verticale semantische herleiding naar een CIM of SBM. 
+
+Een gegevenstype kan echter ook 1 op 1 overgenomen zijn uit een ander logisch gegevensmodel, zonder enige intentie om de betekenis ervan aan te passen. Het is dan mogelijk om daarnaar te verwijzen, en voor de semantische herleidbaarheid te stellen: zie aldaar. 
+
+De herleiding is in principe verticaal, maar met eerst een horizontale zijstap. Dit komt vooral voor wanneer een andere partij, die een bronadministratie voert, de gegevensdefinitie al heeft gegeven en ook zelf de semantische herleidbaarheid al heeft aangebracht. Het is dan beter om hiernaar te verwijzen.
+
+> Voorbeeld 1
+> Een gegevenstype woonplaatscode wordt semantisch gelijkgesteld aan het gegevenstype code van objecttype woonplaats, uit het gegevensmodel van de bronadministratie waarin woonplaatsen zijn geadministreerd. 
+
+> Niet goed voorbeeld A
+> Een gegevenstype identificatie wordt semantisch gelijkgesteld aan de centrale begripsdefinitie voor een identificatie van een object. 
+
+> Niet goed voorbeeld B
+> Een gegevenstype straatnaam (een onderdeel van het adres waar iemand in een verblijfsobject woont) wordt semantisch gelijkgesteld aan de naam van een openbare ruimte, uit het gegevensmodel van de bronadministratie waarin openbare ruimtes zijn geadministreerd. Hier is gewone verticale semantische herleiding nodig, want het betekent niet exact hetzelfde. Er zijn immers ook openbare ruimten die van het type spoorbaan zijn en daar wonen geen mensen aan, deze noemen we geen straat.  
+
+Merk op dat vanwege de aard van deze herleiding het volgende geldt: 
+- er is geen verticale semantische herleiding aangebracht (het is ofwel verticaal, ofwel horizontaal) 
+- er is geen sprake van een lexicaal pad, omdat er niet verwezen wordt naar een CIM
+- er is nooit sprake zijn van een verschil dat verklaard moet worden. Als dit wel aan de hand is, dan is er geen sprake van een gelijkstelling en zal verticale semantische herleiding moeten worden aangebracht
+- het kan zijn dat er sprake is van een net andere verwoording, maar vanwege de semantische gelijkstelling wordt al aangegeven dat dit zo is, en dat de verwoording van het gegevenstype waarnaar verwezen wordt leidend is. 
+
+| Modelelement | indirecte semantische verwijzing naar | kardinaliteit | spelregels, bij 1 modelelement van dit type hoort                     | 
+| ------------ | --------------------------- | ------------- | --------------------------------------------------------------------- | 
+| gegevensobjecttype   | gegevensobjecttype uit ander LGM | 0..1 | als aangebracht, dan altijd tijd precies 1                        |  
+| gegevenstype         | gegevenstype uit ander LGMe      | 0..1 | als aangebracht, dan altijd tijd precies 1                        | 
+
+**Metamodel in diagram vorm:**
+**TODO: Frans, diagram SH Gegevenstype horizontaal naar gegevenstype in ander LGM** 
+
 
 ## Mogelijke openstaande punten en teksten om nog een plek te geven: 
 

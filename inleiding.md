@@ -3,5 +3,6 @@ Het metamodel voor informatiemodellering (MIM) biedt een gemeenschappelijk vertr
 
 Dit document beschrijft een specifiek onderdeel van het MIM, te weten **semantische herleidbaarheid** en de standaard voor het modelleren ervan met behuld van bijbehorende specificaties.  
 
-Veel plezier met het uitwerken van semantische herleidbaarheid! 
+Semantische herleidbaarheid beschrijft hoe modelelementen uit verschillende MIM‑beschouwingsniveaus betekenisvol met elkaar verbonden zijn. Het gaat daarbij om verticale lineage: het herleiden van definities uit informatie- en gegevensmodellen naar de semantiek zoals vastgelegd in begrippenkaders of kennisbronnen. Door deze afkomstrelaties expliciet te maken, wordt inzichtelijk hoe elk modelelelement inhoudelijk voortbouwt op definities uit hogere lagen. De kern hiervan is dat elk modelelelement een eigen, bij het beschouwingsniveau passende definitie heeft. Semantische herleidbaarheid vormt hierbij een aanvullende specificatie die deze definities verbindt en traceerbaar maakt. Zo ontstaat een systematiek waarin betekenis van data van begripsniveau tot dataniveau (en omgekeerd) te begrijpen is. Verticale lineage wordt hiermee een essentieel hulpmiddel om consistentie, begrijpelijkheid en herleidbaarheid binnen en tussen modellen te waarborgen.
 
+Veel plezier met het uitwerken van semantische herleidbaarheid! 
