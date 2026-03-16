@@ -106,7 +106,7 @@ De relatie tussen een conceptueel modelelement en een begrip moet strikt worden 
 Het is mogelijk dat MIM in een latere versie ook niet exact overeenkomende semantische verwijzingen toestaat. De semantische verwijzingen zullen dan een aanduiding of classificatie krijgen. Dit is op het moment nog niet uitgewerkt.
 
 **Metamodel**
-![Semantische herleidbaarheid van een objecttype naar een begrip](media/SH_CIm_SBM_logisch.png "Semantische herleidbaarheid van een objecttype naar een begrip")
+![Semantische herleidbaarheid van een objecttype naar een begrip](media/SH_CIM_SBM_logisch.png "Semantische herleidbaarheid van een objecttype naar een begrip")
 
 TODO-4: visueel diagram voor (alle?) andere modelelementen. 
 
