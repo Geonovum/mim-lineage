@@ -26,7 +26,7 @@ CIM modelelementen:
 LGM modelelementen:
    - gegevensobjecttype
    - gegevenstype
-   - TODO, eventueel: relatietype tussen twee gegevensobjecttypen (of hebben deze altijd als definitie: de verwijzing naar de identificator van het gerelateerde gegevensobjecttype).
+   - TODO l1, eventueel: relatietype tussen twee gegevensobjecttypen (of hebben deze altijd als definitie: de verwijzing naar de identificator van het gerelateerde gegevensobjecttype).
 
 ## Uitgangspunten en ontwerpbeslissingen
 
@@ -83,7 +83,7 @@ _Optionele spelregels_
 2. Het informatiedomein van een CIM volgt strikt 1 begrippenkader, of 1 set van sterk sterk bij elkaar behorende begrippenkaders die een bepaalde onderverdeling kennen. De partij die verantwoordelijkheid is voor beide, is dezelfde partij, en deze bewaakt ook dat beide naadloos op elkaar aansluiten. 
 3. Verwijzingen naar kennisbronnen die niet als begrippenkader zijn uitgewerkt, zijn toegestaan. In dit geval is het metagegeven 'kennisbron' bij een modelelement met een definitie gevuld. 
 
-_TODO: 3 is hier nog niet uitgewerkt._
+_TODO l2: 3 is hier nog niet uitgewerkt._
 
 **Modelelementen uit een CIM waarvoor semantische verwijzingen mogelijk zijn** 
 
@@ -108,7 +108,7 @@ Het is mogelijk dat MIM in een latere versie ook niet exact overeenkomende seman
 **Metamodel**
 ![Semantische herleidbaarheid van een objecttype naar een begrip](media/SH_CIM_SBM_logisch.png "Semantische herleidbaarheid van een objecttype naar een begrip")
 
-TODO-4: visueel diagram voor (alle?) andere modelelementen. 
+TODO-l3: visueel diagram voor (alle?) andere modelelementen. 
 
 ## Lineage vanuit LGM naar begrippenkader 
 *(Nog uit te werken in dit document.)*
@@ -129,7 +129,7 @@ _Interpretatie van de semantische verwijzing_
 
 De formulering *is gebaseerd op* wijst op een meer vrije en mogelijk meervoudige interpretatie van de relatie tussen een logisch modelelement en een begrip.
 
-_TODO: hoe precies verwijzen naar een begrip. Dit is analoog aan MIM 1.2, wellicht nog met een extra uitbreiding of dit wel of niet exact is._
+_TODO l4: hoe precies verwijzen naar een begrip. Dit is analoog aan MIM 1.2, wellicht nog met een extra uitbreiding of dit wel of niet exact is._
 
 
 ## Lineage vanuit LGM naar CIM
@@ -309,7 +309,7 @@ Indien de verwoording van de gegevensdefinitie afwijkt van de verwoording van de
 
 ### Lexicaal pad
 
-TODO: keuzes maken, zie issue 4. 
+TODO l5: keuzes maken, zie issue 4. 
 
 | Modelelement | semantische verwijzing naar     | kardinaliteit | spelregels                     | 
 | ------------ | ------------------------------- | ------------- | ----------------------------------------------- | 
@@ -367,7 +367,7 @@ Merk op dat vanwege de aard van deze herleiding het volgende geldt:
 | gegevenstype         | gegevenstype uit ander LGMe      | 0..1 | als aangebracht, dan altijd tijd precies 1                        | 
 
 **Metamodel in diagram vorm:**
-**TODO: Frans, diagram SH Gegevenstype horizontaal naar gegevenstype in ander LGM** 
+**TODO l6: Frans, diagram SH Gegevenstype horizontaal naar gegevenstype in ander LGM** 
 
 
 ## Mogelijke openstaande punten en teksten om nog een plek te geven: 
