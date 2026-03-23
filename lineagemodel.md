@@ -367,7 +367,7 @@ Merk op dat vanwege de aard van deze herleiding het volgende geldt:
 | gegevenstype         | gegevenstype uit ander LGMe      | 0..1 | als aangebracht, dan altijd tijd precies 1                        | 
 
 **Metamodel in diagram vorm:**
-**TODO l6: Frans, diagram SH Gegevenstype horizontaal naar gegevenstype in ander LGM** 
+![SH Gegevensobjecttype horizontaal](media/SH_Gegevenstype_logisch_horizontaal.png "SH Gegevensobjecttype horizontaal")
 
 
 ## Mogelijke openstaande punten en teksten om nog een plek te geven: 
