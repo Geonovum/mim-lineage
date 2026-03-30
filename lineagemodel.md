@@ -108,8 +108,6 @@ Het is mogelijk dat MIM in een latere versie ook niet exact overeenkomende seman
 **Metamodel**
 ![Semantische herleidbaarheid van een objecttype naar een begrip](media/SH_CIM_SBM_logisch.png "Semantische herleidbaarheid van een objecttype naar een begrip")
 
-TODO-l3: visueel diagram voor (alle?) andere modelelementen.    C:\Git\mim-lineage\mim-lineage\media\SH_CIM_SBM_ logisch.png
-
 ## Lineage vanuit LGM naar begrippenkader 
 *(Nog uit te werken in dit document.)*
 
