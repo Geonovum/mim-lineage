@@ -72,10 +72,10 @@ Per model waarnaar wordt verwezen kan worden aangegeven.
 
 | Metagegeven  | semantische verwijzing naar | kardinaliteit  | voorbeeld | 
 | ------------ | --------------------------- | ------------- | -------------- | 
-| model type          | model                       | 1..1  | begrippenkader | 
-| model identificatie | begrippenkader model        | 1..1  | ...                  | 
-| model naam          | begrippenkader model        | 1..1  | Natuurlijke personen | 
-| model versie        | begrippenkader modelversie  | 1..1  |  1.0.0 | 
+| type          | model type                 | 1..1  | begrippenkader | 
+| identificatie | begrippenkader             | 1..1  | www.voorbeeld.com/conceptscheme/natuurlijke_personen             | 
+| naam          | naam begrippenkader        | 1..1  | Natuurlijke personen | 
+| versie        | begrippenkader modelversie | 1..1  |  1.0.0 | 
 
 _Optionele spelregels_ 
 
@@ -146,11 +146,11 @@ Per model waarnaar wordt verwezen kan worden aangegeven:
 
 | Metagegeven  | semantische verwijzing naar  | kardinaliteit  | voorbeeld | 
 | ------------ | ---------------------------  | ------------- | -------------- | 
-| model type          | model                 | 1..1   | CIM, LGM, begrippenkader
-| model identificatie | zie type, model       | 1..1   | ...                  | 
-| model naam          | zie type, model       | 1..1   | Natuurlijke personen | 
-| model versie        | zie type, modelversie | 1..1   |  1.0.0 | 
-| model URI           | locatie van model     | 0..1   | http://mijnorganisatie/mijnmodel 
+| type          | model                 | 1..1   | CIM, LGM, begrippenkader
+| identificatie | zie type, model       | 1..1   | ...                  | 
+| naam          | zie type, model       | 1..1   | Natuurlijke personen | 
+| versie        | zie type, modelversie | 1..1   |  1.0.0 | 
+| URL           | locatie van model     | 0..1   | http://mijnorganisatie/mijnmodel 
 
 _Optionele spelregels_ 
 
