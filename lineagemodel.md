@@ -54,7 +54,7 @@ Dit wordt momenteel in detail beschreven in o.a. de *NL-SBB standaard*. Horizont
 
 Een logisch gegevensmodel kan worden uitgewerkt in verschillende technische schema's, naar gelang welke gebruikers welke serialisatie willen ontvangen of welke applicaties of databases worden ontwikkelt. Hetzelfde logische model kan in vele technische verschijningsvormen zijn uitgewerkt, waarmee het ook eenvoudig wordt om deze eenduiding naar elkaar te vertalen. Lineage is in principe altijd van 'onder' naar 'boven' dus de lineage van technisch naar logisch hoort bij de technische uitwerking. 
 
-Dit wordt momenteel in detail beschreven in de *Handreiking data lineage*.
+Dit wordt momenteel in detail beschreven in de [*Handreiking data lineage*](https://www.noraonline.nl/wiki/Handreiking_Datalineage).
 
 Deze lineage betreft vaak een mapping en/of een vertaalspeficiatie tussen technisch en logisch. Deze *kan* vanwege pragmatische overwegingen eventueel opgenomen worden *bij* een LGM, maar zit strikt genomen **niet** *in* het LGM. Wellicht dat deze mapping generiek kan worden gespecificeerd zonder afhankelijkheden met de diverse implementatie technieken en als zodanig een plek in MIM kan krijgen, maar dit is nu niet zo.
 

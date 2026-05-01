@@ -1,7 +1,6 @@
 let respecConfig = {
   useLogo: true,
   useLabel: true,
-  // TODO: title is verplicht! Neem hieronder de titel van het document op
   title: "MIM-Lineagemodel",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
   specStatus: "wv",                   // Werkversie
@@ -83,7 +82,7 @@ let respecConfig = {
       },
        {
         name: "Danny Greefhorst",
-        company: "Archixl",
+        company: "ArchiXL",
         companyURL: "https://www.archixl.nl",
       },
 	  
